@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 010 — How to Turn One Idea Into 10 Posts | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-010-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Content Repurposing</div>
+      <h1 class="hook-headline">
+        You don't need<br>
+        more ideas.<br>
+        You need to use<br>
+        <em>one idea 10 different ways.</em>
+      </h1>
+      <p class="hook-sub">The repurposing system that lets you batch a month of content in a single afternoon.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: FORMAT 01 -->
+  <div class="slide format-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="format-inner">
+      <div class="format-badge">Format 01</div>
+      <div class="format-name">Start with a Long-Form Post</div>
+      <div class="format-tagline">Your idea at full depth — the content "source"</div>
+      <div class="format-divider"></div>
+      <p class="format-body">
+        Write the full story: the insight, the context, the proof.<br>
+        <strong>This is your mother-post.</strong><br>
+        Everything else you create comes from this single piece.<br>
+        Aim for 600–900 words. LinkedIn rewards dwell time.
+      </p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: FORMAT 02–04 -->
+  <div class="slide format-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="format-inner">
+      <div class="format-badge">Formats 02–04</div>
+      <div class="format-name">Break It Into Micro-Posts</div>
+      <div class="format-tagline">3 standalone punches from 1 long post</div>
+      <div class="format-divider"></div>
+      <p class="format-body">
+        Every long post has at least 3 quotable lines.<br>
+        Pull them out. Add context. Post each as a standalone.<br>
+        <strong>"The insight" post. "The mistake" post. "The lesson" post.</strong><br>
+        Three different people will engage with each one differently.
+      </p>
+      <div class="format-pills">
+        <div class="format-pill">One-liner hook post</div>
+        <div class="format-pill">Single insight post</div>
+        <div class="format-pill">Controversial take</div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: FORMAT 05 -->
+  <div class="slide format-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">05</div>
+    <div class="format-inner">
+      <div class="format-badge">Format 05</div>
+      <div class="format-name">Turn It Into a Carousel</div>
+      <div class="format-tagline">The highest-reach format on LinkedIn right now</div>
+      <div class="format-divider"></div>
+      <p class="format-body">
+        Your long-form post already has the structure.<br>
+        Each section becomes a slide. Each insight gets its own frame.<br>
+        <strong>Carousels get 3× more reach than standard posts</strong><br>
+        because LinkedIn measures "dwell time per slide."
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: FORMAT 06–07 -->
+  <div class="slide format-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">06</div>
+    <div class="format-inner">
+      <div class="format-badge">Formats 06–07</div>
+      <div class="format-name">Record the Audio & Video Version</div>
+      <div class="format-tagline">Same idea — new audience, new algorithm</div>
+      <div class="format-divider"></div>
+      <p class="format-body">
+        Open your camera. Read the post out loud.<br>
+        Talk through your thinking for 60–90 seconds.<br>
+        <strong>Video builds trust faster than text.</strong><br>
+        Different people consume differently — give them the choice.
+      </p>
+      <div class="format-pills">
+        <div class="format-pill">LinkedIn video post</div>
+        <div class="format-pill">Short-form reel clip</div>
+      </div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: FORMAT 08–10 -->
+  <div class="slide format-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">08</div>
+    <div class="format-inner">
+      <div class="format-badge">Formats 08–10</div>
+      <div class="format-name">Poll, Story &amp; Newsletter</div>
+      <div class="format-tagline">Squeeze every drop from a single idea</div>
+      <div class="format-divider"></div>
+      <p class="format-body">
+        <strong>Poll:</strong> Turn the core question into a poll post.<br>
+        Gets comments + data from your audience.<br>
+        <strong>Story:</strong> Share the personal experience behind the idea.<br>
+        <strong>Newsletter:</strong> Expand it into a full email for your list.<br>
+        <em>One idea. Ten pieces. Zero excuses for running dry.</em>
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: THE SYSTEM -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="system-inner">
+      <div class="sys-eyebrow">The Full System</div>
+      <h2 class="sys-title">One idea → 10 pieces of content</h2>
+      <div class="sys-flow">
+        <div class="sys-node"><div class="sys-node-num">Source</div><div class="sys-node-label">Long Post</div></div>
+        <div class="sys-arrow">→</div>
+        <div class="sys-node"><div class="sys-node-num">Extract</div><div class="sys-node-label">3 Micro Posts</div></div>
+        <div class="sys-arrow">→</div>
+        <div class="sys-node"><div class="sys-node-num">Visualise</div><div class="sys-node-label">Carousel</div></div>
+        <div class="sys-arrow">→</div>
+        <div class="sys-node"><div class="sys-node-num">Record</div><div class="sys-node-label">2 Videos</div></div>
+        <div class="sys-arrow">→</div>
+        <div class="sys-node"><div class="sys-node-num">Expand</div><div class="sys-node-label">Poll + Story + Email</div></div>
+      </div>
+      <p class="sys-note"><strong>Spend 2 hours creating the source post.</strong><br>Spend 2 more hours repurposing. Get 10× the results.</p>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-010.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
