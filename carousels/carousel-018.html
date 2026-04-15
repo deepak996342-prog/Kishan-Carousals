@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 018 — How to Find Your Niche on LinkedIn | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-018-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Niche Strategy</div>
+      <h1 class="hook-headline">
+        "I can't niche down —<br>
+        I'll lose clients."<br>
+        That fear is costing you<br>
+        <em>more clients than you know.</em>
+      </h1>
+      <p class="hook-sub">How to find your niche without closing doors — a framework for getting known without getting boxed in.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide niche-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="niche-inner">
+      <div class="niche-badge">The Problem</div>
+      <div class="niche-name">Trying to speak to everyone means you resonate with no one</div>
+      <div class="niche-tagline">Generalists are invisible. Specialists are magnetic.</div>
+      <div class="niche-divider"></div>
+      <p class="niche-body">
+        "I help businesses grow" is forgettable.<br>
+        <strong>"I help service-based founders get their first 10 clients<br>
+        from LinkedIn without paid ads"</strong> is unforgettable.<br>
+        The second one attracts — the first one disappears into the feed.
+      </p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide niche-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="niche-inner">
+      <div class="niche-badge">The 3-Part Formula</div>
+      <div class="niche-name">Who + Problem + Outcome</div>
+      <div class="niche-tagline">The simplest niche formula that exists</div>
+      <div class="niche-divider"></div>
+      <p class="niche-body">
+        <strong>WHO</strong> do you help? (specific audience)<br>
+        <strong>PROBLEM</strong> — what frustrates them most?<br>
+        <strong>OUTCOME</strong> — what transformation do you deliver?<br><br>
+        "I help [WHO] solve [PROBLEM] so they can [OUTCOME]."<br>
+        That's your niche. That's your content. That's your brand.
+      </p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide niche-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="niche-inner">
+      <div class="niche-badge">The Fear</div>
+      <div class="niche-name">"What if I turn away clients who don't fit?"</div>
+      <div class="niche-tagline">That's not a bug. That's the feature.</div>
+      <div class="niche-divider"></div>
+      <p class="niche-body">
+        Clients who don't fit drain your energy and dilute your positioning.<br>
+        <strong>The right clients — attracted by your niche — pay more,<br>
+        stay longer, and refer others just like them.</strong><br>
+        Saying no to the wrong fit is how you get paid by the right fit.
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide niche-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="niche-inner">
+      <div class="niche-badge">The Method</div>
+      <div class="niche-name">Niche on content. Not on services.</div>
+      <div class="niche-tagline">You can serve anyone — but speak to one person</div>
+      <div class="niche-divider"></div>
+      <p class="niche-body">
+        You don't have to refuse clients outside your niche.<br>
+        You just create content that speaks to <strong>one specific person.</strong><br>
+        That person refers others like them.<br>
+        Content niching is positioning — not a legal contract.<br>
+        <strong>Be known for one thing. Do whatever you want.</strong>
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide niche-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">05</div>
+    <div class="niche-inner">
+      <div class="niche-badge">The Test</div>
+      <div class="niche-name">Ask: would my ideal client stop scrolling at this post?</div>
+      <div class="niche-tagline">If yes — you've found your niche content</div>
+      <div class="niche-divider"></div>
+      <p class="niche-body">
+        Write a post. Then ask: "Would [specific person] read this<br>
+        and think 'this is exactly what I needed'?"<br>
+        <strong>If the answer is yes — post it.</strong><br>
+        If it would work for anyone, it will work for no one.<br>
+        Precision is the point.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="venn-inner">
+      <div class="vn-eyebrow">Your Niche Formula</div>
+      <h2 class="vn-title">Where three things intersect — that's your niche</h2>
+      <div class="venn-grid">
+        <div class="venn-circle">
+          <div class="venn-circle-label">What you're good at</div>
+          <div class="venn-circle-text">Your skill, expertise, and experience</div>
+        </div>
+        <div class="venn-circle">
+          <div class="venn-circle-label">What people pay for</div>
+          <div class="venn-circle-text">A real problem with real money behind it</div>
+        </div>
+        <div class="venn-circle">
+          <div class="venn-circle-label">Who you want to serve</div>
+          <div class="venn-circle-text">The audience that energises you</div>
+        </div>
+      </div>
+      <div class="venn-result">
+        <div class="venn-result-label">Your Niche</div>
+        <div class="venn-result-text">The specific person, with the specific problem, that only you are perfectly positioned to solve.</div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-018.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

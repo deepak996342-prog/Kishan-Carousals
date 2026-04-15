@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 014 — The DM Strategy That Books Discovery Calls Without Being Salesy | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-014-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">DM Strategy</div>
+      <h1 class="hook-headline">
+        Cold DMs feel pushy.<br>
+        Warm DMs feel natural.<br>
+        Here's the <em>5-message sequence</em><br>
+        that books calls on autopilot.
+      </h1>
+      <p class="hook-sub">No scripts. No templates. A real conversation framework that converts without being weird.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: STEP 01 — WARM UP -->
+  <div class="slide dm-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="dm-inner">
+      <div class="dm-badge">Step 01 — Before You DM</div>
+      <div class="dm-name">Warm them up with 3 real comments first</div>
+      <div class="dm-divider"></div>
+      <p class="dm-body">
+        A DM from a stranger is cold. A DM from someone<br>
+        who's commented on your posts twice is <strong>warm.</strong><br>
+        Before you DM anyone: comment genuinely on<br>
+        3 of their posts over 3–5 days. Now you're familiar.
+      </p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: STEP 02 — FIRST DM -->
+  <div class="slide dm-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="dm-inner">
+      <div class="dm-badge">Step 02 — The First DM</div>
+      <div class="dm-name">Reference something specific. No ask.</div>
+      <div class="dm-divider"></div>
+      <p class="dm-body">
+        <strong>No pitch. No "I can help you." Just a genuine connection.</strong>
+      </p>
+      <div class="dm-example">
+        <div class="dm-ex-label">Example</div>
+        <div class="dm-ex-text">"Hey [Name], I saw your post about [X] — really resonated. I work with [similar audience] and ran into the same thing. Thought it was worth reaching out."</div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: STEP 03 — CONVERSATION -->
+  <div class="slide dm-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="dm-inner">
+      <div class="dm-badge">Step 03 — The Conversation</div>
+      <div class="dm-name">Ask 1 question. Listen. Ask another.</div>
+      <div class="dm-divider"></div>
+      <p class="dm-body">
+        Don't info-dump your offer. <strong>Ask about their world.</strong><br>
+        "What's the biggest challenge you're facing with [X] right now?"<br>
+        Then actually listen. Ask a follow-up question.<br>
+        Two exchanges of real conversation builds more trust<br>
+        than 10 bullet points about your services.
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: STEP 04 — THE SOFT OFFER -->
+  <div class="slide dm-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="dm-inner">
+      <div class="dm-badge">Step 04 — The Soft Offer</div>
+      <div class="dm-name">Mention the help only if it naturally fits</div>
+      <div class="dm-divider"></div>
+      <p class="dm-body">
+        Only after they've shared their problem do you mention a solution.<br>
+        <strong>Never before.</strong>
+      </p>
+      <div class="dm-example">
+        <div class="dm-ex-label">Example</div>
+        <div class="dm-ex-text">"I actually help [their type of business] with exactly that. Would it be useful to jump on a quick 30-minute call? No pitch — just want to share what's worked."</div>
+      </div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: WHAT NOT TO DO -->
+  <div class="slide dm-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">✕</div>
+    <div class="dm-inner">
+      <div class="dm-badge">What Kills the DM</div>
+      <div class="dm-name">3 things that instantly end the conversation</div>
+      <div class="dm-divider"></div>
+      <p class="dm-body">
+        <strong>1. Pitching in the first message.</strong> Nobody asked.<br>
+        <strong>2. Copy-paste templates.</strong> People can feel it immediately.<br>
+        <strong>3. "I came across your profile and…"</strong> — the most
+        recognisable cold DM opener. Delete it forever.<br><br>
+        Be specific. Be real. Be genuinely curious about them.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: SEQUENCE SUMMARY -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="sequence-inner">
+      <div class="sq-eyebrow">The Full Sequence</div>
+      <h2 class="sq-title">5 steps from stranger to booked call</h2>
+      <div class="sq-step">
+        <div class="sq-num">1</div>
+        <div class="sq-text"><strong>Warm up:</strong> 3 genuine comments over 3–5 days</div>
+      </div>
+      <div class="sq-step">
+        <div class="sq-num">2</div>
+        <div class="sq-text"><strong>First DM:</strong> Reference something specific — no ask</div>
+      </div>
+      <div class="sq-step">
+        <div class="sq-num">3</div>
+        <div class="sq-text"><strong>Conversation:</strong> Ask 1 question — listen — follow up</div>
+      </div>
+      <div class="sq-step">
+        <div class="sq-num">4</div>
+        <div class="sq-text"><strong>Soft offer:</strong> Mention help only after they share the problem</div>
+      </div>
+      <div class="sq-step">
+        <div class="sq-num">5</div>
+        <div class="sq-text"><strong>Book the call:</strong> Low-pressure, value-first invitation</div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-014.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
