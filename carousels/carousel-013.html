@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 013 — How to Write a LinkedIn Post in 20 Minutes | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-013-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Writing Framework</div>
+      <h1 class="hook-headline">
+        Writing a post shouldn't<br>
+        take 2 hours.<br>
+        Here's how to do it<br>
+        in <em>20 minutes flat.</em>
+      </h1>
+      <p class="hook-sub">The exact 4-phase framework I use — and teach every client — to write posts that convert.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: PHASE 01 — HOOK -->
+  <div class="slide phase-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="phase-inner">
+      <div class="phase-badge">Phase 01 — Minutes 1–3</div>
+      <div class="phase-time">3 min</div>
+      <div class="phase-name">Write your hook — 3 lines only</div>
+      <div class="phase-divider"></div>
+      <p class="phase-body">
+        Line 1: The bold claim or uncomfortable truth.<br>
+        Line 2: The tension or contradiction.<br>
+        Line 3: The promise of what's coming.<br>
+        <strong>3 lines. Under 30 words. That's it.</strong><br>
+        If you nail the hook, 80% of the work is done.
+      </p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: PHASE 02 — BODY -->
+  <div class="slide phase-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="phase-inner">
+      <div class="phase-badge">Phase 02 — Minutes 4–12</div>
+      <div class="phase-time">8 min</div>
+      <div class="phase-name">Brain-dump the body — no editing</div>
+      <div class="phase-divider"></div>
+      <p class="phase-body">
+        Write everything you know about this topic.<br>
+        Don't edit. Don't delete. Don't judge.<br>
+        <strong>You're in "create mode" not "edit mode."</strong><br>
+        Aim for 200–400 words. You'll cut later.<br>
+        Fast drafts beat perfect drafts every time.
+      </p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: PHASE 03 — EDIT -->
+  <div class="slide phase-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="phase-inner">
+      <div class="phase-badge">Phase 03 — Minutes 13–17</div>
+      <div class="phase-time">5 min</div>
+      <div class="phase-name">Edit ruthlessly — cut everything weak</div>
+      <div class="phase-divider"></div>
+      <p class="phase-body">
+        Read it once. Delete anything that isn't essential.<br>
+        <strong>Cut adverbs, filler phrases, and humble-brags.</strong><br>
+        Break long sentences. Add white space.<br>
+        Read it out loud — if you stumble, rewrite it.<br>
+        Target: every line earns its place.
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: PHASE 04 — CTA -->
+  <div class="slide phase-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="phase-inner">
+      <div class="phase-badge">Phase 04 — Minutes 18–20</div>
+      <div class="phase-time">2 min</div>
+      <div class="phase-name">Add the CTA and a question</div>
+      <div class="phase-divider"></div>
+      <p class="phase-body">
+        Every post needs one clear next step.<br>
+        <strong>"If this resonated, share it with someone who needs it."</strong><br>
+        <strong>"Drop a comment — I read every one."</strong><br>
+        <strong>"DM me 'AUDIT' for a free content review."</strong><br>
+        Pick one. One CTA. Never two.
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: COMMON TRAP -->
+  <div class="slide phase-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">!</div>
+    <div class="phase-inner">
+      <div class="phase-badge">The Trap to Avoid</div>
+      <div class="phase-time" style="font-size:52px;">Over-editing</div>
+      <div class="phase-name">Perfection is procrastination in disguise</div>
+      <div class="phase-divider"></div>
+      <p class="phase-body">
+        The post you spent 3 hours on won't outperform<br>
+        the one you wrote in 20 minutes and just posted.<br>
+        <strong>A published post beats a perfect draft — every time.</strong><br>
+        Your audience rewards consistency, not perfection.<br>
+        Set a timer. When it rings, post it.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: FRAMEWORK SUMMARY -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="framework-inner">
+      <div class="fw-eyebrow">The 20-Minute Post Framework</div>
+      <h2 class="fw-title">Four phases. One great post.</h2>
+      <div class="fw-row">
+        <div class="fw-time">3 min</div>
+        <div class="fw-bar b1">Phase 01 — Hook (3 punchy lines)</div>
+      </div>
+      <div class="fw-row">
+        <div class="fw-time">8 min</div>
+        <div class="fw-bar b2">Phase 02 — Body (brain-dump, no editing)</div>
+      </div>
+      <div class="fw-row">
+        <div class="fw-time">5 min</div>
+        <div class="fw-bar b3">Phase 03 — Edit (cut everything weak)</div>
+      </div>
+      <div class="fw-row">
+        <div class="fw-time">2 min</div>
+        <div class="fw-bar b4">Phase 04 — CTA (one clear next step)</div>
+      </div>
+      <p class="fw-note"><strong>Set a 20-minute timer right now.</strong> Write your next post. Post it when the timer rings.</p>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-013.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
