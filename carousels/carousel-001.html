@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 001 — 5 Content Mistakes Killing Your Lead Generation | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:         #0A1628;
+  --blue:       #2563EB;
+  --blue-dark:  #1D4ED8;
+  --blue-glow:  rgba(37, 99, 235, 0.18);
+  --gold:       #F59E0B;
+  --gold-dark:  #D97706;
+  --white:      #FFFFFF;
+  --muted:      #94A3B8;
+  --dim:        #64748B;
+  --surface:    #111F3A;
+  --surface2:   #162440;
+}
+
+html, body {
+  background: #05080F;
+  font-family: 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =============================================
+   CHROME — NAV BAR
+   ============================================= */
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 24px 48px;
+  gap: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 14px 0 20px;
+  width: 1080px;
+}
+
+.nav-btn {
+  background: #1A2640;
+  color: var(--white);
+  border: 1px solid #273550;
+  border-radius: 8px;
+  padding: 11px 28px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.nav-btn:hover   { background: var(--blue); border-color: var(--blue); }
+.nav-btn:disabled { opacity: 0.3; cursor: not-allowed; pointer-events: none; }
+
+.slide-counter {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dim);
+  letter-spacing: 0.1em;
+  min-width: 56px;
+  text-align: center;
+}
+
+/* =============================================
+   SLIDE BASE — 1080 × 1080
+   ============================================= */
+.slide {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  display: none;
+  flex-direction: column;
+}
+.slide.active { display: flex; }
+
+/* =============================================
+   UNIVERSAL BRAND BAR (bottom, every slide)
+   ============================================= */
+.brand-bar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 66px;
+  background: rgba(8, 15, 30, 0.96);
+  border-top: 1px solid rgba(37, 99, 235, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 52px;
+  z-index: 20;
+}
+.brand-left { display: flex; align-items: center; gap: 0; }
+.brand-name  { font-size: 16px; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
+.brand-dot   { color: var(--dim); margin: 0 14px; font-size: 16px; }
+.brand-role  { font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+.brand-url   { font-size: 13px; font-weight: 600; color: var(--blue); letter-spacing: 0.02em; }
+
+/* =============================================
+   UNIVERSAL SLIDE NUMBER (top-right)
+   ============================================= */
+.slide-num {
+  position: absolute;
+  top: 38px; right: 52px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dim);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  z-index: 20;
+}
+
+/* =============================================
+   SLIDE 1 — HOOK
+   ============================================= */
+#slide-1 {
+  background: linear-gradient(150deg, #050D1F 0%, #0A1628 45%, #0D1E40 100%);
+}
+
+/* Geo decorators */
+#slide-1 .geo-ring-a {
+  position: absolute;
+  width: 520px; height: 520px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  border-radius: 50%;
+  top: -140px; right: -170px;
+}
+#slide-1 .geo-ring-b {
+  position: absolute;
+  width: 340px; height: 340px;
+  border: 1px solid rgba(37, 99, 235, 0.07);
+  border-radius: 50%;
+  top: -40px; right: -70px;
+}
+#slide-1 .geo-glow {
+  position: absolute;
+  width: 260px; height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37,99,235,0.14) 0%, transparent 70%);
+  top: 60px; right: 100px;
+}
+#slide-1 .geo-dot-blue {
+  position: absolute;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.55;
+  top: 195px; right: 248px;
+}
+#slide-1 .geo-dot-gold {
+  position: absolute;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.5;
+  top: 312px; right: 155px;
+}
+#slide-1 .geo-line-top {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--gold) 50%, transparent 80%);
+  opacity: 0.55;
+}
+#slide-1 .geo-line-bottom {
+  position: absolute;
+  bottom: 66px; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(37,99,235,0.35), var(--gold) 60%, transparent 100%);
+  opacity: 0.7;
+}
+
+/* Hook content */
+#slide-1 .hook-inner {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 76px;
+  z-index: 10;
+}
+#slide-1 .hook-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 32px;
+}
+#slide-1 .hook-label::before {
+  content: '';
+  width: 32px; height: 2px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+#slide-1 .hook-headline {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.075;
+  letter-spacing: -0.025em;
+  margin-bottom: 36px;
+}
+#slide-1 .hook-headline em {
+  font-style: normal;
+  color: var(--gold);
+}
+#slide-1 .hook-sub {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.55;
+  max-width: 660px;
+  padding-left: 22px;
+  border-left: 3px solid var(--blue);
+}
+
+/* =============================================
+   SLIDES 2–6 — MISTAKE SLIDES
+   ============================================= */
+.mistake-slide {
+  background: var(--bg);
+}
+
+/* Geo */
+.mistake-slide .geo-corner-tl {
+  position: absolute;
+  top: 44px; left: 44px;
+  width: 56px; height: 56px;
+  border-top: 2px solid rgba(37, 99, 235, 0.22);
+  border-left: 2px solid rgba(37, 99, 235, 0.22);
+}
+.mistake-slide .geo-corner-br {
+  position: absolute;
+  bottom: 90px; right: 44px;
+  width: 40px; height: 40px;
+  border-bottom: 2px solid rgba(245, 158, 11, 0.2);
+  border-right: 2px solid rgba(245, 158, 11, 0.2);
+}
+.mistake-slide .geo-line-top {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--blue) 0%, transparent 55%);
+  opacity: 0.45;
+}
+.mistake-slide .geo-watermark {
+  position: absolute;
+  right: 44px;
+  top: 50%;
+  transform: translateY(-60%);
+  font-size: 240px;
+  font-weight: 700;
+  color: rgba(37, 99, 235, 0.045);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* Content */
+.mistake-slide .mistake-inner {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 76px;
+  z-index: 10;
+}
+
+.mistake-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  border-radius: 6px;
+  padding: 9px 22px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 36px;
+  width: fit-content;
+}
+
+.mistake-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+  max-width: 860px;
+}
+.mistake-title .hi {
+  color: var(--gold);
+}
+
+.mistake-divider {
+  width: 52px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.mistake-body {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.68;
+  max-width: 820px;
+}
+.mistake-body strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* =============================================
+   SLIDE 7 — SYSTEM / SOLUTION
+   ============================================= */
+#slide-7 {
+  background: linear-gradient(155deg, #060E20 0%, #0A1628 50%, #0C1B38 100%);
+}
+
+#slide-7 .geo-line-top {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--gold) 0%, transparent 55%);
+  opacity: 0.5;
+}
+
+#slide-7 .system-inner {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 52px 72px 44px;
+  z-index: 10;
+}
+
+#slide-7 .sys-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+#slide-7 .sys-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 44px;
+}
+
+#slide-7 .sys-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  flex: 1;
+  max-height: 508px;
+}
+
+.pillar-card {
+  background: var(--surface);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 16px;
+  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--blue);
+  border-radius: 16px 0 0 16px;
+}
+.pillar-card.gold::before {
+  background: linear-gradient(180deg, var(--gold), var(--gold-dark));
+}
+.pillar-card .p-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.pillar-card.gold .p-num  { color: var(--gold); }
+.pillar-card .p-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+.pillar-card .p-desc {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* =============================================
+   SLIDE 8 — CTA
+   ============================================= */
+#slide-8 {
+  background: linear-gradient(145deg, #92400E 0%, #B45309 25%, #D97706 60%, #F59E0B 100%);
+}
+
+#slide-8 .geo-ring-a {
+  position: absolute;
+  width: 420px; height: 420px;
+  border: 1px solid rgba(10, 22, 40, 0.1);
+  border-radius: 50%;
+  top: -90px; right: -100px;
+}
+#slide-8 .geo-ring-b {
+  position: absolute;
+  width: 260px; height: 260px;
+  border: 1px solid rgba(10, 22, 40, 0.07);
+  border-radius: 50%;
+  top: 60px; right: 60px;
+}
+#slide-8 .geo-ring-c {
+  position: absolute;
+  width: 640px; height: 640px;
+  border: 1px solid rgba(10, 22, 40, 0.05);
+  border-radius: 50%;
+  bottom: -180px; left: -220px;
+}
+
+#slide-8 .cta-inner {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+  z-index: 10;
+}
+
+#slide-8 .cta-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(10, 22, 40, 0.55);
+  margin-bottom: 28px;
+}
+#slide-8 .cta-eyebrow::before {
+  content: '';
+  width: 32px; height: 2px;
+  background: rgba(10, 22, 40, 0.45);
+  flex-shrink: 0;
+}
+
+#slide-8 .cta-title {
+  font-size: 58px;
+  font-weight: 700;
+  color: var(--bg);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+  max-width: 820px;
+}
+
+#slide-8 .cta-body {
+  font-size: 23px;
+  font-weight: 400;
+  color: rgba(10, 22, 40, 0.7);
+  line-height: 1.62;
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+#slide-8 .cta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--gold);
+  border-radius: 12px;
+  padding: 20px 56px;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  width: fit-content;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 40px rgba(10, 22, 40, 0.3);
+}
+
+#slide-8 .cta-url {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(10, 22, 40, 0.55);
+  letter-spacing: 0.04em;
+}
+
+/* CTA brand bar override */
+#slide-8 .brand-bar {
+  background: rgba(146, 64, 14, 0.9);
+  border-top: 1px solid rgba(10, 22, 40, 0.12);
+}
+#slide-8 .brand-name  { color: var(--bg); }
+#slide-8 .brand-dot   { color: rgba(10, 22, 40, 0.35); }
+#slide-8 .brand-role  { color: rgba(10, 22, 40, 0.5); }
+#slide-8 .brand-url   { color: var(--bg); font-weight: 700; }
+#slide-8 .slide-num   { color: rgba(10, 22, 40, 0.4); }
+
+/* =============================================
+   PRINT — each slide on its own page
+   ============================================= */
+@media print {
+  body { background: white; }
+  .nav-bar { display: none; }
+  .slide { display: flex !important; page-break-after: always; break-after: page; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="carousel-wrapper">
+
+  <!-- NAV BAR -->
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 1 — HOOK
+       ══════════════════════════════════════════ -->
+  <div class="slide active" id="slide-1">
+
+    <div class="geo-ring-a"></div>
+    <div class="geo-ring-b"></div>
+    <div class="geo-glow"></div>
+    <div class="geo-dot-blue"></div>
+    <div class="geo-dot-gold"></div>
+    <div class="geo-line-top"></div>
+    <div class="geo-line-bottom"></div>
+
+    <div class="hook-inner">
+      <div class="hook-label">Reality Check</div>
+      <h1 class="hook-headline">
+        You're posting<br>
+        every day.<br>
+        Getting <em>zero leads.</em><br>
+        Here's why.
+      </h1>
+      <p class="hook-sub">
+        5 content mistakes costing founders clients right now
+      </p>
+    </div>
+
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 2 — MISTAKE 01
+       ══════════════════════════════════════════ -->
+  <div class="slide mistake-slide" id="slide-2">
+
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">01</div>
+
+    <div class="mistake-inner">
+      <div class="mistake-badge">Mistake 01</div>
+      <h2 class="mistake-title">
+        You're writing for <span class="hi">yourself,</span><br>
+        not your audience
+      </h2>
+      <div class="mistake-divider"></div>
+      <p class="mistake-body">
+        Most founders post what <strong>they</strong> find interesting.<br>
+        Your audience doesn't care. They care about<br>
+        their own problems. Write for their <strong>3am worries.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 3 — MISTAKE 02
+       ══════════════════════════════════════════ -->
+  <div class="slide mistake-slide" id="slide-3">
+
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">02</div>
+
+    <div class="mistake-inner">
+      <div class="mistake-badge">Mistake 02</div>
+      <h2 class="mistake-title">
+        No CTA =<br>
+        <span class="hi">No clients</span>
+      </h2>
+      <div class="mistake-divider"></div>
+      <p class="mistake-body">
+        Every post needs <strong>one clear next step.</strong><br>
+        If you don't tell people what to do next,<br>
+        they scroll past. Always give a <strong>reason to act.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 4 — MISTAKE 03
+       ══════════════════════════════════════════ -->
+  <div class="slide mistake-slide" id="slide-4">
+
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">03</div>
+
+    <div class="mistake-inner">
+      <div class="mistake-badge">Mistake 03</div>
+      <h2 class="mistake-title">
+        Posting 5 days,<br>
+        <span class="hi">disappearing</span> for 2 weeks
+      </h2>
+      <div class="mistake-divider"></div>
+      <p class="mistake-body">
+        Inconsistency is <strong>invisible.</strong> Your audience forgets<br>
+        you exist. Algorithms punish you. Trust takes<br>
+        months to build and <strong>days to destroy.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 5 — MISTAKE 04
+       ══════════════════════════════════════════ -->
+  <div class="slide mistake-slide" id="slide-5">
+
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">04</div>
+
+    <div class="mistake-inner">
+      <div class="mistake-badge">Mistake 04</div>
+      <h2 class="mistake-title">
+        Chasing trends.<br>
+        <span class="hi">Losing authority.</span>
+      </h2>
+      <div class="mistake-divider"></div>
+      <p class="mistake-body">
+        Trending content gets <strong>views.</strong><br>
+        Authority content gets <strong>clients.</strong><br>
+        Stop being a commentator. Start being<br>
+        the expert they come to <strong>first.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 6 — MISTAKE 05
+       ══════════════════════════════════════════ -->
+  <div class="slide mistake-slide" id="slide-6">
+
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">05</div>
+
+    <div class="mistake-inner">
+      <div class="mistake-badge">Mistake 05</div>
+      <h2 class="mistake-title">
+        Creating from scratch<br>
+        <span class="hi">every single time</span>
+      </h2>
+      <div class="mistake-divider"></div>
+      <p class="mistake-body">
+        One interview = <strong>20 posts.</strong><br>
+        One case study = <strong>10 carousels.</strong><br>
+        One insight = <strong>5 formats.</strong><br>
+        Repurposing is the only strategy that <strong>scales.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 7 — SYSTEM / SOLUTION
+       ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-7">
+
+    <div class="geo-line-top"></div>
+
+    <div class="system-inner">
+      <div class="sys-eyebrow">The Fix</div>
+      <h2 class="sys-title">Here's what the fix looks like</h2>
+
+      <div class="sys-grid">
+
+        <div class="pillar-card">
+          <div class="p-num">01 — Audience</div>
+          <div class="p-title">Right Audience</div>
+          <div class="p-desc">Know exactly who you serve — their fears, desires, and the words they use.</div>
+        </div>
+
+        <div class="pillar-card gold">
+          <div class="p-num">02 — Message</div>
+          <div class="p-title">Right Message</div>
+          <div class="p-desc">Speak directly to their real pain, not what you assume they want to hear.</div>
+        </div>
+
+        <div class="pillar-card gold">
+          <div class="p-num">03 — Format</div>
+          <div class="p-title">Right Format</div>
+          <div class="p-desc">Carousels, short video, posts — matched to where your audience actually scrolls.</div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="p-num">04 — System</div>
+          <div class="p-title">Consistent System</div>
+          <div class="p-desc">Never run out of content again. One idea becomes infinite formats.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 8 — CTA
+       ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-8">
+
+    <div class="geo-ring-a"></div>
+    <div class="geo-ring-b"></div>
+    <div class="geo-ring-c"></div>
+
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">
+        Let me audit your content.<br>
+        No pitch. Just clarity.
+      </h2>
+      <p class="cta-body">
+        30-minute Content Audit Call — I'll show you exactly<br>
+        what's blocking your growth and the 3 moves to fix it.
+      </p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+
+  </div>
+
+</div><!-- /carousel-wrapper -->
+
+<script>
+  var cur = 1;
+  var total = 8;
+
+  function go(dir) {
+    var next = cur + dir;
+    if (next < 1 || next > total) return;
+    document.getElementById('slide-' + cur).classList.remove('active');
+    cur = next;
+    document.getElementById('slide-' + cur).classList.add('active');
+    document.getElementById('counter').textContent = cur + ' / ' + total;
+    document.getElementById('btn-prev').disabled = (cur === 1);
+    document.getElementById('btn-next').disabled = (cur === total);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
+  });
+</script>
+
+</body>
+</html>
