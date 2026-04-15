@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 003 — 5 AI Tools to Create a Month of Content in One Day | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-003-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="carousel-wrapper">
+
+  <!-- NAV BAR -->
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 1 — HOOK
+       ══════════════════════════════════════════ -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div>
+    <div class="geo-ring-b"></div>
+    <div class="geo-glow"></div>
+    <div class="geo-dot-a"></div>
+    <div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div>
+    <div class="geo-line-bottom"></div>
+
+    <div class="hook-inner">
+      <div class="hook-label">Swipe To Save</div>
+      <h1 class="hook-headline">
+        I create a month of content<br>
+        in <em>one day.</em><br>
+        These are the 5 AI tools<br>
+        that make it possible.
+      </h1>
+      <p class="hook-sub">
+        Bookmarked by thousands of founders — save this before you scroll
+      </p>
+    </div>
+
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 2 — TOOL 01: ChatGPT
+       ══════════════════════════════════════════ -->
+  <div class="slide tool-slide" id="slide-2">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">01</div>
+
+    <div class="tool-inner">
+      <div class="tool-badge">Tool 01</div>
+      <div class="tool-name">ChatGPT</div>
+      <div class="tool-tagline">Your always-on content strategist</div>
+      <div class="tool-divider"></div>
+      <p class="tool-body">
+        Give it your niche, your tone, your audience.<br>
+        It outputs <strong>hooks, captions, carousel scripts,</strong><br>
+        and full content calendars. In minutes.<br>
+        The best content assistant that never sleeps.
+      </p>
+    </div>
+
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 3 — TOOL 02: Descript
+       ══════════════════════════════════════════ -->
+  <div class="slide tool-slide" id="slide-3">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">02</div>
+
+    <div class="tool-inner">
+      <div class="tool-badge">Tool 02</div>
+      <div class="tool-name">Descript</div>
+      <div class="tool-tagline">Edit video like a Google Doc</div>
+      <div class="tool-divider"></div>
+      <p class="tool-body">
+        Record once. Edit by <strong>deleting text.</strong><br>
+        Auto-removes filler words, silences, and "ums".<br>
+        One 20-minute video becomes<br>
+        <strong>5 polished clips.</strong> No editing skills needed.
+      </p>
+    </div>
+
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 4 — TOOL 03: Canva
+       ══════════════════════════════════════════ -->
+  <div class="slide tool-slide" id="slide-4">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">03</div>
+
+    <div class="tool-inner">
+      <div class="tool-badge">Tool 03</div>
+      <div class="tool-name">Canva</div>
+      <div class="tool-tagline">Professional design without a designer</div>
+      <div class="tool-divider"></div>
+      <p class="tool-body">
+        Magic Resize turns <strong>one carousel into every format.</strong><br>
+        Brand Kit locks your colors and fonts across all posts.<br>
+        Magic Write drafts your slide copy instantly.<br>
+        <strong>Looks expensive. Isn't.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 5 — TOOL 04: Opus Clip
+       ══════════════════════════════════════════ -->
+  <div class="slide tool-slide" id="slide-5">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">04</div>
+
+    <div class="tool-inner">
+      <div class="tool-badge">Tool 04</div>
+      <div class="tool-name">Opus Clip</div>
+      <div class="tool-tagline">Your short-form video machine</div>
+      <div class="tool-divider"></div>
+      <p class="tool-body">
+        Upload any long video. AI finds your<br>
+        <strong>best 30-second moments</strong> automatically.<br>
+        Auto-adds captions, reframes for vertical.<br>
+        <strong>One upload = 10 Reels, Shorts &amp; TikToks.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 6 — TOOL 05: Buffer
+       ══════════════════════════════════════════ -->
+  <div class="slide tool-slide" id="slide-6">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">05</div>
+
+    <div class="tool-inner">
+      <div class="tool-badge">Tool 05</div>
+      <div class="tool-name">Buffer</div>
+      <div class="tool-tagline">Schedule once, publish everywhere</div>
+      <div class="tool-divider"></div>
+      <p class="tool-body">
+        One content day per month.<br>
+        Draft, schedule, and <strong>forget.</strong><br>
+        Posts go live at optimal times across<br>
+        LinkedIn, Instagram &amp; X —<br>
+        <strong>while you focus on your actual business.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 7 — THE TRUTH
+       ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-7">
+    <div class="geo-ring"></div>
+    <div class="geo-ring-sm"></div>
+    <div class="geo-line-top"></div>
+
+    <div class="truth-inner">
+      <div class="truth-eyebrow">But Here's The Truth</div>
+      <h2 class="truth-quote">
+        Tools without strategy<br>
+        is just <em>expensive noise.</em>
+      </h2>
+      <div class="truth-divider"></div>
+      <div class="truth-points">
+        <div class="truth-point">
+          Most founders use all 5 of these and <strong>still struggle with leads.</strong>
+        </div>
+        <div class="truth-point">
+          Tools create content. <strong>Strategy creates clients.</strong>
+        </div>
+        <div class="truth-point">
+          You need to know <strong>what to create, for whom, and when</strong> — before you touch any tool.
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 8 — CTA
+       ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div>
+    <div class="geo-ring-b"></div>
+    <div class="geo-ring-c"></div>
+
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">
+        Let me audit your content.<br>
+        No pitch. Just clarity.
+      </h2>
+      <p class="cta-body">
+        30-minute Content Audit Call — I'll show you exactly<br>
+        what's blocking your growth and the 3 moves to fix it.
+      </p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+</div><!-- /carousel-wrapper -->
+
+<script>
+  var cur = 1, total = 8;
+
+  function go(dir) {
+    var next = cur + dir;
+    if (next < 1 || next > total) return;
+    document.getElementById('slide-' + cur).classList.remove('active');
+    cur = next;
+    document.getElementById('slide-' + cur).classList.add('active');
+    document.getElementById('counter').textContent = cur + ' / ' + total;
+    document.getElementById('btn-prev').disabled = (cur === 1);
+    document.getElementById('btn-next').disabled = (cur === total);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
+  });
+
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf');
+    btn.disabled = true;
+    try {
+      var jsPDF = window.jspdf.jsPDF;
+      var doc = new jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) {
+        btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…';
+        slides[i].style.display = 'flex';
+        var canvas = await html2canvas(slides[i], {
+          width: 1080, height: 1080, scale: 2,
+          useCORS: true, logging: false, backgroundColor: null
+        });
+        slides[i].style.display = '';
+        if (i > 0) doc.addPage([1080, 1080], 'p');
+        doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080);
+      }
+      doc.save('Kishan-Kr-Soni-Carousel-003.pdf');
+    } catch (err) {
+      console.error('PDF export failed:', err);
+      alert('PDF export failed — please try again.');
+    }
+    btn.textContent = '↓ Download PDF';
+    btn.disabled = false;
+  }
+</script>
+
+</body>
+</html>
