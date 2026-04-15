@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 007 — The 3 Types of Content Every Service Business Needs | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-007-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Content Mix</div>
+      <h1 class="hook-headline">
+        Most service businesses<br>
+        only post <em>one type</em> of content.<br>
+        Then wonder why<br>
+        they're not getting clients.
+      </h1>
+      <p class="hook-sub">You need all 3 types. Here's exactly what they are and why.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: TYPE 01 — AUTHORITY -->
+  <div class="slide type-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="type-inner">
+      <div class="type-badge">Type 01</div>
+      <div class="type-name">Authority Content</div>
+      <div class="type-tagline">Makes them trust you before they meet you</div>
+      <div class="type-divider"></div>
+      <p class="type-body">
+        Frameworks, insights, opinions, expertise.<br>
+        Content that signals: <strong>"This person knows their stuff."</strong><br>
+        When clients see you, they should think:<br>
+        <strong>"I want to work with this person."</strong>
+      </p>
+      <div class="type-examples">
+        <div class="type-example-pill">How-to carousels</div>
+        <div class="type-example-pill">Opinion posts</div>
+        <div class="type-example-pill">Lessons learned</div>
+        <div class="type-example-pill">Frameworks</div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: TYPE 01 DEEP — what most people miss -->
+  <div class="slide type-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="type-inner">
+      <div class="type-badge">Type 01 — Common Mistake</div>
+      <div class="type-name">Most authority content<br>sounds like a textbook.</div>
+      <div class="type-divider"></div>
+      <p class="type-body">
+        Authority doesn't mean formal.<br>
+        It means <strong>specific and confident.</strong><br>
+        "Here are 5 content tips" is generic.<br>
+        "Why I deleted 3 months of content and started over" is authority.<br>
+        <strong>Your opinion is the differentiator.</strong>
+      </p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: TYPE 02 — RELATABILITY -->
+  <div class="slide type-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="type-inner">
+      <div class="type-badge">Type 02</div>
+      <div class="type-name">Relatability Content</div>
+      <div class="type-tagline">Makes them like you before they buy from you</div>
+      <div class="type-divider"></div>
+      <p class="type-body">
+        Behind-the-scenes, failures, day-in-the-life,<br>
+        honest moments. Content that signals:<br>
+        <strong>"This is a real person I can relate to."</strong><br>
+        People buy from people they <strong>like and trust.</strong>
+      </p>
+      <div class="type-examples">
+        <div class="type-example-pill">BTS posts</div>
+        <div class="type-example-pill">Failure stories</div>
+        <div class="type-example-pill">Day-in-life</div>
+        <div class="type-example-pill">Personal wins</div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: TYPE 02 DEEP -->
+  <div class="slide type-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="type-inner">
+      <div class="type-badge">Type 02 — Common Mistake</div>
+      <div class="type-name">Relatability without<br>substance loses respect.</div>
+      <div class="type-divider"></div>
+      <p class="type-body">
+        Sharing struggles is powerful.<br>
+        <strong>But always tie it to a lesson.</strong><br>
+        "I failed" is a diary entry.<br>
+        "I failed and here's what it taught me about [topic]"<br>
+        is <strong>content that converts.</strong>
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: TYPE 03 — CONVERSION -->
+  <div class="slide type-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="type-inner">
+      <div class="type-badge">Type 03</div>
+      <div class="type-name">Conversion Content</div>
+      <div class="type-tagline">Makes them act — now, not someday</div>
+      <div class="type-divider"></div>
+      <p class="type-body">
+        Case studies, results, testimonials, direct offers.<br>
+        Content that signals: <strong>"This person can solve my problem."</strong><br>
+        Without it, you build an audience.<br>
+        With it, you <strong>build a client base.</strong>
+      </p>
+      <div class="type-examples">
+        <div class="type-example-pill">Case studies</div>
+        <div class="type-example-pill">Client results</div>
+        <div class="type-example-pill">Testimonials</div>
+        <div class="type-example-pill">Soft CTAs</div>
+      </div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: THE MIX -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="mix-inner">
+      <div class="mix-eyebrow">The Winning Mix</div>
+      <h2 class="mix-title">How to split your content each month</h2>
+      <div class="mix-grid">
+        <div class="mix-card c1">
+          <div class="mc-pct">50%</div>
+          <div class="mc-name">Authority</div>
+          <div class="mc-desc">Build credibility. Attract ideal clients before they're ready to buy.</div>
+        </div>
+        <div class="mix-card c2">
+          <div class="mc-pct">30%</div>
+          <div class="mc-name">Relatability</div>
+          <div class="mc-desc">Build connection. Make them root for you and feel seen by you.</div>
+        </div>
+        <div class="mix-card c3">
+          <div class="mc-pct">20%</div>
+          <div class="mc-name">Conversion</div>
+          <div class="mc-desc">Drive action. Turn warm followers into booked calls and clients.</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-007.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

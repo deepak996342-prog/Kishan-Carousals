@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 006 — 5 LinkedIn Hook Formulas That Stop the Scroll | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-006-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Write Better</div>
+      <h1 class="hook-headline">
+        Your first line decides<br>
+        if anyone reads the rest.<br>
+        Here are <em>5 hook formulas</em><br>
+        that actually work.
+      </h1>
+      <p class="hook-sub">Steal these. Use them today. Watch your reach double.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: FORMULA 01 -->
+  <div class="slide hook-formula-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="formula-inner">
+      <div class="formula-badge">Formula 01</div>
+      <div class="formula-name">The Counterintuitive</div>
+      <div class="formula-template">"Everyone says [X]. But [opposite truth]."</div>
+      <div class="formula-divider"></div>
+      <div class="formula-example">
+        <div class="ex-label">Example</div>
+        <div class="ex-text">"Everyone says post daily. But one great post a week beats seven mediocre ones."</div>
+      </div>
+      <p class="formula-why">Challenges assumptions. <strong>Forces a pause.</strong> Makes people want to know why you're right.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: FORMULA 02 -->
+  <div class="slide hook-formula-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="formula-inner">
+      <div class="formula-badge">Formula 02</div>
+      <div class="formula-name">The Specific Number</div>
+      <div class="formula-template">"I did [X] for [N] days/clients. Here's what happened."</div>
+      <div class="formula-divider"></div>
+      <div class="formula-example">
+        <div class="ex-label">Example</div>
+        <div class="ex-text">"I audited 47 founder LinkedIn profiles last month. Only 3 had a content strategy that could actually convert."</div>
+      </div>
+      <p class="formula-why">Specificity signals <strong>credibility.</strong> "47" is believable. "many" is not.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: FORMULA 03 -->
+  <div class="slide hook-formula-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="formula-inner">
+      <div class="formula-badge">Formula 03</div>
+      <div class="formula-name">The Painful Truth</div>
+      <div class="formula-template">"Nobody wants to hear this, but [hard truth]."</div>
+      <div class="formula-divider"></div>
+      <div class="formula-example">
+        <div class="ex-label">Example</div>
+        <div class="ex-text">"Nobody wants to hear this, but your content isn't underperforming because of the algorithm. It's because nobody cares about your product yet."</div>
+      </div>
+      <p class="formula-why">Discomfort creates <strong>attention.</strong> Readers lean in to confirm or deny.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: FORMULA 04 -->
+  <div class="slide hook-formula-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="formula-inner">
+      <div class="formula-badge">Formula 04</div>
+      <div class="formula-name">The Before / After</div>
+      <div class="formula-template">"6 months ago: [bad state]. Today: [transformed state]."</div>
+      <div class="formula-divider"></div>
+      <div class="formula-example">
+        <div class="ex-label">Example</div>
+        <div class="ex-text">"6 months ago: 200 followers, zero leads, posting into the void. Today: 4,800 followers, 3 inbound calls a week. Same person. Different strategy."</div>
+      </div>
+      <p class="formula-why">Transformation is <strong>irresistible.</strong> It sells possibility, not features.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: FORMULA 05 -->
+  <div class="slide hook-formula-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">05</div>
+    <div class="formula-inner">
+      <div class="formula-badge">Formula 05</div>
+      <div class="formula-name">The Open Loop</div>
+      <div class="formula-template">"I [did unusual thing]. Here's what I learned."</div>
+      <div class="formula-divider"></div>
+      <div class="formula-example">
+        <div class="ex-label">Example</div>
+        <div class="ex-text">"I stopped posting on LinkedIn for 30 days. Then I came back and did this one thing. My reach tripled."</div>
+      </div>
+      <p class="formula-why">Unresolved tension forces the scroll. The brain <strong>needs the answer.</strong></p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: BONUS RULES -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="bonus-inner">
+      <div class="bon-eyebrow">Bonus Rules</div>
+      <h2 class="bon-title">3 rules that make every hook land harder</h2>
+      <div class="bon-rule">
+        <div class="bon-rule-num">1</div>
+        <div class="bon-rule-text"><strong>Write 10 hooks. Use the best 1.</strong> Your first hook is never your best hook. Neither is your second.</div>
+      </div>
+      <div class="bon-rule">
+        <div class="bon-rule-num">2</div>
+        <div class="bon-rule-text"><strong>Make it about them, not you.</strong> "I did X" only works if the reader sees themselves in X.</div>
+      </div>
+      <div class="bon-rule">
+        <div class="bon-rule-num">3</div>
+        <div class="bon-rule-text"><strong>Short sentences hit harder.</strong> Read it out loud. If you run out of breath — cut it in half.</div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-006.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

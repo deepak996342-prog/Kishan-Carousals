@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 009 — The LinkedIn Profile That Attracts Clients While You Sleep | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-009-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Profile Optimization</div>
+      <h1 class="hook-headline">
+        Your LinkedIn profile<br>
+        is either your<br>
+        <em>best salesperson</em><br>
+        or your worst first impression.
+      </h1>
+      <p class="hook-sub">5 sections most founders get wrong — and how to fix each one today.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: SECTION 01 — HEADLINE -->
+  <div class="slide section-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="section-inner">
+      <div class="section-badge">Section 01</div>
+      <div class="section-name">Your Headline</div>
+      <div class="section-tagline">The first thing clients read — make it count</div>
+      <div class="section-divider"></div>
+      <p class="section-body">
+        Most founders write their job title.<br>
+        <strong>That tells people what you are. Not what you do for them.</strong>
+      </p>
+      <div class="do-dont">
+        <div class="dont-box">
+          <div class="box-label">❌ Weak</div>
+          <div class="box-text">"Founder &amp; CEO at XYZ Solutions"</div>
+        </div>
+        <div class="do-box">
+          <div class="box-label">✓ Strong</div>
+          <div class="box-text">"I help [audience] achieve [result] without [pain]"</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: SECTION 02 — BANNER -->
+  <div class="slide section-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="section-inner">
+      <div class="section-badge">Section 02</div>
+      <div class="section-name">Your Banner Image</div>
+      <div class="section-tagline">Premium real estate 95% of people waste</div>
+      <div class="section-divider"></div>
+      <p class="section-body">
+        A blue default banner screams: <strong>"I'm not serious."</strong><br>
+        Your banner is a billboard. Use it to communicate:<br>
+        who you help, what you do, and one call to action.<br>
+        <strong>Your ideal client should "get it" in 3 seconds.</strong>
+      </p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: SECTION 03 — ABOUT -->
+  <div class="slide section-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="section-inner">
+      <div class="section-badge">Section 03</div>
+      <div class="section-name">Your About Section</div>
+      <div class="section-tagline">Where curiosity becomes conviction</div>
+      <div class="section-divider"></div>
+      <p class="section-body">
+        Don't start with "I am a passionate..." — nobody cares.<br>
+        Start with <strong>the problem your ideal client is facing.</strong><br>
+        Then explain your solution, your proof, and a clear CTA.<br>
+        <strong>Think: landing page, not resume.</strong>
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: SECTION 04 — FEATURED -->
+  <div class="slide section-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="section-inner">
+      <div class="section-badge">Section 04</div>
+      <div class="section-name">Your Featured Section</div>
+      <div class="section-tagline">Your 24/7 portfolio that pre-sells for you</div>
+      <div class="section-divider"></div>
+      <p class="section-body">
+        Pin your 3 best-performing posts or resources here.<br>
+        A lead magnet. A case study. A carousel that shows your expertise.<br>
+        <strong>Warm leads visit your profile before they DM you.</strong><br>
+        Give them a reason to stay — and a reason to reach out.
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: SECTION 05 — RECOMMENDATIONS -->
+  <div class="slide section-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">05</div>
+    <div class="section-inner">
+      <div class="section-badge">Section 05</div>
+      <div class="section-name">Recommendations</div>
+      <div class="section-tagline">Social proof that closes deals before calls even happen</div>
+      <div class="section-divider"></div>
+      <p class="section-body">
+        A profile with zero recommendations says: <strong>"Trust me."</strong><br>
+        A profile with 5 client testimonials says: <strong>"Here's proof."</strong><br>
+        Ask your last 3 happy clients for a specific recommendation.<br>
+        One great recommendation converts better than 10 generic ones.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: CHECKLIST -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="checklist-inner">
+      <div class="cl-eyebrow">Your Action Plan</div>
+      <h2 class="cl-title">Profile audit — do this today</h2>
+      <div class="cl-item">
+        <div class="cl-check">1</div>
+        <div class="cl-text"><strong>Rewrite your headline</strong> — outcome for client, not your job title</div>
+      </div>
+      <div class="cl-item">
+        <div class="cl-check">2</div>
+        <div class="cl-text"><strong>Update your banner</strong> — who you help + one CTA</div>
+      </div>
+      <div class="cl-item">
+        <div class="cl-check">3</div>
+        <div class="cl-text"><strong>Reopen your About section</strong> — problem → solution → proof → CTA</div>
+      </div>
+      <div class="cl-item">
+        <div class="cl-check">4</div>
+        <div class="cl-text"><strong>Pin 3 pieces</strong> to Featured — lead magnet, case study, best post</div>
+      </div>
+      <div class="cl-item">
+        <div class="cl-check">5</div>
+        <div class="cl-text"><strong>Request 3 recommendations</strong> from past happy clients</div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-009.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
