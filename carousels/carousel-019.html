@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 019 — 5 Post Types That Get the Most Engagement on LinkedIn | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-019-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Engagement Playbook</div>
+      <h1 class="hook-headline">
+        Not all posts are equal.<br>
+        5 types consistently<br>
+        outperform the rest.<br>
+        <em>Here's the ranked list.</em>
+      </h1>
+      <p class="hook-sub">Data-backed post types that drive comments, shares, and profile visits — use this as your content calendar template.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide post-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="post-inner">
+      <div class="post-badge">Post Type 01</div>
+      <div class="post-name">The Personal Story</div>
+      <div class="post-tagline">Highest comments. Highest saves. Every time.</div>
+      <div class="post-divider"></div>
+      <p class="post-body">
+        "I failed at X. Here's what it cost me and what I learned."<br>
+        People share what they feel — not what they know.<br>
+        <strong>A story with a lesson attached outperforms a tips list<br>
+        by 3–5× on average.</strong><br>
+        Vulnerability + insight = the most powerful content format.
+      </p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide post-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="post-inner">
+      <div class="post-badge">Post Type 02</div>
+      <div class="post-name">The Contrarian Take</div>
+      <div class="post-tagline">Sparks debate. Attracts the right audience.</div>
+      <div class="post-divider"></div>
+      <p class="post-body">
+        <strong>"Unpopular opinion: [thing everyone believes] is wrong."</strong><br>
+        This triggers comments from two camps: those who agree<br>
+        and those who want to argue. Both are good.<br>
+        More comments = more reach. More reach = more clients.<br>
+        Just make sure you can back it up.
+      </p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide post-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="post-inner">
+      <div class="post-badge">Post Type 03</div>
+      <div class="post-name">The Carousel</div>
+      <div class="post-tagline">3× more reach than any other format right now</div>
+      <div class="post-divider"></div>
+      <p class="post-body">
+        LinkedIn measures how long someone views your content.<br>
+        <strong>Each swipe = more dwell time = more algorithmic reach.</strong><br>
+        An 8-slide carousel can earn 5–10× the impressions<br>
+        of a text post with identical content.<br>
+        Format matters as much as content.
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide post-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="post-inner">
+      <div class="post-badge">Post Type 04</div>
+      <div class="post-name">The Results Post</div>
+      <div class="post-tagline">Converts lurkers into leads faster than anything else</div>
+      <div class="post-divider"></div>
+      <p class="post-body">
+        "Client went from [before] to [after] in [timeframe]."<br>
+        <strong>Specificity makes it credible. Results make it shareable.</strong><br>
+        People tag others who need what you provide.<br>
+        Your clients' wins are your best sales material.<br>
+        Document them. Post them. Watch leads arrive.
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide post-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">05</div>
+    <div class="post-inner">
+      <div class="post-badge">Post Type 05</div>
+      <div class="post-name">The Question Post</div>
+      <div class="post-tagline">Lowest effort. Highest comment rate.</div>
+      <div class="post-divider"></div>
+      <p class="post-body">
+        "What's the one thing you wish someone told you<br>
+        when you started [X]? Drop it below."<br>
+        <strong>Questions invite participation — and people love<br>
+        being asked for their opinion.</strong><br>
+        Every comment extends your reach. Use questions weekly.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="ranking-inner">
+      <div class="rk-eyebrow">Your Weekly Content Mix</div>
+      <h2 class="rk-title">5 post types — ranked by engagement impact</h2>
+      <div class="rk-row">
+        <div class="rk-pos">1</div>
+        <div class="rk-type">Personal Story</div>
+        <div class="rk-why">Highest emotional resonance</div>
+      </div>
+      <div class="rk-row">
+        <div class="rk-pos">2</div>
+        <div class="rk-type">Carousel</div>
+        <div class="rk-why">Highest algorithmic reach</div>
+      </div>
+      <div class="rk-row">
+        <div class="rk-pos">3</div>
+        <div class="rk-type">Contrarian Take</div>
+        <div class="rk-why">Highest comment volume</div>
+      </div>
+      <div class="rk-row">
+        <div class="rk-pos">4</div>
+        <div class="rk-type">Results Post</div>
+        <div class="rk-why">Highest lead conversion</div>
+      </div>
+      <div class="rk-row">
+        <div class="rk-pos">5</div>
+        <div class="rk-type">Question Post</div>
+        <div class="rk-why">Easiest to write. Consistent engagement.</div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-019.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
