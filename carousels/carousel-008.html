@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 008 — 5 Content Myths Keeping Your Business Broke | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-008-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Myth Busting</div>
+      <h1 class="hook-headline">
+        You've been told to<br>
+        "just post more content."<br>
+        That advice is keeping you<br>
+        <em>broke.</em>
+      </h1>
+      <p class="hook-sub">5 content myths founders still believe — and the truths that actually grow revenue.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: MYTH 01 -->
+  <div class="slide myth-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">01</div>
+    <div class="myth-inner">
+      <div class="myth-badge">Myth 01</div>
+      <div class="myth-box">
+        <div class="myth-label">The Myth</div>
+        <div class="myth-text">"More followers = more clients."</div>
+      </div>
+      <div class="truth-box">
+        <div class="truth-label">The Truth</div>
+        <div class="truth-text">1,000 right followers beat 100,000 wrong ones.</div>
+      </div>
+      <p class="myth-body">
+        A follower who never buys is just a vanity number.<br>
+        <strong>Targeted content attracts buyers,</strong> not just browsers.<br>
+        Stop chasing volume. Start attracting your ideal client.
+      </p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: MYTH 02 -->
+  <div class="slide myth-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">02</div>
+    <div class="myth-inner">
+      <div class="myth-badge">Myth 02</div>
+      <div class="myth-box">
+        <div class="myth-label">The Myth</div>
+        <div class="myth-text">"You need to post every single day."</div>
+      </div>
+      <div class="truth-box">
+        <div class="truth-label">The Truth</div>
+        <div class="truth-text">Consistency beats frequency. Quality beats quantity.</div>
+      </div>
+      <p class="myth-body">
+        Daily posting burns you out and tanks your quality.<br>
+        <strong>3 great posts per week</strong> outperform 7 rushed ones.<br>
+        Your audience remembers great content. They scroll past filler.
+      </p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: MYTH 03 -->
+  <div class="slide myth-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">03</div>
+    <div class="myth-inner">
+      <div class="myth-badge">Myth 03</div>
+      <div class="myth-box">
+        <div class="myth-label">The Myth</div>
+        <div class="myth-text">"Viral content grows your business."</div>
+      </div>
+      <div class="truth-box">
+        <div class="truth-label">The Truth</div>
+        <div class="truth-text">Viral brings views. Authority brings clients.</div>
+      </div>
+      <p class="myth-body">
+        Going viral once won't pay your rent.<br>
+        <strong>Consistent authority content</strong> builds the trust that converts.<br>
+        A post seen by 500 ideal clients is worth more than<br>
+        one seen by 500,000 random people.
+      </p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: MYTH 04 -->
+  <div class="slide myth-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">04</div>
+    <div class="myth-inner">
+      <div class="myth-badge">Myth 04</div>
+      <div class="myth-box">
+        <div class="myth-label">The Myth</div>
+        <div class="myth-text">"My content isn't working because of the algorithm."</div>
+      </div>
+      <div class="truth-box">
+        <div class="truth-label">The Truth</div>
+        <div class="truth-text">The algorithm rewards content people actually want to read.</div>
+      </div>
+      <p class="myth-body">
+        The algorithm isn't your enemy. Boring content is.<br>
+        When people stop, read, and engage —<br>
+        <strong>the algorithm amplifies you automatically.</strong><br>
+        Fix the content. The reach follows.
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: MYTH 05 -->
+  <div class="slide myth-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">05</div>
+    <div class="myth-inner">
+      <div class="myth-badge">Myth 05</div>
+      <div class="myth-box">
+        <div class="myth-label">The Myth</div>
+        <div class="myth-text">"Selling on content feels pushy and salesy."</div>
+      </div>
+      <div class="truth-box">
+        <div class="truth-label">The Truth</div>
+        <div class="truth-text">Not selling is costing you clients every single week.</div>
+      </div>
+      <p class="myth-body">
+        People can't hire you if they don't know you can help.<br>
+        <strong>A clear, confident CTA is a service</strong> — not a sell.<br>
+        The founder who never mentions their offer<br>
+        is the best-kept secret in their niche.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: TRUTH SUMMARY -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="summary-inner">
+      <div class="sum-eyebrow">The Real Rules</div>
+      <h2 class="sum-title">Replace the myths. Run the truths.</h2>
+      <div class="sum-list">
+        <div class="sum-item">
+          <div class="sum-x">✕</div>
+          <div class="sum-text"><span class="sum-old">More followers</span> → <span class="sum-new">Right followers</span></div>
+        </div>
+        <div class="sum-item">
+          <div class="sum-x">✕</div>
+          <div class="sum-text"><span class="sum-old">Post every day</span> → <span class="sum-new">Post with purpose</span></div>
+        </div>
+        <div class="sum-item">
+          <div class="sum-x">✕</div>
+          <div class="sum-text"><span class="sum-old">Chase virality</span> → <span class="sum-new">Build authority</span></div>
+        </div>
+        <div class="sum-item">
+          <div class="sum-x">✕</div>
+          <div class="sum-text"><span class="sum-old">Blame the algorithm</span> → <span class="sum-new">Fix the content</span></div>
+        </div>
+        <div class="sum-item">
+          <div class="sum-x">✕</div>
+          <div class="sum-text"><span class="sum-old">Avoid selling</span> → <span class="sum-new">Make clear offers</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-008.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
