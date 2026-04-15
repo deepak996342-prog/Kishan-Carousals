@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 016 — The Content Strategy That Works for Any Service Business | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-016-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-glow"></div>
+    <div class="geo-dot-a"></div><div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div><div class="geo-line-bottom"></div>
+    <div class="hook-inner">
+      <div class="hook-label">Universal Strategy</div>
+      <h1 class="hook-headline">
+        A doctor. A cafe owner.<br>
+        A consultant. All three<br>
+        need the <em>exact same</em><br>
+        content strategy.
+      </h1>
+      <p class="hook-sub">The 3-part system that works for every service business — regardless of industry.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 2: THE DOCTOR -->
+  <div class="slide profile-slide" id="slide-2">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">Dr</div>
+    <div class="profile-inner">
+      <div class="profile-badge">Profile 01 — The Doctor</div>
+      <div class="profile-name">Trust is the only currency in healthcare</div>
+      <div class="profile-tagline">Patients choose who they feel they know</div>
+      <div class="profile-divider"></div>
+      <p class="profile-body">
+        A doctor who posts: "5 signs you're ignoring your blood pressure"<br>
+        gets patients who arrive already trusting them.<br>
+        <strong>Content replaces the word-of-mouth referral.</strong><br>
+        It works while the clinic is closed, scaling trust 24/7.
+      </p>
+      <div class="content-pills">
+        <div class="content-pill">Health education posts</div>
+        <div class="content-pill">Myth-busting</div>
+        <div class="content-pill">Patient success stories</div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: THE CAFE OWNER -->
+  <div class="slide profile-slide" id="slide-3">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">☕</div>
+    <div class="profile-inner">
+      <div class="profile-badge">Profile 02 — The Cafe Owner</div>
+      <div class="profile-name">People don't just want coffee. They want a feeling.</div>
+      <div class="profile-tagline">Community and story drive foot traffic</div>
+      <div class="profile-divider"></div>
+      <p class="profile-body">
+        A cafe that shows its sourcing story, its barista team,<br>
+        its regulars — <strong>builds community before people visit.</strong><br>
+        A first-time customer becomes a regular faster<br>
+        when they already feel they belong there.
+      </p>
+      <div class="content-pills">
+        <div class="content-pill">Behind-the-scenes</div>
+        <div class="content-pill">Team spotlights</div>
+        <div class="content-pill">Community events</div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: THE CONSULTANT -->
+  <div class="slide profile-slide" id="slide-4">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">C</div>
+    <div class="profile-inner">
+      <div class="profile-badge">Profile 03 — The Consultant</div>
+      <div class="profile-name">Authority attracts clients who are already sold</div>
+      <div class="profile-tagline">Content is the sales call you never have to make</div>
+      <div class="profile-divider"></div>
+      <p class="profile-body">
+        A consultant who shares results, frameworks, and insights<br>
+        attracts clients who arrive saying: <strong>"I've been following you.<br>
+        I already know I want to work with you."</strong><br>
+        Content removes the sales friction entirely.
+      </p>
+      <div class="content-pills">
+        <div class="content-pill">Case studies</div>
+        <div class="content-pill">Frameworks</div>
+        <div class="content-pill">Results posts</div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: WHAT THEY SHARE -->
+  <div class="slide profile-slide" id="slide-5">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">∞</div>
+    <div class="profile-inner">
+      <div class="profile-badge">What They All Share</div>
+      <div class="profile-name">Every service business sells trust first</div>
+      <div class="profile-tagline">The product is secondary. The person is primary.</div>
+      <div class="profile-divider"></div>
+      <p class="profile-body">
+        Patients, customers, clients — they all buy the same thing first:<br>
+        <strong>confidence that this person can solve my problem.</strong><br>
+        Content builds that confidence at scale.<br>
+        Before any call. Before any meeting. Before any visit.
+      </p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: THE 3 PILLARS -->
+  <div class="slide profile-slide" id="slide-6">
+    <div class="geo-line-top"></div><div class="geo-corner-tl"></div><div class="geo-corner-br"></div><div class="geo-watermark">3</div>
+    <div class="profile-inner">
+      <div class="profile-badge">The 3 Universal Pillars</div>
+      <div class="profile-name">Every service business needs these 3 types of posts</div>
+      <div class="profile-divider"></div>
+      <p class="profile-body">
+        <strong>Expertise posts:</strong> Show you know your subject deeply.<br>
+        Teach something. Share a case study. Give a framework.<br><br>
+        <strong>Human posts:</strong> Show the real person behind the business.<br>
+        A failure, a win, a behind-the-scenes moment.<br><br>
+        <strong>Offer posts:</strong> Clearly explain what you do and who you help.<br>
+        No pitch — just clarity. Make it easy to hire you.
+      </p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: UNIVERSAL TRUTH -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+    <div class="universal-inner">
+      <div class="uni-eyebrow">The Universal Truth</div>
+      <h2 class="uni-title">Same strategy. Different words. Same result.</h2>
+      <div class="uni-row">
+        <div class="uni-icon">🏥</div>
+        <div class="uni-text"><strong>Doctor:</strong> Educate → Build trust → Patients arrive pre-convinced</div>
+      </div>
+      <div class="uni-row">
+        <div class="uni-icon">☕</div>
+        <div class="uni-text"><strong>Cafe:</strong> Share stories → Build community → Regulars feel at home</div>
+      </div>
+      <div class="uni-row">
+        <div class="uni-icon">💼</div>
+        <div class="uni-text"><strong>Consultant:</strong> Show results → Build authority → Clients arrive pre-sold</div>
+      </div>
+      <div class="uni-row">
+        <div class="uni-icon">✓</div>
+        <div class="uni-text"><strong>The formula:</strong> Value → Trust → Action — every service business, every niche.</div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-016.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
