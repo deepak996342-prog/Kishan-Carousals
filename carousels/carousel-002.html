@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 002 — How I Save Founders 20+ Hours a Week | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-002-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="carousel-wrapper">
+
+  <!-- NAV BAR -->
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 1 — HOOK
+       ══════════════════════════════════════════ -->
+  <div class="slide active" id="slide-1">
+
+    <div class="geo-ring-a"></div>
+    <div class="geo-ring-b"></div>
+    <div class="geo-glow"></div>
+    <div class="geo-dot-a"></div>
+    <div class="geo-dot-b"></div>
+    <div class="geo-line-top"></div>
+    <div class="geo-line-bottom"></div>
+
+    <div class="hook-inner">
+      <div class="hook-label">The System</div>
+      <h1 class="hook-headline">
+        I save founders<br>
+        <em>20+ hours</em> a week.<br>
+        Here's the exact system.
+      </h1>
+      <p class="hook-sub">
+        5 steps that run your content — so you don't have to
+      </p>
+
+      <div class="step-strip">
+        <div class="step-pip">
+          <div class="pip-dot" style="background:var(--blue);opacity:1;"></div>
+          <div class="pip-label">Step 1</div>
+        </div>
+        <div class="pip-line"></div>
+        <div class="step-pip">
+          <div class="pip-dot"></div>
+          <div class="pip-label">Step 2</div>
+        </div>
+        <div class="pip-line"></div>
+        <div class="step-pip">
+          <div class="pip-dot"></div>
+          <div class="pip-label">Step 3</div>
+        </div>
+        <div class="pip-line"></div>
+        <div class="step-pip">
+          <div class="pip-dot"></div>
+          <div class="pip-label">Step 4</div>
+        </div>
+        <div class="pip-line"></div>
+        <div class="step-pip">
+          <div class="pip-dot"></div>
+          <div class="pip-label">Step 5</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 2 — STEP 01
+       ══════════════════════════════════════════ -->
+  <div class="slide step-slide" id="slide-2">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">01</div>
+
+    <div class="step-inner">
+      <div class="step-badge">Step 01</div>
+      <h2 class="step-title">
+        Audit what's working.<br>
+        <span class="hi">Kill what isn't.</span>
+      </h2>
+      <div class="step-divider"></div>
+      <p class="step-body">
+        Most founders keep posting formats that <strong>never convert.</strong><br>
+        A 30-minute audit reveals your top 3 performers.<br>
+        Everything else gets cut.<br>
+        <strong>Focus beats volume every time.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 3 — STEP 02
+       ══════════════════════════════════════════ -->
+  <div class="slide step-slide" id="slide-3">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">02</div>
+
+    <div class="step-inner">
+      <div class="step-badge">Step 02</div>
+      <h2 class="step-title">
+        Turn one idea into<br>
+        <span class="hi">30 pieces of content.</span>
+      </h2>
+      <div class="step-divider"></div>
+      <p class="step-body">
+        One interview = <strong>4 carousels, 10 posts, 3 videos.</strong><br>
+        You stop creating from scratch.<br>
+        You start multiplying what already works.<br>
+        This is the <strong>repurposing engine.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 4 — STEP 03
+       ══════════════════════════════════════════ -->
+  <div class="slide step-slide" id="slide-4">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">03</div>
+
+    <div class="step-inner">
+      <div class="step-badge">Step 03</div>
+      <h2 class="step-title">
+        Use AI to create<br>
+        in <span class="hi">1/10th the time.</span>
+      </h2>
+      <div class="step-divider"></div>
+      <p class="step-body">
+        AI doesn't replace your voice. It <strong>amplifies</strong> it.<br>
+        Scripts, captions, hooks — drafted in minutes.<br>
+        Edited to sound exactly like you.<br>
+        <strong>Published consistently.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 5 — STEP 04
+       ══════════════════════════════════════════ -->
+  <div class="slide step-slide" id="slide-5">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">04</div>
+
+    <div class="step-inner">
+      <div class="step-badge">Step 04</div>
+      <h2 class="step-title">
+        Schedule everything.<br>
+        <span class="hi">Show up without showing up.</span>
+      </h2>
+      <div class="step-divider"></div>
+      <p class="step-body">
+        A month of content batched in <strong>one day.</strong><br>
+        Scheduled across platforms. Automatic.<br>
+        Your audience sees consistency.<br>
+        You see <strong>20+ hours of free time</strong> — every week.
+      </p>
+    </div>
+
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 6 — STEP 05
+       ══════════════════════════════════════════ -->
+  <div class="slide step-slide" id="slide-6">
+    <div class="geo-line-top"></div>
+    <div class="geo-corner-tl"></div>
+    <div class="geo-corner-br"></div>
+    <div class="geo-watermark">05</div>
+
+    <div class="step-inner">
+      <div class="step-badge">Step 05</div>
+      <h2 class="step-title">
+        Track only what<br>
+        <span class="hi">leads to revenue.</span>
+      </h2>
+      <div class="step-divider"></div>
+      <p class="step-body">
+        Forget vanity metrics.<br>
+        We track: <strong>profile visits → DMs → calls → clients.</strong><br>
+        If a number doesn't lead to money,<br>
+        <strong>we stop watching it.</strong>
+      </p>
+    </div>
+
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 7 — OUTCOME GRID
+       ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-7">
+    <div class="geo-line-top"></div>
+
+    <div class="outcome-inner">
+      <div class="out-eyebrow">The Outcome</div>
+      <h2 class="out-title">What founders get when the system runs</h2>
+
+      <div class="out-grid">
+
+        <div class="out-card">
+          <div class="oc-label">Time Saved</div>
+          <div class="oc-stat">20+ Hours / Week</div>
+          <div class="oc-desc">Every single week, without cutting corners on quality.</div>
+        </div>
+
+        <div class="out-card gold">
+          <div class="oc-label">Authority</div>
+          <div class="oc-stat">Daily Presence</div>
+          <div class="oc-desc">Show up consistently without daily effort. Become the go-to expert.</div>
+        </div>
+
+        <div class="out-card gold">
+          <div class="oc-label">Growth</div>
+          <div class="oc-stat">Inbound Leads</div>
+          <div class="oc-desc">Clients reach out to you. You stop chasing and start choosing.</div>
+        </div>
+
+        <div class="out-card">
+          <div class="oc-label">Output</div>
+          <div class="oc-stat">30× Content</div>
+          <div class="oc-desc">One idea becomes 30 pieces of content, every single time.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SLIDE 8 — CTA
+       ══════════════════════════════════════════ -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div>
+    <div class="geo-ring-b"></div>
+    <div class="geo-ring-c"></div>
+
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">
+        Let me audit your content.<br>
+        No pitch. Just clarity.
+      </h2>
+      <p class="cta-body">
+        30-minute Content Audit Call — I'll show you exactly<br>
+        what's blocking your growth and the 3 moves to fix it.
+      </p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left">
+        <span class="brand-name">Kishan Kr Soni</span>
+        <span class="brand-dot">·</span>
+        <span class="brand-role">Content Strategist &amp; AI Specialist</span>
+      </div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+</div><!-- /carousel-wrapper -->
+
+<script>
+  var cur = 1, total = 8;
+
+  function go(dir) {
+    var next = cur + dir;
+    if (next < 1 || next > total) return;
+    document.getElementById('slide-' + cur).classList.remove('active');
+    cur = next;
+    document.getElementById('slide-' + cur).classList.add('active');
+    document.getElementById('counter').textContent = cur + ' / ' + total;
+    document.getElementById('btn-prev').disabled = (cur === 1);
+    document.getElementById('btn-next').disabled = (cur === total);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
+  });
+
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf');
+    btn.disabled = true;
+
+    try {
+      var jsPDF = window.jspdf.jsPDF;
+      var doc = new jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+
+      for (var i = 0; i < slides.length; i++) {
+        btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…';
+        slides[i].style.display = 'flex';
+        var canvas = await html2canvas(slides[i], {
+          width: 1080, height: 1080, scale: 2,
+          useCORS: true, logging: false, backgroundColor: null
+        });
+        slides[i].style.display = '';
+        if (i > 0) doc.addPage([1080, 1080], 'p');
+        doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080);
+      }
+
+      doc.save('Kishan-Kr-Soni-Carousel-002.pdf');
+    } catch (err) {
+      console.error('PDF export failed:', err);
+      alert('PDF export failed — please try again.');
+    }
+
+    btn.textContent = '↓ Download PDF';
+    btn.disabled = false;
+  }
+</script>
+
+</body>
+</html>
