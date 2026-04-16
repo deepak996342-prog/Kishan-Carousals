@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 021 — The 7 LinkedIn Metrics That Actually Matter | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-021-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Analytics</div>
+      <h1 class="headline">The <span class="accent">7</span> metrics<br>that actually matter.<br>And the <span class="accent">3</span><br>that don't.</h1>
+      <p class="sub-deck">Most creators obsess over the wrong numbers. Here's what your analytics are really telling you — and what to ignore completely.</p>
+    </div>
+    <div class="hex-group">
+      <div class="hex">7</div>
+      <div class="hex gold">↑</div>
+      <div class="hex dim">3</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: METRIC 01 — Profile View Rate -->
+  <div class="slide metric-slide" id="slide-2">
+    <div class="side-accent blue"></div>
+    <div class="geo-tr"></div>
+    <div class="inner">
+      <div class="m-badge">Metric 01 · Matters</div>
+      <div class="m-title">Profile View Rate<br>After Posting</div>
+      <div class="m-divider"><div class="m-divider-line"></div></div>
+      <p class="m-body">Every post is a funnel. The question is: <strong>how many readers care enough to visit your profile?</strong><br>A 1–3% profile view rate means your content is converting. Under 0.5%? Your hook needs work.</p>
+      <div class="metric-bar-group">
+        <div class="metric-bar-row"><span class="metric-bar-label">From a post</span><div class="metric-bar-track"><div class="metric-bar-fill high" style="width:78%"></div></div><span class="metric-bar-val">78%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Direct search</span><div class="metric-bar-track"><div class="metric-bar-fill mid" style="width:45%"></div></div><span class="metric-bar-val">45%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Suggested</span><div class="metric-bar-track"><div class="metric-bar-fill low" style="width:22%"></div></div><span class="metric-bar-val">22%</span></div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: METRIC 02 — Search Appearances -->
+  <div class="slide metric-slide" id="slide-3">
+    <div class="side-accent gold"></div>
+    <div class="geo-tr"></div>
+    <div class="inner">
+      <div class="m-badge gold">Metric 02 · Matters</div>
+      <div class="m-title">Weekly Search<br>Appearances</div>
+      <div class="m-divider"><div class="m-divider-line"></div></div>
+      <p class="m-body">This is your <strong>LinkedIn SEO score.</strong> It tells you how many people found you by searching keywords — not because they already knew you.<br>Growing search appearances = your profile is working as a magnet, not just a resume.</p>
+      <div class="metric-bar-group">
+        <div class="metric-bar-row"><span class="metric-bar-label">Your keywords</span><div class="metric-bar-track"><div class="metric-bar-fill high" style="width:85%"></div></div><span class="metric-bar-val">85%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Your industry</span><div class="metric-bar-track"><div class="metric-bar-fill mid" style="width:60%"></div></div><span class="metric-bar-val">60%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Outside network</span><div class="metric-bar-track"><div class="metric-bar-fill low" style="width:30%"></div></div><span class="metric-bar-val">30%</span></div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: METRIC 03 — Non-Follower Impressions -->
+  <div class="slide metric-slide" id="slide-4">
+    <div class="side-accent blue"></div>
+    <div class="geo-tr"></div>
+    <div class="inner">
+      <div class="m-badge">Metric 03 · Matters</div>
+      <div class="m-title">% Impressions<br>from Non-Followers</div>
+      <div class="m-divider"><div class="m-divider-line"></div></div>
+      <p class="m-body">If 100% of your views come from existing followers, the algorithm isn't amplifying you. <strong>The goal: 30%+ impressions from people who don't follow you yet.</strong><br>That's organic reach. That's growth. That's what makes LinkedIn powerful.</p>
+      <div class="metric-bar-group">
+        <div class="metric-bar-row"><span class="metric-bar-label">Non-followers</span><div class="metric-bar-track"><div class="metric-bar-fill high" style="width:68%"></div></div><span class="metric-bar-val">68%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Current followers</span><div class="metric-bar-track"><div class="metric-bar-fill mid" style="width:32%"></div></div><span class="metric-bar-val">32%</span></div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: METRIC 04 — True Engagement Rate -->
+  <div class="slide metric-slide" id="slide-5">
+    <div class="side-accent gold"></div>
+    <div class="geo-tr"></div>
+    <div class="inner">
+      <div class="m-badge gold">Metric 04 · Matters</div>
+      <div class="m-title">True Engagement<br>Rate (Not Likes)</div>
+      <div class="m-divider"><div class="m-divider-line"></div></div>
+      <p class="m-body">Likes are the weakest signal. <strong>Comments and reposts are what the algorithm actually rewards.</strong><br>A post with 10 deep comments outperforms one with 200 likes. Track your comment rate — it reveals whether your content creates real connection.</p>
+      <div class="metric-bar-group">
+        <div class="metric-bar-row"><span class="metric-bar-label">Comments</span><div class="metric-bar-track"><div class="metric-bar-fill high" style="width:90%"></div></div><span class="metric-bar-val">High</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Reposts</span><div class="metric-bar-track"><div class="metric-bar-fill mid" style="width:65%"></div></div><span class="metric-bar-val">Med</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">Reactions only</span><div class="metric-bar-track"><div class="metric-bar-fill low" style="width:30%"></div></div><span class="metric-bar-val">Low</span></div>
+      </div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: METRICS 05–07 — Follower Growth, DMs, ICP Connections -->
+  <div class="slide metric-slide" id="slide-6">
+    <div class="side-accent blue"></div>
+    <div class="geo-tr"></div>
+    <div class="inner">
+      <div class="m-badge">Metrics 05–07 · Matter Most</div>
+      <div class="m-title">Growth Rate, DMs<br>&amp; ICP Connections</div>
+      <div class="m-divider"><div class="m-divider-line"></div></div>
+      <p class="m-body"><strong>Follower growth rate</strong> (not total) shows momentum.<br><strong>Inbound DMs from content</strong> is the #1 lead signal — someone read your post and reached out.<br><strong>New connections from ideal clients</strong> means your content is attracting the right people.</p>
+      <div class="metric-bar-group">
+        <div class="metric-bar-row"><span class="metric-bar-label">Growth rate</span><div class="metric-bar-track"><div class="metric-bar-fill high" style="width:80%"></div></div><span class="metric-bar-val">80%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">DMs / week</span><div class="metric-bar-track"><div class="metric-bar-fill high" style="width:95%"></div></div><span class="metric-bar-val">95%</span></div>
+        <div class="metric-bar-row"><span class="metric-bar-label">ICP connects</span><div class="metric-bar-track"><div class="metric-bar-fill mid" style="width:55%"></div></div><span class="metric-bar-val">55%</span></div>
+      </div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: DASHBOARD -->
+  <div class="slide" id="slide-7">
+    <div class="dash-inner">
+      <div class="d-eyebrow">The Metric Scorecard</div>
+      <h2 class="d-title">7 that matter. 3 you should stop watching.</h2>
+      <div class="dash-grid">
+        <div class="dash-card good">
+          <span class="dc-type good">Track this</span>
+          <div class="dc-metric">Profile View Rate</div>
+          <div class="dc-why">Shows if content converts curiosity to interest</div>
+        </div>
+        <div class="dash-card good">
+          <span class="dc-type good">Track this</span>
+          <div class="dc-metric">Search Appearances</div>
+          <div class="dc-why">Your LinkedIn SEO health score</div>
+        </div>
+        <div class="dash-card good">
+          <span class="dc-type good">Track this</span>
+          <div class="dc-metric">Non-Follower Reach</div>
+          <div class="dc-why">% of impressions reaching new audiences</div>
+        </div>
+        <div class="dash-card good">
+          <span class="dc-type good">Track this</span>
+          <div class="dc-metric">Comment Rate</div>
+          <div class="dc-why">Real engagement depth, not vanity clicks</div>
+        </div>
+        <div class="dash-card good">
+          <span class="dc-type good">Track this</span>
+          <div class="dc-metric">Inbound DMs</div>
+          <div class="dc-why">The #1 direct lead signal from content</div>
+        </div>
+        <div class="dash-card good">
+          <span class="dc-type good">Track this</span>
+          <div class="dc-metric">Follower Growth Rate</div>
+          <div class="dc-why">Momentum signal — trending up or stalling?</div>
+        </div>
+        <div class="dash-card bad">
+          <span class="dc-type bad">Ignore this</span>
+          <div class="dc-metric">Total Like Count</div>
+          <div class="dc-why">Weak signal. Zero revenue correlation.</div>
+        </div>
+        <div class="dash-card bad">
+          <span class="dc-type bad">Ignore this</span>
+          <div class="dc-metric">Total Follower Count</div>
+          <div class="dc-why">Inactive followers = dead weight</div>
+        </div>
+        <div class="dash-card bad">
+          <span class="dc-type bad">Ignore this</span>
+          <div class="dc-metric">Raw Impressions</div>
+          <div class="dc-why">Impressions without action mean nothing</div>
+        </div>
+      </div>
+      <div class="d-note">Track what <strong>moves people toward working with you</strong> — not what makes your profile look impressive.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-021.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
