@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 029 — How to Write a LinkedIn About Section That Converts | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-029-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Profile</div>
+      <h1 class="headline">Your About section is<br>a <span class="accent">2,600-character</span><br>sales page.<br>Is it working?</h1>
+      <p class="sub-deck">Most LinkedIn About sections read like CVs. Here's the 5-part framework that turns profile visitors into discovery call bookings.</p>
+    </div>
+    <div class="section-stack">
+      <div class="sec-block"><div class="sec-block-label">Hook</div><div class="sec-block-desc">Stop the scroll. Fast.</div></div>
+      <div class="sec-block"><div class="sec-block-label">Who You Serve</div><div class="sec-block-desc">Name your audience.</div></div>
+      <div class="sec-block"><div class="sec-block-label">Your Story</div><div class="sec-block-desc">Build trust, not hype.</div></div>
+      <div class="sec-block"><div class="sec-block-label">Proof</div><div class="sec-block-desc">Results, not claims.</div></div>
+      <div class="sec-block"><div class="sec-block-label">CTA</div><div class="sec-block-desc">One clear next step.</div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Section 1 — Hook -->
+  <div class="slide section-slide" id="slide-2">
+    <div class="left-accent"></div>
+    <div class="bg-bloom"></div>
+    <div class="sec-inner">
+      <div class="sec-badge">Section 01 · The Hook</div>
+      <div class="sec-title">First 2 lines show<br>before "see more."</div>
+      <div class="sec-sub">These 2 lines do 80% of the work.</div>
+      <div class="sec-divider"></div>
+      <p class="sec-body">Most About sections start with "I am a [title] with X years of experience." That's the worst possible hook. <strong>Your reader doesn't care about your history — they care about their own problem.</strong><br>Lead with a bold claim, a provocative question, or a result your client wants. Make them click "see more" before they've read anything else.</p>
+      <div class="sec-sample">
+        <div class="sec-sample-label">Strong Hook Example</div>
+        <div class="sec-sample-text"><span>Most founders post consistently and still get zero leads. I help fix that in 90 days.</span></div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: Section 2 — Who You Serve -->
+  <div class="slide section-slide" id="slide-3">
+    <div class="left-accent gold"></div>
+    <div class="bg-bloom"></div>
+    <div class="sec-inner">
+      <div class="sec-badge gold">Section 02 · Who You Serve</div>
+      <div class="sec-title">Name your ideal client<br>in the first paragraph.</div>
+      <div class="sec-sub">The right person should feel immediately seen.</div>
+      <div class="sec-divider"></div>
+      <p class="sec-body">If your About section could describe anyone, it will attract no one. <strong>Get specific about who you work with, what their situation looks like, and what problem they're stuck on.</strong><br>When your ideal client reads "this is for someone who's struggling with exactly what I'm struggling with" — they don't just read further. They DM you.</p>
+      <div class="sec-sample">
+        <div class="sec-sample-label">Strong Example</div>
+        <div class="sec-sample-text"><span>I work with service business owners doing £5K–£20K/month who are posting on LinkedIn but not seeing it convert to clients.</span></div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: Section 3 — Your Story -->
+  <div class="slide section-slide" id="slide-4">
+    <div class="left-accent"></div>
+    <div class="bg-bloom"></div>
+    <div class="sec-inner">
+      <div class="sec-badge">Section 03 · Your Story</div>
+      <div class="sec-title">Tell the origin story.<br>Not your CV.</div>
+      <div class="sec-sub">People hire people, not resumes.</div>
+      <div class="sec-divider"></div>
+      <p class="sec-body">The middle of your About section should tell the story of why you do this work — a problem you faced, a moment that shifted your thinking, or the client result that proved your approach worked.<br><strong>This is where you make the human connection.</strong> It's where someone goes from "this looks interesting" to "I want to work with this person."</p>
+      <div class="sec-sample">
+        <div class="sec-sample-label">Story Prompt</div>
+        <div class="sec-sample-text"><span>"Three years ago, I was in the exact same position as most of my clients: posting every day on LinkedIn and wondering why nothing was happening. Then I discovered..."</span></div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: Section 4 — Proof -->
+  <div class="slide section-slide" id="slide-5">
+    <div class="left-accent gold"></div>
+    <div class="bg-bloom"></div>
+    <div class="sec-inner">
+      <div class="sec-badge gold">Section 04 · Proof</div>
+      <div class="sec-title">Show results.<br>Not vague claims.</div>
+      <div class="sec-sub">Specificity is credibility.</div>
+      <div class="sec-divider"></div>
+      <p class="sec-body">Don't say "I help clients get results." Say: <strong>"A recent client went from 400 followers and no leads to 3 inbound discovery calls per week in 60 days."</strong><br>Name the outcome. Name the timeframe. Name the transformation. If you have a client testimonial quote, use it. One specific result beats ten generic claims every time.</p>
+      <div class="sec-sample">
+        <div class="sec-sample-label">Proof Formula</div>
+        <div class="sec-sample-text"><span>[Client type] went from [before state] to [after state] in [timeframe]. Here's how the process works...</span></div>
+      </div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: Section 5 — CTA -->
+  <div class="slide section-slide" id="slide-6">
+    <div class="left-accent"></div>
+    <div class="bg-bloom"></div>
+    <div class="sec-inner">
+      <div class="sec-badge">Section 05 · The CTA</div>
+      <div class="sec-title">End with one<br>clear next step.</div>
+      <div class="sec-sub">Most About sections just... end. That's a wasted conversion.</div>
+      <div class="sec-divider"></div>
+      <p class="sec-body">After building trust through your hook, audience, story, and proof — tell the reader exactly what to do next. <strong>One action. Specific. Easy to take.</strong><br>"If this sounds like where you are, DM me 'AUDIT' and I'll walk you through what I'd do differently with your content — no cost, no pitch."<br>That's it. That simple sentence books calls.</p>
+      <div class="sec-sample">
+        <div class="sec-sample-label">CTA Formula</div>
+        <div class="sec-sample-text"><span>If [condition that matches your ideal client], DM me [word] and [specific next thing that happens].</span></div>
+      </div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: ABOUT ANATOMY -->
+  <div class="slide" id="slide-7">
+    <div class="ab-inner">
+      <div class="ab-eyebrow">About Section Blueprint</div>
+      <h2 class="ab-title">The 5-part structure — at a glance</h2>
+      <div class="ab-blocks">
+        <div class="ab-block">
+          <div class="ab-tag hook">Hook</div>
+          <div class="ab-content"><div class="ab-heading">First 2 Visible Lines</div><div class="ab-desc">Bold claim or client pain. Must earn the "see more" click.</div></div>
+        </div>
+        <div class="ab-block">
+          <div class="ab-tag who">Who</div>
+          <div class="ab-content"><div class="ab-heading">Specific Audience Statement</div><div class="ab-desc">Name exactly who you serve and the problem they have.</div></div>
+        </div>
+        <div class="ab-block">
+          <div class="ab-tag story">Story</div>
+          <div class="ab-content"><div class="ab-heading">Your Origin / Why You Do This</div><div class="ab-desc">Human connection. The moment that made you the expert.</div></div>
+        </div>
+        <div class="ab-block">
+          <div class="ab-tag proof">Proof</div>
+          <div class="ab-content"><div class="ab-heading">Specific Client Results</div><div class="ab-desc">Before → after with a timeframe. One is enough if it's specific.</div></div>
+        </div>
+        <div class="ab-block">
+          <div class="ab-tag cta">CTA</div>
+          <div class="ab-content"><div class="ab-heading">One Clear Next Step</div><div class="ab-desc">DM trigger word, link to book, or direct email. One action only.</div></div>
+        </div>
+      </div>
+      <div class="ab-note">Rewrite your About section using this structure. <strong>Most creators see a 2–4× increase in discovery call bookings within 30 days.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-029.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
