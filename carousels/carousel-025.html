@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 025 — How to Get Your First 1,000 LinkedIn Followers | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-025-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Growth</div>
+      <h1 class="headline">0 to <span class="accent">1,000</span><br>LinkedIn followers.<br>The exact playbook.</h1>
+      <p class="sub-deck">5 high-leverage tactics that compound — even if you're starting from zero with no audience and no brand name yet.</p>
+    </div>
+    <div class="milestone">
+      <div class="ms-ring">
+        <span class="ms-num">1K</span>
+        <span class="ms-label">Followers</span>
+      </div>
+      <div class="ms-tag">90 days or less</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Tactic 01 — Optimize Profile First -->
+  <div class="slide tactic-slide" id="slide-2">
+    <div class="v-accent"></div>
+    <div class="corner-bloom"></div>
+    <div class="t-number">01</div>
+    <div class="t-inner">
+      <div class="t-badge">Tactic 01</div>
+      <div class="t-title">Optimize your profile<br>before posting anything.</div>
+      <div class="t-sub">First impressions happen in 3 seconds.</div>
+      <div class="t-divider"></div>
+      <p class="t-body">When someone visits your profile, they're making a split-second decision: follow or leave. <strong>A weak headline, a generic About section, or a blank banner makes them leave.</strong><br>Nail your headline (Formula 01), write a client-first About section, and put a clear banner that states your offer. Do this before you post a single word.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: Tactic 02 — Comment Strategy -->
+  <div class="slide tactic-slide" id="slide-3">
+    <div class="v-accent gold"></div>
+    <div class="corner-bloom"></div>
+    <div class="t-number">02</div>
+    <div class="t-inner">
+      <div class="t-badge gold">Tactic 02</div>
+      <div class="t-title">Comment on 10 posts<br>every single day.</div>
+      <div class="t-sub">Commenting is the fastest follower growth hack.</div>
+      <div class="t-divider"></div>
+      <p class="t-body">Every meaningful comment puts your name in front of the poster's entire audience. <strong>10 thoughtful comments per day = 70 new audience touchpoints per week.</strong><br>Don't say "Great post!" Say something that proves you read it, adds a point, or asks a sharp question. Those comments get replies, likes, and profile visits.</p>
+      <div class="t-stat">
+        <div class="t-stat-num">10</div>
+        <div class="t-stat-desc"><strong>comments/day</strong> = 300 audience touchpoints per month. Compounding.</div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: Tactic 03 — Connect Intentionally -->
+  <div class="slide tactic-slide" id="slide-4">
+    <div class="v-accent"></div>
+    <div class="corner-bloom"></div>
+    <div class="t-number">03</div>
+    <div class="t-inner">
+      <div class="t-badge">Tactic 03</div>
+      <div class="t-title">Connect with 20 ideal<br>clients every week.</div>
+      <div class="t-sub">Not random people. Your exact target audience.</div>
+      <div class="t-divider"></div>
+      <p class="t-body">Search for your ideal client — by job title, company size, industry, or keywords. Send a connection request with a 1-sentence personalised note. No pitch. Just a genuine reason to connect.<br><strong>"I saw your comment on [X]. Your point about [Y] resonated — connecting."</strong> That's it. Most people accept. Now you're in each other's feeds.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: Tactic 04 — Post 4–5x/Week -->
+  <div class="slide tactic-slide" id="slide-5">
+    <div class="v-accent gold"></div>
+    <div class="corner-bloom"></div>
+    <div class="t-number">04</div>
+    <div class="t-inner">
+      <div class="t-badge gold">Tactic 04</div>
+      <div class="t-title">Post 4–5 times<br>per week. Consistently.</div>
+      <div class="t-sub">Volume beats perfection at the start.</div>
+      <div class="t-divider"></div>
+      <p class="t-body">The first 1,000 followers is a volume game. You don't know yet which posts will hit. So post consistently and let data tell you what resonates.<br><strong>Your 10th post will perform better than your 1st. Your 50th better than your 10th.</strong> The algorithm rewards creators who show up. Show up before you feel ready.</p>
+      <div class="t-stat">
+        <div class="t-stat-num">4×</div>
+        <div class="t-stat-desc">posts/week over 12 weeks = <strong>48 posts.</strong> Your whole content game changes.</div>
+      </div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: Tactic 05 — Ask for Reposts -->
+  <div class="slide tactic-slide" id="slide-6">
+    <div class="v-accent"></div>
+    <div class="corner-bloom"></div>
+    <div class="t-number">05</div>
+    <div class="t-inner">
+      <div class="t-badge">Tactic 05</div>
+      <div class="t-title">Ask your network<br>to reshare your best post.</div>
+      <div class="t-sub">One repost from the right person = 500 new eyeballs.</div>
+      <div class="t-divider"></div>
+      <p class="t-body">When you write a post you're proud of, message 5 connections who'd find it genuinely useful. <strong>"Hey [name], wrote something that might be useful for your audience — if you agree, a reshare would mean a lot."</strong><br>This is not spammy. It's how real creators grow. Most people are happy to help if you ask directly and sincerely.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: GROWTH PHASES -->
+  <div class="slide" id="slide-7">
+    <div class="gt-inner">
+      <div class="gt-eyebrow">The Growth Curve</div>
+      <h2 class="gt-title">What 0 → 1,000 actually looks like</h2>
+      <div class="phase-list">
+        <div class="phase-row">
+          <div class="phase-label">0 → 100 followers</div>
+          <div class="phase-track"><div class="phase-fill p1"></div></div>
+          <div class="phase-count">Weeks 1–3</div>
+        </div>
+        <div class="phase-row">
+          <div class="phase-label">100 → 300 followers</div>
+          <div class="phase-track"><div class="phase-fill p2"></div></div>
+          <div class="phase-count">Weeks 4–6</div>
+        </div>
+        <div class="phase-row">
+          <div class="phase-label">300 → 700 followers</div>
+          <div class="phase-track"><div class="phase-fill p3"></div></div>
+          <div class="phase-count">Weeks 7–10</div>
+        </div>
+        <div class="phase-row">
+          <div class="phase-label">700 → 1,000 followers</div>
+          <div class="phase-track"><div class="phase-fill p4"></div></div>
+          <div class="phase-count">Weeks 11–12</div>
+        </div>
+      </div>
+      <div class="gt-note">The first 100 followers take the longest. <strong>The last 300 arrive faster than the first 30.</strong> That's the compounding effect — it's real, and it rewards consistency above all else.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-025.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

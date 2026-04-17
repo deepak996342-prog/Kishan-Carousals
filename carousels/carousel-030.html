@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 030 — Building Your LinkedIn Network Strategically | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-030-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Network Strategy</div>
+      <h1 class="headline">5,000 random<br>connections ≠ clients.<br><span class="accent">500 right ones</span><br>can change everything.</h1>
+      <p class="sub-deck">How to build a LinkedIn network that sends you referrals, opens doors, and compounds into business — intentionally.</p>
+    </div>
+    <div class="network-nodes">
+      <div class="node center">YOU</div>
+      <div class="node icp n1">ICP</div>
+      <div class="node icp n2">ICP</div>
+      <div class="node ref n3">Ref</div>
+      <div class="node ref n4">Ref</div>
+      <div class="node peer n5">Peer</div>
+      <div class="node peer n6">Peer</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Tier 1 — Ideal Clients -->
+  <div class="slide strategy-slide" id="slide-2">
+    <div class="left-bar"></div>
+    <div class="top-corner"></div>
+    <div class="st-inner">
+      <div class="st-badge">Tier 01 · Priority</div>
+      <div class="st-title">Connect with your<br>ideal clients first.</div>
+      <div class="st-sub">They're the whole point of your LinkedIn presence.</div>
+      <div class="st-divider"></div>
+      <p class="st-body">Every week, send 20 connection requests to people who match your ideal client profile — by job title, company size, industry, or challenge. <strong>Don't wait to be discovered. Go to where your clients are.</strong><br>Use the search filters: "Marketing Directors at SaaS companies with 50–200 employees." Get specific. Send requests with a personal note.</p>
+      <div class="st-action">Weekly goal: <strong>20 ideal client connection requests, 3–5 accepted, 1 conversation started.</strong></div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: Tier 2 — Referral Partners -->
+  <div class="slide strategy-slide" id="slide-3">
+    <div class="left-bar gold"></div>
+    <div class="top-corner"></div>
+    <div class="st-inner">
+      <div class="st-badge gold">Tier 02 · Leverage</div>
+      <div class="st-title">Build relationships<br>with referral partners.</div>
+      <div class="st-sub">People who serve your clients but don't compete with you.</div>
+      <div class="st-divider"></div>
+      <p class="st-body">Referral partners are people whose clients are your clients — but they offer something completely different. <strong>A web designer who works with the same founders you do. A bookkeeper who serves the same small business owners.</strong><br>Connect. Support their content. When their client needs what you do, your name comes up. This is the highest-ROI network building activity on LinkedIn.</p>
+      <div class="st-action">Identify <strong>10 complementary service providers</strong> serving your exact audience. Connect and start genuine conversations.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: Tier 3 — Peers and Collaborators -->
+  <div class="slide strategy-slide" id="slide-4">
+    <div class="left-bar"></div>
+    <div class="top-corner"></div>
+    <div class="st-inner">
+      <div class="st-badge">Tier 03 · Community</div>
+      <div class="st-title">Connect with peers<br>doing similar work.</div>
+      <div class="st-sub">Your competition is also your community.</div>
+      <div class="st-divider"></div>
+      <p class="st-body">Connecting with people who do similar work to you creates an unexpected benefit: <strong>they refer overflow clients, they reshare your best content, they introduce you to their network.</strong><br>Competitors are only competition if you think transactionally. Think collaboratively, and your "competition" becomes one of your most powerful growth levers.</p>
+      <div class="st-action">Find <strong>20 peers in your niche.</strong> Follow, comment on their content, and connect. Relationship before collaboration.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: Tier 4 — Influencers in Your Space -->
+  <div class="slide strategy-slide" id="slide-5">
+    <div class="left-bar gold"></div>
+    <div class="top-corner"></div>
+    <div class="st-inner">
+      <div class="st-badge gold">Tier 04 · Visibility</div>
+      <div class="st-title">Engage with creators<br>your clients follow.</div>
+      <div class="st-sub">Borrowed authority is still authority.</div>
+      <div class="st-divider"></div>
+      <p class="st-body">Find the 10–15 LinkedIn creators your ideal clients already follow. <strong>Comment thoughtfully on their posts every single day.</strong> Their audience is your audience. By consistently showing up in their comment section with real insight, you become known before you've ever directly connected.<br>Once you've left 10+ meaningful comments, send a genuine connection request. Most will accept — and now you have direct access to their network.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: The Nurture System -->
+  <div class="slide strategy-slide" id="slide-6">
+    <div class="left-bar"></div>
+    <div class="top-corner"></div>
+    <div class="st-inner">
+      <div class="st-badge">The Nurture System</div>
+      <div class="st-title">Connecting is step one.<br>Nurturing is the job.</div>
+      <div class="st-sub">A cold connection is worthless without follow-through.</div>
+      <div class="st-divider"></div>
+      <p class="st-body">After connecting, the relationship needs tending. <strong>Comment on their content. React to their updates. Send a DM when they share something relevant to you.</strong><br>No pitch. No ask. Just genuine human interest. The people in your network who matter most will be the ones who feel like you're actually paying attention to them — not just collecting them.</p>
+      <div class="st-action">Weekly habit: <strong>check in on 5 key connections.</strong> React. Comment. Reply. That's all it takes to stay top of mind.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: NETWORK TIERS -->
+  <div class="slide" id="slide-7">
+    <div class="nt-inner">
+      <div class="nt-eyebrow">Your Strategic Network Map</div>
+      <h2 class="nt-title">4 connection tiers. Each serves a different purpose.</h2>
+      <div class="tier-list">
+        <div class="tier-row">
+          <div class="tier-label">
+            <div class="tier-name">Ideal Clients</div>
+            <div class="tier-count icp">20 requests/week</div>
+          </div>
+          <div class="tier-desc">People who match your perfect client profile. Direct revenue potential. Connect with personalised notes.</div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-label">
+            <div class="tier-name">Referral Partners</div>
+            <div class="tier-count ref">10 key relationships</div>
+          </div>
+          <div class="tier-desc">Complementary service providers who serve your clients. Your best referral source when nurtured properly.</div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-label">
+            <div class="tier-name">Peers &amp; Collaborators</div>
+            <div class="tier-count peer">20 in your niche</div>
+          </div>
+          <div class="tier-desc">Same audience, different offer. Reshares, referrals, and introductions come from this tier.</div>
+        </div>
+        <div class="tier-row">
+          <div class="tier-label">
+            <div class="tier-name">Creators / Influencers</div>
+            <div class="tier-count inf">10–15 to follow</div>
+          </div>
+          <div class="tier-desc">Your borrowed audience. Comment first. Connect after consistent presence. Massive visibility upside.</div>
+        </div>
+      </div>
+      <div class="nt-note"><strong>A strategic network of 500 right people</strong> generates more business than 10,000 random connections.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-030.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

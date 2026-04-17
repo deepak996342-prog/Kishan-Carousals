@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 026 — The Power of LinkedIn Comments | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-026-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Engagement Strategy</div>
+      <h1 class="headline">You don't need<br>a big audience<br>to grow <span class="accent">fast.</span><br>You need to comment.</h1>
+      <p class="sub-deck">The right comment on the right post reaches more people than your own post ever will. Here's how to use it as a growth engine.</p>
+    </div>
+    <div class="bubble-stack">
+      <div class="bubble good">
+        <div class="bubble-text">"This is exactly what I experienced — the part about X is underrated..."</div>
+        <div class="bubble-label good">High-value comment</div>
+      </div>
+      <div class="bubble bad">
+        <div class="bubble-text">"Great post! 🔥"</div>
+        <div class="bubble-label bad">Invisible comment</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Why Comments Work -->
+  <div class="slide reason-slide" id="slide-2">
+    <div class="left-bar"></div>
+    <div class="top-glow"></div>
+    <div class="r-inner">
+      <div class="r-badge">Why It Works</div>
+      <div class="r-title">Comments are mini-posts<br>seen by a huge audience.</div>
+      <div class="r-sub">You don't need followers to get seen.</div>
+      <div class="r-divider"></div>
+      <p class="r-body">When you comment on a post by someone with 10,000 followers, <strong>a portion of their audience sees your comment</strong> — and they can click through to your profile.<br>LinkedIn notifies the poster. It surfaces your name in notifications. It shows the comment to mutual connections. One thoughtful comment is worth 10 posts at the start.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: Who to Comment On -->
+  <div class="slide reason-slide" id="slide-3">
+    <div class="left-bar gold"></div>
+    <div class="top-glow"></div>
+    <div class="r-inner">
+      <div class="r-badge gold">Who to Comment On</div>
+      <div class="r-title">Comment on creators<br>your ideal clients follow.</div>
+      <div class="r-sub">Find your clients' favorite voices first.</div>
+      <div class="r-divider"></div>
+      <p class="r-body">Don't comment randomly. <strong>Find 10–15 creators your ideal clients already follow.</strong> When you consistently add value in their comment sections, their audience starts recognizing you — before you've ever posted yourself.<br>This is borrowed audience strategy. Use it for 30 days and watch your profile views explode.</p>
+      <div class="r-example">
+        <div class="r-example-label">Your Action Plan</div>
+        <div class="r-example-text">Search your ideal client's job title. See who they follow, comment on, and engage with. Go comment there — thoughtfully, daily.</div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: The 3-Layer Comment Formula -->
+  <div class="slide reason-slide" id="slide-4">
+    <div class="left-bar"></div>
+    <div class="top-glow"></div>
+    <div class="r-inner">
+      <div class="r-badge">The Formula</div>
+      <div class="r-title">The 3-layer comment<br>that builds your brand.</div>
+      <div class="r-sub">Validate → Expand → Invite</div>
+      <div class="r-divider"></div>
+      <p class="r-body"><strong>Layer 1 — Validate:</strong> Acknowledge the post's main point genuinely.<br><strong>Layer 2 — Expand:</strong> Add your own perspective, data point, or experience.<br><strong>Layer 3 — Invite:</strong> Ask a question or make an observation that invites reply.<br>This structure turns your comment into a mini-post — and it always gets noticed.</p>
+      <div class="r-example">
+        <div class="r-example-label">Example</div>
+        <div class="r-example-text">"Totally agree. [Expand with your angle.] The part I'd add is [your insight]. Has anyone found that [question to invite replies]?"</div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: Timing Matters -->
+  <div class="slide reason-slide" id="slide-5">
+    <div class="left-bar gold"></div>
+    <div class="top-glow"></div>
+    <div class="r-inner">
+      <div class="r-badge gold">Timing Strategy</div>
+      <div class="r-title">Comment in the first<br>30 minutes. Always.</div>
+      <div class="r-sub">Early comments get 10× the visibility.</div>
+      <div class="r-divider"></div>
+      <p class="r-body">LinkedIn's algorithm shows early comments to a much wider audience — before the post even gets significant traction. <strong>Being one of the first 5 comments on a post puts your name in the high-visibility window.</strong><br>Turn on notifications for your target creators. Comment within 20–30 minutes of them posting. Consistency here builds recognition fast.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: Comments on Your Own Posts -->
+  <div class="slide reason-slide" id="slide-6">
+    <div class="left-bar"></div>
+    <div class="top-glow"></div>
+    <div class="r-inner">
+      <div class="r-badge">Your Own Posts</div>
+      <div class="r-title">Reply to every comment<br>within the first hour.</div>
+      <div class="r-sub">Replies double your post's reach — guaranteed.</div>
+      <div class="r-divider"></div>
+      <p class="r-body">Every reply you leave on your own post is another touchpoint in someone's feed. <strong>A post with 10 replies has 10× more engagement signal than one with 10 likes.</strong><br>Reply fast. Reply with substance. Ask follow-up questions. Treat your comment section like a conversation — because it is one, and LinkedIn rewards it heavily.</p>
+      <div class="r-example">
+        <div class="r-example-label">The Rule</div>
+        <div class="r-example-text">Never let a comment go unanswered for more than an hour on posting day. Set a timer. This alone multiplies reach.</div>
+      </div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: COMMENT QUALITY MATRIX -->
+  <div class="slide" id="slide-7">
+    <div class="matrix-inner">
+      <div class="mx-eyebrow">Comment Quality Matrix</div>
+      <h2 class="mx-title">Weak vs strong comments — side by side</h2>
+      <div class="mx-grid">
+        <div class="mx-card weak">
+          <div class="mx-card-label weak">✕ Weak Comment</div>
+          <div class="mx-card-example">"Great post! So inspiring 🔥"</div>
+          <div class="mx-card-result">Result: invisible. No profile visits. No follows.</div>
+        </div>
+        <div class="mx-card strong">
+          <div class="mx-card-label strong">✓ Strong Comment</div>
+          <div class="mx-card-example">"The point about consistency is underrated — I'd add that the first 30 days feel like posting to nobody, but week 6 is where everything shifts."</div>
+          <div class="mx-card-result">Result: profile visits, new followers, DMs.</div>
+        </div>
+        <div class="mx-card weak">
+          <div class="mx-card-label weak">✕ Weak Comment</div>
+          <div class="mx-card-example">"I agree 100%! Well said."</div>
+          <div class="mx-card-result">Result: ignored. No algorithm signal. No authority.</div>
+        </div>
+        <div class="mx-card strong">
+          <div class="mx-card-label strong">✓ Strong Comment</div>
+          <div class="mx-card-example">"Counterpoint: [your take]. In my experience [insight]. Has anyone found [question]?"</div>
+          <div class="mx-card-result">Result: liked, replied to, shared — full engagement loop.</div>
+        </div>
+      </div>
+      <div class="mx-note">Your comments are <strong>permanent brand impressions</strong> on someone else's audience. Write them like you'd write a post.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-026.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

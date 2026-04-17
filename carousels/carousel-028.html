@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 028 — LinkedIn Video vs Carousel vs Text: What Actually Works | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-028-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Format Strategy</div>
+      <h1 class="headline">Video, carousel, text.<br>Which format<br>wins on LinkedIn<br>in <span class="accent">2025?</span></h1>
+      <p class="sub-deck">The answer isn't what most creators expect — and the wrong format choice is costing you reach, engagement, and clients.</p>
+    </div>
+    <div class="format-trio">
+      <div class="ft-box video">
+        <div class="ft-icon">▶</div>
+        <div class="ft-label">Video</div>
+        <div class="ft-sub">High effort. Big upside.</div>
+      </div>
+      <div class="ft-box carousel">
+        <div class="ft-icon">⧉</div>
+        <div class="ft-label">Carousel</div>
+        <div class="ft-sub">Best reach right now.</div>
+      </div>
+      <div class="ft-box text">
+        <div class="ft-icon">≡</div>
+        <div class="ft-label">Text Post</div>
+        <div class="ft-sub">Low effort. High impact.</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Carousel -->
+  <div class="slide format-slide" id="slide-2">
+    <div class="left-bar purple"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge purple">Format 01 · Carousel</div>
+      <div class="f-title">The highest-reach format<br>on LinkedIn right now.</div>
+      <div class="f-tagline">LinkedIn rewards dwell time. Carousels create it.</div>
+      <div class="f-divider"></div>
+      <p class="f-body">Each swipe = more time spent = more algorithmic push. <strong>An 8-slide carousel earns 3–5× more impressions than a text post with the same content.</strong><br>Carousels are also saved at high rates — they become reference material. Saves are the most powerful engagement signal LinkedIn has.</p>
+      <div class="f-stats">
+        <div class="f-stat"><div class="f-stat-num">3–5×</div><div class="f-stat-desc">More reach than text posts</div></div>
+        <div class="f-stat"><div class="f-stat-num">2×</div><div class="f-stat-desc">Higher save rate vs other formats</div></div>
+        <div class="f-stat"><div class="f-stat-num">#1</div><div class="f-stat-desc">Best for building authority</div></div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: Text Post -->
+  <div class="slide format-slide" id="slide-3">
+    <div class="left-bar gold"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge gold">Format 02 · Text Post</div>
+      <div class="f-title">The fastest format.<br>Highest comment rate.</div>
+      <div class="f-tagline">Raw authenticity. Zero production time.</div>
+      <div class="f-divider"></div>
+      <p class="f-body">Text posts take 20 minutes and consistently generate the most comments — especially personal stories, strong opinions, and questions. <strong>Comments trigger exponential algorithmic reach.</strong><br>For viral moments, relatable experiences, and contrarian takes: text wins every time. Start with text when you're learning what resonates.</p>
+      <div class="f-stats">
+        <div class="f-stat"><div class="f-stat-num gold">Fastest</div><div class="f-stat-desc">20 min to write and post</div></div>
+        <div class="f-stat"><div class="f-stat-num gold">#1</div><div class="f-stat-desc">Comment rate of all formats</div></div>
+        <div class="f-stat"><div class="f-stat-num gold">Best</div><div class="f-stat-desc">For stories and opinions</div></div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: Video -->
+  <div class="slide format-slide" id="slide-4">
+    <div class="left-bar red"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge red">Format 03 · Video</div>
+      <div class="f-title">The trust accelerator.<br>Highest barrier to entry.</div>
+      <div class="f-tagline">Video converts viewers to clients faster than anything else.</div>
+      <div class="f-divider"></div>
+      <p class="f-body">Seeing someone speak builds trust at a speed no text can match. <strong>A 2-minute talking-head video where you share a real insight builds more credibility than 20 written posts.</strong><br>But video requires consistency, camera comfort, and production quality. The barrier is high — which means less competition. If you can do it, do it. If not, start with carousels.</p>
+      <div class="f-stats">
+        <div class="f-stat"><div class="f-stat-num red">Fastest</div><div class="f-stat-desc">Trust-building format</div></div>
+        <div class="f-stat"><div class="f-stat-num red">High</div><div class="f-stat-desc">Production barrier</div></div>
+        <div class="f-stat"><div class="f-stat-num red">Best</div><div class="f-stat-desc">For converting warm leads</div></div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: What Format for What Goal -->
+  <div class="slide format-slide" id="slide-5">
+    <div class="left-bar purple"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge purple">Match Format to Goal</div>
+      <div class="f-title">Different formats serve<br>different outcomes.</div>
+      <div class="f-tagline">The right format depends on what you want to achieve.</div>
+      <div class="f-divider"></div>
+      <p class="f-body"><strong>Want reach and new followers?</strong> Carousel or viral text post.<br><strong>Want authority and trust?</strong> Carousel or video.<br><strong>Want comments and engagement?</strong> Text post or question post.<br><strong>Want to convert warm leads?</strong> Video — they need to see you.<br>Stop asking "what's best." Start asking "what's best for this goal?"</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: The Mix -->
+  <div class="slide format-slide" id="slide-6">
+    <div class="left-bar gold"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge gold">The Winning Mix</div>
+      <div class="f-title">Don't pick one.<br>Combine all three.</div>
+      <div class="f-tagline">A balanced format strategy compounds faster than any single format.</div>
+      <div class="f-divider"></div>
+      <p class="f-body">The creators growing fastest in 2025 use all three formats — strategically. The optimal weekly mix: <strong>2 text posts (fast, high comments) + 1 carousel (deep reach, authority) + 1 video (trust, conversion).</strong><br>This covers reach, authority, engagement, and conversion in one week. It serves different parts of your audience's preference. It maximizes algorithm diversity.</p>
+      <div class="f-stats">
+        <div class="f-stat"><div class="f-stat-num">2×</div><div class="f-stat-desc">Text posts/week</div></div>
+        <div class="f-stat"><div class="f-stat-num">1×</div><div class="f-stat-desc">Carousel/week</div></div>
+        <div class="f-stat"><div class="f-stat-num">1×</div><div class="f-stat-desc">Video/week</div></div>
+      </div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: COMPARISON TABLE -->
+  <div class="slide" id="slide-7">
+    <div class="cmp-inner">
+      <div class="cmp-eyebrow">Format Scorecard</div>
+      <h2 class="cmp-title">The complete comparison — at a glance</h2>
+      <div class="cmp-table">
+        <div class="cmp-header label">Metric</div>
+        <div class="cmp-header carousel">⧉ Carousel</div>
+        <div class="cmp-header video">▶ Video</div>
+        <div class="cmp-header text">≡ Text Post</div>
+
+        <div class="cmp-row-label">Algorithmic Reach</div>
+        <div class="cmp-cell best">Highest</div>
+        <div class="cmp-cell mid">Medium</div>
+        <div class="cmp-cell mid">Medium</div>
+
+        <div class="cmp-row-label">Trust Building</div>
+        <div class="cmp-cell mid">High</div>
+        <div class="cmp-cell best">Highest</div>
+        <div class="cmp-cell low">Lower</div>
+
+        <div class="cmp-row-label">Comment Rate</div>
+        <div class="cmp-cell mid">Medium</div>
+        <div class="cmp-cell mid">Medium</div>
+        <div class="cmp-cell best">Highest</div>
+
+        <div class="cmp-row-label">Production Time</div>
+        <div class="cmp-cell mid">1–2 hours</div>
+        <div class="cmp-cell low">2–4 hours</div>
+        <div class="cmp-cell best">20–30 min</div>
+
+        <div class="cmp-row-label">Save Rate</div>
+        <div class="cmp-cell best">Highest</div>
+        <div class="cmp-cell low">Low</div>
+        <div class="cmp-cell low">Low</div>
+
+        <div class="cmp-row-label">Client Conversion</div>
+        <div class="cmp-cell mid">High</div>
+        <div class="cmp-cell best">Highest</div>
+        <div class="cmp-cell mid">Medium</div>
+      </div>
+      <div class="cmp-note"><strong>No single format wins everything.</strong> Use all three strategically based on your goal for each piece of content.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-028.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

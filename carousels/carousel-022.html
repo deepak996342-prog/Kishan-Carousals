@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 022 — How to Write LinkedIn Headlines That Get Clicked | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-022-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- SLIDE 1: HOOK -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Profile</div>
+      <h1 class="headline">Your headline is a<br><span class="accent">220-character</span><br>billboard.<br>Is yours wasting it?</h1>
+      <p class="sub-deck">5 proven headline formulas that attract ideal clients — and the 3 mistakes killing your discoverability right now.</p>
+    </div>
+    <div class="char-badge">
+      <div class="char-box">
+        <span class="cb-num">220</span>
+        <span class="cb-label">Characters</span>
+      </div>
+      <div class="char-box gold">
+        <span class="cb-num">5×</span>
+        <span class="cb-label">More Views</span>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar">
+      <div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div>
+      <span class="brand-url">linkedin.com/in/kishan-kr-soni</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Formula 01 -->
+  <div class="slide formula-slide" id="slide-2">
+    <div class="side-bar"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge">Formula 01</div>
+      <div class="f-title">Who + What + Outcome</div>
+      <div class="f-formula-box">[Who you help] → [What you do] → [Result they get]</div>
+      <p class="f-body">This is the most client-attractive headline structure. It answers the 3 questions every ideal client silently asks when they land on your profile.<br><strong>No jargon. No titles. Just clarity.</strong></p>
+      <div class="f-example"><span>I help SaaS founders turn content into inbound leads — without paid ads.</span></div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 3: Formula 02 -->
+  <div class="slide formula-slide" id="slide-3">
+    <div class="side-bar gold"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge gold">Formula 02</div>
+      <div class="f-title">The Problem–Solver Headline</div>
+      <div class="f-formula-box gold">Helping [audience] stop [painful problem] and start [desired outcome]</div>
+      <p class="f-body">Lead with the pain. People scroll until something mirrors their own frustration. <strong>When they see their problem named exactly, they stop and read everything.</strong> This is the most emotionally magnetic formula.</p>
+      <div class="f-example"><span>Helping consultants stop trading time for money and start scaling with content.</span></div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 4: Formula 03 -->
+  <div class="slide formula-slide" id="slide-4">
+    <div class="side-bar"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge">Formula 03</div>
+      <div class="f-title">The Credibility Headline</div>
+      <div class="f-formula-box">[Proof point] · [What you do] · [Who you serve]</div>
+      <p class="f-body">If you have social proof — awards, results, recognizable clients — lead with it. <strong>Credibility signals earn trust before a single word of your content is read.</strong> Don't hide your wins. Wear them in your headline.</p>
+      <div class="f-example"><span>Ex-Google · Content Strategist · Helping B2B brands grow without ad spend</span></div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 5: Formula 04 -->
+  <div class="slide formula-slide" id="slide-5">
+    <div class="side-bar gold"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge gold">Formula 04</div>
+      <div class="f-title">The Niche Authority Headline</div>
+      <div class="f-formula-box gold">The go-to [role] for [hyper-specific niche]</div>
+      <p class="f-body">Niching your headline feels scary. It shouldn't. <strong>The more specific you get, the more searches you appear in — and the more qualified those searchers are.</strong> Generic headlines attract no one. Specific ones attract exactly the right person.</p>
+      <div class="f-example"><span>The go-to LinkedIn strategist for coaches doing $10K–$50K/month</span></div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 6: Formula 05 / What NOT to Write -->
+  <div class="slide formula-slide" id="slide-6">
+    <div class="side-bar"></div>
+    <div class="corner-glow"></div>
+    <div class="f-inner">
+      <div class="f-badge">Formula 05 · Avoid These</div>
+      <div class="f-title">3 Headline Mistakes<br>Killing Your Reach</div>
+      <div class="f-formula-box" style="color:var(--muted); border-left-color: #EF4444;">Mistake 1: "CEO | Founder | Entrepreneur" — says nothing.</div>
+      <div class="f-formula-box" style="color:var(--muted); border-left-color: #EF4444; margin-top:12px;">Mistake 2: "Helping people live their best life" — too vague.</div>
+      <div class="f-formula-box" style="color:var(--muted); border-left-color: #EF4444; margin-top:12px;">Mistake 3: Just your job title — no one searches that.</div>
+      <p class="f-body" style="margin-top:20px;"><strong>Your headline isn't your job title.</strong> It's your sales pitch. It's your SEO tag. Treat it like a billboard that costs you real money — because wasting it does.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 7: BEFORE / AFTER -->
+  <div class="slide" id="slide-7">
+    <div class="ba-inner">
+      <div class="ba-eyebrow">Real-World Rewrites</div>
+      <h2 class="ba-title">Same person. Totally different results.</h2>
+      <div class="ba-row">
+        <div class="ba-col bad">
+          <div class="ba-label bad">✕ Before</div>
+          <div class="ba-text">Marketing Manager | Digital Enthusiast | MBA Graduate</div>
+        </div>
+        <div class="ba-col good">
+          <div class="ba-label good">✓ After</div>
+          <div class="ba-text">I help e-commerce brands grow 3× faster with organic LinkedIn content.</div>
+        </div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-col bad">
+          <div class="ba-label bad">✕ Before</div>
+          <div class="ba-text">Business Coach | Speaker | Helping people unlock their potential</div>
+        </div>
+        <div class="ba-col good">
+          <div class="ba-label good">✓ After</div>
+          <div class="ba-text">Business coach for 6-figure consultants ready to stop trading time for money.</div>
+        </div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-col bad">
+          <div class="ba-label bad">✕ Before</div>
+          <div class="ba-text">Freelance Writer | Content Creator | Storyteller</div>
+        </div>
+        <div class="ba-col good">
+          <div class="ba-label good">✓ After</div>
+          <div class="ba-text">B2B SaaS copywriter who writes content that books demos, not just gets likes.</div>
+        </div>
+      </div>
+      <div class="ba-note">One rewrite. <strong>Same skills. Completely different client quality.</strong> Your headline is doing the hiring — or costing you it.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- SLIDE 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-022.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
