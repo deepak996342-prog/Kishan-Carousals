@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 037 — The 10 LinkedIn Hook Formulas That Stop the Scroll | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-037-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Hook Formulas</div>
+      <h1 class="headline">The first line of<br>your post decides<br><span class="accent">everything.</span><br>Here are 10 formulas.</h1>
+      <p class="sub-deck">Most posts die in the first sentence. These 10 proven hook formulas stop the scroll and force the click every time.</p>
+    </div>
+    <div class="hook-rings">
+      <div class="ring r4"></div>
+      <div class="ring r3"></div>
+      <div class="ring r2"></div>
+      <div class="ring r1">10<br>HOOKS</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2: Formulas 1-2 -->
+  <div class="slide hk-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Formulas 01–02 · Number + Contrarian</div>
+      <div class="a-title">Lead with a number.<br>Or challenge a belief.</div>
+      <div class="a-sub">The two most reliable scroll-stoppers in the LinkedIn playbook.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Formula 1 — The Number Hook:</strong> Specific numbers trigger curiosity. The brain wants to know what the list contains before committing to reading.<br><br><strong>Formula 2 — The Contrarian Hook:</strong> Challenge a widely-held belief and you immediately create tension. Tension demands resolution. Resolution requires reading on.</p>
+      <div class="hook-example">
+        <div class="he-label">Formula 1 Example</div>
+        <div class="he-text"><strong>"7 LinkedIn mistakes that cost me 3,000 followers in a single month."</strong></div>
+      </div>
+      <div class="hook-example" style="margin-top:10px;">
+        <div class="he-label">Formula 2 Example</div>
+        <div class="he-text"><strong>"Posting every day is the worst thing you can do for your LinkedIn growth."</strong></div>
+      </div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3: Formulas 3-4 -->
+  <div class="slide hk-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Formulas 03–04 · Question + Bold Claim</div>
+      <div class="a-title">Ask the question<br>they're already asking.</div>
+      <div class="a-sub">Or make a claim so bold they can't scroll past it without knowing if it's true.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Formula 3 — The Question Hook:</strong> Use the exact question your ideal reader is already asking themselves. Mirror their internal dialogue and they feel like you're reading their mind.<br><br><strong>Formula 4 — The Bold Claim Hook:</strong> State something that sounds impossible or extreme — but that you can back up. The bigger the claim, the higher the scroll-stopping power.</p>
+      <div class="hook-example">
+        <div class="he-label">Formula 3 Example</div>
+        <div class="he-text"><strong>"Why do some LinkedIn creators get 50K views on a simple text post while yours gets 200?"</strong></div>
+      </div>
+      <div class="hook-example" style="margin-top:10px;">
+        <div class="he-label">Formula 4 Example</div>
+        <div class="he-text"><strong>"I booked 14 clients in 30 days without a single cold outreach message."</strong></div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4: Formulas 5-6 -->
+  <div class="slide hk-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Formulas 05–06 · Failure + Result Reveal</div>
+      <div class="a-title">Admit the failure.<br>Or tease the result.</div>
+      <div class="a-sub">Vulnerability and curiosity gaps are two of the most powerful hooks in existence.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Formula 5 — The Failure Hook:</strong> Admitting a public mistake or failure instantly creates relatability and trust. Nobody can resist learning what went wrong — and more importantly, how you recovered.<br><br><strong>Formula 6 — The Result Reveal Hook:</strong> State the end result first. The reader is immediately asking "how?" — and they have to read to find out.</p>
+      <div class="hook-example">
+        <div class="he-label">Formula 5 Example</div>
+        <div class="he-text"><strong>"I spent £12,000 on LinkedIn ads and got zero clients. Here's what I learned."</strong></div>
+      </div>
+      <div class="hook-example" style="margin-top:10px;">
+        <div class="he-label">Formula 6 Example</div>
+        <div class="he-text"><strong>"This one carousel post generated £45K in new business. Here's exactly why it worked."</strong></div>
+      </div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5: Formulas 7-8 -->
+  <div class="slide hk-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Formulas 07–08 · Time Frame + If-Then</div>
+      <div class="a-title">Compress time.<br>Or create a condition.</div>
+      <div class="a-sub">Speed creates urgency. Conditional statements create personalisation.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Formula 7 — The Time Frame Hook:</strong> Compressing a transformation into a specific timeframe makes results feel concrete and achievable. It also signals efficiency — you'll help them get there faster.<br><br><strong>Formula 8 — The If-Then Hook:</strong> This hook self-selects your ideal reader. "If you [specific situation]..." immediately filters who reads on — and those who do are highly qualified.</p>
+      <div class="hook-example">
+        <div class="he-label">Formula 7 Example</div>
+        <div class="he-text"><strong>"In 90 days, I went from 800 to 12,000 LinkedIn followers. Here's the exact system."</strong></div>
+      </div>
+      <div class="hook-example" style="margin-top:10px;">
+        <div class="he-label">Formula 8 Example</div>
+        <div class="he-text"><strong>"If you're posting consistently on LinkedIn but not generating leads, read this."</strong></div>
+      </div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6: Formulas 9-10 -->
+  <div class="slide hk-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Formulas 09–10 · List Hook + Confession</div>
+      <div class="a-title">Promise a list.<br>Or confess something real.</div>
+      <div class="a-sub">Lists promise structured value. Confessions create authentic connection.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Formula 9 — The List Hook:</strong> Promising a list creates an open loop. The reader's brain immediately wants to know all the items. It's one of the oldest and most reliable hooks in content history — because it works.<br><br><strong>Formula 10 — The Confession Hook:</strong> "I used to think X. I was wrong." This opens with intellectual honesty and a reversal. People are wired to follow along when someone publicly changes their mind based on evidence.</p>
+      <div class="hook-example">
+        <div class="he-label">Formula 9 Example</div>
+        <div class="he-text"><strong>"10 things every LinkedIn creator should stop doing immediately (most do 6+ of these)."</strong></div>
+      </div>
+      <div class="hook-example" style="margin-top:10px;">
+        <div class="he-label">Formula 10 Example</div>
+        <div class="he-text"><strong>"I used to think follower count was everything. I was completely wrong — here's what actually matters."</strong></div>
+      </div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: 10 Hook Templates Reference Grid -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Quick Reference</div>
+      <h2 class="s7-ti">10 hook formulas — save this and use it every time you write</h2>
+      <div class="hook-ref-grid">
+        <div class="hook-ref"><div class="hr-num">01</div><div class="hr-body"><strong>Number Hook</strong> — "[X] things/reasons/mistakes that..."</div></div>
+        <div class="hook-ref"><div class="hr-num">02</div><div class="hr-body"><strong>Contrarian</strong> — "Everyone says [X]. They're wrong."</div></div>
+        <div class="hook-ref"><div class="hr-num">03</div><div class="hr-body"><strong>Question</strong> — "Why does [pain point] happen to you but not them?"</div></div>
+        <div class="hook-ref"><div class="hr-num">04</div><div class="hr-body"><strong>Bold Claim</strong> — "I [extreme result] without [expected method]."</div></div>
+        <div class="hook-ref"><div class="hr-num">05</div><div class="hr-body"><strong>Failure</strong> — "I [failed publicly]. Here's what I learned."</div></div>
+        <div class="hook-ref"><div class="hr-num">06</div><div class="hr-body"><strong>Result Reveal</strong> — "[Big result]. Here's exactly how."</div></div>
+        <div class="hook-ref"><div class="hr-num">07</div><div class="hr-body"><strong>Time Frame</strong> — "In [X days], I went from [A] to [B]."</div></div>
+        <div class="hook-ref"><div class="hr-num">08</div><div class="hr-body"><strong>If-Then</strong> — "If you [specific situation], read this."</div></div>
+        <div class="hook-ref"><div class="hr-num">09</div><div class="hr-body"><strong>List Hook</strong> — "[X] things [specific person] must stop doing."</div></div>
+        <div class="hook-ref"><div class="hr-num">10</div><div class="hr-body"><strong>Confession</strong> — "I used to believe [X]. I was completely wrong."</div></div>
+      </div>
+      <div class="s7-note"><strong>Rule:</strong> Write 5 different hooks before choosing one. The first is almost never the best.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your<br>content hooks.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll review your last 10 posts and rewrite your hooks live so you can see exactly what's possible.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-037.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
