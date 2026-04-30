@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 031 — How to Write a LinkedIn Post That Goes Viral | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-031-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Viral Content</div>
+      <h1 class="headline">Viral posts aren't<br>luck. They follow<br>a <span class="accent">repeatable</span><br>pattern.</h1>
+      <p class="sub-deck">5 elements every high-reach LinkedIn post has in common — and how to engineer them deliberately into your next post.</p>
+    </div>
+    <div class="spark-col">
+      <div class="spark-tag">Strong Hook</div>
+      <div class="spark-tag gold">Emotional Trigger</div>
+      <div class="spark-tag">Clear Insight</div>
+      <div class="spark-tag gold">Shareability</div>
+      <div class="spark-tag">Bold CTA</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide v-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="vi">
+      <div class="v-badge">Element 01</div>
+      <div class="v-title">A hook that creates<br>an unfinished loop.</div>
+      <div class="v-sub">The brain hates open loops. Use that.</div>
+      <div class="v-divider"></div>
+      <p class="v-body">The most-shared posts open a question or tension in line 1 that the reader desperately wants to resolve. <strong>"I was about to quit LinkedIn. Then this happened."</strong> You cannot scroll past that. The brain demands closure — and clicking "see more" is how it gets it.<br>Your hook should promise a payoff. Then deliver.</p>
+      <div class="v-box">Test: Cover your post after line 1. Does the reader <strong>need</strong> to know what comes next? If not, rewrite the first line.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide v-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="vi">
+      <div class="v-badge gold">Element 02</div>
+      <div class="v-title">Emotional truth<br>over polished advice.</div>
+      <div class="v-sub">People share what makes them feel something.</div>
+      <div class="v-divider"></div>
+      <p class="v-body">The highest-shared posts aren't the most technically correct. They're the most emotionally accurate. <strong>When someone reads your post and thinks "this is exactly how I feel" — that's the share trigger.</strong><br>Vulnerability, frustration, surprise, pride, and humour are the emotions that spread. Tips don't spread. Feelings do.</p>
+      <div class="v-box"><strong>Ask yourself:</strong> What would someone feel reading this? If the answer is "nothing in particular" — rewrite with emotional honesty.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide v-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="vi">
+      <div class="v-badge">Element 03</div>
+      <div class="v-title">One sharp, specific<br>insight — not five.</div>
+      <div class="v-sub">Depth beats breadth every time.</div>
+      <div class="v-divider"></div>
+      <p class="v-body">The instinct when writing is to share everything you know. Resist it. <strong>A post that makes one point with total conviction and clarity outperforms a list of ten shallow tips.</strong><br>Your reader should finish your post with one idea lodged in their brain. If they finish with ten semi-ideas, they remember zero. Go deep, not wide. One knife, not a handful of spoons.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide v-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="vi">
+      <div class="v-badge gold">Element 04</div>
+      <div class="v-title">Write to be shared<br>by a specific person.</div>
+      <div class="v-sub">Who would tag someone in this? Write for them.</div>
+      <div class="v-divider"></div>
+      <p class="v-body">Before writing, ask: "Who would share this and who would they tag?" <strong>The best viral posts are written for the person who reads it AND the person they'll send it to.</strong><br>"Tag a founder who needs to read this." That's not an accident — it's architecture. Write so specifically that someone feels the urge to forward it to someone who needs it right now.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide v-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="vi">
+      <div class="v-badge">Element 05</div>
+      <div class="v-title">Post when your<br>audience is active.</div>
+      <div class="v-sub">Timing amplifies content. Don't waste it.</div>
+      <div class="v-divider"></div>
+      <p class="v-body">A great post at 11pm on Sunday is dead content. <strong>The LinkedIn algorithm measures early engagement velocity.</strong> If your first hour generates 10 comments, the algorithm shows it to 5× more people. If it gets 0, it stops.<br>Best windows: Tuesday–Thursday, 7–9am or 12–2pm (your audience's timezone). Post, then spend 30 minutes replying to every comment immediately.</p>
+      <div class="v-box"><strong>The first 60 minutes matter most.</strong> Be available. Reply fast. Fuel the algorithm with your own engagement.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Viral Post Checklist</div>
+      <h2 class="s7-ti">4 ingredients every high-reach post shares</h2>
+      <div class="viral-grid">
+        <div class="vg-card c1">
+          <div class="vg-label v">Hook</div>
+          <div class="vg-title">Open Loop First Line</div>
+          <div class="vg-desc">Creates tension. Forces the "see more" click. Promises a payoff the reader must have.</div>
+        </div>
+        <div class="vg-card c2">
+          <div class="vg-label g">Emotion</div>
+          <div class="vg-title">Emotional Resonance</div>
+          <div class="vg-desc">Makes the reader feel seen, surprised, or inspired. Feelings drive shares, not information.</div>
+        </div>
+        <div class="vg-card c3">
+          <div class="vg-label r">Insight</div>
+          <div class="vg-title">One Sharp Takeaway</div>
+          <div class="vg-desc">One idea, stated with conviction. Shallow breadth is forgettable. Deep specificity sticks.</div>
+        </div>
+        <div class="vg-card c4">
+          <div class="vg-label gr">Timing</div>
+          <div class="vg-title">Peak Window + Active Reply</div>
+          <div class="vg-desc">Post Tue–Thu 7–9am. Spend the first hour replying to fuel the algorithm's amplification.</div>
+        </div>
+      </div>
+      <div class="s7-note">Viral posts aren't lucky. They're <strong>engineered.</strong> Run this checklist before you hit publish every time.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-031.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
