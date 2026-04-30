@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 034 — The Art of the LinkedIn DM: From Cold to Closed | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-034-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn DMs</div>
+      <h1 class="headline">Cold DMs get<br>ignored. <span class="accent">Warm DMs</span><br>book calls.<br>Here's why.</h1>
+      <p class="sub-deck">The difference between a DM that converts and one that gets deleted is a 5-step sequence most people skip entirely.</p>
+    </div>
+    <div class="dm-rings">
+      <div class="ring r4"></div>
+      <div class="ring r3"></div>
+      <div class="ring r2"></div>
+      <div class="ring r1">5<br>STEPS</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2: Step 1 — Warm Up First -->
+  <div class="slide dm-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Step 01 · Warm Up First</div>
+      <div class="a-title">Engage before<br>you ever send a message.</div>
+      <div class="a-sub">Cold outreach fails because it skips the relationship stage.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Before you DM anyone, spend <strong>1–2 weeks engaging with their content</strong> — genuinely. Leave thoughtful comments. Agree, push back, add insight. Like their posts. React to their updates.<br><br>When your name keeps appearing in their notifications, you're no longer a stranger. You're a familiar presence. That shift — from cold to warm — is the only thing that makes a DM feel welcome instead of intrusive.</p>
+      <div class="a-box"><strong>Rule:</strong> Never send a DM to someone whose content you haven't engaged with at least 3 times in the past 14 days.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3: Step 2 — Opening Line -->
+  <div class="slide dm-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Step 02 · The Opening Line</div>
+      <div class="a-title">Never lead<br>with an offer.</div>
+      <div class="a-sub">The first message sets the entire tone of the relationship.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The worst DMs start with: "Hi, I noticed your profile and I'd love to tell you about my service…" This is transactional. It signals you want something from them before you've earned any goodwill.<br><br>Start with a <strong>genuine, specific reference</strong> to something they said or shared. "Your post on [topic] last week actually shifted how I think about [X]…" This shows you paid attention. It's rare. It gets read.</p>
+      <div class="a-box"><strong>Template:</strong> "Hey [Name] — your take on [specific post/idea] was genuinely interesting. Especially the part about [specific detail]."</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4: Step 3 — Curiosity Trigger -->
+  <div class="slide dm-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Step 03 · Curiosity Trigger</div>
+      <div class="a-title">Make them curious<br>enough to reply.</div>
+      <div class="a-sub">A great second message creates a knowledge gap they want closed.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Once they've replied to your opener, your next message should plant a curiosity seed — not deliver a pitch. Reference something you've observed about their situation or a question that implies you have relevant insight.<br><br><strong>"I've been thinking about what you said about [X]. I've seen this play out a certain way with a few founders I work with — curious if you've run into the same thing?"</strong><br><br>This invites dialogue. They engage to learn what you know. You're not selling — you're drawing them in.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5: Step 4 — Moving to Value -->
+  <div class="slide dm-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Step 04 · Moving to Value</div>
+      <div class="a-title">Give before<br>you ask for anything.</div>
+      <div class="a-sub">Value exchange is what separates conversations from transactions.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">By message 3–4, share something genuinely useful — a resource, a framework, an insight specific to their situation. Not a lead magnet. Not a free trial. A real, no-strings insight that helps them <strong>right now</strong>.<br><br>"Based on what you shared about [problem], here's what I've seen work consistently: [framework/insight]. Thought this might be useful for where you are right now."<br><br>This positions you as the expert who gives. Not the salesperson who takes.</p>
+      <div class="a-box"><strong>Rule:</strong> Give 2–3 rounds of genuine value before any soft ask. Trust is built in layers.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6: Step 5 — The Soft Ask -->
+  <div class="slide dm-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Step 05 · The Soft Ask</div>
+      <div class="a-title">Ask for a call,<br>not a commitment.</div>
+      <div class="a-sub">The goal of a DM is a conversation — not a closed deal.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When the conversation has warmed, make a low-friction ask. Not "let me show you my proposal." Not "I'd love to work with you." Instead: <strong>"Would it be useful to jump on a 20-minute call? I can walk you through exactly how I'd approach [their problem]."</strong><br><br>This is framed as value for them, not a sales call for you. It removes pressure. A soft ask at the right moment — after genuine engagement and value — converts at dramatically higher rates than any cold pitch.</p>
+      <div class="a-box"><strong>Key:</strong> The ask should feel like a natural next step in the conversation, not a sudden gear change.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: DM Flow Chart -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">DM Sequence Flow</div>
+      <h2 class="s7-ti">The 5-step warm DM system — from stranger to booked call</h2>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-connector"><div class="flow-num">1</div><div class="flow-line"></div></div>
+          <div class="flow-content"><div class="fc-title">Warm Up (Days 1–14)</div><div class="fc-desc">Engage with their content 3+ times — thoughtful comments, reactions, genuine interactions</div></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector"><div class="flow-num">2</div><div class="flow-line"></div></div>
+          <div class="flow-content"><div class="fc-title">The Opening Line (Message 1)</div><div class="fc-desc">Specific reference to something they posted — shows you paid real attention</div></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector"><div class="flow-num">3</div><div class="flow-line"></div></div>
+          <div class="flow-content"><div class="fc-title">Curiosity Trigger (Message 2)</div><div class="fc-desc">Ask a question that hints you have relevant insight — invite them to pull it out of you</div></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector"><div class="flow-num">4</div><div class="flow-line"></div></div>
+          <div class="flow-content"><div class="fc-title">Value Drop (Messages 3–4)</div><div class="fc-desc">Share a framework, insight or resource specific to their situation — no strings attached</div></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector"><div class="flow-num">5</div></div>
+          <div class="flow-content"><div class="fc-title">Soft Ask (Message 5)</div><div class="fc-desc">Invite a 20-min call framed as value for them, not a sales pitch for you</div></div>
+        </div>
+      </div>
+      <div class="s7-note">Warm DM conversion rate: <strong>12–25%</strong>. Cold DM conversion rate: <strong>1–3%</strong>. The warm-up phase is not optional.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your<br>LinkedIn outreach.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute DM Strategy Call — I'll review your current outreach approach and map the exact sequence that turns cold contacts into warm conversations.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-034.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
