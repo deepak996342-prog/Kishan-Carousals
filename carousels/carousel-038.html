@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 038 — LinkedIn for B2B: Turning Connections into Contracts | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-038-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn for B2B</div>
+      <h1 class="headline">B2B buyers make<br><span class="accent">57% of their</span><br>decision before<br>talking to sales.</h1>
+      <p class="sub-deck">LinkedIn is where that 57% happens. Here's how to be the obvious choice before they ever pick up the phone.</p>
+    </div>
+    <div class="b2b-rings">
+      <div class="ring r4"></div>
+      <div class="ring r3"></div>
+      <div class="ring r2"></div>
+      <div class="ring r1">B2B<br>WIN</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2: Decision Maker Content -->
+  <div class="slide b2b-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Strategy 01 · Decision Maker Content</div>
+      <div class="a-title">Write for the person<br>who signs the contract.</div>
+      <div class="a-sub">C-suite buyers read differently from practitioners — adjust your content accordingly.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most B2B content is written for practitioners — the people who use products. But <strong>decision makers read for strategic outcomes</strong>: revenue impact, risk reduction, competitive advantage, and team efficiency.<br><br>Reframe your content lens. Instead of "How to use [tool] better," write "Why [tool category] is becoming a strategic lever for growth-stage companies." Same expertise, radically different audience — and a much shorter path to the conversation that matters.</p>
+      <div class="a-box"><strong>Filter:</strong> Before posting, ask: "Would a CFO or COO find this useful?" If not, reframe it.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3: Case Study Posts -->
+  <div class="slide b2b-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Strategy 02 · Case Study Posts</div>
+      <div class="a-title">The content format<br>that converts best in B2B.</div>
+      <div class="a-sub">Before/after transformation posts build trust faster than any other format.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A case study post follows this structure: <strong>Situation → Problem → What we did → Measurable result</strong>. It's short (under 400 words), specific (real numbers), and ends with a takeaway applicable to similar companies.<br><br>This format works because it's proof wrapped in a story. Decision makers see themselves in the "before" and want the "after." It's not a pitch — it's a demonstration that you've solved the exact problem they're facing for someone just like them.</p>
+      <div class="a-box"><strong>Template:</strong> "A [industry] client came to us with [problem]. In [timeframe], we achieved [result] by doing [approach]. Here's what we learned."</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4: Building Pipeline Without Cold Calls -->
+  <div class="slide b2b-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Strategy 03 · Inbound Pipeline</div>
+      <div class="a-title">Build pipeline without<br>a single cold call.</div>
+      <div class="a-sub">Content that teaches attracts buyers who are already pre-sold.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The old B2B playbook: cold call, cold email, chase. The new playbook: <strong>publish insights that attract buyers who are already looking for what you offer</strong>.<br><br>When your content consistently answers the questions your buyers are Googling or thinking about, they find you — not the other way around. They arrive in your DMs with context, trust, and intent. These conversations close 3–5× faster than cold-sourced leads because the trust-building happened in public before the private conversation began.</p>
+      <div class="a-box"><strong>Shift:</strong> Every post you write is a pre-qualification tool. Write content that filters in your ideal buyer and filters out everyone else.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5: The Retargeting Effect -->
+  <div class="slide b2b-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Strategy 04 · The Retargeting Effect</div>
+      <div class="a-title">Show up in their feed<br>before they're ready to buy.</div>
+      <div class="a-sub">Consistent visibility creates familiarity — and familiarity drives preference.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">B2B purchase cycles are long — often 3–18 months. Decision makers are researching for months before they act. <strong>If you're consistently in their feed during that research phase, you become the default option</strong> when they're finally ready.<br><br>LinkedIn content acts as organic retargeting. Every post that surfaces in front of a potential buyer reinforces your expertise and keeps you top-of-mind. By the time they're ready to buy, they feel like they already know you — because in a sense, they do.</p>
+      <div class="a-box"><strong>Rule of 7:</strong> Decision makers typically need 7+ touchpoints with your brand before they take action. Consistent posting creates those touchpoints passively.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6: Converting Views to Booked Calls -->
+  <div class="slide b2b-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Strategy 05 · Converting to Calls</div>
+      <div class="a-title">Turn content views<br>into booked conversations.</div>
+      <div class="a-sub">Content builds trust. But you still have to make the ask.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Views and followers don't pay your bills. Conversations do. The bridge between content and revenue is an <strong>intentional conversion mechanism</strong> — a CTA, a DM follow-up to commenters, or a periodic offer in your content.<br><br>When someone engages with your content — likes it, comments, shares it — they've raised their hand. That's the moment to start a warm conversation. Not a pitch, but a genuine outreach based on their specific comment or reaction. This turns passive content reach into active pipeline.</p>
+      <div class="a-box"><strong>System:</strong> Review post engagers 24 hours after posting. Personally message 5–10 who fit your ICP. Reference their comment. Start a conversation.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: B2B Funnel with Metric Progress Bars -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">B2B LinkedIn Funnel</div>
+      <h2 class="s7-ti">From content view to signed contract — the metric benchmarks</h2>
+      <div class="funnel-list">
+        <div class="funnel-row">
+          <div class="funnel-top"><span class="funnel-label">Content Impressions</span><span class="funnel-stat">100% of reach</span></div>
+          <div class="funnel-bar-track"><div class="funnel-bar-fill" style="width:100%"></div></div>
+          <div class="funnel-desc">Decision makers see your post in their feed — the top of your B2B funnel</div>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-top"><span class="funnel-label">Post Engagements</span><span class="funnel-stat">~8–12% of views</span></div>
+          <div class="funnel-bar-track"><div class="funnel-bar-fill" style="width:75%"></div></div>
+          <div class="funnel-desc">Likes, comments, reposts — signals of interest from potential buyers</div>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-top"><span class="funnel-label">Profile Visits</span><span class="funnel-stat">~3–5% of viewers</span></div>
+          <div class="funnel-bar-track"><div class="funnel-bar-fill" style="width:55%"></div></div>
+          <div class="funnel-desc">They're researching you — this is buying intent</div>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-top"><span class="funnel-label">DM / Inbound Enquiry</span><span class="funnel-stat">~1–2% of viewers</span></div>
+          <div class="funnel-bar-track"><div class="funnel-bar-fill" style="width:35%"></div></div>
+          <div class="funnel-desc">Warm, pre-sold leads who reach out based on your content</div>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-top"><span class="funnel-label">Discovery Call</span><span class="funnel-stat">~30–50% of DMs</span></div>
+          <div class="funnel-bar-track"><div class="funnel-bar-fill" style="width:20%"></div></div>
+          <div class="funnel-desc">High-intent conversation with a qualified decision maker</div>
+        </div>
+        <div class="funnel-row">
+          <div class="funnel-top"><span class="funnel-label">Signed Contract</span><span class="funnel-stat">~20–40% of calls</span></div>
+          <div class="funnel-bar-track"><div class="funnel-bar-fill" style="width:10%"></div></div>
+          <div class="funnel-desc">Closed deal — 3–5× faster than cold-sourced leads</div>
+        </div>
+      </div>
+      <div class="s7-note"><strong>Scale the top of the funnel</strong> with consistent content. The conversion rates compound over time.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your<br>B2B LinkedIn strategy.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute B2B Strategy Call — I'll map your content to your buyer journey and show you exactly where you're losing pipeline that content could be generating.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-038.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

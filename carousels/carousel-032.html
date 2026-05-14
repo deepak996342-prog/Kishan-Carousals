@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 032 — The LinkedIn Algorithm: How It Really Works | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-032-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Algorithm Decoded</div>
+      <h1 class="headline">Stop guessing<br>why your posts<br>die. Here's how<br>the <span class="accent">algorithm</span> works.</h1>
+      <p class="sub-deck">LinkedIn's algorithm isn't random. It follows a clear signal hierarchy — and once you know it, you can engineer reach deliberately.</p>
+    </div>
+    <div class="algo-rings">
+      <div class="ring r4"></div>
+      <div class="ring r3"></div>
+      <div class="ring r2"></div>
+      <div class="ring r1">ALGO</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide algo-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Phase 01 · The First Hour</div>
+      <div class="a-title">Your post gets tested<br>on a small audience first.</div>
+      <div class="a-sub">The algorithm runs a 60-minute experiment on every post.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When you publish, LinkedIn shows your post to a small slice of your connections — roughly 5–10%. It measures how they engage. <strong>High comments and reposts in the first hour = wide distribution. Low engagement = post suppressed.</strong><br>This is why the first 60 minutes are critical. Be present. Reply to every comment. The algorithm reads your replies as additional engagement signals.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide algo-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Phase 02 · Signal Hierarchy</div>
+      <div class="a-title">Not all engagement<br>signals are equal.</div>
+      <div class="a-sub">Comments > Reposts > Reactions > Views.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn weights engagement signals differently. <strong>Comments are the strongest signal.</strong> They indicate real attention. Reposts indicate strong value. Reactions are weak. Views barely count alone.<br>A post with 8 thoughtful comments will reach further than one with 80 likes. Engineer comments by asking questions, taking positions that invite response, and replying to keep threads alive.</p>
+      <div class="a-box"><strong>Hack:</strong> Ask a direct question at the end of every post. "What would you add?" generates 3× more comments than no CTA.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide algo-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Phase 03 · Dwell Time</div>
+      <div class="a-title">The algorithm measures<br>how long people read.</div>
+      <div class="a-sub">Dwell time is a massive hidden ranking signal.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn tracks how long someone pauses on your post before scrolling. <strong>Long-form text posts and carousels naturally create high dwell time.</strong> Videos require autoplay and sound-off compatibility to hold attention.<br>Write posts that take 30–60 seconds to read. Use line breaks to increase scroll time. Every second someone spends reading sends a positive signal.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide algo-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Phase 04 · Relevance Score</div>
+      <div class="a-title">The algorithm decides<br>who sees your post.</div>
+      <div class="a-sub">It shows your content to people most likely to engage.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn matches your post to people who have engaged with similar content before. <strong>If your audience engages consistently, the algorithm learns to show your content to more people like them.</strong><br>This means consistency trains the algorithm. The more consistently you post and engage, the more precisely LinkedIn knows your audience — and the better it places your content.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide algo-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">What Kills Reach</div>
+      <div class="a-title">3 things that suppress<br>your post immediately.</div>
+      <div class="a-sub">Avoid these — they signal low-quality content.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. External links in the post body.</strong> LinkedIn wants users to stay on platform. Links out = suppressed reach. Put links in the first comment instead.<br><strong>2. Posting and disappearing.</strong> If you don't engage in your own comment section, the algorithm reads this as low-value content.<br><strong>3. Buying likes or using engagement pods.</strong> LinkedIn's AI detects inauthentic patterns and quietly reduces organic reach.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Algorithm Signal Scorecard</div>
+      <h2 class="s7-ti">Ranked by reach impact — engineer these deliberately</h2>
+      <div class="signal-list">
+        <div class="signal-row">
+          <div class="signal-name">Comments (early)</div>
+          <div class="signal-bar-wrap"><div class="signal-bar s1"></div></div>
+          <div class="signal-weight high">Highest</div>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name">Reposts</div>
+          <div class="signal-bar-wrap"><div class="signal-bar s2"></div></div>
+          <div class="signal-weight high">Very High</div>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name">Dwell Time</div>
+          <div class="signal-bar-wrap"><div class="signal-bar s3"></div></div>
+          <div class="signal-weight med">High</div>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name">Your Replies</div>
+          <div class="signal-bar-wrap"><div class="signal-bar s4"></div></div>
+          <div class="signal-weight med">Medium</div>
+        </div>
+        <div class="signal-row">
+          <div class="signal-name">Likes / Reactions</div>
+          <div class="signal-bar-wrap"><div class="signal-bar s5"></div></div>
+          <div class="signal-weight">Low</div>
+        </div>
+      </div>
+      <div class="s7-note">The algorithm is not random. <strong>Engineer comments. Reply fast. Create dwell. Repeat consistently.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-032.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

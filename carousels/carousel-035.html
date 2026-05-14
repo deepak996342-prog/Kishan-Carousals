@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 035 — Content Repurposing: Turn 1 Idea into 10 Pieces of Content | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-035-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Content Repurposing</div>
+      <h1 class="headline">You don't need<br>more ideas.<br>Use the ones you<br>have <span class="accent">better.</span></h1>
+      <p class="sub-deck">One pillar piece of content can fuel 10+ formats across LinkedIn — if you know the repurposing system.</p>
+    </div>
+    <div class="rep-rings">
+      <div class="ring r4"></div>
+      <div class="ring r3"></div>
+      <div class="ring r2"></div>
+      <div class="ring r1">1→10</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2: Pillar Content -->
+  <div class="slide rep-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Foundation · Pillar Content</div>
+      <div class="a-title">Start with one deep,<br>comprehensive piece.</div>
+      <div class="a-sub">Everything else is derived from this single source of truth.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A pillar piece is your long-form anchor — a 2,000-word article, a 60-minute interview, a detailed case study, or an in-depth newsletter issue. It's the <strong>complete, expert-level treatment</strong> of a topic you know deeply.<br><br>This is not a LinkedIn post. It's the source material from which all your LinkedIn posts will be pulled. Think of it as the diamond — everything else you create is cut from it.</p>
+      <div class="a-box"><strong>Pillar Ideas:</strong> A client transformation story · Your complete framework · A step-by-step process · A contrarian take with full evidence</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3: Format 1 — Carousel -->
+  <div class="slide rep-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Format 01 · Carousel</div>
+      <div class="a-title">Break it into<br>a visual slide deck.</div>
+      <div class="a-sub">Carousels get 3× more reach than text posts — and save your content.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Take the key framework, process, or list from your pillar content and turn it into a carousel. Each slide = one idea. 8–12 slides is the sweet spot.<br><br>A carousel forces you to distil your thinking into clear, scannable visuals. The algorithm loves them because they generate <strong>high dwell time and swipe interactions</strong> — both of which signal quality content to LinkedIn's distribution engine.<br><br>One pillar piece can easily produce 2–3 different carousel angles.</p>
+      <div class="a-box"><strong>Extraction method:</strong> Pull the numbered list, the step-by-step process, or the comparison framework directly from your pillar content.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4: Format 2 — Text Post Threads -->
+  <div class="slide rep-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Format 02 · Text Post Threads</div>
+      <div class="a-title">Turn each section into<br>a standalone post.</div>
+      <div class="a-sub">A 5-section pillar article = 5 separate LinkedIn posts.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Every major section or insight from your pillar content can become a single LinkedIn text post. <strong>Reframe the angle</strong>, write a new hook, and let that one idea breathe on its own.<br><br>The pillar article on "5 reasons clients leave agencies" becomes 5 posts — one for each reason, each with a unique hook and angle. Posted across 5 weeks, that's an entire month of content from one article.<br><br>This is the fastest path to consistency without running out of ideas.</p>
+      <div class="a-box"><strong>Rule:</strong> Change the hook on every post. Same insight, fresh entry point. Your audience sees different angles, not repetition.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5: Format 3 — Short Video Clips -->
+  <div class="slide rep-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Format 03 · Short Video Clips</div>
+      <div class="a-title">Record yourself explaining<br>one insight. 90 seconds.</div>
+      <div class="a-sub">LinkedIn native video gets priority reach — and builds trust faster than text.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Pick one idea from your pillar content — the most surprising, contrarian, or actionable insight. Record a 60–90 second LinkedIn video where you explain it directly to camera.<br><br>No editing required. Phone, natural light, one clear point. Your face builds trust faster than any caption. Video also surfaces to people outside your network, giving you <strong>broader organic reach</strong> than text alone.<br><br>Post the video with the full explanation in the caption for the scrollers who don't watch.</p>
+      <div class="a-box"><strong>Format:</strong> State the insight in 10 seconds. Explain why in 40 seconds. Give the action step in 20 seconds. Done.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6: Format 4 — Polls + Stories -->
+  <div class="slide rep-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Format 04 · Polls + Stories</div>
+      <div class="a-title">Turn your insights into<br>questions for your audience.</div>
+      <div class="a-sub">Polls generate comments + data. Stories humanise your expertise.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">From your pillar content, extract a debatable question and turn it into a LinkedIn poll. "What's the #1 reason content strategies fail?" with 4 options from your article generates comments, data, and reach — while subtly positioning your expertise.<br><br>Meanwhile, extract the <strong>human story behind the insight</strong> — the client struggle, the mistake you made, the realisation moment — and write it as a personal narrative post. Story-driven posts are LinkedIn's highest-engagement format and require zero new ideas.</p>
+      <div class="a-box"><strong>Repurposing math:</strong> 1 pillar piece → 2 carousels + 5 text posts + 2 videos + 2 polls + 1 story = 12 pieces of content.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Repurposing Matrix -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Repurposing Matrix</div>
+      <h2 class="s7-ti">1 pillar piece → 10 content formats</h2>
+      <div class="matrix-grid">
+        <div class="matrix-cell source">
+          <div class="mc-label">Source (×1)</div>
+          <div class="mc-title">Pillar Content</div>
+          <div class="mc-items">Long article · Interview · Case study · Newsletter</div>
+        </div>
+        <div class="matrix-cell">
+          <div class="mc-label">Carousels (×2–3)</div>
+          <div class="mc-title">Visual Slide Decks</div>
+          <div class="mc-items">Framework · Step-by-step · Comparison · Checklist</div>
+        </div>
+        <div class="matrix-cell">
+          <div class="mc-label">Text Posts (×4–5)</div>
+          <div class="mc-title">Standalone Insights</div>
+          <div class="mc-items">One insight per post · New hook each time · Different angle</div>
+        </div>
+        <div class="matrix-cell">
+          <div class="mc-label">Video (×2)</div>
+          <div class="mc-title">Short-Form Clips</div>
+          <div class="mc-items">60–90 sec explainer · To-camera · One point only</div>
+        </div>
+        <div class="matrix-cell">
+          <div class="mc-label">Poll (×1–2)</div>
+          <div class="mc-title">Audience Questions</div>
+          <div class="mc-items">Debatable premise from your content · 4 options · Ask for comments</div>
+        </div>
+        <div class="matrix-cell">
+          <div class="mc-label">Story Post (×1)</div>
+          <div class="mc-title">Narrative Version</div>
+          <div class="mc-items">The human story behind the insight · Mistake → lesson → result</div>
+        </div>
+      </div>
+      <div class="s7-note">Create one pillar piece per month. <strong>Repurpose it across 4 weeks.</strong> Never run out of ideas again.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me build your<br>repurposing system.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll map your existing content into a repurposing engine that runs on autopilot.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-035.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
