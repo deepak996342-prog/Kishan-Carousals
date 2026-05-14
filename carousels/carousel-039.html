@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 039 — Why Most LinkedIn Strategies Fail | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-039-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Strategy Failures</div>
+      <h1 class="headline">You're doing everything<br>right. But LinkedIn<br>still isn't working.<br><span class="accent">Here's why.</span></h1>
+      <p class="sub-deck">5 reasons smart professionals get zero results on LinkedIn — and the specific fix for each one.</p>
+    </div>
+    <div class="fail-col">
+      <div class="fail-tag">Wrong audience</div>
+      <div class="fail-tag">No clear goal</div>
+      <div class="fail-tag">Inconsistent</div>
+      <div class="fail-tag">Vanity metrics</div>
+      <div class="fail-tag">No system</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide fl-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Failure 01</div>
+      <div class="a-title">Posting without a defined<br>target audience.</div>
+      <div class="a-sub">If you're talking to everyone, you're helping no one.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The most common LinkedIn failure is writing generic content that could apply to anyone. <strong>When your post could be shared by a solopreneur, a corporate manager, or a university student — it's useful to no one specifically enough to share.</strong><br>The fix: define one ideal reader. Write every post as if they're the only person reading. Your reach will shrink initially. Your relevance will explode.</p>
+      <div class="a-box"><strong>The fix:</strong> Write your ideal client's job title, company size, and biggest frustration at the top of every post draft. Write to that person only.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide fl-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Failure 02</div>
+      <div class="a-title">Measuring vanity metrics<br>instead of business outcomes.</div>
+      <div class="a-sub">Impressions don't pay invoices. Clients do.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">If your measure of LinkedIn success is views and likes, you'll optimise for viral posts that attract no clients. <strong>The metrics that matter: DMs from ideal prospects, calls booked, clients acquired, referrals received.</strong><br>A post with 200 views and 3 discovery calls outperforms a post with 20,000 views and zero conversations every single time. Track what moves your business, not your ego.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide fl-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Failure 03</div>
+      <div class="a-title">Giving up after 30 days<br>of low results.</div>
+      <div class="a-sub">LinkedIn is a 6-month investment, not a 30-day experiment.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most people quit LinkedIn right before it would have started working. <strong>The algorithm needs 3 months of consistent content to learn who you are. Your audience needs 60–90 days of seeing you to begin trusting you.</strong><br>The professionals who dominate LinkedIn aren't more talented than those who quit — they simply stayed longer. Consistency is the only moat that most people refuse to build.</p>
+      <div class="a-box"><strong>The fix:</strong> Commit to 6 months before making any judgment. Define "working" as DMs and conversations, not follower counts.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide fl-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Failure 04</div>
+      <div class="a-title">Copying what works for others<br>without adapting it.</div>
+      <div class="a-sub">Their audience isn't your audience. Their strategy isn't your strategy.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When you see a creator getting 50,000 views, the temptation is to copy their style, format, and topics. But their results come from years of audience trust-building that you haven't done yet. <strong>You can borrow the principle, but you can't copy the result.</strong><br>Learn from what works for others — then adapt it to your specific niche, voice, and audience. The principle scales. The execution must be original.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide fl-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Failure 05</div>
+      <div class="a-title">Creating content without<br>a system to sustain it.</div>
+      <div class="a-sub">Inspiration runs out. Systems don't.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Posting when you feel inspired leads to 3 days of posting followed by 2-week gaps. <strong>Inconsistency is invisible. Your audience forgets you exist. The algorithm stops amplifying your content.</strong><br>Build a content system: a fixed time each week for writing, a bank of ideas you replenish regularly, and batches of posts written in advance. The best LinkedIn creators aren't more inspired — they're more systematic.</p>
+      <div class="a-box"><strong>The fix:</strong> Block 2 hours every Monday to write and schedule 3–4 posts for the week. Treat it like a client meeting — non-negotiable.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">The Fix Framework</div>
+      <h2 class="s7-ti">5 failures → 5 fixes that change everything</h2>
+      <div class="fix-table">
+        <div class="fix-row">
+          <div class="fix-fail"><div class="fix-label fail">Failure</div><div class="fix-text">No defined target audience</div></div>
+          <div class="fix-sol"><div class="fix-label fix">Fix</div><div class="fix-text">Write for ONE specific ICP. Reject generic content.</div></div>
+        </div>
+        <div class="fix-row">
+          <div class="fix-fail"><div class="fix-label fail">Failure</div><div class="fix-text">Tracking views and likes only</div></div>
+          <div class="fix-sol"><div class="fix-label fix">Fix</div><div class="fix-text">Track DMs, calls booked, and clients acquired.</div></div>
+        </div>
+        <div class="fix-row">
+          <div class="fix-fail"><div class="fix-label fail">Failure</div><div class="fix-text">Quitting after 30 days</div></div>
+          <div class="fix-sol"><div class="fix-label fix">Fix</div><div class="fix-text">Commit 6 months minimum before evaluating results.</div></div>
+        </div>
+        <div class="fix-row">
+          <div class="fix-fail"><div class="fix-label fail">Failure</div><div class="fix-text">Copying others' tactics directly</div></div>
+          <div class="fix-sol"><div class="fix-label fix">Fix</div><div class="fix-text">Learn the principle. Apply it in your own voice.</div></div>
+        </div>
+        <div class="fix-row">
+          <div class="fix-fail"><div class="fix-label fail">Failure</div><div class="fix-text">No content creation system</div></div>
+          <div class="fix-sol"><div class="fix-label fix">Fix</div><div class="fix-text">Weekly content block + idea bank + batched writing.</div></div>
+        </div>
+      </div>
+      <div class="s7-note">LinkedIn failure is almost never about talent. It's about <strong>missing the right inputs, not the right luck.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-039.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
