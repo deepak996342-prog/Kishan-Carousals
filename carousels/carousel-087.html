@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 087 — Retainer Clients: Building Predictable Monthly Revenue | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-087-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Retainer Model</div>
+      <h1 class="headline">Project-based income is<br>unpredictable. Here's<br>how retainers build<br><span class="accent">guaranteed monthly revenue.</span></h1>
+      <p class="sub-deck">The retainer model for service businesses — how to structure, price, and sell ongoing engagements.</p>
+    </div>
+    <div class="touch-stack">
+      <div class="touch-box">£2K/month</div>
+      <div class="touch-box" style="border-color:rgba(245,158,11,0.35);color:var(--gold)">£4K/month</div>
+      <div class="touch-box">£8K/month</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Business Shift</div>
+      <div class="a-title">Why retainers change the<br>fundamentals of a service business.</div>
+      <div class="a-sub">Predictable revenue changes how you plan, invest, and operate.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Project revenue: inconsistent, feast-or-famine, constant new client acquisition required. Retainer revenue: predictable, compounding, client relationship deepens over time.<br><br><strong>Three £2,000/month retainers = £6,000 guaranteed before the month starts.</strong><br><br>The psychological shift: knowing next month's revenue is secured changes everything. You stop chasing. You start building.</p>
+      <div class="a-box"><strong>The compounding effect:</strong> Each month of a retainer, the client knows more about what works. Your efficiency improves. Their results improve. Both sides win more over time.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Retainer Structure</div>
+      <div class="a-title">What to include in a retainer —<br>the recurring value principle.</div>
+      <div class="a-sub">Retainers work when scope is clear and value is ongoing.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Best retainer structures for content professionals: <strong>Ongoing content strategy</strong> (monthly planning + creation + distribution). <strong>Advisory/fractional CMO</strong> (monthly strategy calls + guidance). <strong>Performance optimisation</strong> (monthly review + content updates + A/B testing).<br><br>The key: recurring deliverables that deliver recurring value. If the client can't point to what they received each month, the retainer won't survive month 4.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Pricing</div>
+      <div class="a-title">Pricing your retainer —<br>the monthly value approach.</div>
+      <div class="a-sub">Price by monthly value delivered, not hours spent.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Don't price by hours. Price by monthly value delivered.<br><br>Ask: what's the minimum monthly outcome this client needs to justify the investment? If one new client from your work is worth £5,000: <strong>a £2,000 retainer = 2.5x monthly ROI minimum. A £3,500 retainer = 1.4x ROI.</strong><br><br>Let the client's value metric set your floor, not your hours. Hours are an input. Value is an outcome. Clients pay for outcomes.</p>
+      <div class="a-box"><strong>The pricing formula:</strong> Minimum monthly client value ÷ 3 = your floor retainer price. Price above your floor. Never below it.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Transition</div>
+      <div class="a-title">The retainer conversation —<br>transitioning project clients.</div>
+      <div class="a-sub">The best time: immediately after strong project results.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'I noticed [result you just delivered]. I offer an ongoing arrangement where we [description of retainer]. Clients in similar situations typically see [6-month outcome]. <strong>Would you like me to put together what that would look like for your business?'</strong><br><br>Frame as a natural extension, not a new pitch. The project proved capability. The retainer locks in continued results. You're offering them the guarantee, not just the service.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Retention</div>
+      <div class="a-title">Retainer retention —<br>keeping clients for 12+ months.</div>
+      <div class="a-sub">The enemy of retainer longevity: invisible value.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">If clients can't see what they're getting month by month, they cancel. <strong>Monthly reporting is non-negotiable</strong>: 'Here's what we did, what it achieved, what we're doing next month.'<br><br>Monthly 30-minute strategy calls. Unexpected value: surprise them with something they didn't ask for. <strong>Visible value creates long-term retainers.</strong><br><br>The clients who cancel aren't unhappy — they're just unsure it's still working. Make it impossible to be unsure.</p>
+      <div class="a-box"><strong>The retention formula:</strong> Monthly report + strategy call + one unexpected value item. Clients who receive all three renew at 85%+ rates.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Retainer Revenue Model</div>
+      <h2 class="s7-ti">What different retainer scenarios produce annually</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Retainer Count</th>
+            <th>Monthly Rate</th>
+            <th>Monthly MRR</th>
+            <th>Annual Revenue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Entry</td>
+            <td>3 retainers</td>
+            <td>£2,000/month</td>
+            <td>£6,000</td>
+            <td><strong>£72,000</strong></td>
+          </tr>
+          <tr>
+            <td>Growth</td>
+            <td>4 retainers</td>
+            <td>£3,000/month</td>
+            <td>£12,000</td>
+            <td><strong>£144,000</strong></td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>3 retainers</td>
+            <td>£5,000/month</td>
+            <td>£15,000</td>
+            <td><strong>£180,000</strong></td>
+          </tr>
+          <tr>
+            <td>Elite</td>
+            <td>2 retainers</td>
+            <td>£8,000/month</td>
+            <td>£16,000</td>
+            <td><strong>£192,000</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Three clients at £4,000/month beats ten clients at £1,200/month. <strong>Fewer, deeper relationships outperform volume every time.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-087.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

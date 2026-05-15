@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 100 — Building a Content Business with AI: The Complete Blueprint | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-100-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>AI Content Business</div>
+      <h1 class="headline">A content-led business<br>that generates clients<br>while you sleep.<br><span class="accent">Here's the full system.</span></h1>
+      <p class="sub-deck">The AI-powered content business blueprint: from zero to consistent leads in 90 days, built on 3 hours per week.</p>
+    </div>
+    <div class="tool-stack-visual">
+      <div class="tool-item"><span class="tool-num">Create</span><div><div class="tool-name">AI-assisted creation</div><div class="tool-role">Claude + voice training</div></div></div>
+      <div class="tool-item"><span class="tool-num">Distribute</span><div><div class="tool-name">Automated distribution</div><div class="tool-role">Buffer / Publer scheduling</div></div></div>
+      <div class="tool-item"><span class="tool-num">Capture</span><div><div class="tool-name">Email list growth</div><div class="tool-role">ConvertKit / Beehiiv</div></div></div>
+      <div class="tool-item"><span class="tool-num">Convert</span><div><div class="tool-name">Human conversion</div><div class="tool-role">DMs and calls</div></div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">What It Actually Means</div>
+      <div class="a-title">What a content business actually<br>means for service professionals.</div>
+      <div class="a-sub">Each layer is buildable in one afternoon.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A content business uses content as its primary client acquisition channel. Every piece of content is an asset working for you while you sleep.<br><br>AI makes this achievable for a solo professional. <strong>The system: AI-assisted creation → automated distribution → systematic lead capture → human conversion.</strong><br><br>Each layer is buildable in one afternoon. The question is only whether you build it.</p>
+      <div class="a-box"><strong>The asset model:</strong> Traditional businesses trade time for money. Content businesses create assets that generate income independent of active time. Content is the asset. AI is the factory.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The AI Content Stack</div>
+      <div class="a-title">The AI-powered content stack —<br>tools and monthly cost.</div>
+      <div class="a-sub">£35-£50/month in tools. £5,000-£20,000/month in revenue potential.</div>
+      <div class="a-divider"></div>
+      <div class="stack-list">
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">£20</span><div class="si-text"><strong>Claude/GPT</strong> — writing and ideation. The core creation engine.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">£15</span><div class="si-text"><strong>Buffer or Publer</strong> — scheduling and distribution.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">Free</span><div class="si-text"><strong>ConvertKit or Beehiiv</strong> — email list building (free to start).</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">Free</span><div class="si-text"><strong>Notion + Google Analytics</strong> — CRM, tracking, measurement.</div></div>
+      </div>
+      <div class="a-box" style="border-left-color:var(--gold);border-color:rgba(245,158,11,0.2);"><strong>Total: £35-£50/month.</strong> Revenue potential: £5,000-£20,000/month. That ROI is why this system is worth building.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">90-Day Plan</div>
+      <div class="a-title">The 90-day AI-powered system —<br>week by week.</div>
+      <div class="a-sub">Achievable on 3 hours per week for a busy professional.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Weeks 1-4:</strong> Set up tools, create first 10 AI-assisted posts, publish and observe. <strong>Weeks 5-8:</strong> Identify top performers, scale what works, begin building email list. <strong>Weeks 9-12:</strong> Automated distribution system running, growing email list, first inbound leads from content.<br><br><strong>The AI advantage:</strong> This is achievable on 3 hours per week for a busy professional. The same system took 15+ hours/week before AI.</p>
+      <div class="a-box"><strong>The milestone:</strong> By week 12, most service professionals see their first inbound enquiry from content. That's the moment everything changes.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Measuring ROI</div>
+      <div class="a-title">Measuring the ROI —<br>the numbers that justify the investment.</div>
+      <div class="a-sub">At 12 months: 8-20 leads/month as content compounds.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Track monthly: content hours vs. pre-AI hours. Leads from content. Revenue attributed to content. Cost per lead.<br><br>Benchmark: <strong>£50/month in tools + 10 hours/week = first inbound lead within 60-90 days</strong> for most service businesses. At 6 months: 3-8 inbound leads per month. <strong>At 12 months: 8-20 leads/month as content compounds.</strong></p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 2-Year Advantage</div>
+      <div class="a-title">The 2-year compounding effect —<br>why starting now matters.</div>
+      <div class="a-sub">The best time to start was 2 years ago. The second-best time: today.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The professionals who build AI-powered content systems now have a 2-year head start over those who start next year. <strong>Content compounds:</strong> each piece you publish increases the likelihood the next piece performs better. <strong>Authority compounds:</strong> each month of consistent presence builds more trust.<br><br>The best time to start was 2 years ago. The second-best time: today.</p>
+      <div class="a-box"><strong>The compounding maths:</strong> Month 1 = 1x. Month 6 = 3x. Month 12 = 8x. Month 24 = 20x. Content authority is the closest thing to compound interest that exists in marketing.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Content Business Blueprint</div>
+      <h2 class="s7-ti">4-quadrant system — key actions in each layer</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Layer</th>
+            <th>Function</th>
+            <th>Key Actions</th>
+            <th>Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Create</strong></td>
+            <td>AI-assisted content production</td>
+            <td>Voice training · Ideation session · Draft + 5-edit pass</td>
+            <td>Claude / ChatGPT</td>
+          </tr>
+          <tr>
+            <td><strong>Distribute</strong></td>
+            <td>Automated multi-platform publishing</td>
+            <td>Schedule 2 weeks ahead · Cross-post with adaptation · Analytics alerts</td>
+            <td>Buffer / Publer</td>
+          </tr>
+          <tr>
+            <td><strong>Capture</strong></td>
+            <td>Build email list from content</td>
+            <td>Newsletter link in posts · Lead magnet · Weekly issue</td>
+            <td>ConvertKit / Beehiiv</td>
+          </tr>
+          <tr>
+            <td><strong>Convert</strong></td>
+            <td>Human-to-human conversion</td>
+            <td>DM conversations · Discovery calls · Proposals</td>
+            <td>You + pipeline</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Build the four layers in order. <strong>Create before distributing. Distribute before capturing. Capture before converting. Sequence matters.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-100.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 054 — Instagram Bio Optimisation for Service Businesses | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-054-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Instagram Bio</div>
+      <h1 class="headline">Instagram Bio<br>Optimisation for<br><span class="accent">Service Businesses.</span></h1>
+      <p class="sub-deck">Your bio has 5 seconds to convert a visitor into a follower. Here's how to make it work.</p>
+    </div>
+    <div class="profile-mock">
+      <div class="profile-avatar"></div>
+      <div class="profile-name-mock">Your Name | Your Role</div>
+      <div class="profile-bio-mock">What you do · Who you help · What to do next</div>
+      <div class="profile-link-mock">↓ Free Resource</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 5-Second Test</div>
+      <div class="a-title">The 5-second bio test.</div>
+      <div class="a-sub">Three questions your bio must answer instantly.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A visitor to your profile has 5 seconds before they decide to follow or leave. Your bio must answer in that time: <strong>what do you do, who do you help, and what should they do next.</strong> If any of these is unclear or missing, you're losing followers who would have become clients. Test your own bio right now — can you answer all three in under 5 seconds?</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Name Field Hack</div>
+      <div class="a-title">The name field hack that gets<br>you discovered.</div>
+      <div class="a-sub">Instagram's search indexes your name field, not your bio.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Instead of 'Sarah Johnson' write <strong>'Sarah Johnson | LinkedIn Coach'.</strong> Now you appear in searches for 'LinkedIn Coach'. This single change increases profile visits from search for free. Keywords in the name field = free organic discovery. This is the most underused Instagram SEO tactic for service business owners.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Bio Formula</div>
+      <div class="a-title">Writing a bio that converts<br>visitors to followers.</div>
+      <div class="a-sub">Under 150 characters. Specific. Clear. Action-oriented.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Formula: <strong>[What you do] + [Who you help] + [The result they get] + [CTA].</strong> Example: 'I help founders create content that generates leads. 30-min free audit ↓'. Under 150 characters. Specific. Clear. Action-oriented. No fluff, no emojis unless they add meaning. Every word must earn its place. Cut anything that doesn't clarify or convert.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Link Strategy</div>
+      <div class="a-title">The link-in-bio strategy.</div>
+      <div class="a-sub">One link. Not a link tree with 10 options.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Decision paralysis kills conversion. Your link should go to a single high-value offer: a free resource (builds email list), a booking page (books calls), or a specific landing page for your primary service. <strong>Test different destinations quarterly and measure which converts.</strong> One clear path outperforms ten confusing options every single time.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Visual First Impression</div>
+      <div class="a-title">Profile photo, highlights, and grid —<br>the visual first impression.</div>
+      <div class="a-sub">Visual consistency = professional credibility.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Profile photo: professional, well-lit, simple background. Grid: consistent color palette and style — not perfectly curated, but recognisably yours. <strong>First 6 posts in grid are part of your bio experience.</strong> Highlights: labelled clearly with matching cover images. Visual consistency = professional credibility. Prospects judge your business by your grid before they read a single word.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Instagram Profile Optimisation Checklist</div>
+      <h2 class="s7-ti">Profile element → Optimised state</h2>
+      <div class="checklist-2col">
+        <div class="checklist-item">
+          <div class="checklist-elem">Name Field</div>
+          <div class="checklist-state">Name + keyword (e.g., 'John | Coach')</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-elem">Bio Text</div>
+          <div class="checklist-state">What + who + result + CTA, under 150 chars</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-elem">Profile Photo</div>
+          <div class="checklist-state">Professional, well-lit, simple background</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-elem">Link in Bio</div>
+          <div class="checklist-state">Single destination — no link trees</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-elem">Highlights</div>
+          <div class="checklist-state">Labelled clearly, matching cover images</div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-elem">Grid (first 6)</div>
+          <div class="checklist-state">Consistent palette, best content visible</div>
+        </div>
+      </div>
+      <div class="s7-note">Audit your profile against this checklist monthly. <strong>Small optimisations compound — a better bio means every piece of content you create converts at a higher rate.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-054.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

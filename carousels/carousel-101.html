@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 101 — LinkedIn Newsletter: Build a Publication That Drives Leads | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-101-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Newsletter</div>
+      <h1 class="headline">Your LinkedIn posts<br>disappear in 48 hours.<br>A newsletter stays<br><span class="accent">in inboxes forever.</span></h1>
+      <p class="sub-deck">How to launch and grow a LinkedIn Newsletter that builds a loyal reading audience and generates consistent leads.</p>
+    </div>
+    <div class="metric-stack">
+      <div class="metric-box">
+        <div class="metric-val">40-50%</div>
+        <div class="metric-label">Open rate (vs. 25% external email)</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-val">Weekly leads</div>
+        <div class="metric-label">From consistent newsletter presence</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-val">Permanent</div>
+        <div class="metric-label">Subscribers — your own audience</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Two-Channel Advantage</div>
+      <div class="a-title">Why LinkedIn Newsletter outperforms<br>regular email newsletters for B2B.</div>
+      <div class="a-sub">Two distribution channels for one publication — a unique advantage.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn delivers newsletters via two channels: <strong>LinkedIn notification feed AND email.</strong> Two distribution channels for one publication.<br><br>Average open rates: 40-50% (vs. 25% for external email newsletters). The audience is self-selected professionals. Unlike external lists, <strong>subscribers are connected to your professional brand</strong> — they see your posts AND your newsletter.<br><br>No other newsletter platform gives you this dual-channel distribution for free.</p>
+      <div class="a-box"><strong>The compound effect:</strong> Every newsletter subscriber also sees your regular posts. Your newsletter amplifies your entire content presence — not just the newsletter itself.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3: Gold -->
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Launch Strategy</div>
+      <div class="a-title">Setting up and launching<br>your LinkedIn Newsletter.</div>
+      <div class="a-sub">LinkedIn notifies ALL your existing followers at launch — use this moment wisely.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Enable in Creator Mode settings. <strong>Write your first 3 issues before launching</strong> — don't start an audience with one issue.<br><br>LinkedIn notifies ALL your existing followers when you launch — this is the only organic push LinkedIn gives creators. <strong>Use this moment: launch with your single most valuable, most shareable issue.</strong><br><br>You get one launch. Make it count.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Ideal Format</div>
+      <div class="a-title">The ideal LinkedIn Newsletter<br>format.</div>
+      <div class="a-sub">A focused newsletter on one topic beats a comprehensive overview every time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Length:</strong> 600-900 words. <strong>Structure:</strong> One key insight + 3 supporting points + one actionable takeaway + CTA. <strong>Cadence:</strong> Weekly or biweekly (consistency beats frequency).<br><br>The one insight rule: a focused newsletter on a specific topic beats a comprehensive overview every single time. Subscribers return for depth, not breadth.<br><br>Treat each issue as the definitive guide to one specific problem.</p>
+      <div class="a-box"><strong>The format test:</strong> Could you describe your newsletter in one sentence? 'I help [audience] with [specific topic] every [cadence].' If you can, it's focused enough.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5: Gold -->
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Content That Converts</div>
+      <div class="a-title">Newsletter content that builds<br>trust and converts subscribers.</div>
+      <div class="a-sub">Subscribers who receive 10 value-first issues before an offer convert at 3-5x the rate.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>80% pure value:</strong> insights your readers genuinely can't get elsewhere. <strong>10% social proof:</strong> client stories woven naturally into value-driven content. <strong>10% soft offers:</strong> 'if you want to implement this, here's how to work with me.'<br><br>This ratio feels generous — that's precisely why it converts. <strong>Subscribers who receive 10 value-first issues before seeing an offer convert at 3-5x the rate of those who see offers in issue 1.</strong></p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Growth Strategies</div>
+      <div class="a-title">Growing your newsletter —<br>the compound strategies.</div>
+      <div class="a-sub">After 12 issues: newsletter swap with a complementary creator.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Promote each issue as a LinkedIn post</strong> (post the hook, link to the newsletter). <strong>Mention your newsletter in headline and featured section.</strong> <strong>Feature guest creators</strong> (they promote your newsletter to their audience). <strong>Ask subscribers to forward to one relevant person.</strong><br><br>After 12 issues: newsletter swap with a complementary creator. Each strategy adds subscribers. Together, they compound into a self-sustaining growth engine.</p>
+      <div class="a-box"><strong>The fastest growth lever:</strong> Promote every issue as a standalone LinkedIn post. Your post reaches your followers. Your followers become your newsletter subscribers. The flywheel starts here.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Summary -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Newsletter Launch Plan</div>
+      <h2 class="s7-ti">Three phases — setup, first issue, and growth strategies</h2>
+      <div class="checklist-cols">
+        <div class="chk-col c1">
+          <div class="chk-col-label">Phase 1</div>
+          <div class="chk-col-title">Setup</div>
+          <div class="chk-items">
+            <div class="chk-item">Enable Creator Mode on LinkedIn</div>
+            <div class="chk-item">Create your newsletter in Creator Hub</div>
+            <div class="chk-item">Write issues 1, 2, and 3 before launching</div>
+            <div class="chk-item">Add newsletter link to headline and featured section</div>
+            <div class="chk-item">Decide: weekly or biweekly cadence</div>
+          </div>
+        </div>
+        <div class="chk-col c2">
+          <div class="chk-col-label">Phase 2</div>
+          <div class="chk-col-title">First Issue</div>
+          <div class="chk-items">
+            <div class="chk-item">Launch with your single most valuable issue</div>
+            <div class="chk-item">600-900 words, one key insight</div>
+            <div class="chk-item">Post the hook as a LinkedIn post</div>
+            <div class="chk-item">Reply to every comment on launch day</div>
+            <div class="chk-item">No offers in the first 10 issues</div>
+          </div>
+        </div>
+        <div class="chk-col c3">
+          <div class="chk-col-label">Phase 3</div>
+          <div class="chk-col-title">Growth Strategies</div>
+          <div class="chk-items">
+            <div class="chk-item">Promote each issue as a standalone post</div>
+            <div class="chk-item">Feature one guest creator per month</div>
+            <div class="chk-item">Ask subscribers to forward to one person</div>
+            <div class="chk-item">Newsletter swap after issue 12</div>
+            <div class="chk-item">Add soft CTA from issue 11 onwards</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">The newsletter is your most durable content asset. <strong>Posts disappear in 48 hours. Newsletter subscribers stay with you for years.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-101.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 094 — AI Video Tools: Producing Content Without a Camera Crew | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-094-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>AI Video</div>
+      <h1 class="headline">Professional video used to<br>require a crew, studio,<br>and 8 hours. AI has<br><span class="accent">changed the math.</span></h1>
+      <p class="sub-deck">The AI video tools that let solo creators produce studio-quality content in under an hour — no production experience needed.</p>
+    </div>
+    <div class="tool-stack-visual">
+      <div class="tool-item"><span class="tool-num">01</span><div><div class="tool-name">Script</div><div class="tool-role">Your expertise, your ideas</div></div></div>
+      <div class="tool-item"><span class="tool-num">02</span><div><div class="tool-name">AI voice/avatar</div><div class="tool-role">Production handled by AI</div></div></div>
+      <div class="tool-item"><span class="tool-num">03</span><div><div class="tool-name">Published video</div><div class="tool-role">Studio quality, solo effort</div></div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Collapsed Costs</div>
+      <div class="a-title">How AI has collapsed video<br>production costs and time.</div>
+      <div class="a-sub">The only barrier remaining is the script — which is the human contribution that matters most.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Traditional video: camera, lighting, location, editing software, 4-8 hours of production. AI video: script, voice tool, 30-60 minutes.<br><br>For service businesses: video presence is now accessible regardless of technical skill, time available, or camera confidence. <strong>The only barrier remaining is the script — which is still the human contribution that matters most.</strong></p>
+      <div class="a-box"><strong>The shift:</strong> Production was the bottleneck. AI eliminated it. The only thing between you and video content is 30 minutes and a good script.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">4 Tools</div>
+      <div class="a-title">4 AI video tools changing what's<br>possible for solo creators.</div>
+      <div class="a-sub">Each eliminates 1-3 hours of traditional production time per video.</div>
+      <div class="a-divider"></div>
+      <div class="stack-list">
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">1</span><div class="si-text"><strong>HeyGen / Synthesia</strong> — AI avatar videos from a script. No camera needed, multiple languages.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">2</span><div class="si-text"><strong>Descript</strong> — edit video by editing the transcript. No timeline required.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">3</span><div class="si-text"><strong>Opus Clip</strong> — automatically clips long-form into short-form highlights.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">4</span><div class="si-text"><strong>CapCut AI</strong> — auto-captions, silence removal, B-roll generation.</div></div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Voice Cloning</div>
+      <div class="a-title">Voice cloning — creating your<br>personal AI narrator.</div>
+      <div class="a-sub">Setup once. Script → audio → video in under 20 minutes.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Record 30 minutes of natural speech. Upload to ElevenLabs. Train your voice clone. Now generate unlimited audio in your voice from text.<br><br>Use for: YouTube narration, LinkedIn video clips, audio newsletters. <strong>Setup: once.</strong> After setup: script → audio → video in under 20 minutes.<br><br>Your voice. Your ideas. AI production.</p>
+      <div class="a-box"><strong>The investment:</strong> 30 minutes of recording once = unlimited audio content in your voice forever. One of the highest-ROI AI setups available to content creators.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Use Cases</div>
+      <div class="a-title">AI video for LinkedIn and YouTube —<br>realistic use cases.</div>
+      <div class="a-sub">The human contribution: your expertise, your script, your thinking.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>LinkedIn:</strong> AI talking-head clips for tips and announcements. AI-narrated screen recordings for tutorials.<br><br><strong>YouTube:</strong> AI-assisted editing via Descript cuts 60% of production time. Automated chapter creation with OpusClip. Short-form clips from long-form videos.<br><br><strong>The human contribution:</strong> your expertise, your script, your thinking. AI handles everything after.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Ethics</div>
+      <div class="a-title">The ethics of AI video —<br>where to draw the line.</div>
+      <div class="a-sub">AI video is a production tool, not a deception tool.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Best practices:</strong> Use AI to produce content that accurately represents your ideas. Disclose AI-generated avatars when relevant. Never fabricate testimonials or misrepresent clients. Never create content you wouldn't be comfortable owning publicly.<br><br>The ideas are yours. AI is the production layer.<br><br>AI video is a production efficiency tool — not a credibility substitute. The moment it's used to deceive, it destroys what it was supposed to build.</p>
+      <div class="a-box"><strong>The authenticity test:</strong> 'If someone asked me about this on a live call, could I defend every claim with personal experience?' If yes — publish. If no — edit first.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">AI Video Production Workflow</div>
+      <h2 class="s7-ti">5-step workflow — from script to published video</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Step</th>
+            <th>Action</th>
+            <th>Best Tool</th>
+            <th>Time Required</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1 — Script</strong></td>
+            <td>Write script from your expertise</td>
+            <td>Claude / ChatGPT (assisted)</td>
+            <td>15-20 minutes</td>
+          </tr>
+          <tr>
+            <td><strong>2 — Voice/Avatar</strong></td>
+            <td>Generate voice or avatar video</td>
+            <td>ElevenLabs / HeyGen</td>
+            <td>5-10 minutes</td>
+          </tr>
+          <tr>
+            <td><strong>3 — Editing</strong></td>
+            <td>Edit by editing transcript</td>
+            <td>Descript</td>
+            <td>10-15 minutes</td>
+          </tr>
+          <tr>
+            <td><strong>4 — Captions</strong></td>
+            <td>Auto-captions, silence removal</td>
+            <td>CapCut AI</td>
+            <td>5 minutes</td>
+          </tr>
+          <tr>
+            <td><strong>5 — Distribution</strong></td>
+            <td>Clip short-form, schedule posts</td>
+            <td>Opus Clip + Buffer</td>
+            <td>10 minutes</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Traditional video: 4-8 hours. <strong>AI-assisted video: 45-60 minutes. Same quality. One-tenth the time.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-094.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 086 — Referral Strategy: Building a Stream of Warm Client Introductions | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-086-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Referral System</div>
+      <h1 class="headline">Referred clients convert<br>3x faster, pay more,<br>and complain less.<br><span class="accent">Here's the system.</span></h1>
+      <p class="sub-deck">How to build a referral strategy that creates a consistent stream of warm introductions from happy clients.</p>
+    </div>
+    <div class="touch-stack">
+      <div class="touch-box">Ask at right moment</div>
+      <div class="touch-box" style="border-color:rgba(245,158,11,0.35);color:var(--gold)">Make it easy</div>
+      <div class="touch-box">Close the loop</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Referral Gap</div>
+      <div class="a-title">Why referrals are the highest-value<br>leads — and why most leave them to chance.</div>
+      <div class="a-sub">90% of service businesses leave referrals to chance.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Referred leads convert at 3x the rate of cold leads. They come pre-sold on your credibility. They have lower price sensitivity and shorter sales cycles. <strong>And yet 90% of service businesses leave referrals to chance.</strong><br><br>The gap: most businesses do excellent work but never strategically ask for introductions. The work earns the right to ask. Most people just never ask.</p>
+      <div class="a-box"><strong>The math:</strong> If your referral conversion rate is 3x cold leads, one referral conversation every 2 weeks = the equivalent of 6 cold outreach prospects. The highest ROI acquisition activity available.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Optimal Moment</div>
+      <div class="a-title">The optimal moment to ask —<br>timing is everything.</div>
+      <div class="a-sub">At peak enthusiasm, 40% say yes immediately.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Immediately after a client achieves a meaningful result or milestone is the single best time to ask for a referral. In that moment, their enthusiasm and gratitude are at their peak.<br><br><strong>'You've just [achieved result]. I'd love to help others like you achieve the same. Do you know anyone who might benefit from what we've done together?'</strong><br><br>At the right moment, 40% say yes immediately. The same question asked at the wrong moment gets 10%.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Remove Friction</div>
+      <div class="a-title">Making the referral easy —<br>removing every friction point.</div>
+      <div class="a-sub">The harder it is to refer you, the less it happens.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Provide: <strong>a one-sentence description of who you help</strong> ('I help B2B consultants build a LinkedIn presence that generates leads — typically within 90 days'). A referral message they can copy/adapt. Your direct booking link. A simple 'forward this email' option.<br><br>The easier the act, the more often it happens. Design the referral experience with the same care you design your client onboarding.</p>
+      <div class="a-box"><strong>The referral toolkit:</strong> One sentence · One message template · One booking link. Give clients these three things and watch referrals double within 60 days.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Gifts vs. Fees</div>
+      <div class="a-title">Referral gifts vs. referral fees —<br>what actually works.</div>
+      <div class="a-sub">Recognition and gratitude outperform cash payments.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Paying fees for referrals creates a transactional dynamic. For professional services, <strong>recognition and gratitude work better</strong>: a handwritten note, a gift relevant to their interests, or a donation to a charity they support.<br><br>Relationship-reinforcing thank-yous create cycles of goodwill. Transactional payments create transactional referrers who refer for money, not fit. The wrong referred client costs more than the referral fee saved you.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Close the Loop</div>
+      <div class="a-title">The referral follow-up loop —<br>always close it.</div>
+      <div class="a-sub">Every referral loop closed plants seeds for the next one.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When a referral is received: thank the referring client immediately and specifically. Connect with the referred prospect within 24 hours — <strong>'I understand [referrer] thought we should connect.'</strong><br><br>After the engagement: loop back — <strong>'[Their referral] was a genuine pleasure. Thank you for the introduction.'</strong><br><br>Close every referral loop. Every time. It signals that your relationship extends beyond the transaction.</p>
+      <div class="a-box"><strong>The compound effect:</strong> Clients who receive a thank-you loop are 3x more likely to refer again. One referral, closed gracefully, creates a cycle of introductions.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Referral System Playbook</div>
+      <h2 class="s7-ti">Three pillars of a referral strategy that runs itself</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Pillar</th>
+            <th>When</th>
+            <th>Script / Action</th>
+            <th>Key Principle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ask</td>
+            <td>At peak client result</td>
+            <td>'You've just [result] — do you know anyone I could help similarly?'</td>
+            <td>Timing is the whole game</td>
+          </tr>
+          <tr>
+            <td>Make It Easy</td>
+            <td>When they say yes</td>
+            <td>Send: 1-sentence bio · message template · booking link</td>
+            <td>Friction kills follow-through</td>
+          </tr>
+          <tr>
+            <td>Thank You</td>
+            <td>Immediately + after engagement</td>
+            <td>Handwritten note or meaningful gift. Loop back after engagement.</td>
+            <td>Recognition creates cycles</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">A referral system is built from 3 habits, not a programme. <strong>Ask at the right moment. Make it easy. Always close the loop.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-086.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

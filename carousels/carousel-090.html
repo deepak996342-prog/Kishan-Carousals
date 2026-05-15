@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 090 — The Sales Pipeline Every Service Business Needs | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-090-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Sales Pipeline</div>
+      <h1 class="headline">Without a pipeline,<br>leads disappear and<br>revenue is impossible<br><span class="accent">to predict. Here's the fix.</span></h1>
+      <p class="sub-deck">A simple 5-stage sales pipeline for service businesses — and how to use it to protect and predict your revenue.</p>
+    </div>
+    <div class="touch-stack">
+      <div class="touch-box"><span class="t-num">1</span>Aware</div>
+      <div class="touch-box"><span class="t-num">2</span>Interested</div>
+      <div class="touch-box" style="border-color:rgba(245,158,11,0.35);color:var(--gold)"><span class="t-num" style="color:var(--gold)">3</span>Call done</div>
+      <div class="touch-box"><span class="t-num">4</span>Proposal</div>
+      <div class="touch-box"><span class="t-num">5</span>Decision</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why You Need a Pipeline</div>
+      <div class="a-title">Why you need a pipeline —<br>even if it's just a spreadsheet.</div>
+      <div class="a-sub">Visibility into every open opportunity — what it needs to move forward.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Without a pipeline: leads fall through the cracks. You forget to follow up. You can't predict next month's revenue. You can't see which stage is losing deals.<br><br><strong>Even a simple spreadsheet — 5 columns, each lead in one row — gives you visibility into every open opportunity and exactly what it needs to move forward.</strong><br><br>You don't need expensive CRM software to start. You need five columns and the discipline to update them.</p>
+      <div class="a-box"><strong>Minimum viable pipeline:</strong> Name · Source · Stage (1-5) · Value · Next action · Date. Six columns. Everything you need.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The 5-Stage Pipeline</div>
+      <div class="a-title">The 5-stage service business<br>pipeline.</div>
+      <div class="a-sub">Every opportunity lives in exactly one stage with a specific next action.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Stage 1 Awareness:</strong> Lead engaged with content or was referred. <strong>Stage 2 Interest:</strong> Lead reached out or requested a call. <strong>Stage 3 Discovery:</strong> Call completed, proposal pending. <strong>Stage 4 Proposal:</strong> Proposal sent, awaiting decision. <strong>Stage 5 Closed:</strong> Won (client) or Lost (with reason).<br><br>Every opportunity lives in exactly one stage. Each has a specific next action. Ambiguity in your pipeline = lost revenue.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Pipeline Metrics</div>
+      <div class="a-title">The pipeline metrics that<br>predict your revenue.</div>
+      <div class="a-sub">Three numbers tell you exactly where your pipeline leaks.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Conversion rate per stage</strong> (what % move from stage 3 to 4? 4 to 5?). <strong>Average deal size per stage.</strong> <strong>Time in each stage</strong> (how long do leads sit at 'proposal sent'?).<br><br>These three numbers tell you exactly where your sales process leaks and where to focus improvement. <strong>Most service businesses lose most deals at Stage 4.</strong><br><br>If you measure nothing, you can improve nothing. Start here.</p>
+      <div class="a-box"><strong>The Stage 4 fix:</strong> If deals stall after proposal, your follow-up sequence or your proposal walkthrough habit needs attention — not your price.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Weekly Review</div>
+      <div class="a-title">The weekly 20-minute<br>pipeline review.</div>
+      <div class="a-sub">Leads not actively moving are actively cooling.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Every Monday: review all Stage 3 and Stage 4 opportunities. For each: has the next action been completed? Is a follow-up due? Is the lead stale (2+ weeks with no movement)?<br><br><strong>Take action on every open deal within 24 hours.</strong><br><br>Leads that aren't actively moving are actively cooling. The pipeline review is the most revenue-protective habit in any service business. 20 minutes. Every Monday. No exceptions.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Content as Pipeline</div>
+      <div class="a-title">Content as top-of-pipeline —<br>the sustainable acquisition system.</div>
+      <div class="a-sub">A single high-value post can create 3 new pipeline opportunities.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn post → lead engages → conversation starts (Stage 1). DM deepens → they express interest (Stage 2). Discovery call booked (Stage 3). Proposal sent (Stage 4).<br><br><strong>Content is the most sustainable source of pipeline for service businesses.</strong> A single high-value post can create 3 new opportunities. Build your pipeline from content, not cold outreach.<br><br>Content works 24 hours per day. Cold outreach works only when you're working.</p>
+      <div class="a-box"><strong>The content pipeline formula:</strong> 4 posts/week × 52 weeks = 208 pipeline seeds per year. At 2% Stage 1 conversion = 4+ new clients annually from content alone.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Sales Pipeline Dashboard</div>
+      <h2 class="s7-ti">The 5-stage pipeline — entry trigger, next action, success metric</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Description</th>
+            <th>Entry Trigger</th>
+            <th>Next Action</th>
+            <th>Success Metric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 — Aware</td>
+            <td>Engaged with your content or referred</td>
+            <td>Comment, like, or referral</td>
+            <td>Send a personalised DM</td>
+            <td>Reply received</td>
+          </tr>
+          <tr>
+            <td>2 — Interested</td>
+            <td>Expressed interest or asked a question</td>
+            <td>Inbound message</td>
+            <td>Book a discovery call</td>
+            <td>Call scheduled</td>
+          </tr>
+          <tr>
+            <td>3 — Discovery</td>
+            <td>Call completed, proposal pending</td>
+            <td>Call completed</td>
+            <td>Send proposal within 48h</td>
+            <td>Proposal sent</td>
+          </tr>
+          <tr>
+            <td>4 — Proposal</td>
+            <td>Proposal sent, decision pending</td>
+            <td>Proposal sent</td>
+            <td>Book walkthrough call</td>
+            <td>Decision given</td>
+          </tr>
+          <tr>
+            <td>5 — Decision</td>
+            <td>Won (client) or lost (with reason)</td>
+            <td>Client yes or no</td>
+            <td>Onboard or log reason</td>
+            <td>Revenue or learning</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">The pipeline doesn't close deals. <strong>The Monday review habit, the follow-up sequence, and the proposal walkthrough close deals.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-090.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

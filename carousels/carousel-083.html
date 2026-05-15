@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 083 — Writing Proposals That Win More Business | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-083-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Proposals</div>
+      <h1 class="headline">Your proposal loses<br>before the prospect<br>reads page 3. Here's<br><span class="accent">what to fix.</span></h1>
+      <p class="sub-deck">The proposal structure that wins business — by making the client the centre of every page.</p>
+    </div>
+    <div class="prop-visual">
+      <div class="prop-page"><span class="page-num">P1</span>Their Situation</div>
+      <div class="prop-page gold-page"><span class="page-num">P2</span>Outcomes</div>
+      <div class="prop-page"><span class="page-num">P3</span>Methodology</div>
+      <div class="prop-page gold-page"><span class="page-num">P4</span>Investment</div>
+      <div class="prop-page"><span class="page-num">P5</span>Case Study</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Core Problem</div>
+      <div class="a-title">Why most proposals lose before<br>the prospect reads page 3.</div>
+      <div class="a-sub">The average proposal is a document about the agency — not the client.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">It features: company history, services list, team bios, case studies from unrelated industries, and a pricing table. The prospect reads page 1, skips to pricing, and makes their decision. <strong>The proposal is rarely the deciding factor — the relationship and trust built before it is.</strong><br><br>The proposal's job: confirm and document what the client already feels about working with you.</p>
+      <div class="a-box"><strong>The test:</strong> Count the words 'we' and 'our' vs. 'you' and 'your' on page 1. If 'we' wins, rewrite it. The client doesn't care about you — they care about their problem.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Winning Structure</div>
+      <div class="a-title">The 5-page proposal structure<br>that wins deals.</div>
+      <div class="a-sub">The rule: 'you' and 'your' must dominate page 1.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Page 1:</strong> Your diagnosis of their specific situation (prove you listened). <strong>Page 2:</strong> The specific outcomes you'll deliver — not the tasks, the results. <strong>Page 3:</strong> Your approach and methodology (the how). <strong>Page 4:</strong> Timeline and investment. <strong>Page 5:</strong> Relevant case study matching their problem.<br><br>Every page answers a question the client is already asking. Page 1: Do they understand me? Page 2: What will I get? Page 4: What will it cost?</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">One-Page Proposal</div>
+      <div class="a-title">The one-page proposal that converts<br>better than 10-page documents.</div>
+      <div class="a-sub">Simplicity signals confidence. Complexity signals insecurity.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">For smaller engagements: one page, three sections. <strong>Section 1:</strong> 'Here's what I understand about your situation.' <strong>Section 2:</strong> 'Here's what I'd do and what you'll have at the end.' <strong>Section 3:</strong> 'Investment: £X. Next step: [link].'<br><br>A one-page proposal signals that you've thought clearly about the problem and the solution. It respects the client's time. Busy decision-makers prefer brevity.</p>
+      <div class="a-box"><strong>When to use it:</strong> Engagements under £5,000. Clients who prefer direct communication. When the relationship is strong. When your reputation does the heavy lifting.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Common Mistakes</div>
+      <div class="a-title">Proposal mistakes that lose deals<br>before you know it.</div>
+      <div class="a-sub">Fix these six things and your close rate improves immediately.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Generic language</strong> ('we deliver results'). <strong>Features without benefits.</strong> <strong>No specific mention of the prospect's situation.</strong> <strong>Sending without a verbal walkthrough.</strong> <strong>Too many options</strong> (decision paralysis). <strong>No expiry date</strong> — proposals with no urgency get indefinitely deferred.<br><br>The most common mistake: a proposal that could be sent to any client. If your prospect can't tell it was written specifically for them, rewrite it.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Walkthrough</div>
+      <div class="a-title">Why proposals need a meeting —<br>never just email it.</div>
+      <div class="a-sub">This single change doubles close rates.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Always schedule a 20-minute walkthrough call. <strong>'I'd like to walk you through the proposal so I can answer any questions and make sure it addresses everything we discussed.'</strong><br><br>On the walkthrough, you control the narrative. You emphasise what matters. You handle concerns in real time. You can watch for hesitation and address it immediately. An emailed proposal without a walkthrough is a 50% close-rate surrender.</p>
+      <div class="a-box"><strong>The sequence:</strong> Discovery call → 24-hour follow-up summary → Proposal sent → Walkthrough call scheduled → Close. Never skip the walkthrough.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Proposal Template Structure</div>
+      <h2 class="s7-ti">The 5-page proposal — what goes on each page</h2>
+      <div class="proposal-pages">
+        <div class="proposal-row">
+          <div class="pg-num">01</div>
+          <div class="pg-title">Their Situation</div>
+          <div class="pg-desc">Your specific diagnosis of their problem. More 'you/your' than any other word. Prove you listened on the discovery call.</div>
+        </div>
+        <div class="proposal-row gold-row">
+          <div class="pg-num">02</div>
+          <div class="pg-title">Outcomes</div>
+          <div class="pg-desc">What the client will have at the end — not tasks, results. Specific, measurable, and tied to what they told you they want.</div>
+        </div>
+        <div class="proposal-row">
+          <div class="pg-num">03</div>
+          <div class="pg-title">Methodology</div>
+          <div class="pg-desc">How you'll achieve the outcomes. Your process, approach, and why it works. Confidence without over-complicating.</div>
+        </div>
+        <div class="proposal-row gold-row">
+          <div class="pg-num">04</div>
+          <div class="pg-title">Timeline &amp; Investment</div>
+          <div class="pg-desc">Clear milestones, deliverable schedule, and investment. Include an expiry date to create healthy urgency.</div>
+        </div>
+        <div class="proposal-row">
+          <div class="pg-num">05</div>
+          <div class="pg-title">Relevant Case Study</div>
+          <div class="pg-desc">One case study matching their specific problem. Before/after. Real numbers where possible. Proof you've done this before.</div>
+        </div>
+      </div>
+      <div class="s7-note">The proposal doesn't close deals. <strong>The relationship, the discovery call, and the walkthrough close deals. The proposal documents what's already been decided.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-083.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

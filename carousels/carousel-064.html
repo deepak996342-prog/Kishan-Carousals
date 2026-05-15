@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 064 — Email Automation: The Sequences That Work While You Sleep | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-064-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Email Automation</div>
+      <h1 class="headline">The sequences<br>that convert<br>subscribers<br><span class="accent">while you sleep.</span></h1>
+      <p class="sub-deck">A 7-email automated sequence that converts subscribers to clients over 2–3 weeks — built once, runs forever.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide em-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">What Automation Is</div>
+      <div class="a-title">What email automation is and<br>why 90% of businesses waste it.</div>
+      <div class="a-sub">Automation sends the right email to the right person at the right time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most businesses set up one welcome email and stop. <strong>The opportunity: a 7-email automated sequence that converts subscribers to clients over 2–3 weeks.</strong><br><br>Once built, it works forever. While you're sleeping, in a meeting, or on holiday — your sequence is nurturing leads and generating enquiries without your involvement.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3 (gold) -->
+  <div class="slide em-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Welcome Sequence</div>
+      <div class="a-title">The welcome sequence —<br>your most important automated emails.</div>
+      <div class="a-sub">This sequence converts 8–15% of subscribers into enquiries.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Email 1 (immediately):</strong> deliver lead magnet + introduce yourself + set expectations.<br><strong>Email 2 (day 2):</strong> your origin story — why you do what you do.<br><strong>Email 3 (day 4):</strong> your methodology — how you work.<br><strong>Email 4 (day 6):</strong> client case study — proof.<br><strong>Email 5 (day 8):</strong> the offer — your service, clearly described.<br><strong>Email 6 (day 10):</strong> objection handling. <strong>Email 7 (day 12):</strong> last chance + genuine urgency.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide em-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Re-engagement</div>
+      <div class="a-title">Re-engagement sequences<br>— reviving cold subscribers.</div>
+      <div class="a-sub">A clean list of 500 engaged subscribers beats 5,000 cold ones.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">After 90 days without engagement, a subscriber is 'cold.' Send a 3-email re-engagement sequence: <strong>'Still interested?' email, 'Here's what you've missed' email, 'Last email from us' email with clear re-subscribe CTA.</strong><br><br>Remove non-re-engagers. A clean engaged list converts dramatically better for sales and protects your deliverability.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5 (gold) -->
+  <div class="slide em-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Segmentation</div>
+      <div class="a-title">Segmentation — the automation<br>that personalises at scale.</div>
+      <div class="a-sub">Segmentation doubles email revenue.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Segment by: <strong>interest</strong> (which lead magnet they downloaded), <strong>behaviour</strong> (link clicks, opens), <strong>business stage</strong> (new, growing, established).<br><br>A new business owner doesn't need the same content as a scaling agency. Each segment gets different content and offers. <strong>Segmentation doubles email revenue</strong> with the same list size.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide em-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Tool Selection</div>
+      <div class="a-title">Choosing and setting up<br>email automation tools.</div>
+      <div class="a-sub">The tool matters less than the strategy.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Entry level:</strong> Mailchimp or ConvertKit (under 2,000 subscribers, free tier). <strong>Growing:</strong> ActiveCampaign or Klaviyo (advanced segmentation). <strong>Enterprise:</strong> HubSpot.<br><br>Start with what you'll actually use. <strong>A simple tool used consistently beats a complex tool abandoned after setup.</strong> You can always migrate — but you can't recover the time lost not starting.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: 7-Email Sequence Template -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">7-Email Welcome Sequence Template</div>
+      <h2 class="s7-ti">Each email, timing, and purpose</h2>
+      <div class="seq-list">
+        <div class="seq-row">
+          <div class="seq-day">Day 0</div>
+          <div class="seq-title">Deliver &amp; Welcome</div>
+          <div class="seq-purpose">Lead magnet delivery + who you are + what to expect</div>
+        </div>
+        <div class="seq-row">
+          <div class="seq-day">Day 2</div>
+          <div class="seq-title">Origin Story</div>
+          <div class="seq-purpose">Why you do this work — builds emotional connection</div>
+        </div>
+        <div class="seq-row">
+          <div class="seq-day">Day 4</div>
+          <div class="seq-title">Your Methodology</div>
+          <div class="seq-purpose">How you work — builds trust and reduces uncertainty</div>
+        </div>
+        <div class="seq-row">
+          <div class="seq-day">Day 6</div>
+          <div class="seq-title">Client Case Study</div>
+          <div class="seq-purpose">Proof — real results from real clients like them</div>
+        </div>
+        <div class="seq-row">
+          <div class="seq-day">Day 8</div>
+          <div class="seq-title">The Offer</div>
+          <div class="seq-purpose">Your service, clearly described — the first soft ask</div>
+        </div>
+        <div class="seq-row">
+          <div class="seq-day">Day 10</div>
+          <div class="seq-title">Objection Handling</div>
+          <div class="seq-purpose">Address the 3 most common reasons people hesitate</div>
+        </div>
+        <div class="seq-row">
+          <div class="seq-day">Day 12</div>
+          <div class="seq-title">Last Chance</div>
+          <div class="seq-purpose">Genuine urgency + clear booking link + testimonial</div>
+        </div>
+      </div>
+      <div class="s7-note">Build it once. <strong>Then let it convert subscribers to enquiries while you focus on delivering great work.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-064.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

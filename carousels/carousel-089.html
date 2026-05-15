@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 089 — Value-Based Pricing: Stop Trading Hours for Dollars | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-089-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Value Pricing</div>
+      <h1 class="headline">The faster you work,<br>the less you earn.<br>Hourly billing has<br><span class="accent">an expiry date.</span></h1>
+      <p class="sub-deck">The value-based pricing transition that service businesses use to 3-5x their revenue without working more hours.</p>
+    </div>
+    <div class="touch-stack">
+      <div class="touch-box">Hours × rate</div>
+      <div class="touch-box" style="border-color:rgba(245,158,11,0.35);color:var(--gold)">→ Outcome price</div>
+      <div class="touch-box">3-5x revenue</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Hourly Trap</div>
+      <div class="a-title">The hourly billing trap —<br>punishing your own efficiency.</div>
+      <div class="a-sub">Getting better at your craft makes you earn less. That's broken.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Hourly billing creates a perverse incentive: <strong>the more efficient you become, the less you earn.</strong> A task that took 3 hours last year takes 45 minutes now — your skills grew, your revenue shrank.<br><br>Clients who pay by the hour watch the clock. Clients who pay for outcomes judge by results. One model creates friction. The other creates partnership.</p>
+      <div class="a-box"><strong>The compounding loss:</strong> Every skill improvement under hourly billing costs you revenue. Every hour saved = revenue lost. The better you get, the worse the model treats you.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Determine Value Price</div>
+      <div class="a-title">How to determine a<br>value-based price.</div>
+      <div class="a-sub">Price at 20-30% of the value you create.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Step 1:</strong> Understand the problem in financial terms ('if this generates 2 new clients, what is that worth?'). <strong>Step 2:</strong> Estimate the value your work creates (not the time — the outcome). <strong>Step 3:</strong> Price at 20-30% of that value.<br><br>If your work generates £50,000 in client revenue, a £10,000-£15,000 engagement is an excellent ROI for them and excellent revenue for you. <strong>The math is the conversation.</strong></p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Outcome Conversation</div>
+      <div class="a-title">The outcome conversation —<br>finding the value number.</div>
+      <div class="a-sub">Price after the value anchor, never before.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Before any proposal, ask:<br><br><strong>'What does solving this problem mean financially for your business?'</strong><br><strong>'What's the cost of not solving it in the next 12 months?'</strong><br><strong>'If we achieve [goal] in 90 days, what would you consider a fair investment?'</strong><br><br>These questions establish the value anchor before you mention a number. Price after, not before. The prospect sets the frame. You set the price within it.</p>
+      <div class="a-box"><strong>The sequence:</strong> Understand value → anchor on outcome → price at a fraction of value. In that order. Every time.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Others Charge Less</div>
+      <div class="a-title">Handling the 'others charge<br>less' objection.</div>
+      <div class="a-sub">The confidence to walk away makes the premium believable.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>'I'm sure they do. The question is: are you optimising for price or for outcome?'</strong><br><br>Never justify your price — explain the value. Never discount — reframe. 'My clients pay more and achieve more. That's the trade. If the outcome I described isn't worth the investment to you, we may not be the right fit — and that's okay.'<br><br>The confidence to walk away is what makes the premium believable.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Transition</div>
+      <div class="a-title">Moving from hourly to value pricing<br>without losing clients.</div>
+      <div class="a-sub">Most service businesses 3-5x revenue within 12 months.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Start with new clients only. Don't retroactively change existing clients. For each new engagement: calculate the outcome value first, then price.<br><br>Track your effective hourly rate in both models — the comparison is persuasive. <strong>Most service businesses 3-5x their revenue within 12 months of this transition.</strong><br><br>The first value-priced engagement feels uncomfortable. The second feels normal. The third feels like the old model was the strange one.</p>
+      <div class="a-box"><strong>The proof point:</strong> Calculate your effective hourly rate on your last 3 value-priced projects. Compare to your stated hourly rate. The gap tells the whole story.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Value Pricing Calculation</div>
+      <h2 class="s7-ti">Step-by-step: from problem to price</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Step</th>
+            <th>Question</th>
+            <th>Example Answer</th>
+            <th>What It Tells You</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 — Problem</td>
+            <td>What financial problem does this solve?</td>
+            <td>No inbound leads from LinkedIn</td>
+            <td>The stakes of inaction</td>
+          </tr>
+          <tr>
+            <td>2 — Impact</td>
+            <td>What's one new client worth monthly?</td>
+            <td>£5,000/month per client</td>
+            <td>The floor value of one outcome</td>
+          </tr>
+          <tr>
+            <td>3 — Role</td>
+            <td>What % of that outcome do you create?</td>
+            <td>80% — without content, no leads</td>
+            <td>Your contribution percentage</td>
+          </tr>
+          <tr>
+            <td>4 — Price Range</td>
+            <td>20-30% of 90-day value?</td>
+            <td>£15,000 × 25% = £3,750</td>
+            <td>Your value-based floor</td>
+          </tr>
+          <tr>
+            <td>5 — Final Price</td>
+            <td>What's the right price for this client?</td>
+            <td>£3,500-£4,500</td>
+            <td>Price with confidence</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Value pricing is not about charging more. <strong>It's about charging what the outcome is worth — to them, not to you.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-089.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 059 — Instagram Analytics: Reading Your Data to Make Better Content | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-059-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Instagram Analytics</div>
+      <h1 class="headline">Instagram Analytics:<br>Reading Your Data to<br>Make <span class="accent">Better Content.</span></h1>
+      <p class="sub-deck">The 5 metrics that actually matter for service businesses — and how to act on them.</p>
+    </div>
+    <div class="metric-stack">
+      <div class="metric-box mb-acc">
+        <div class="metric-dot"></div>
+        <div class="metric-name">Saves</div>
+      </div>
+      <div class="metric-box mb-gold">
+        <div class="metric-dot"></div>
+        <div class="metric-name">Story Replies</div>
+      </div>
+      <div class="metric-box mb-acc">
+        <div class="metric-dot"></div>
+        <div class="metric-name">Reach</div>
+      </div>
+      <div class="metric-box mb-gold">
+        <div class="metric-dot"></div>
+        <div class="metric-name">DMs Received</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">What Matters</div>
+      <div class="a-title">The metrics that actually matter<br>for service businesses on Instagram.</div>
+      <div class="a-sub">Followers are a trailing metric — focus on intent signals.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">For lead generation, ignore: follower growth rate, impressions, profile visits. Focus on: <strong>reach</strong> (how many new people), <strong>saves</strong> (content value), <strong>story replies</strong> (relationship depth), <strong>DMs received</strong> (conversion intent). Followers are a trailing metric — they follow after enough value is delivered. Lead with signals of intent.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Audience Insights</div>
+      <div class="a-title">Audience insights — understanding<br>who's watching.</div>
+      <div class="a-sub">The 60/40 rule for audience demographics.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Instagram shows your audience demographics: age, location, active hours. <strong>Most valuable insight: what time is your audience most active?</strong> Post within 1 hour of that window. Secondary insight: the 60/40 rule — if more than 60% of your audience is the wrong demographic, your content positioning needs adjusting. Data shows you what words alone cannot.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Weekly Review</div>
+      <div class="a-title">Post performance analysis —<br>the weekly 10-minute review.</div>
+      <div class="a-sub">Sort by saves and by reach — both lists are necessary.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Sort your last month's posts by saves. The top 3 are your best content. Study what they have in common. Sort by reach. The top 3 are your best discovery content. <strong>These two lists often don't overlap — that's normal.</strong> Both types are necessary: saves deepen relationships, reach expands your audience. You need both engines running.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Story Analytics</div>
+      <div class="a-title">Story analytics — the<br>intimacy metric.</div>
+      <div class="a-sub">Story completion rate is the key metric.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Story completion rate (% who watch all slides) is the key metric. <strong>Under 70%: your stories are too long or not interesting enough. 80%+: strong.</strong> The drop-off slide tells you exactly where you lose viewers. Cut everything after that slide in future series. Your Stories analytics are a direct line to understanding what your warmest audience actually wants.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Monthly Dashboard</div>
+      <div class="a-title">Building a monthly<br>analytics dashboard.</div>
+      <div class="a-sub">After 3 months, patterns emerge — let data guide your experiments.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Track these 5 numbers monthly: reach growth %, average saves per post, story completion rate, DMs received, profile visits → link clicks conversion rate. Plot them on a simple spreadsheet. <strong>After 3 months, patterns emerge.</strong> Let data guide your content experiments. You stop guessing and start knowing what your audience responds to. Data is your content compass.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Instagram Analytics Reference Card</div>
+      <h2 class="s7-ti">Metric → What it means + target benchmark</h2>
+      <table class="ref-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>What It Means</th>
+            <th>Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reach (new accounts)</td>
+            <td>How many non-followers saw your content</td>
+            <td>Growing MoM</td>
+          </tr>
+          <tr>
+            <td>Saves per post</td>
+            <td>Content perceived as worth returning to</td>
+            <td>1%+ of reach</td>
+          </tr>
+          <tr>
+            <td>Story completion rate</td>
+            <td>% who watch all Story slides</td>
+            <td>80%+</td>
+          </tr>
+          <tr>
+            <td>Story replies</td>
+            <td>Warmest audience actively engaging</td>
+            <td>Increasing</td>
+          </tr>
+          <tr>
+            <td>DMs received</td>
+            <td>Direct conversion intent from content</td>
+            <td>5+ per week</td>
+          </tr>
+          <tr>
+            <td>Profile visits</td>
+            <td>Content driving curiosity about you</td>
+            <td>Growing MoM</td>
+          </tr>
+          <tr>
+            <td>Link clicks</td>
+            <td>Visitors taking next step</td>
+            <td>5%+ of visits</td>
+          </tr>
+          <tr>
+            <td>Follower growth</td>
+            <td>Lagging indicator of all of the above</td>
+            <td>Trailing metric</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Track weekly. Review monthly. <strong>The pattern across 90 days tells you everything about what your audience values.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-059.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

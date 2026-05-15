@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 073 — Blog Strategy That Actually Brings Clients (Not Just Traffic) | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-073-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Blog Strategy</div>
+      <h1 class="headline">A blog strategy that<br>actually brings clients —<br><span class="accent">not just traffic.</span></h1>
+      <p class="sub-deck">Most blogs generate readers. Successful business blogs generate enquiries. Here's the difference.</p>
+    </div>
+    <div class="rank-stack">
+      <div class="rank-box">Client-journey content</div>
+      <div class="rank-box r2">Rank + convert</div>
+      <div class="rank-box r3">Compounding leads</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide seo-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Blog vs Business Blog</div>
+      <div class="a-title">Most blogs generate traffic.<br>Yours should generate clients.</div>
+      <div class="a-sub">Different purpose demands a different strategy.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most blogs generate traffic. Successful business blogs generate clients. The difference: alignment. <strong>Every article should serve someone at a specific stage of considering your service.</strong><br>A recipe blog inspires. A service business blog should educate, build trust, and create the psychological readiness to enquire. A reader who finds your article through Google, spends 8 minutes reading it, and feels like you understand their problem is already 60% of the way to becoming a client. That's the power of purposeful blogging.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide seo-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Client-Journey Architecture</div>
+      <div class="a-title">Structure your blog to guide<br>readers through every stage.</div>
+      <div class="a-sub">Every article serves a specific stage of the buying journey.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Awareness articles (60%):</strong> 'How to [solve problem]', 'Why [common mistake happens]' — for people who don't know a solution exists yet.<br><strong>Consideration articles (30%):</strong> 'Best approaches to [solution]', 'Case study: how I helped [client type]' — for people evaluating options.<br><strong>Decision articles (10%):</strong> 'How to choose [service provider]', 'What working with me looks like' — for people ready to hire.<br>Your blog should guide a reader through this journey across multiple visits, warming them with each article.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide seo-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Article Structure</div>
+      <div class="a-title">Writing articles that rank<br>on Google and convert readers.</div>
+      <div class="a-sub">The structure that satisfies both Google and humans.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The structure that both Google and humans love: <strong>H1 (keyword + benefit) → intro that states the problem → 3–7 H2 subheadings (each answers a sub-question) → conclusion with CTA → internal links to related articles.</strong><br>Word count for competitive topics: 1,500–2,500 words. Quality over quantity — one deeply useful article outranks five generic ones. Every subheading should answer a question your client is actually asking. If a section doesn't serve the reader, remove it.</p>
+      <div class="a-box"><strong>The golden rule:</strong> If you removed a paragraph and the reader wouldn't notice the gap — remove it. Tight, useful writing ranks and retains.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide seo-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Blog CTA</div>
+      <div class="a-title">The CTA that converts<br>readers into leads.</div>
+      <div class="a-sub">Context-specific CTAs convert 3x better than generic forms.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most blogs end with 'thanks for reading!' That's a wasted opportunity. <strong>End every article with a relevant, specific CTA: 'If you're dealing with [the exact problem this article addressed], I offer a free 30-minute audit to show you the 3 steps to fix it.'</strong><br>Match the CTA to the article's topic. An article about LinkedIn strategy should CTA to a LinkedIn audit. An article about SEO should CTA to an SEO review. Context-specific CTAs convert 3x better than generic contact forms because the reader already trusts you after spending 8 minutes with your content.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide seo-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Publishing Cadence</div>
+      <div class="a-title">How many posts and<br>how often — the real answer.</div>
+      <div class="a-sub">Quality and strategy beat quantity every time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>The honest answer:</strong> 2 well-researched, keyword-optimised articles per month outperforms 8 generic posts consistently. Focus on articles targeting keywords with clear client intent.<br>Update older articles every 6–12 months — Google rewards freshness and it's faster than writing new content. <strong>A blog of 50 strong articles outperforms a blog of 500 weak ones.</strong><br>Think of your blog as a product, not a publication. Each article is a permanent asset. One excellent article ranking on page 1 delivers more ROI than 20 articles buried on page 5.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Blog Content Calendar</div>
+      <h2 class="s7-ti">4-week template — one month, four articles</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Week 1 · Awareness</div>
+          <div class="pb-title">Attract New Readers</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Topic: 'How to [solve core problem]'</div>
+            <div class="pb-goal">Keyword: informational long-tail</div>
+            <div class="pb-goal">Intent: discovery / education</div>
+            <div class="pb-goal">Word count: 1,800–2,200 words</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Week 2 · Consideration</div>
+          <div class="pb-title">Build Preference</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Topic: 'Best [solution] for [type]'</div>
+            <div class="pb-goal">Keyword: commercial intent</div>
+            <div class="pb-goal">Intent: comparison / evaluation</div>
+            <div class="pb-goal">Word count: 1,500–2,000 words</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Weeks 3–4 · Depth</div>
+          <div class="pb-title">Establish Authority</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Topic: case study or deep guide</div>
+            <div class="pb-goal">Keyword: niche long-tail</div>
+            <div class="pb-goal">Intent: trust-building</div>
+            <div class="pb-goal">Internal links: connect all 4 posts</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">Every article should link to at least 2 others. <strong>The blog that guides readers from article to article converts visitors into clients.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-073.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

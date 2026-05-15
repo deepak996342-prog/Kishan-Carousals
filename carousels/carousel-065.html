@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 065 — Growing Your Email List from 0 to 1,000 Subscribers | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-065-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>List Building</div>
+      <h1 class="headline">From zero to<br>1,000 email<br>subscribers —<br><span class="accent">the exact roadmap.</span></h1>
+      <p class="sub-deck">The first 1,000 subscribers change your business. Here's how to get there with a strategy that compounds.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide em-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why 1,000 Matters</div>
+      <div class="a-title">Why 1,000 engaged email<br>subscribers changes your business.</div>
+      <div class="a-sub">The first 1,000 are the hardest. After that, compounding takes over.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">With 1,000 engaged subscribers: <strong>you can launch a new service and get 10–20 enquiries in 48 hours.</strong> You have a warm audience for every piece of content. You have data about what your market wants.<br><br>Each subscriber brings fractional value that compounds. The list that generates $0 at 100 subscribers generates $10,000+ at 1,000 — if nurtured correctly.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3 (gold) -->
+  <div class="slide em-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Lead Magnet Strategy</div>
+      <div class="a-title">Lead magnet strategy —<br>creating something worth the email.</div>
+      <div class="a-sub">If you'd tweet about it, it's good enough as a lead magnet.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>The worst lead magnets:</strong> generic ebooks, '10 tips' PDFs, vague checklists.<br><br><strong>The best:</strong> specific tools (templates, calculators, scripts), compressed frameworks (one-page cheat sheets), actionable guides (step-by-step for a specific outcome).<br><br>Rule: <strong>if you'd tweet about it as a piece of content, it's good enough as a lead magnet.</strong></p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide em-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">LinkedIn Pipeline</div>
+      <div class="a-title">The LinkedIn-to-email pipeline<br>that generates 50–200 subscribers per post.</div>
+      <div class="a-sub">One high-value post per week = consistent list growth.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Post valuable LinkedIn content → add <strong>'Want the full template? Comment TEMPLATE'</strong> → DM commenters the download page → they subscribe.<br><br>This method generates 50–200 new subscribers per LinkedIn post for accounts with 2,000+ connections. One high-value post per week produces consistent, compounding list growth.</p>
+      <div class="a-box"><strong>The flywheel:</strong> more subscribers → better content feedback → better LinkedIn content → more subscribers.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5 (gold) -->
+  <div class="slide em-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Landing Page</div>
+      <div class="a-title">Optimising your sign-up page<br>for conversion.</div>
+      <div class="a-sub">Optimised pages convert 30–50% of visitors.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Your landing page has one job: convert visitors to subscribers. <strong>Remove navigation. Remove distractions.</strong><br><br>Headline: specific outcome. Sub: what's inside. CTA button: <strong>'Send me the [specific thing]'</strong> not 'Subscribe.' Social proof: number of subscribers or testimonial. Test: remove one element at a time.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide em-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Referral Loop</div>
+      <div class="a-title">The referral loop — getting<br>subscribers to bring subscribers.</div>
+      <div class="a-sub">The best source of new subscribers is existing subscribers.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Add to every email: <strong>'Find this valuable? Forward to one person who'd benefit.'</strong> Add a referral link (SparkLoop or beehiiv). When a subscriber brings 3 new subscribers, reward them with a bonus resource.<br><br>They self-select the audience quality — referred subscribers open, click, and convert at 2–3× the rate of paid acquisition.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: 4-channel dashboard -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">List Growth Strategy Dashboard</div>
+      <h2 class="s7-ti">4 channels, tactics, and expected monthly growth</h2>
+      <div class="channel-grid">
+        <div class="channel-card ch1">
+          <div class="ch-name">LinkedIn</div>
+          <div class="ch-tactic">Comment-to-DM pipeline with high-value lead magnet</div>
+          <div class="ch-timeline">Active from month 1</div>
+          <div class="ch-growth">+50–200 subscribers / post</div>
+        </div>
+        <div class="channel-card ch2">
+          <div class="ch-name">Instagram</div>
+          <div class="ch-tactic">Link-in-bio landing page + story swipe-up CTAs</div>
+          <div class="ch-timeline">Active from month 1</div>
+          <div class="ch-growth">+20–80 subscribers / month</div>
+        </div>
+        <div class="channel-card ch3">
+          <div class="ch-name">Referral</div>
+          <div class="ch-tactic">SparkLoop / beehiiv referral with bonus resource reward</div>
+          <div class="ch-timeline">Set up in month 2</div>
+          <div class="ch-growth">+15–40 subscribers / month (compound)</div>
+        </div>
+        <div class="channel-card ch4">
+          <div class="ch-name">SEO / Blog</div>
+          <div class="ch-tactic">Embedded sign-up forms in niche search content</div>
+          <div class="ch-timeline">Results from month 3+</div>
+          <div class="ch-growth">+30–100 subscribers / month (compounding)</div>
+        </div>
+      </div>
+      <div class="s7-note">Activate LinkedIn and referral first — fastest returns. <strong>Add SEO last — it's slow to start but becomes your largest channel within 12 months.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-065.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
