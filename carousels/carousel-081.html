@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 081 — Pricing Strategy: How to Charge What You're Worth | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-081-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Pricing Strategy</div>
+      <h1 class="headline">You're probably<br>charging 50% of<br>what your work<br><span class="accent">is actually worth.</span></h1>
+      <p class="sub-deck">The pricing strategy that positions your services correctly — and attracts clients who respect the work.</p>
+    </div>
+    <div class="price-stack">
+      <div class="price-box">
+        <div class="tier-label">Basic</div>
+        <div class="tier-price">Entry</div>
+      </div>
+      <div class="price-box tier-mid">
+        <div class="tier-label">Premium</div>
+        <div class="tier-price">Core</div>
+      </div>
+      <div class="price-box tier-top">
+        <div class="tier-label">Elite</div>
+        <div class="tier-price">Anchor</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Underpricing Problem</div>
+      <div class="a-title">Why most service businesses<br>underprice themselves.</div>
+      <div class="a-sub">Pricing is your most powerful positioning signal.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A £500 project and a £5,000 project are perceived completely differently — before a single piece of work is seen. <strong>Underpricing attracts price-sensitive clients who are hardest to serve.</strong><br><br>The business owners who charge the most often have the most satisfied clients, because they attract clients who value the work. Your price communicates your value before you say a word.</p>
+      <div class="a-box"><strong>The signal:</strong> Low prices don't attract more clients — they attract the wrong clients. Raise your prices and watch the quality of your conversations change.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Value vs. Hourly</div>
+      <div class="a-title">The shift that changes<br>everything.</div>
+      <div class="a-sub">Hourly billing punishes efficiency. Value pricing rewards expertise.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The faster you work, the less you earn on hourly rates — your expertise is actively penalised. <strong>Value-based pricing ties your fee to the outcome you deliver.</strong><br><br>'I charge £3,000 for this engagement' positions you as an expert with a clear deliverable. 'I charge £75/hour' positions you as a commodity measured by time. One creates confidence. The other creates clock-watching.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">3-Tier Pricing</div>
+      <div class="a-title">The anchor pricing strategy<br>that shifts perception.</div>
+      <div class="a-sub">Offer 3 packages — small, medium, large. Most clients choose the middle.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>The highest tier anchors perception of value for the middle tier.</strong> The lowest tier provides an entry point that often upgrades.<br><br>Without 3 options, clients compare you to competitors. With 3 options, they compare your tiers to each other — and you win either way. The premium tier does not need to sell often. Its job is to make the core tier look excellent value.</p>
+      <div class="a-box"><strong>The psychology:</strong> The middle option captures 60–70% of buyers. Price it where you want to live. Anchor the top tier 3–4× above it.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Raising Your Rates</div>
+      <div class="a-title">How to raise your prices<br>without losing clients.</div>
+      <div class="a-sub">The announcement that keeps the clients you want.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Announce price increases to current clients 30 days before implementation. Give them the opportunity to book future work at current rates. <strong>Use the language: 'My rates are increasing to better reflect the value I deliver. Here's what's changing.'</strong><br><br>Most loyal clients stay. Some leave — and that's fine. The right clients value what you do. The ones who leave were already not the right fit for where you're taking your business.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Objection Handling</div>
+      <div class="a-title">The price objection response<br>that converts.</div>
+      <div class="a-sub">When a prospect says "it's too expensive" — don't discount. Ask.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Ask: <strong>'Too expensive compared to what?'</strong> The answer reveals the real objection. Then: 'What does the problem cost you if it isn't solved?'<br><br>If the answer is more than your fee, pricing isn't the issue — communication of value is. Help them see the cost of inaction. A £3,000 fee that prevents £30,000 of ongoing losses isn't expensive. It's the cheapest thing they'll buy this year.</p>
+      <div class="a-box"><strong>The rule:</strong> Never discount in response to a price objection. Discounting confirms their suspicion that your price was inflated. Reframe instead.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Pricing Framework</div>
+      <h2 class="s7-ti">3-column pricing architecture — Entry / Core / Premium</h2>
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Entry</th>
+            <th>Core</th>
+            <th>Premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature-label">Positioning</td>
+            <td>Test the relationship</td>
+            <td>Best value · Most popular</td>
+            <td>Full access · Comprehensive</td>
+          </tr>
+          <tr>
+            <td class="feature-label">Price Signal</td>
+            <td>Accessible</td>
+            <td>Serious investment</td>
+            <td>Anchor tier</td>
+          </tr>
+          <tr>
+            <td class="feature-label">Client Type</td>
+            <td>Budget-conscious starters</td>
+            <td>Growth-focused businesses</td>
+            <td>Results-obsessed leaders</td>
+          </tr>
+          <tr>
+            <td class="feature-label">Scope</td>
+            <td>Core deliverable only</td>
+            <td>Full service + support</td>
+            <td>Everything + priority access</td>
+          </tr>
+          <tr>
+            <td class="feature-label">Goal</td>
+            <td>Entry point, often upgrades</td>
+            <td>60–70% of sales here</td>
+            <td>Anchors middle-tier value</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Your pricing is your positioning. <strong>Set it deliberately — not by guessing what the market will bear, but by calculating what your outcomes are worth.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-081.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
