@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 066 — The Welcome Email: Your First Email Sets Everything | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-066-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Welcome Email</div>
+      <h1 class="headline">Your first email<br>has an 82%<br>open rate.<br><span class="accent">Use it wisely.</span></h1>
+      <p class="sub-deck">The welcome email is the highest-leverage email you'll ever send. Most businesses waste it on a generic 'thanks for subscribing.'</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide em-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Highest Open Rate</div>
+      <div class="a-title">Why your welcome email has the<br>highest open rate you'll ever achieve.</div>
+      <div class="a-sub">Average welcome email open rate: 82% vs 25% for regular newsletters.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Your new subscriber is most excited about you right now. <strong>This is the single best chance you'll ever have to make an impression.</strong><br><br>Most businesses send a generic 'Thanks for subscribing.' That's like meeting your best potential client and saying nothing memorable. You had the moment — and you wasted it.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3 (gold) -->
+  <div class="slide em-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Perfect Welcome Email</div>
+      <div class="a-title">The anatomy of a<br>perfect welcome email.</div>
+      <div class="a-sub">The reply request is the most important element.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Subject:</strong> 'Here's what you asked for + something extra.'<br><strong>Opening:</strong> deliver the lead magnet in the first line.<br><strong>Body:</strong> who you are (2–3 sentences). What they can expect (content type + frequency).<br><strong>One question:</strong> 'What's your biggest challenge with [topic]?'<br><strong>CTA:</strong> reply button.<br><br>The reply request trains the inbox algorithm that you're not spam.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide em-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Origin Story</div>
+      <div class="a-title">The origin story in<br>the welcome email.</div>
+      <div class="a-sub">People don't buy from businesses. They buy from people they trust.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Your welcome email is the perfect moment to share 2–3 sentences about <strong>why you do what you do.</strong> Not a CV. A human reason.<br><br>The struggle you overcame. The client you helped. The moment you knew this was your calling. <strong>Authenticity in email creates relationships that social media rarely can.</strong></p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5 (gold) -->
+  <div class="slide em-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Setting Expectations</div>
+      <div class="a-title">Setting expectations — the<br>professional courtesy that reduces unsubscribes.</div>
+      <div class="a-sub">This single paragraph reduces unsubscribes by 30%.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'Every Tuesday, you'll receive [exactly what]. It takes under 5 minutes to read. You can reply any time — I read every response.'<br><br>People stay when they know what to expect. <strong>Surprises in email feel like violations of trust.</strong> Set the expectation and deliver on it — every single week.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide em-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">A/B Testing</div>
+      <div class="a-title">A/B testing your<br>welcome email.</div>
+      <div class="a-sub">Your welcome email is the highest-leverage page in your business.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Test the subject line first (30 days). Then test the CTA (reply vs. click a link). Then test the length (short vs. long). <strong>Make one change per test.</strong><br><br>A 10% improvement in your welcome email compresses across every future campaign. A subscriber who's impressed on day one opens 40% more future emails than one who wasn't.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Welcome Email Structure -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Welcome Email Template Structure</div>
+      <h2 class="s7-ti">Each section and its purpose</h2>
+      <div class="email-struct">
+        <div class="email-row highlight">
+          <div class="email-section">Subject Line</div>
+          <div class="email-purpose"><strong>'Here's what you asked for + something extra'</strong> — deliver promise + add unexpected value</div>
+        </div>
+        <div class="email-row">
+          <div class="email-section">Opening Line</div>
+          <div class="email-purpose">Lead magnet delivery immediately — fulfil the promise before anything else</div>
+        </div>
+        <div class="email-row">
+          <div class="email-section">Who You Are</div>
+          <div class="email-purpose">2–3 sentences on your why — not your CV, your human reason for doing this work</div>
+        </div>
+        <div class="email-row">
+          <div class="email-section">What to Expect</div>
+          <div class="email-purpose">Content type + frequency + 'I read every reply' — sets expectation, reduces unsubscribes</div>
+        </div>
+        <div class="email-row highlight">
+          <div class="email-section">The Question</div>
+          <div class="email-purpose"><strong>'What's your biggest challenge with [topic]?'</strong> — trains inbox, generates insight, builds relationship</div>
+        </div>
+        <div class="email-row">
+          <div class="email-section">CTA</div>
+          <div class="email-purpose">Reply button only — one action, makes it feel personal not promotional</div>
+        </div>
+        <div class="email-row">
+          <div class="email-section">Sign-off</div>
+          <div class="email-purpose">First name + your role — warm, not corporate, reinforces the human connection</div>
+        </div>
+      </div>
+      <div class="s7-note">The welcome email sets the tone for everything that follows. <strong>Get it right and every subsequent email benefits from the trust you built here.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-066.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

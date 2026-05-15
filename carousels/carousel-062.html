@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 062 — Writing Subject Lines That Get Your Emails Opened | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-062-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Email Subject Lines</div>
+      <h1 class="headline">The most important<br>sentence you<br>write is the<br><span class="accent">subject line.</span></h1>
+      <p class="sub-deck">64% of recipients decide whether to open based on the subject line alone. Here's how to get it right.</p>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide em-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Stakes</div>
+      <div class="a-title">Why your subject line is the<br>most important sentence you write.</div>
+      <div class="a-sub">Your email body is irrelevant if the subject line fails.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>64% of email recipients decide whether to open based on the subject line alone.</strong> Your brilliant email body is irrelevant if the subject line fails to create curiosity or promise value.<br><br>Subject lines deserve more time than the email body in many cases. A weak subject line means all your content goes unread.</p>
+      <div class="a-box"><strong>The maths:</strong> A 10% improvement in your open rate means 10% more people see your offer. Subject line optimisation is the highest-leverage writing task in email.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3 (gold) -->
+  <div class="slide em-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">6 Proven Formulas</div>
+      <div class="a-title">The 6 subject line formulas<br>that consistently perform.</div>
+      <div class="a-sub">Proven frameworks that create opens across industries.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. The question:</strong> 'Are you making this mistake?'<br><strong>2. The number:</strong> '5 subject lines that get 50% open rates.'<br><strong>3. The contrarian:</strong> 'Why I stopped using email automation.'<br><strong>4. The personal:</strong> 'I almost didn't send this.'<br><strong>5. The ultra-specific:</strong> 'The one LinkedIn change that doubled my leads.'<br><strong>6. The open loop:</strong> 'I tried something different last week...'</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide em-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Curiosity Gap</div>
+      <div class="a-title">Creating urgency<br>without clickbait.</div>
+      <div class="a-sub">The curiosity gap: the space between what they know and what they want to know.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The best subject lines create a gap that can only be closed by opening the email.<br><br><strong>Critical rule: the email MUST deliver what the subject line promises.</strong> Clickbait destroys trust faster than anything else in email marketing. You get the open once. You lose the subscriber forever.</p>
+      <div class="a-box"><strong>The test:</strong> Read your subject line. Then read your email. Does the email close the loop? If not, rewrite the subject line — not the email.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5 (gold) -->
+  <div class="slide em-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">A/B Testing</div>
+      <div class="a-title">A/B testing subject lines<br>— the 20-minute weekly process.</div>
+      <div class="a-sub">How to double your open rate in 4 months.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Split your list in half. Send version A to 50%, version B to 50%. Wait 4 hours. The higher-open-rate version 'wins.' Send the winner to everyone who didn't receive either.<br><br><strong>After 4 months, you have a database of what your audience responds to. This doubles your open rate</strong> — with zero additional effort beyond the initial setup.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide em-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Deliverability Killers</div>
+      <div class="a-title">Subject line mistakes that<br>kill your deliverability.</div>
+      <div class="a-sub">These trigger spam filters and teach your audience to ignore you.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>ALL CAPS.</strong> Excessive punctuation!!!. Spam trigger words: 'free', 'guaranteed', 'limited time'. Subject lines over 60 characters (cut off on mobile). Starting with 'Re:' or 'Fwd:' as fake replies.<br><br>These don't just reduce open rates — they trigger spam filters and permanently damage your sender reputation.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Swipe File -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Subject Line Swipe File</div>
+      <h2 class="s7-ti">6 ready-to-use subject line examples</h2>
+      <div class="swipe-grid">
+        <div class="swipe-card">
+          <div class="swipe-formula">The Question</div>
+          <div class="swipe-example">"Are you making this content mistake?"</div>
+          <div class="swipe-why">Creates self-doubt and curiosity — powerful for professional audiences.</div>
+        </div>
+        <div class="swipe-card">
+          <div class="swipe-formula">The Number</div>
+          <div class="swipe-example">"5 subject lines that get 50% open rates"</div>
+          <div class="swipe-why">Specific numbers signal concrete, scannable value inside.</div>
+        </div>
+        <div class="swipe-card">
+          <div class="swipe-formula">The Contrarian</div>
+          <div class="swipe-example">"Why I stopped posting daily"</div>
+          <div class="swipe-why">Contradicts common advice — stands out in a crowded inbox.</div>
+        </div>
+        <div class="swipe-card">
+          <div class="swipe-formula">The Personal</div>
+          <div class="swipe-example">"I almost didn't send this"</div>
+          <div class="swipe-why">Vulnerability creates human connection and intrigue instantly.</div>
+        </div>
+        <div class="swipe-card">
+          <div class="swipe-formula">Ultra-Specific</div>
+          <div class="swipe-example">"The one LinkedIn change that doubled my leads"</div>
+          <div class="swipe-why">Specificity signals this is real, tested information — not generic advice.</div>
+        </div>
+        <div class="swipe-card">
+          <div class="swipe-formula">The Open Loop</div>
+          <div class="swipe-example">"I tried something different last week..."</div>
+          <div class="swipe-why">The ellipsis creates an unresolved pattern the brain needs to close.</div>
+        </div>
+      </div>
+      <div class="s7-note">Test two formulas against each other every send. <strong>Over time, your swipe file becomes your personal playbook — built on your audience's actual behaviour.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-062.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
