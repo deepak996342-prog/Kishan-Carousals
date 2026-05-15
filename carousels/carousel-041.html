@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 041 — YouTube for Business: Your Complete Starter Guide | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-041-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>YouTube Strategy</div>
+      <h1 class="headline">YouTube for Business:<br>Your Complete<br><span class="accent">Starter Guide.</span></h1>
+      <p class="sub-deck">Everything you need to start, grow, and monetise a YouTube channel that brings real clients to your service business.</p>
+    </div>
+    <div class="day-stack">
+      <div class="day-box">2.7B Users Waiting</div>
+      <div class="day-box phase2">Evergreen Lead Engine</div>
+      <div class="day-box phase3">Compound Growth</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why YouTube</div>
+      <div class="a-title">Why YouTube is the highest-ROI<br>content platform for service businesses.</div>
+      <div class="a-sub">The content you create today keeps bringing leads 3 years from now.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">YouTube has 2.7B users. Unlike LinkedIn posts that disappear, YouTube videos rank for years. <strong>YouTube compounds where other platforms decay. A LinkedIn post is dead in 48 hours. A YouTube video can generate leads every single month for years.</strong><br>The key insight: when someone searches "how to [your service]" on Google, YouTube videos appear above websites. You don't need a big audience — you need the right video in front of the right person at the right moment.</p>
+      <div class="a-box"><strong>Start with 3 search-intent videos:</strong> 'How to [problem you solve]' · 'Best [service you offer]' · '[your niche] mistakes to avoid'</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">First 10 Videos</div>
+      <div class="a-title">Your first 10 YouTube videos —<br>what to create and in what order.</div>
+      <div class="a-sub">The order matters more than the topics.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most people start with their best ideas and burn out. Instead: <strong>videos 1–3 should answer the most common questions your clients ask. Videos 4–6 should show your process and methodology. Videos 7–10 should be case studies and results.</strong><br>This sequence builds trust systematically. By video 10, a viewer knows exactly what you do, how you do it, and what results they can expect.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">YouTube SEO</div>
+      <div class="a-title">The YouTube SEO formula that<br>gets your videos found.</div>
+      <div class="a-sub">Your title is a search query, not a creative headline.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">YouTube is a search engine. 70% of watch time comes from search and recommended videos. <strong>Your title must contain the exact phrase people search. Use YouTube's autocomplete to find real search terms. The description should include your keyword in the first 2 sentences.</strong><br>Tags matter less than the title and thumbnail combined. The retention rate in the first 30 seconds determines everything else.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">No Camera Needed</div>
+      <div class="a-title">Creating YouTube content<br>without showing your face.</div>
+      <div class="a-sub">The camera-shy consultant's complete guide.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Screen recordings. Slides with voiceover. Animated explainers. Interview formats where you're off-camera. <strong>If you're not ready to be on camera, none of these formats require it. Start with screen recordings of your process — these often outperform talking-head videos because they provide immediate practical value.</strong><br>The permission slip: you don't have to show your face to build authority.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Converting Viewers</div>
+      <div class="a-title">Converting YouTube viewers<br>into discovery calls.</div>
+      <div class="a-sub">Views without conversion is a vanity hobby, not a business.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Every video needs a CTA at the 70% mark — not the end, not the beginning. <strong>Link to a free resource in the description (not your website — a specific landing page). Use end cards to direct viewers to your 3 best performing videos. Pin a comment with your CTA.</strong><br>Mention your offer naturally within the value delivery. YouTube is top-of-funnel; your email list and DMs convert.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">YouTube Launch Checklist</div>
+      <h2 class="s7-ti">Everything you need before, during, and after launch</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Setup</div>
+          <div class="pb-title">Channel Foundation</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Channel name + branding set</div>
+            <div class="pb-goal">Channel description written</div>
+            <div class="pb-goal">Profile photo + banner uploaded</div>
+            <div class="pb-goal">Links to website + social added</div>
+            <div class="pb-goal">First 3 video topics researched</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Content</div>
+          <div class="pb-title">First Videos</div>
+          <div class="pb-goals">
+            <div class="pb-goal">3 search-intent videos scripted</div>
+            <div class="pb-goal">Thumbnails designed (custom)</div>
+            <div class="pb-goal">Descriptions with keyword in line 1</div>
+            <div class="pb-goal">CTA placed at 70% mark</div>
+            <div class="pb-goal">Free resource linked in description</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Growth</div>
+          <div class="pb-title">After Publishing</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Pin CTA comment on each video</div>
+            <div class="pb-goal">Share on LinkedIn same day</div>
+            <div class="pb-goal">Reply to every comment (48h)</div>
+            <div class="pb-goal">Check analytics at day 7 + 30</div>
+            <div class="pb-goal">Repurpose top video into Shorts</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">YouTube rewards channels that show up consistently. <strong>Publish your first 3 videos in the first week — momentum beats perfectionism every time.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-041.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
