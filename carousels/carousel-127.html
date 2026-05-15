@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 127 — Storytelling Framework: The Story Structure That Drives Engagement | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-127-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Storytelling Framework</div>
+      <h1 class="headline">Data convinces.<br>Stories convert.<br><span class="accent">The gap is knowing<br>which story to tell.</span></h1>
+      <p class="sub-deck">The 5-part story framework that turns everyday professional experiences into LinkedIn content that stops the scroll.</p>
+    </div>
+    <div class="story-steps">
+      <div class="story-step"><span class="story-step-num">1</span><span class="story-step-text">Situation</span></div>
+      <div class="story-step gold-step"><span class="story-step-num">2</span><span class="story-step-text">Complication</span></div>
+      <div class="story-step"><span class="story-step-num">3</span><span class="story-step-text">Your Insight</span></div>
+      <div class="story-step gold-step"><span class="story-step-num">4</span><span class="story-step-text">Resolution</span></div>
+      <div class="story-step"><span class="story-step-num">5</span><span class="story-step-text">Lesson for Reader</span></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why Storytelling Works</div>
+      <div class="a-title">Stories bypass skepticism<br>that facts trigger.</div>
+      <div class="a-sub">The neuroscience behind why stories outperform data.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When you read a statistic, your prefrontal cortex evaluates it critically. When you read a story, your brain simulates the experience — you feel what the protagonist feels. <strong>Narrative processing bypasses skepticism.</strong><br><br>Stories are shared 22× more than facts alone. They make abstract expertise concrete — instead of "I'm a good strategist", a story shows a specific client outcome that proves it without claiming it.<br><br>Data tells people what to think. Stories make them feel it themselves. Feeling drives action.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The 5-Part Structure</div>
+      <div class="a-title">Every great LinkedIn story<br>uses this skeleton.</div>
+      <div class="a-sub">Simple structure. Infinite stories.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Situation:</strong> Set the scene in one sentence. Who, where, what context.<br><strong>2. Complication:</strong> What went wrong, changed, or created pressure. This is the hook.<br><strong>3. Your Insight:</strong> The moment of realisation or the choice you made differently.<br><strong>4. Resolution:</strong> What happened as a result. Specific outcome, not vague success.<br><strong>5. Lesson:</strong> The transferable truth that applies to your reader's situation — not your story.</p>
+      <div class="a-box"><strong>The test:</strong> If someone can read your lesson without reading your story and it still lands — your story is doing its job as context, not content.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Finding Stories</div>
+      <div class="a-title">Stories are hiding in your<br>everyday work.</div>
+      <div class="a-sub">You don't need drama. You need attention.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most professionals think they don't have stories. They're wrong — they have stories every day. They just don't recognise them as content material.<br><br>Look for: <strong>client conversations that shifted something.</strong> Project post-mortems — what you'd do differently. The moment confusion became clarity on a problem you'd been stuck on. An old belief you held that you now think is wrong.<br><br>The best stories aren't dramatic. They're specific. "A SaaS founder, 3 years in, told me something that changed how I think about pricing" works better than "clients often ask me about pricing."</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Making Stories Relatable</div>
+      <div class="a-title">Specificity is what makes<br>stories universal.</div>
+      <div class="a-sub">The counter-intuitive truth about audience connection.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Vague stories feel safe to write but don't land. Specific stories feel exposed but connect deeply. <strong>Use specificity: "a SaaS founder 3 years in" not "a client."</strong><br><br>Show tension before insight — the harder the problem sounds, the more valuable the solution feels. End with a truth that lands in someone else's situation, not yours.<br><br>People don't see themselves in your broad experience. They see themselves in your specific detail — because specificity triggers the "that's exactly me" recognition that makes them comment.</p>
+      <div class="a-box"><strong>Specificity test:</strong> Replace every vague noun with a specific one. "Someone I know" → "a founder I spoke to last Tuesday." Feels uncomfortable. That's right.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Hook Mastery</div>
+      <div class="a-title">Your first sentence decides<br>if anyone reads the rest.</div>
+      <div class="a-sub">The opening line is where most story posts are won or lost.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn shows 2-3 lines before "see more." Your first sentence — sometimes your only sentence — must create enough tension or curiosity to earn the click.<br><br><strong>Can you end it with a comma and still stop the scroll?</strong> That's the test. "Three years ago I made a mistake that cost me my biggest client," earns the click. "I want to share something about client management" does not.<br><br>Great story hooks are incomplete without the rest. They create an open loop — the brain physically needs it closed. Give people an open loop. They will follow you in.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Story Framework Template</div>
+      <h2 class="s7-ti">5-part structure with prompts and examples</h2>
+      <table class="framework-table">
+        <thead>
+          <tr>
+            <th>Part</th>
+            <th>What It Does</th>
+            <th>Writing Prompt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Situation</td>
+            <td>Sets context in one sentence</td>
+            <td>"I was [doing X] when [specific detail]..."</td>
+          </tr>
+          <tr>
+            <td>Complication</td>
+            <td>Creates tension — the hook</td>
+            <td>"Then [unexpected thing happened]..."</td>
+          </tr>
+          <tr>
+            <td>Insight</td>
+            <td>Your unique perspective shift</td>
+            <td>"That's when I realised [non-obvious truth]..."</td>
+          </tr>
+          <tr>
+            <td>Resolution</td>
+            <td>Specific outcome, not vague success</td>
+            <td>"The result was [concrete, named outcome]..."</td>
+          </tr>
+          <tr>
+            <td>Lesson</td>
+            <td>Transferable truth for reader</td>
+            <td>"If you're [reader situation], then [lesson]..."</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">The lesson is what <strong>your reader will share.</strong> Write the story for yourself. Write the lesson for them.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-127.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

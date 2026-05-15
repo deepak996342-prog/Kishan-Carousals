@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 131 — Long Game Mindset: Why Most People Quit Before Results Compound | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-131-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Long Game Mindset</div>
+      <h1 class="headline">Most people abandon their<br>LinkedIn strategy 60 days<br><span class="accent">before it starts working.</span></h1>
+      <p class="sub-deck">The mindset shift that separates creators who build lasting authority from those who cycle through strategies forever.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Months 1–3</div>
+        <div class="vis-box-val">Feels like nothing. Stay.</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Months 4–6</div>
+        <div class="vis-box-val">Slow traction begins.</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Month 7+</div>
+        <div class="vis-box-val">Compound growth starts.</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Compound Curve</div>
+      <div class="a-title">LinkedIn growth is a curve,<br>not a line.</div>
+      <div class="a-sub">Understanding the shape of results changes your expectations.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Months 1-3 feel like shouting into a void. Posts get 10 likes. Follower growth is single digits per week. Nothing seems to be working.<br><br><strong>Months 4-6: slow traction.</strong> Certain posts start getting noticed. A handful of people comment consistently. You get your first DM from someone you don't know.<br><br><strong>Month 7+: compound growth begins.</strong> Your audience recommends you. Engagement multiplies because your existing audience amplifies new posts. The algorithm recognises you. Almost no one reaches month 7 — because they quit at month 3.</p>
+      <div class="a-box"><strong>The irony:</strong> The people who quit at month 3 will never know they were 4 months from the breakthrough. Patience isn't passive — it's a strategic decision.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Why Smart People Quit Early</div>
+      <div class="a-title">It's not laziness.<br>It's a measurement problem.</div>
+      <div class="a-sub">You're measuring the wrong things at the wrong time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Smart professionals don't quit because they're lazy. They quit because they're measuring wrong.<br><br><strong>Comparing day 30 to someone else's year 3.</strong> That creator didn't start with 50,000 followers — you're seeing the finish, not the start.<br><br><strong>Measuring reach instead of relationship depth.</strong> 50 impressions from 50 ideal clients is more valuable than 5,000 random impressions.<br><br><strong>Expecting virality, getting slow trust.</strong> LinkedIn doesn't reward viral — it rewards consistency. The platform compounds trust, not reach. Measure the right currency.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Leading Indicators</div>
+      <div class="a-title">These signals mean you're<br>on track even when it feels slow.</div>
+      <div class="a-sub">Leading indicators precede results. Learn to read them.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most creators only measure lagging indicators — follower count, impressions. By the time these move meaningfully, the work that caused it is months old.<br><br>Track leading indicators instead: <strong>Are the right people engaging?</strong> Not just anyone — your ideal client profile. <strong>Are DMs increasing?</strong> Even 1 per week is significant early. <strong>Is comment quality improving?</strong> Shallow "great post!" comments are noise. Specific, thoughtful engagement is signal.<br><br>If all three are trending up: you're on track. Results are coming. Stay.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Redefining Phase 1 Success</div>
+      <div class="a-title">What 0-90 day success<br>actually looks like.</div>
+      <div class="a-sub">Recalibrate the win condition before you measure failure.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">In the first 90 days, success is not: 5,000 followers, viral posts, inbound clients. Those are Phase 3 outcomes. Seeking them in Phase 1 is like judging a seed for not being a tree.<br><br><strong>Phase 1 success looks like: post consistency</strong> (not reach — you published what you said you would). <strong>Voice clarity</strong> (not virality — you're finding how you sound). <strong>Finding 3-5 potential clients</strong> in your comment sections who are showing interest.<br><br>By this standard, you can succeed in Phase 1 even with zero follower growth. Reset the win condition.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Patience Protocol</div>
+      <div class="a-title">How to stay consistent<br>when nothing seems to happen.</div>
+      <div class="a-sub">Structure beats willpower for long-game success.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Commit to 12 months.</strong> Not "let me try this for a while." Make a decision. Put it in your calendar. Tell someone. 12 months.<br><br><strong>Review quarterly, not weekly.</strong> Weekly progress is nearly invisible. Quarterly progress is obvious and motivating.<br><br><strong>Never judge a post in the first 48 hours.</strong> LinkedIn distributes content over days, sometimes weeks. A "slow" post may pick up significant engagement on day 5.<br><br><strong>Build audience one conversation at a time.</strong> Reply to every comment. Follow up in DMs. The audience that compounds is the one you treated like people.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Content Growth Curve</div>
+      <h2 class="s7-ti">3 phases with realistic expectations and mindset</h2>
+      <div class="s7-3col">
+        <div class="s7-card">
+          <div class="s7-card-lbl">Phase 1 · Months 1–3</div>
+          <div class="s7-card-ttl">Plant</div>
+          <div class="s7-list">
+            <div class="s7-li">Realistic: &lt;500 followers</div>
+            <div class="s7-li">Leading indicator: consistency rate</div>
+            <div class="s7-li">Win = posted what you committed to</div>
+            <div class="s7-li">Mindset: planting, not harvesting</div>
+            <div class="s7-li">Action: don't compare, just create</div>
+          </div>
+        </div>
+        <div class="s7-card gc">
+          <div class="s7-card-lbl">Phase 2 · Months 4–6</div>
+          <div class="s7-card-ttl">Tend</div>
+          <div class="s7-list">
+            <div class="s7-li">Realistic: first inbound DMs</div>
+            <div class="s7-li">Leading indicator: comment quality</div>
+            <div class="s7-li">Win = right people engaging</div>
+            <div class="s7-li">Mindset: tending a growing thing</div>
+            <div class="s7-li">Action: engage every commenter</div>
+          </div>
+        </div>
+        <div class="s7-card">
+          <div class="s7-card-lbl">Phase 3 · Month 7+</div>
+          <div class="s7-card-ttl">Harvest</div>
+          <div class="s7-list">
+            <div class="s7-li">Realistic: consistent inbound leads</div>
+            <div class="s7-li">Leading indicator: referral rate</div>
+            <div class="s7-li">Win = clients attributed to content</div>
+            <div class="s7-li">Mindset: managing abundance</div>
+            <div class="s7-li">Action: introduce premium offer</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">The people in Phase 3 aren't smarter. <strong>They're the ones who didn't quit in Phase 1.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-131.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
