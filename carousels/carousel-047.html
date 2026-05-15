@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 047 — Building a YouTube Content Calendar That You'll Actually Stick To | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-047-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Content Calendar</div>
+      <h1 class="headline">Building a YouTube<br>Content Calendar<br><span class="accent">You'll Actually Stick To.</span></h1>
+      <p class="sub-deck">The planning system that removes "what do I post?" from your week — permanently.</p>
+    </div>
+    <div class="day-stack">
+      <div class="day-box">Quarterly Planning</div>
+      <div class="day-box phase2">Batching Method</div>
+      <div class="day-box phase3">12-Week Launch Plan</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Quarterly Planning</div>
+      <div class="a-title">The quarterly YouTube<br>planning method.</div>
+      <div class="a-sub">Plan 3 months at a time. Leave 20% of slots open for trending topics.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Planning 12 videos at a time sounds overwhelming — until you realise it takes 90 minutes once per quarter instead of 30 minutes of stress every single week. <strong>Group videos by monthly theme or series. Monthly theme = easier to batch-create. Leave 20% of slots flexible for trending topics and timely content.</strong><br>The planning session removes the single biggest barrier to consistent YouTube: the "what do I post?" decision. When that decision is made in advance, your energy on production day goes into quality — not topic anxiety.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">3 Video Types</div>
+      <div class="a-title">The 3 types of videos every<br>YouTube channel needs.</div>
+      <div class="a-sub">Balance: 50% SEO, 30% authority, 20% conversion.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. SEO/Search videos (evergreen, discovery):</strong> these rank in search and bring in new viewers for years. They answer specific questions. They're the traffic engine.<br><strong>2. Authority videos (showcase your expertise):</strong> these demonstrate depth of knowledge. They're why subscribers stay. They build the trust that search videos can't.<br><strong>3. Conversion videos (case studies, testimonials, offers):</strong> these are where clients recognise themselves and reach out. 20% of your content can drive 80% of your enquiries when positioned correctly.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Batching Production</div>
+      <div class="a-title">Batching production — creating<br>4 videos in one day.</div>
+      <div class="a-sub">Batching eliminates 80% of production friction and setup time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The logistics: same setup, same lighting, change outfits between sessions. <strong>Script all 4 videos before recording day. Record in order of energy — most important content first, when you're freshest. Edit in sequence during the rest of the week.</strong><br>The math: 4 videos batch-recorded in one day = 4 weeks of content. That's one production day per month. For most service business owners, this is the difference between "I'll get to YouTube eventually" and "my YouTube channel runs consistently while I serve clients."</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Publishing Frequency</div>
+      <div class="a-title">Publishing frequency — what<br>actually moves the algorithm.</div>
+      <div class="a-sub">One high-quality video per week beats three mediocre ones.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1 high-quality video per week, published consistently for 90 days, will outperform 3 mediocre videos per week every time.</strong> The algorithm rewards channels it can rely on — both for quality and schedule.<br>The minimum viable posting schedule: 1 video per week for 90 days without exception. Don't start at 3 videos per week unless you can genuinely sustain that volume for 6 months. Starting fast and burning out damages channel authority more than starting slow and building steadily.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Managing the Calendar</div>
+      <div class="a-title">Managing a content calendar without<br>it becoming a second job.</div>
+      <div class="a-sub">30 minutes on Monday. 2 hours per week total. That's enough.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The simplest system that works: <strong>a spreadsheet with five columns — publish date, video title, status (idea / scripted / recorded / edited / live), thumbnail status, and SEO notes. 30 minutes on Monday to review and update the week. Total time investment: 2 hours per week including the planning session.</strong><br>This is achievable for most service business owners without hiring a team. The calendar isn't the hard part. The hard part is committing to the system when a week gets busy. Plan for the busy week in advance — always have 2 videos in the edit queue as a buffer.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">12-Week YouTube Launch Plan</div>
+      <h2 class="s7-ti">What to focus on in each phase of your launch</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Weeks 1–4</div>
+          <div class="pb-title">Foundation</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Channel setup + branding done</div>
+            <div class="pb-goal">3 SEO/search videos published</div>
+            <div class="pb-goal">1 authority video published</div>
+            <div class="pb-goal">Thumbnail template created</div>
+            <div class="pb-goal">Spreadsheet calendar in place</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Weeks 5–8</div>
+          <div class="pb-title">Momentum</div>
+          <div class="pb-goals">
+            <div class="pb-goal">3 more search videos live</div>
+            <div class="pb-goal">First case study video published</div>
+            <div class="pb-goal">Best video repurposed into Shorts</div>
+            <div class="pb-goal">First analytics review done</div>
+            <div class="pb-goal">Email list CTA added to top video</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Weeks 9–12</div>
+          <div class="pb-title">Conversion</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Process video with embedded offer</div>
+            <div class="pb-goal">Lowest-CTR thumbnails updated</div>
+            <div class="pb-goal">Playlist structure completed</div>
+            <div class="pb-goal">Quarter 2 topics planned</div>
+            <div class="pb-goal">First YouTube enquiry tracked</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">After 12 weeks you'll have 12 videos, data on what works, and a system that runs without guesswork. <strong>That's the foundation — now scale what's working.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-047.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 046 — YouTube Thumbnails: The Psychology of Getting Clicked | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-046-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Thumbnail Design</div>
+      <h1 class="headline">YouTube Thumbnails:<br>The Psychology of<br><span class="accent">Getting Clicked.</span></h1>
+      <p class="sub-deck">Why your thumbnail is the most important design decision you make — and how to get it right every time.</p>
+    </div>
+    <div class="day-stack">
+      <div class="day-box">CTR is Everything</div>
+      <div class="day-box phase2">3-Element Formula</div>
+      <div class="day-box phase3">A/B Testing Method</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why Thumbnails Win</div>
+      <div class="a-title">Why thumbnails matter more<br>than titles for discovery.</div>
+      <div class="a-sub">Humans process images 60,000x faster than text.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Thumbnails appear 3x larger than titles in YouTube search results. The human brain processes images in 13 milliseconds — long before the title is read. <strong>CTR (click-through rate) is the single most important YouTube ranking factor after the first 48 hours.</strong><br>A video with a 7% CTR and 50% retention will be pushed to hundreds of thousands of viewers regardless of subscriber count. A video with a 2% CTR will be suppressed no matter how good the content is. YouTube is telling you: if viewers aren't clicking, the content doesn't get shown. Fix the click first.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">3-Element Formula</div>
+      <div class="a-title">The 3-element thumbnail formula<br>that works across every niche.</div>
+      <div class="a-sub">Simple, bold, and readable at thumbnail size on a phone screen.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Face (emotion: surprise, concern, or excitement) + Bold text (3–5 words maximum) + High contrast background.</strong> This formula works because it answers the viewer's subconscious question in under a second: "Is this for me, and does this person know something I don't?"<br>Channels without faces can use before/after comparisons, large numbers, or visual metaphors. The test: shrink your thumbnail to phone size. If the text is still readable and the main element is still clear — it works. If anything gets lost — redesign it.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Colour Psychology</div>
+      <div class="a-title">Colour psychology in thumbnails —<br>what each colour signals.</div>
+      <div class="a-sub">The most clicked thumbnails use high contrast between background and subject.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Red/orange: urgency, warning, importance. Yellow: curiosity, opportunity, energy. Blue: trust, authority, credibility. Green: growth, money, permission.</strong><br>The psychology is unconscious — your viewer isn't thinking about colour theory. But their brain is processing it in milliseconds. The highest-performing thumbnails typically use one dominant background colour that contrasts sharply with the subject. Busy, multi-coloured backgrounds confuse the eye. The goal is instant visual clarity: one thing to look at, one message to receive, one reason to click.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">A/B Testing</div>
+      <div class="a-title">A/B testing thumbnails — the method<br>that doubled my CTR.</div>
+      <div class="a-sub">Change one element at a time. Test for 7 days minimum.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Create two thumbnail versions per video. Change ONE element between them — the background colour, the text, or the facial expression. Test for 7 days minimum. The winning thumbnail = higher CTR with similar retention.</strong><br>YouTube Studio shows thumbnail CTR per video under Analytics → Reach. Industry benchmarks: 4–6% CTR is good. 7%+ is excellent. Below 3% means your thumbnail is actively suppressing the video.<br>Most creators never test. This single habit separates channels that grow from channels that plateau.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Common Mistakes</div>
+      <div class="a-title">Thumbnail mistakes that<br>kill your channel.</div>
+      <div class="a-sub">Inconsistent brand means low recognition — viewers stop seeing you.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The mistakes that suppress channels quietly: <strong>too much text (more than 5 words). Clickbait that doesn't match content (destroys retention and trust). Low contrast between subject and background. No clear focal point — the eye doesn't know where to look.</strong><br>The most damaging mistake: changing your thumbnail style constantly. Your returning viewers recognise your channel by your thumbnail style before they read your channel name. Inconsistent brand = low recognition. Low recognition = lower CTR from subscribers. Lower CTR = less algorithmic push. The compounding effect works against you.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Thumbnail Checklist</div>
+      <h2 class="s7-ti">Do this. Don't do this. Every single video.</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Do This</div>
+          <div class="pb-title">Thumbnail Best Practice</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Use a custom thumbnail always</div>
+            <div class="pb-goal">High contrast background + subject</div>
+            <div class="pb-goal">3–5 words maximum on thumbnail</div>
+            <div class="pb-goal">Clear focal point (face or graphic)</div>
+            <div class="pb-goal">Consistent brand style per channel</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Test This</div>
+          <div class="pb-title">A/B Testing Routine</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Create 2 versions per video</div>
+            <div class="pb-goal">Change only 1 element at a time</div>
+            <div class="pb-goal">Run test for minimum 7 days</div>
+            <div class="pb-goal">Check CTR in YouTube Studio</div>
+            <div class="pb-goal">Keep winner as new template</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Never Do This</div>
+          <div class="pb-title">Thumbnail Mistakes</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Too much text (6+ words)</div>
+            <div class="pb-goal">Clickbait that mismatches content</div>
+            <div class="pb-goal">Low contrast (dark on dark)</div>
+            <div class="pb-goal">Busy background with no focal point</div>
+            <div class="pb-goal">Different style every video</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">A great thumbnail doesn't just get clicks — it gets the <strong>right</strong> clicks. Qualified viewers who watch, stay, and subscribe.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-046.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

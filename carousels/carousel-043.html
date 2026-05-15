@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 043 — YouTube SEO: Getting Your Videos Found Without Paid Ads | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-043-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>YouTube SEO</div>
+      <h1 class="headline">YouTube SEO:<br>Getting Your Videos<br><span class="accent">Found Without Paid Ads.</span></h1>
+      <p class="sub-deck">The organic search strategy that puts your videos in front of ideal clients — for free, for years.</p>
+    </div>
+    <div class="day-stack">
+      <div class="day-box">Keyword Research</div>
+      <div class="day-box phase2">Title Formula</div>
+      <div class="day-box phase3">Playlist Strategy</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Keyword Research</div>
+      <div class="a-title">Keyword research for YouTube —<br>finding what your clients actually search.</div>
+      <div class="a-sub">Real searches come from real people with real problems.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The YouTube autocomplete method: go to YouTube, type your topic, and note the suggestions that appear. <strong>These are real searches by real people. Start with "how to [your service]" and "best [your service] for [your client type]."</strong><br>Free tools: TubeBuddy and vidIQ (both have free tiers) show you search volume and competition. The sweet spot: moderate search volume with low competition. This is where small channels can rank fast and attract exactly the right viewer.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Title Formula</div>
+      <div class="a-title">Writing titles that rank<br>and get clicked.</div>
+      <div class="a-sub">A title must do two jobs: rank in search and earn the click.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Include the exact keyword in the first 40 characters — this is what YouTube reads for ranking. Add a number or power word to increase click-through rate. The title must make a specific promise.</strong><br>The test: would your ideal client click this title if it appeared in a search result? If not, rewrite it. Most creators write titles they find clever. Your viewer doesn't care about clever — they care about "is this the answer to my specific problem?" Your title must say yes, clearly.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Technical SEO</div>
+      <div class="a-title">Descriptions, tags, and chapters —<br>the technical SEO checklist.</div>
+      <div class="a-sub">Small technical details compound into significant ranking advantages.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The first 150 characters of your description appear in search results — make them count. <strong>Include your primary keyword in the first sentence. Add timestamps and chapters: they create rich snippets that appear in Google search and give viewers a reason to click.</strong><br>Tags: use 5–10 specific tags, not 50 generic ones. Specificity beats volume. A tag like "content strategy for consultants" outperforms "marketing" every time because it tells YouTube exactly who this video is for.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Thumbnails</div>
+      <div class="a-title">Thumbnails — the click-through<br>rate multiplier.</div>
+      <div class="a-sub">Custom thumbnails get 2–3x more clicks than auto-generated.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Face + text + high contrast = the thumbnail formula that works across every niche. Test 2 thumbnails per video in the first month using YouTube Studio's A/B feature.</strong><br>CTR below 4% = thumbnail problem. Retention below 50% = content problem. These two metrics together tell you exactly what to fix. A great thumbnail gets the click. A great video earns the watch time. You need both — but fix your thumbnail first because without the click, the content never gets seen.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Playlists</div>
+      <div class="a-title">The playlist strategy that keeps<br>viewers watching longer.</div>
+      <div class="a-sub">Playlists get indexed separately — they're free SEO real estate.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Playlists are indexed separately in YouTube search — a playlist about "content strategy for consultants" can rank alongside individual videos on the same topic.</strong> Group videos by topic or viewer journey. Put your strongest video first — first impressions apply to playlists too.<br>YouTube rewards channels that keep people on the platform. Playlists are the single best mechanism for achieving this. A viewer who watches 3 videos in a playlist is 5x more likely to subscribe than a viewer who watches 1 standalone video.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">YouTube SEO Checklist</div>
+      <h2 class="s7-ti">Every element optimised, every video</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Discovery</div>
+          <div class="pb-title">Title &amp; Thumbnail</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Keyword in first 40 characters</div>
+            <div class="pb-goal">Number or power word added</div>
+            <div class="pb-goal">Custom thumbnail uploaded</div>
+            <div class="pb-goal">CTR target: 4%+</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Indexing</div>
+          <div class="pb-title">Description &amp; Tags</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Keyword in first sentence</div>
+            <div class="pb-goal">150-char preview optimised</div>
+            <div class="pb-goal">Timestamps/chapters added</div>
+            <div class="pb-goal">5–10 specific tags used</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Retention</div>
+          <div class="pb-title">Chapters &amp; Playlists</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Added to relevant playlist</div>
+            <div class="pb-goal">End card links to top video</div>
+            <div class="pb-goal">CTA at 70% mark in video</div>
+            <div class="pb-goal">Retention target: 40%+</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">YouTube SEO is not a one-time task — it's a monthly review habit. <strong>Update your lowest-CTR thumbnails every 30 days.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-043.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

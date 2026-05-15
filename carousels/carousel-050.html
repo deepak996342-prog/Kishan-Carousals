@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 050 — From YouTube Viewer to Paying Client: The Conversion Path | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-050-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>YouTube Conversion</div>
+      <h1 class="headline">From YouTube Viewer<br>to Paying Client:<br><span class="accent">The Conversion Path.</span></h1>
+      <p class="sub-deck">Why most service businesses don't get clients from YouTube — and the exact path that changes that.</p>
+    </div>
+    <div class="day-stack">
+      <div class="day-box">The Trust Ladder</div>
+      <div class="day-box phase2">Channel Optimisation</div>
+      <div class="day-box phase3">90-Day Case Study</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Trust Ladder</div>
+      <div class="a-title">The trust ladder — how YouTube<br>viewers become clients.</div>
+      <div class="a-sub">Each step reduces friction. Skip steps and conversion fails.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The full journey: <strong>Stranger → Viewer → Subscriber → Email Subscriber → Discovery Call → Client.</strong><br>Each step reduces friction and builds trust. Most service businesses try to jump from Viewer directly to Client — putting their offer in the first 10 seconds of video 1. Viewers don't convert at that stage. They don't know you yet.<br>The patience required: let the trust ladder do its job. Viewers who complete the full journey convert at 5–10x the rate of cold outreach. YouTube is a trust machine. Let it run.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Channel Optimisation</div>
+      <div class="a-title">Optimising your channel page<br>for client conversion.</div>
+      <div class="a-sub">Your channel page is a landing page. Treat it like one.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most creators treat the channel page as an afterthought. It's the first thing a potential client sees when they click your name. <strong>Channel description: state what you do, who you help, and what they get — in the first two sentences. Featured section: link your best lead-generating video and your free resource. About section: include a CTA and a direct contact method.</strong><br>A well-optimised channel page converts at 3–5x the rate of an unoptimised one. 30 minutes of setup work. Permanent conversion improvement.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">CTA Formula</div>
+      <div class="a-title">The video CTA formula that<br>books discovery calls.</div>
+      <div class="a-sub">The softer the language, the higher the conversion rate for service businesses.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The formula at 70% of every video: <strong>"[Client name] came to me with [specific problem]. After [timeframe], they achieved [specific result]. If you want the same for your business, I offer a free 30-minute audit. Link is in the description."</strong><br>No hard sell. No price mention. No features list. A genuine story followed by a genuine offer. The softer the language, the higher the conversion rate for service businesses. Hard CTAs trigger resistance. Soft CTAs trigger curiosity. Curiosity books calls. Resistance doesn't.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Community Posts</div>
+      <div class="a-title">Community posts and YouTube email —<br>the overlooked conversion tools.</div>
+      <div class="a-sub">Treat YouTube community posts like a newsletter. They reach subscribers directly.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>YouTube's community post feature reaches subscribers in their feed — outside of videos. Weekly tips, polls, behind-the-scenes moments, and upcoming video previews all build familiarity between uploads.</strong><br>YouTube doesn't have DMs — but community posts build the familiarity that drives subscribers to find your contact details and reach out. The pattern: video → community post → email list → DM or email enquiry. Each touchpoint warms the relationship. By the time a viewer contacts you, they already feel like they know you — because through 6 months of video and community posts, they kind of do.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">90-Day Case Study</div>
+      <div class="a-title">The 90-day YouTube launch that<br>generated my first YouTube client.</div>
+      <div class="a-sub">Case study videos consistently drive more enquiries than any other type.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Day 1–30: 4 SEO-optimised search videos on the most common problems my ideal clients face.</strong><br><strong>Day 31–60: first client case study video — specific results, specific client (with permission), specific timeframe.</strong><br><strong>Day 61–90: process video with embedded offer at the 70% mark.</strong><br>The case study video consistently drives more enquiries than any other format. Why: potential clients recognise themselves in the story. They see a problem they have, a result they want, and a path from one to the other. Share real results. Be specific. Clients recognise themselves in specificity.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">YouTube Conversion Optimisation Checklist</div>
+      <h2 class="s7-ti">Every element of the conversion path, checked and ready</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Channel Setup</div>
+          <div class="pb-title">First Impression</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Channel description: what/who/what they get</div>
+            <div class="pb-goal">Featured video = best converter</div>
+            <div class="pb-goal">Free resource linked in About</div>
+            <div class="pb-goal">Contact method clearly visible</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Video CTAs</div>
+          <div class="pb-title">In-Video Conversion</div>
+          <div class="pb-goals">
+            <div class="pb-goal">CTA placed at 70% mark</div>
+            <div class="pb-goal">Story-based (client result) CTA</div>
+            <div class="pb-goal">Soft language, genuine offer</div>
+            <div class="pb-goal">Brief repeat at video end</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Email Integration</div>
+          <div class="pb-title">Off-YouTube Conversion</div>
+          <div class="pb-goals">
+            <div class="pb-goal">Free resource in every description</div>
+            <div class="pb-goal">Email sequence: 5+ messages</div>
+            <div class="pb-goal">Email CTA: discovery call</div>
+            <div class="pb-goal">Track YouTube → client enquiries</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">YouTube converts slowly and powerfully. <strong>Build the system, stay consistent, and the right clients will find you — already knowing, liking, and trusting you.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-050.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

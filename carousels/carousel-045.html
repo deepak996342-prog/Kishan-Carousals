@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 045 — Video Hooks: The First 30 Seconds That Determine Everything | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-045-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Video Hooks</div>
+      <h1 class="headline">Video Hooks:<br>The First 30 Seconds<br><span class="accent">That Determine Everything.</span></h1>
+      <p class="sub-deck">Why the opening half-minute of every video is the most important content you'll ever create.</p>
+    </div>
+    <div class="day-stack">
+      <div class="day-box">8-Second Decision</div>
+      <div class="day-box phase2">5 Hook Formulas</div>
+      <div class="day-box phase3">48-Hour Test</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 30-Second Rule</div>
+      <div class="a-title">Why 70% of viewers leave<br>in the first 30 seconds.</div>
+      <div class="a-sub">The attention decision happens before your first sentence is finished.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The average viewer makes their attention decision in 8–12 seconds. Pattern recognition happens instantly: <strong>"Is this for me?"</strong><br><strong>A slow intro, logo animation, or "hey guys welcome back" loses them immediately.</strong> These opening patterns signal to the viewer's brain: "this creator doesn't value my time." The viewer has hundreds of alternatives one swipe away. Your first 30 seconds is not an introduction — it's a contract. You're promising a specific value in exchange for their specific time. Make that contract explicit, immediately.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">5 Hook Formulas</div>
+      <div class="a-title">The 5 hook formulas that work<br>across every niche.</div>
+      <div class="a-sub">Test all five. Double down on whichever your audience responds to most.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Contrarian:</strong> "Everyone says X. Here's why that's wrong."<br><strong>2. Question:</strong> "Why do [common thing] always fail?"<br><strong>3. Story:</strong> "Last week a client told me something that changed how I think about [topic]."<br><strong>4. Statistic:</strong> "X% of [your audience] makes this mistake — and it's costing them Y."<br><strong>5. Bold promise:</strong> "In the next 8 minutes I'll show you exactly how to [specific result]."<br>The best hook for your channel depends on your audience. Test all five in your first 10 videos.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Pattern Interrupt</div>
+      <div class="a-title">The pattern interrupt — stopping<br>the scroll in 3 seconds.</div>
+      <div class="a-sub">Your first frame matters as much as your thumbnail.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Start in the middle of action or with a bold, surprising statement. Cut the preamble entirely.</strong> No "so today I want to talk about..." No "before we get started..." These are preamble patterns that signal more preamble is coming — and viewers leave.<br>Your viewer's first thought when the pattern interrupt works: "Wait, what?" That brief moment of confusion or surprise is what makes them stop scrolling. It's not manipulation — it's the same technique a great book uses in its first sentence. Start in a moment of consequence.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Testing Hooks</div>
+      <div class="a-title">Testing hooks — the 48-hour<br>rewrite strategy.</div>
+      <div class="a-sub">If a video underperforms in 48 hours, the hook is the first thing to fix.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>If a video underperforms in its first 48 hours, re-upload with a new first 30 seconds. Keep the body of the video identical. This single tactic can 10x a video's reach.</strong><br>YouTube's algorithm judges your video heavily in the first 48 hours. If it doesn't perform, the algorithm stops pushing it — often permanently. But a new upload resets that window. You get a second chance with the same content, just a better hook. Most creators never use this. It's the highest-leverage edit available after publication.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide vd-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Long vs. Short Hooks</div>
+      <div class="a-title">Long-form vs. short-form hooks —<br>different rules apply.</div>
+      <div class="a-sub">Long-form: 30 seconds. Short-form: 3 seconds. Different windows, different rules.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Long-form hook (8–12 min videos): you have 30 seconds. Use them to make a promise of transformation. The viewer is investing real time — they need to know it's worth it.</strong><br><strong>Short-form hook (Shorts/Reels): you have 3 seconds.</strong> Use an immediate curiosity gap or an emotional trigger. No setup. No context. Just a statement that demands the viewer stay for the next 57 seconds. The rules are completely different. A hook that works in a long video will fail in a Short — and vice versa. Write your hooks with the format in mind from the first word.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Hook Formula Library</div>
+      <h2 class="s7-ti">5 proven hook types — ready to use in your next video</h2>
+      <div class="phase-blocks">
+        <div class="phase-block p1">
+          <div class="pb-label g">Formula 1</div>
+          <div class="pb-title">Contrarian</div>
+          <div class="pb-goals">
+            <div class="pb-goal">"Everyone says post daily."</div>
+            <div class="pb-goal">"Here's why that's wrong."</div>
+            <div class="pb-goal">Challenge a common belief</div>
+            <div class="pb-goal">Best for thought leadership</div>
+          </div>
+        </div>
+        <div class="phase-block p2">
+          <div class="pb-label go">Formula 2 &amp; 3</div>
+          <div class="pb-title">Question + Story</div>
+          <div class="pb-goals">
+            <div class="pb-goal">"Why do X always fail?"</div>
+            <div class="pb-goal">Open a curiosity loop</div>
+            <div class="pb-goal">"Last week a client told me..."</div>
+            <div class="pb-goal">Story = highest retention hook</div>
+          </div>
+        </div>
+        <div class="phase-block p3">
+          <div class="pb-label g">Formula 4 &amp; 5</div>
+          <div class="pb-title">Stat + Promise</div>
+          <div class="pb-goals">
+            <div class="pb-goal">"X% of [audience] does this wrong"</div>
+            <div class="pb-goal">Specific number = credibility</div>
+            <div class="pb-goal">"In 8 minutes you'll know how to..."</div>
+            <div class="pb-goal">Promise = commitment contract</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">The best hook you'll ever write comes from listening to what your clients say. <strong>Their exact words are your most powerful opening line.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-045.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
