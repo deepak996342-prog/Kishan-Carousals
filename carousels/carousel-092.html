@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 092 — The AI Tool Stack for Content Creators in 2025 | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-092-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>AI Tool Stack</div>
+      <h1 class="headline">You don't need<br>more AI tools.<br>You need the<br><span class="accent">right 5.</span></h1>
+      <p class="sub-deck">The optimal AI tool stack for solo content creators — depth over breadth, every time.</p>
+    </div>
+    <div class="tool-stack-visual">
+      <div class="tool-item"><span class="tool-num">01</span><div><div class="tool-name">Claude / ChatGPT</div><div class="tool-role">Writing & ideation core</div></div></div>
+      <div class="tool-item"><span class="tool-num">02</span><div><div class="tool-name">Perplexity AI</div><div class="tool-role">Real-time research</div></div></div>
+      <div class="tool-item"><span class="tool-num">03</span><div><div class="tool-name">Midjourney / DALL-E</div><div class="tool-role">Visual content</div></div></div>
+      <div class="tool-item"><span class="tool-num">04</span><div><div class="tool-name">Descript / ElevenLabs</div><div class="tool-role">Voice & video</div></div></div>
+      <div class="tool-item"><span class="tool-num">05</span><div><div class="tool-name">Make.com / Zapier</div><div class="tool-role">Automation</div></div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide ai-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Tool Overload Problem</div>
+      <div class="a-title">More AI tools makes you<br>less productive, not more.</div>
+      <div class="a-sub">5,000+ AI tools. Most creators use 12 badly.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">There are now 5,000+ AI tools. Most content creators have 8–12 subscriptions they barely use. The result: <strong>context-switching, learning curves, and a monthly bill that exceeds what AI saves.</strong><br><br>The optimal stack for a solo content creator: 3–5 tools, each with a clear, non-overlapping function. Every tool you add beyond your core stack adds complexity without proportional return.<br><br><strong>Depth over breadth.</strong> Know three tools deeply. Don't know twelve tools superficially.</p>
+      <div class="a-box"><strong>The test:</strong> Could you explain exactly what you used each AI tool for last week? If you can't, you don't need it. Audit your subscriptions before adding more.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3: Gold -->
+  <div class="slide ai-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Core Stack</div>
+      <div class="a-title">The 5-tool AI content stack<br>that covers everything.</div>
+      <div class="a-sub">These 5 tools handle 95% of a content creator's needs.</div>
+      <div class="a-divider"></div>
+      <div class="stack-list">
+        <div class="stack-item"><span class="si-num">1</span><div class="si-text"><strong>Claude or ChatGPT</strong> — writing, ideation, research. The core tool you use every day.</div></div>
+        <div class="stack-item"><span class="si-num">2</span><div class="si-text"><strong>Perplexity AI</strong> — real-time research with citations. Replaces 80% of your manual searching.</div></div>
+        <div class="stack-item"><span class="si-num">3</span><div class="si-text"><strong>Midjourney or DALL-E</strong> — visuals for carousels and thumbnails. No designer needed.</div></div>
+        <div class="stack-item"><span class="si-num">4</span><div class="si-text"><strong>ElevenLabs or Descript</strong> — voice cloning and video editing. Production at scale.</div></div>
+        <div class="stack-item"><span class="si-num">5</span><div class="si-text"><strong>Make.com or Zapier</strong> — automation and workflow. Connect everything, remove repetition.</div></div>
+      </div>
+      <div class="a-box" style="margin-top:14px;"><strong>Monthly cost:</strong> Under £100/month for the full stack. ROI measured in hours saved, not money spent.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide ai-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Claude vs. ChatGPT</div>
+      <div class="a-title">Which writing AI is better<br>for content creators?</div>
+      <div class="a-sub">The honest comparison based on actual output quality.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Claude:</strong> superior for long-form writing, nuanced tone, maintaining context over long conversations. Stronger reasoning for strategic advice. Better at following complex, multi-part instructions.<br><br><strong>ChatGPT:</strong> stronger code generation, better for plugins and integrations, GPT-4o multimodal capability. Larger plugin ecosystem.<br><br><strong>For content creation specifically:</strong> Claude Sonnet is the current benchmark. Use what produces output you can publish with minimal editing. The best tool is the one you've trained on your voice.</p>
+      <div class="a-box"><strong>My recommendation:</strong> Start with Claude for writing. Add ChatGPT for anything requiring integrations or multimodal input. Both are worth learning — pick one as your primary.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5: Gold -->
+  <div class="slide ai-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Automation Workflow</div>
+      <div class="a-title">Automating your content workflow<br>with AI — build once, run forever.</div>
+      <div class="a-sub">3–4 hours saved per week from one afternoon of setup.</div>
+      <div class="a-divider"></div>
+      <div class="stack-list">
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">1</span><div class="si-text"><strong>Trigger:</strong> You write a LinkedIn post.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">2</span><div class="si-text"><strong>AI repurpose:</strong> Auto-generates Instagram caption + email newsletter excerpt + tweet.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">3</span><div class="si-text"><strong>Scheduling:</strong> Auto-queued for each platform at optimal posting times.</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">4</span><div class="si-text"><strong>Analytics pull:</strong> Weekly performance summary generated and emailed to you.</div></div>
+      </div>
+      <div class="a-box" style="margin-top:14px;border-left-color:var(--gold);border-color:rgba(245,158,11,0.2);"><strong>Result:</strong> One post becomes four. One afternoon of setup saves 3–4 hours every week. Consistent cross-platform presence without manual effort.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide ai-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Research & Trend Tools</div>
+      <div class="a-title">AI tools for research and<br>trend-spotting — stay informed fast.</div>
+      <div class="a-sub">The best content comes from deep knowledge. These tools build it.</div>
+      <div class="a-divider"></div>
+      <div class="stack-list">
+        <div class="stack-item"><span class="si-num">→</span><div class="si-text"><strong>Perplexity AI:</strong> Real-time web research with cited sources. Replaces hours of manual research.</div></div>
+        <div class="stack-item"><span class="si-num">→</span><div class="si-text"><strong>SparkToro:</strong> Audience research — what your ideal client reads, watches, and follows.</div></div>
+        <div class="stack-item"><span class="si-num">→</span><div class="si-text"><strong>BuzzSumo:</strong> Trending content in your niche. Know what's working before you create.</div></div>
+        <div class="stack-item"><span class="si-num">→</span><div class="si-text"><strong>Google Trends:</strong> Search interest over time. Spot rising topics before they peak.</div></div>
+        <div class="stack-item"><span class="si-num">→</span><div class="si-text"><strong>Feedly:</strong> Aggregated RSS for staying informed without drowning in tabs.</div></div>
+      </div>
+      <div class="a-box" style="margin-top:14px;"><strong>The principle:</strong> AI tools help you stay informed without spending hours reading. Informed creators produce better content. Better content compounds faster.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Summary -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">AI Tool Stack by Function</div>
+      <h2 class="s7-ti">Eight content creation functions — the best tool for each</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Function</th>
+            <th>Best Tool + Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Writing &amp; drafting</td>
+            <td><strong>Claude Sonnet</strong> — best long-form quality, voice consistency, nuanced tone</td>
+          </tr>
+          <tr>
+            <td>Real-time research</td>
+            <td><strong>Perplexity AI</strong> — cites sources, current data, no hallucinations on facts</td>
+          </tr>
+          <tr>
+            <td>Visual creation</td>
+            <td><strong>Midjourney</strong> — highest quality AI imagery for professional carousel graphics</td>
+          </tr>
+          <tr>
+            <td>Voice &amp; audio</td>
+            <td><strong>ElevenLabs</strong> — most realistic voice cloning, ideal for audio content at scale</td>
+          </tr>
+          <tr>
+            <td>Video editing</td>
+            <td><strong>Descript</strong> — edit video by editing text transcript; removes silences automatically</td>
+          </tr>
+          <tr>
+            <td>Automation</td>
+            <td><strong>Make.com</strong> — more powerful than Zapier for content workflows; visual builder</td>
+          </tr>
+          <tr>
+            <td>Trend monitoring</td>
+            <td><strong>BuzzSumo + Feedly</strong> — niche trends and aggregated reading in one workflow</td>
+          </tr>
+          <tr>
+            <td>Scheduling</td>
+            <td><strong>Buffer or Publer</strong> — simple, reliable, supports all major platforms</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-092.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
