@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 103 — LinkedIn Polls: Build Engagement and Understand Your Audience | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-103-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Polls</div>
+      <h1 class="headline">Your next viral post<br>could be just<br><span class="accent">4 answer options.</span></h1>
+      <p class="sub-deck">How to use polls strategically — to spark debate, gather data, and build engagement that feeds your content calendar.</p>
+    </div>
+    <div class="poll-grid">
+      <div class="poll-option"><div class="poll-bar" style="width:72%"></div><span>Build in public — Yes ✓</span></div>
+      <div class="poll-option gold"><div class="poll-bar" style="width:44%"></div><span>Stay private — No</span></div>
+      <div class="poll-option"><div class="poll-bar" style="width:28%"></div><span>Depends on the goal</span></div>
+      <div class="poll-option gold"><div class="poll-bar" style="width:16%"></div><span>Undecided</span></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Algorithm Boost</div>
+      <div class="a-title">Why Polls Work<br>Algorithmically</div>
+      <div class="a-sub">LinkedIn actively pushes polls harder than most other formats.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Polls generate immediate, low-friction engagement. A single click to vote takes two seconds — far less commitment than writing a comment. <strong>This means polls collect engagement faster than any other format in the first 30 minutes after posting.</strong><br><br>High early engagement signals value to the LinkedIn algorithm, which then <strong>extends the post's reach to your 2nd-degree network</strong> — people who don't follow you yet. The result: polls are one of the most reliable ways to reach new audiences on the platform without spending a penny.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Poll Formats</div>
+      <div class="a-title">4 Poll Types That<br>Drive Real Engagement</div>
+      <div class="a-sub">Not all polls are equal — format drives performance.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Controversy / Hot Take:</strong> "Cold calling is dead. Agree or disagree?" People vote AND explain themselves in comments. High comment volume = massive reach.<br><br><strong>2. "Which do you prefer?":</strong> Two strong opposing options. Forces people to take a side. Generates debate between respondents.<br><br><strong>3. Data-gathering:</strong> "How many times a week do you post on LinkedIn?" Turns your audience into a research panel. The results become your next piece of content.<br><br><strong>4. Prediction:</strong> "Will AI replace junior copywriters by 2026?" Future-oriented, inherently thought-provoking.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Writing Polls</div>
+      <div class="a-title">Writing Irresistible<br>Poll Questions</div>
+      <div class="a-sub">The question does the work — four principles that convert.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Be specific, not generic.</strong> "Do you use LinkedIn?" gets skipped. "Are you posting on LinkedIn more or less than 6 months ago?" gets clicked.<br><br><strong>Add slight provocation.</strong> Mild controversy drives participation. Safe polls are forgettable polls.<br><br><strong>Make it answerable in 2 seconds.</strong> If someone needs to think for 30 seconds to understand what you're asking, they scroll past. Clarity beats cleverness.<br><br><strong>Tap into relatable tension.</strong> The best polls surface a dilemma your audience already experiences privately. Make them feel seen by simply answering.</p>
+      <div class="a-box"><strong>Test this:</strong> Before publishing, ask yourself — "Would I vote on this?" If you hesitate, rewrite the question.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Follow-Up Strategy</div>
+      <div class="a-title">The Post-Poll Move<br>Most People Skip</div>
+      <div class="a-sub">Your second post doubles your total reach from one poll.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When your poll closes, <strong>write a results post.</strong> Share the results, add your own analysis, and tell people what the data means. This second piece of content typically generates as much or more engagement as the poll itself — because now you're delivering insight, not just collecting opinions.<br><br>Example structure: <strong>"I asked my audience [question]. Here's what 847 of you said — and why it surprised me."</strong> Then give your genuine take on what the results reveal about your industry.<br><br>Two posts. One idea. Double the reach. That's the poll strategy.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Mistakes to Avoid</div>
+      <div class="a-title">Poll Frequency &amp;<br>The Mistakes That Kill Them</div>
+      <div class="a-sub">Less is more — polls lose power when overused.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Frequency:</strong> Max 1–2 polls per month. Use them as strategic spikes, not daily filler. The moment your audience expects a poll every week, the novelty — and engagement — drops significantly.<br><br><strong>Never pitch in a poll.</strong> "Which of my services would you buy?" is not a poll — it's a sales page with a vote button. Your audience sees through it immediately and disengages.<br><br><strong>Engage every comment within 2 hours.</strong> People who comment on polls are your highest-interest audience. Respond to every single one within the first two hours. This keeps the engagement wave rolling and signals genuine interest to the algorithm.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Poll Content Calendar</div>
+      <h2 class="s7-ti">12 Poll Ideas Across 4 Content Themes + Follow-Up Formats</h2>
+      <div class="poll-calendar">
+        <div class="poll-theme t1">
+          <div class="pt-label">Expertise / Hot Takes</div>
+          <div class="pt-item">Is cold outreach dead in 2025?</div>
+          <div class="pt-item">AI tools: replacing jobs or creating them?</div>
+          <div class="pt-item">Best way to grow on LinkedIn in 90 days?</div>
+          <div class="pt-follow">Follow-up: data analysis post + your POV</div>
+        </div>
+        <div class="poll-theme t2">
+          <div class="pt-label">Audience Research</div>
+          <div class="pt-item">How many posts/week do you publish?</div>
+          <div class="pt-item">Biggest content creation challenge?</div>
+          <div class="pt-item">Where does most of your business come from?</div>
+          <div class="pt-follow">Follow-up: insight post with benchmarks</div>
+        </div>
+        <div class="poll-theme t3">
+          <div class="pt-label">Debate / Controversy</div>
+          <div class="pt-item">Long-form or short posts: which wins?</div>
+          <div class="pt-item">Best time to post: morning vs. evening?</div>
+          <div class="pt-item">Ghostwriting: ethical or not?</div>
+          <div class="pt-follow">Follow-up: comment roundup + your verdict</div>
+        </div>
+        <div class="poll-theme t4">
+          <div class="pt-label">Prediction / Future</div>
+          <div class="pt-item">Will text posts still work in 2027?</div>
+          <div class="pt-item">Biggest growth lever: content or network?</div>
+          <div class="pt-item">LinkedIn in 5 years: bigger or smaller?</div>
+          <div class="pt-follow">Follow-up: thought leadership + data post</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-103.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

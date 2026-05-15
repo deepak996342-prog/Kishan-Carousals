@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 102 — LinkedIn Live: Run Your First Live Broadcast | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-102-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Live</div>
+      <h1 class="headline">LinkedIn Live is the<br>most underused tool<br>on the platform.<br><span class="accent">Competitors are sleeping on it.</span></h1>
+      <p class="sub-deck">How to run your first LinkedIn Live broadcast — setup to follow-up — and use it to build authority fast.</p>
+    </div>
+    <div class="live-stack">
+      <div class="live-box"><span class="live-dot"></span>Live Now: AMA Session</div>
+      <div class="live-box gold-box">7× More Reactions</div>
+      <div class="live-box">Replay in Feed</div>
+      <div class="live-box gold-box">Real-Time Notifications</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Algorithm Advantage</div>
+      <div class="a-title">Why LinkedIn Live Gets<br>7× More Reactions</div>
+      <div class="a-sub">The algorithm actively favours live content.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn Live is not just another content format — it's an algorithm shortcut. <strong>When you go live, LinkedIn sends real-time notifications to your followers,</strong> something no other format receives. The algorithm boosts your broadcast during streaming, prioritising it in feeds across your first and second-degree network.<br><br>After the broadcast ends, <strong>the replay video stays in your feed as a permanent post</strong> — continuing to generate views, reactions, and comments for weeks. One broadcast can outperform a month of regular posts.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Equipment & Setup</div>
+      <div class="a-title">Gear &amp; Setup —<br>No Studio Needed</div>
+      <div class="a-sub">Professional results without professional costs.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Your smartphone is enough to start.</strong> A ring light ($30–50) removes shadows and adds instant visual polish. Stable WiFi is non-negotiable — ethernet is better if you can manage it. Position yourself with a window in front of you, not behind.<br><br>For software, <strong>StreamYard's free tier gives you everything you need</strong>: screen sharing, branded overlays, guest functionality, and direct publishing to LinkedIn. No download required — it runs in your browser. You can be broadcast-ready in under 30 minutes.</p>
+      <div class="a-box"><strong>Minimum viable setup:</strong> Smartphone + ring light + StreamYard free + stable WiFi. That's it. Start your first broadcast this week.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Format Choices</div>
+      <div class="a-title">3 First-Broadcast<br>Formats That Work</div>
+      <div class="a-sub">Pick one and run with it — don't overthink the format.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Q&amp;A "Ask Me Anything"</strong> — the lowest-prep format. Announce your topic, let your audience ask questions live. Works brilliantly if you have even a modest engaged following. 20–30 minutes is ideal.<br><br><strong>2. Topic Deep-Dive</strong> — a structured 25-minute commentary on a subject you know deeply. Have 5 talking points ready; let the conversation flow naturally from there.<br><br><strong>3. Behind-the-Scenes Process Walkthrough</strong> — share your screen, show your tools, walk through exactly how you do something. High perceived value, low production barrier.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Promotion Timeline</div>
+      <div class="a-title">The 5-Day Promotion<br>Sequence Before You Go Live</div>
+      <div class="a-sub">The broadcast starts long before you press go live.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Day −5:</strong> Announce the broadcast with a compelling hook post. State the specific outcome attendees will get. Invite your ideal audience explicitly.<br><br><strong>Day −1:</strong> Send a reminder post. Add urgency — "Tomorrow at 11am." Create a LinkedIn Event so people can register and receive automatic reminders.<br><br><strong>Morning of:</strong> Post with the direct broadcast link. Keep it short: what you're covering + the time + the link. Pin this to the top of your profile. Reply to every comment to signal the algorithm this post matters.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Post-Broadcast</div>
+      <div class="a-title">How to Repurpose One<br>Broadcast Into a Week of Content</div>
+      <div class="a-sub">The broadcast is the source. Repurposing is the strategy.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most people go live and then… nothing. That's a massive waste. <strong>Your broadcast is a content mine.</strong> From one 30-minute session you can extract:<br><br><strong>60-second highlight clips</strong> — pull the 2–3 moments where the energy peaked. Post each one separately over the next week.<br><br><strong>A follow-up insight post</strong> — share the top 3 things your audience asked about. This second post often outperforms the broadcast itself.<br><br><strong>DMs to everyone who commented</strong> — they showed up for you. Thank them personally. This is how live sessions become real relationships.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Launch Checklist</div>
+      <h2 class="s7-ti">LinkedIn Live — Pre / During / Post Checklist</h2>
+      <div class="checklist-cols">
+        <div class="chk-col c1">
+          <div class="chk-label">Pre-Broadcast</div>
+          <div class="chk-item">Test audio &amp; video 30 min before</div>
+          <div class="chk-item">Publish LinkedIn Event for registration</div>
+          <div class="chk-item">Announce D-5 and D-1 posts</div>
+          <div class="chk-item">Prepare 5 talking points/questions</div>
+          <div class="chk-item">Morning-of post with direct link</div>
+          <div class="chk-item">Set up StreamYard with branding</div>
+          <div class="chk-item">Close unnecessary browser tabs</div>
+        </div>
+        <div class="chk-col c2">
+          <div class="chk-label">During Broadcast</div>
+          <div class="chk-item">Welcome viewers by name in chat</div>
+          <div class="chk-item">Read &amp; answer live questions</div>
+          <div class="chk-item">State your topic clearly at the start</div>
+          <div class="chk-item">Include a mid-stream CTA</div>
+          <div class="chk-item">Repeat your handle for new arrivals</div>
+          <div class="chk-item">End with a clear next step for viewers</div>
+          <div class="chk-item">Keep to 20–40 minutes max</div>
+        </div>
+        <div class="chk-col c3">
+          <div class="chk-label">Post-Broadcast</div>
+          <div class="chk-item">DM every commenter personally</div>
+          <div class="chk-item">Write follow-up post with key takeaways</div>
+          <div class="chk-item">Clip 60s highlights for feed posts</div>
+          <div class="chk-item">Review analytics (peak viewers, retention)</div>
+          <div class="chk-item">Save replay link for repurposing</div>
+          <div class="chk-item">Schedule next broadcast date</div>
+          <div class="chk-item">Note top 3 questions for future posts</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-102.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
