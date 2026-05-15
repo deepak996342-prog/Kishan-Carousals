@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 104 — LinkedIn Events: Fill Your Events and Build a Hot Audience | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-104-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Events</div>
+      <h1 class="headline">LinkedIn Events give you<br>access to your entire<br>network before your<br><span class="accent">event even starts.</span></h1>
+      <p class="sub-deck">How to create a LinkedIn Event that fills up, keeps people engaged, and converts attendees into conversations.</p>
+    </div>
+    <div class="event-cards">
+      <div class="event-card">
+        <div class="ec-date">Thu, Jun 12 · 11:00 AM</div>
+        <div class="ec-title">Content Strategy Masterclass</div>
+        <div class="ec-count">247 attending</div>
+      </div>
+      <div class="event-card">
+        <div class="ec-date">Tue, Jun 18 · 2:00 PM</div>
+        <div class="ec-title">LinkedIn AMA — Live Q&amp;A</div>
+        <div class="ec-count">189 attending</div>
+      </div>
+      <div class="event-card">
+        <div class="ec-date">Wed, Jun 25 · 12:00 PM</div>
+        <div class="ec-title">AI Tools for Content Teams</div>
+        <div class="ec-count">312 attending</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why Events Work</div>
+      <div class="a-title">What LinkedIn Events<br>Do for Your Brand</div>
+      <div class="a-sub">Four compounding benefits that make events worth creating.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Warm up cold prospects.</strong> Someone who registers for your event self-identifies as interested in your topic. That's intent data you can't buy.<br><br><strong>Algorithm boost.</strong> LinkedIn promotes events to your connections' networks, extending your reach beyond your current audience.<br><br><strong>Email-list alternative.</strong> Registered attendees become a list you can communicate with via event updates — inside LinkedIn, no email required.<br><br><strong>Establish authority before you say a word.</strong> Hosting an event positions you as an expert worth listening to. Attendance builds credibility by association.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Event Design</div>
+      <div class="a-title">Creating an Event<br>People Actually Click On</div>
+      <div class="a-sub">Your title is your most important marketing decision.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Lead with specific outcome, not format.</strong> "How to Generate 3 Qualified Leads/Week with LinkedIn Content" will always outperform "LinkedIn Content Webinar." Tell people exactly what they'll walk away with.<br><br><strong>Professional banner matters.</strong> A clean, branded banner in the correct 1920×1080px ratio signals that you take this seriously. Use Canva's free LinkedIn Event template.<br><br><strong>Clear agenda + strong speaker bio.</strong> List exactly what you'll cover in 3–4 bullet points. Your bio should mention one specific result, not just job title. People attend for the outcome, not the credential.</p>
+      <div class="a-box"><strong>Title formula:</strong> "How to [Specific Outcome] in [Time Frame] Using [Your Method]" converts significantly better than generic topic titles.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Promotion Plan</div>
+      <div class="a-title">The 30-Day Promotion<br>Plan That Fills Events</div>
+      <div class="a-sub">Consistent pre-event content is what separates 20 from 200 attendees.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>D-30:</strong> Create the event and publish a teaser post. Announce the topic and ask who wants to attend.<br><br><strong>D-30 to D-7:</strong> Post 3× per week on topics related to your event. Each post ends with a soft invite. This builds anticipation and attracts exactly the right audience.<br><br><strong>D-7 to D-1:</strong> Send personal invites to your warm connections — the 20–30 people who engage with your content regularly. Personal beats broadcast.<br><br><strong>Co-host strategy:</strong> Find one person in a complementary space, make them a co-host. Their network sees your event too. Doubles promotion reach overnight.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Running the Event</div>
+      <div class="a-title">How to Run a High-Value<br>LinkedIn Event</div>
+      <div class="a-sub">Three principles that turn attendees into followers.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Open with a provocative question.</strong> "How many of you are posting content on LinkedIn but not seeing any leads from it?" 80% of the room will mentally raise their hand. You've just demonstrated you understand their exact problem.<br><br><strong>Involve the chat actively.</strong> Ask questions throughout. Call out specific names when reading comments. People who feel seen share what they're attending with their network.<br><br><strong>Deliver one breakthrough insight they can use today.</strong> Not a list of ten tactics — one clear, actionable idea that makes them think "I need to do this now." That insight is what they'll share and talk about.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Post-Event 72 Hours</div>
+      <div class="a-title">The 72-Hour Window<br>After Every Event</div>
+      <div class="a-sub">Most of the value from your event happens after it ends.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The 72 hours after your event is your highest-conversion window. Here's the sequence:<br><br><strong>Hour 0–6:</strong> Post a thank-you post tagging attendees who asked great questions. This gets them to share your post with their network.<br><br><strong>Hour 24:</strong> Share the recording link via an event update. Everyone who registered gets notified — including those who didn't attend live.<br><br><strong>Hour 48–72:</strong> Pitch the next step — a free resource, a follow-up conversation, your service. People who attended your event are now pre-sold. They've invested 30–60 minutes with you. This is exactly the right moment to make an offer.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Event Timeline</div>
+      <h2 class="s7-ti">D-30 to D+7 — Specific Actions at Each Stage</h2>
+      <div class="timeline">
+        <div class="tl-row">
+          <div class="tl-label">D-30</div>
+          <div class="tl-action"><strong>Create event + publish teaser post.</strong> Announce topic, build anticipation, invite early interest.</div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-label">D-30 to D-7</div>
+          <div class="tl-action"><strong>Post 3×/week</strong> on related topics. Each post ends with a soft invite to the event.</div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-label gold">D-7</div>
+          <div class="tl-action"><strong>Send personal invites</strong> to your 20–30 warmest connections. Add a co-host for doubled reach.</div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-label gold">D-1</div>
+          <div class="tl-action"><strong>Reminder post + event update.</strong> Keep it short: topic, time, link. Pin to your profile.</div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-label">Day 0</div>
+          <div class="tl-action"><strong>Go live.</strong> Open with a question, involve the chat, deliver one breakthrough insight, close with a clear CTA.</div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-label">D+1 to D+7</div>
+          <div class="tl-action"><strong>Thank-you post → recording share → next-step pitch.</strong> 72-hour conversion window in action.</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-104.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 107 — LinkedIn Ghostwriting: Hire Help vs. Build the Skill | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-107-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Ghostwriting</div>
+      <h1 class="headline">Your choice isn't between<br>posting or not. It's between<br>doing it yourself and<br><span class="accent">getting leverage.</span></h1>
+      <p class="sub-deck">An honest framework for deciding when to hire LinkedIn ghostwriting help — and when to build the skill yourself.</p>
+    </div>
+    <div class="vs-stack">
+      <div class="vs-side a">
+        <div class="vs-head">Build the Skill</div>
+        <div class="vs-point">Early-stage brand building</div>
+        <div class="vs-point">Voice IS the differentiator</div>
+        <div class="vs-point">Writing = thinking = strategy</div>
+      </div>
+      <div class="vs-side b">
+        <div class="vs-head">Hire the Help</div>
+        <div class="vs-point">ROI already validated</div>
+        <div class="vs-point">Time is the bottleneck</div>
+        <div class="vs-point">POV exists, execution doesn't</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Case for Building</div>
+      <div class="a-title">Why You Should Build<br>the Skill Yourself First</div>
+      <div class="a-sub">There are moments in your career when only you can write your content.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>In the early stages, your personal voice IS your brand.</strong> Before you have case studies, testimonials, and track records, the only thing that differentiates you from a hundred competitors is how you think and how you communicate that thinking. A ghostwriter can't access that yet.<br><br>Writing is also a <strong>strategic thinking discipline</strong>. Forcing yourself to articulate your ideas in public sharpens your positioning, clarifies your niche, and reveals what you actually believe. Many founders discover their real brand through 6 months of consistent writing — not before it.<br><br>Build the skill until you have something worth scaling.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Case for Hiring</div>
+      <div class="a-title">When It Makes Sense<br>to Hire Ghostwriting Help</div>
+      <div class="a-sub">Three conditions that justify the investment.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Your content ROI is validated.</strong> You have data showing that LinkedIn generates leads, referrals, or opportunities for your business. Now the question is scale, not whether it works.<br><br><strong>Your time genuinely costs more.</strong> If an hour of your time is worth $300 and you're spending 5 hours a week on content, that's $1,500/week of opportunity cost. A ghostwriter at $2,000/month is now an obvious ROI decision — not a luxury.<br><br><strong>You have the POV but struggle to articulate it.</strong> Some people think deeply but write slowly. A skilled ghostwriter who interviews you and shapes your ideas into posts is a genuine force multiplier.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Spectrum</div>
+      <div class="a-title">The Ghostwriting Spectrum —<br>5 Options Between DIY and Full Service</div>
+      <div class="a-sub">It's not binary — find the right level of leverage for your stage.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Full ghostwriter</strong> — they create everything, you review and publish. Highest cost, maximum time savings.<br><br><strong>2. Editor/strategist</strong> — you write rough drafts, they sharpen and optimise. Preserves your voice, reduces time by 60%.<br><br><strong>3. Interview-based writer</strong> — they interview you weekly for 30 minutes, extract your ideas, write the posts. The sweet spot for many founders.<br><br><strong>4. Template system</strong> — they build your frameworks and templates once; you fill in the specifics each week.<br><br><strong>5. Writing coach</strong> — they develop your skills over 6 months so you need less help long-term.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Vetting Writers</div>
+      <div class="a-title">How to Vet a LinkedIn<br>Ghostwriter Before Hiring</div>
+      <div class="a-sub">Three checks that separate real results from good sales pitches.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Ask for client results, not just writing samples.</strong> Anyone can write a decent post. Ask for before/after analytics: what was the client's follower count when they started? What was it 3 months later? What leads did the content generate?<br><br><strong>Run a paid test post.</strong> Before committing to a retainer, pay for one post written to a detailed brief. Review the draft for voice match, not just quality. A technically great post that doesn't sound like you is worthless.<br><br><strong>Check their own LinkedIn profile.</strong> A LinkedIn ghostwriter who doesn't grow their own LinkedIn audience should raise a flag. Do they practice what they sell?</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Making Hybrid Work</div>
+      <div class="a-title">The Hybrid Model That<br>Gets the Best of Both Worlds</div>
+      <div class="a-sub">Your voice, their craft — the collaboration that actually scales.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The most effective setup most busy professionals use isn't fully outsourced or fully DIY — it's collaborative:<br><br><strong>You supply:</strong> your ideas, your personal stories, your unique point of view, the experiences only you have had, the opinions only you hold. This is irreplaceable and cannot be faked.<br><br><strong>They supply:</strong> structure, hook writing, editing for clarity, format optimisation, posting cadence management, analytics review.<br><br><strong>You always review before publishing.</strong> If you'd be embarrassed to have someone read the draft knowing you wrote it yourself — it needs another revision. You are still accountable for everything published under your name.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Decision Matrix</div>
+      <h2 class="s7-ti">Hire vs. Build — Score Yourself Across 4 Factors</h2>
+      <div class="decision-table">
+        <div class="dt-col hire">
+          <div class="dt-head">Hire If Your Scores Are High</div>
+          <div class="dt-row">
+            <div class="dt-factor">Budget</div>
+            <div class="dt-val"><span class="dt-score high">$2k+/mo available</span></div>
+          </div>
+          <div class="dt-row">
+            <div class="dt-factor">Time Value</div>
+            <div class="dt-val"><span class="dt-score high">$200+/hr billable rate</span></div>
+          </div>
+          <div class="dt-row">
+            <div class="dt-factor">Content ROI</div>
+            <div class="dt-val"><span class="dt-score high">LinkedIn → leads proven</span></div>
+          </div>
+          <div class="dt-row">
+            <div class="dt-factor">Stage</div>
+            <div class="dt-val"><span class="dt-score high">Scaling, not exploring</span></div>
+          </div>
+        </div>
+        <div class="dt-col build">
+          <div class="dt-head">Build If Your Scores Are Lower</div>
+          <div class="dt-row">
+            <div class="dt-factor">Budget</div>
+            <div class="dt-val"><span class="dt-score med">Under $500/mo</span></div>
+          </div>
+          <div class="dt-row">
+            <div class="dt-factor">Time Value</div>
+            <div class="dt-val"><span class="dt-score med">Writing builds thinking</span></div>
+          </div>
+          <div class="dt-row">
+            <div class="dt-factor">Content ROI</div>
+            <div class="dt-val"><span class="dt-score med">Still testing the market</span></div>
+          </div>
+          <div class="dt-row">
+            <div class="dt-factor">Stage</div>
+            <div class="dt-val"><span class="dt-score med">Finding voice + niche</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:16px;font-size:15px;color:var(--muted);border-left:3px solid var(--acc-light);padding-left:16px;">Most people in the early stage should build first. Most people past $10k MRR from LinkedIn should hire. The hybrid works at every stage.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-107.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

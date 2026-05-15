@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 108 — LinkedIn Recommendations: Social Proof That Converts | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-108-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Recommendations</div>
+      <h1 class="headline">One great LinkedIn<br>recommendation does more<br>than 6 months of<br><span class="accent">self-promotion.</span></h1>
+      <p class="sub-deck">How to request, position, and display recommendations so they work as active sales tools — not profile decoration.</p>
+    </div>
+    <div class="rec-card-stack">
+      <div class="rec-card">
+        <div class="rec-card-quote">Kishan transformed our LinkedIn strategy. We went from 0 to 3 inbound calls a week in 60 days.</div>
+        <div class="rec-author">— Sarah M., Founder, B2B SaaS</div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-card-quote">The most specific, practical content advice I've received. Results-focused and genuinely excellent.</div>
+        <div class="rec-author">— David K., Head of Marketing</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why They Work</div>
+      <div class="a-title">Why Recommendations Are<br>Your Best Social Proof</div>
+      <div class="a-sub">Third-party validation outperforms any claim you make yourself.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>They appear at decision moments.</strong> When someone is considering hiring you and visits your profile, recommendations are the last thing they read before making a decision. A strong recommendation stack turns a "maybe" into a "yes."<br><br><strong>They show up in LinkedIn search.</strong> Profile keywords within recommendations are indexed by LinkedIn search — meaning your recommendations improve your discoverability.<br><br><strong>They say what you can't say yourself.</strong> You can't write "I tripled my client's revenue" in your bio without sounding like every other consultant. A client can say it for you — and it lands 10× more credibly.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Request</div>
+      <div class="a-title">The Perfect Recommendation<br>Request That Always Gets a Yes</div>
+      <div class="a-sub">Most requests fail because they ask too much. This format succeeds because it asks for too little.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Give context first:</strong> Remind them which project or engagement you're referring to. Don't make them guess.<br><br><strong>Suggest 2–3 specific things to mention:</strong> "If you could mention [specific outcome] and [specific approach], that would be incredibly helpful." This removes the blank-page paralysis that kills most recommendation requests.<br><br><strong>Provide a bullet template:</strong> Three optional bullet points they can use as inspiration. Most people will use them almost verbatim — and that's fine. You've made it easy.<br><br><strong>Set a 2-week window:</strong> "Would you be able to write one in the next two weeks?" creates a soft deadline without pressure.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">What Great Looks Like</div>
+      <div class="a-title">The 4-Part Formula for<br>a Converting Recommendation</div>
+      <div class="a-sub">Not all recommendations are equal — structure determines impact.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A recommendation that converts follows this structure:<br><br><strong>1. The Problem</strong> — "When I hired Kishan, our LinkedIn content was generating no leads despite posting 3× a week."<br><br><strong>2. How They Solved It</strong> — "Kishan restructured our entire content approach in the first two weeks — new pillars, new formats, new hook strategy."<br><br><strong>3. Specific Outcome</strong> — "Within 90 days we had 6 qualified discovery calls directly attributed to LinkedIn content."<br><br><strong>4. Who Should Hire You</strong> — "If you're a B2B founder who wants content that actually converts, Kishan is the person to call."<br><br>4–5 sentences. Specific numbers. Present tense recommendation at the end.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Give First</div>
+      <div class="a-title">The Give-First Strategy That<br>Gets You 3–4 Recommendations</div>
+      <div class="a-sub">Reciprocity is the most reliable way to build your recommendation count.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Instead of asking for recommendations, start by giving 5 proactive recommendations to people you've genuinely worked with and admired.<br><br><strong>Write them unsolicited, without asking for anything in return.</strong> Be specific about outcomes and results. Use the 4-part formula.<br><br>What happens next is predictable: within 30 days, 3–4 of the 5 people will write you a recommendation in return. Reciprocity is a deeply human instinct — and it works even more reliably on LinkedIn where the action is visible to mutual connections.<br><br>This strategy requires no awkward asks. It positions you as generous. And it works every time.</p>
+      <div class="a-box"><strong>Give 5, receive 3–4.</strong> Write your first proactive recommendation today — it takes 10 minutes and starts the reciprocity cycle.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Recommendations as Content</div>
+      <div class="a-title">How to Turn Your Best<br>Recommendation Into a Post</div>
+      <div class="a-sub">Screenshot social proof = organic reach + credibility simultaneously.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Your best recommendation sitting quietly on your profile reaches only the people who visit it. That might be 50–100 people per week. But a post about that recommendation can reach thousands.<br><br><strong>Here's the format:</strong> Share a screenshot of the recommendation. Add 2–3 sentences about what you're proud of in the outcome. Make it about the client's transformation, not your ego. Tag the person if they're comfortable being tagged.<br><br>This creates a post that demonstrates value without directly selling, leverages genuine social proof, and reaches your entire network — not just profile visitors. <strong>Post your best recommendation once every 2–3 months.</strong> It never gets old to new followers.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Recommendation System</div>
+      <h2 class="s7-ti">Request Script / What to Include / Follow-Up Sequence</h2>
+      <div class="rec-system">
+        <div class="rs-col c1">
+          <div class="rs-label">Request Script</div>
+          <div class="rs-item">Remind them of the specific project/engagement</div>
+          <div class="rs-item">Suggest 2–3 specific things to mention</div>
+          <div class="rs-item">Provide optional bullet template</div>
+          <div class="rs-item">Set a soft 2-week deadline</div>
+          <div class="rs-item">Thank them regardless of their answer</div>
+          <div class="rs-item">Use LinkedIn message, not email</div>
+        </div>
+        <div class="rs-col c2">
+          <div class="rs-label">What to Include</div>
+          <div class="rs-item">The specific problem they had before you</div>
+          <div class="rs-item">How you solved it (approach, not just title)</div>
+          <div class="rs-item">One specific measurable outcome</div>
+          <div class="rs-item">Who should hire you — a clear statement</div>
+          <div class="rs-item">4–5 sentences max — length hurts credibility</div>
+          <div class="rs-item">Present tense final recommendation</div>
+        </div>
+        <div class="rs-col c3">
+          <div class="rs-label">Follow-Up Sequence</div>
+          <div class="rs-item">Give 5 proactive recs first (no ask)</div>
+          <div class="rs-item">Follow up once if no response after 10 days</div>
+          <div class="rs-item">Post best recommendation as content 1×/quarter</div>
+          <div class="rs-item">Screenshot and save all recs to your files</div>
+          <div class="rs-item">Review your rec section quarterly — refresh old</div>
+          <div class="rs-item">Target 10+ recommendations total on profile</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-108.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
