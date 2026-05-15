@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 085 — Objection Handling: Responding to 'It's Too Expensive' | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-085-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Objections</div>
+      <h1 class="headline">When they say 'it's too<br>expensive' they're usually<br>saying something<br><span class="accent">completely different.</span></h1>
+      <p class="sub-deck">The 3 real objections hiding behind 'it's too expensive' — and the response that converts each one.</p>
+    </div>
+    <div class="touch-stack">
+      <div class="touch-box" style="border-color:rgba(220,38,38,0.4)">Cost objection</div>
+      <div class="touch-box" style="border-color:rgba(245,158,11,0.35);color:var(--gold)">Value question</div>
+      <div class="touch-box" style="border-color:rgba(220,38,38,0.4)">Trust gap</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Real Objection</div>
+      <div class="a-title">Why price objections<br>are rarely about price.</div>
+      <div class="a-sub">Three hidden meanings behind 'it's too expensive.'</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'It's too expensive' usually means: <strong>'I don't understand the value'</strong>, or <strong>'I don't trust the outcome'</strong>, or <strong>'This isn't a priority right now.'</strong><br><br>Rarely: 'I genuinely cannot afford this.'<br><br>Treating it as a price objection when it's actually a value communication failure is the most common sales mistake service businesses make. Diagnose before you defend.</p>
+      <div class="a-box"><strong>The diagnostic question:</strong> 'Can I ask — when you say expensive, what are you comparing it to?' The answer reveals which objection you're actually dealing with.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Reframe Question</div>
+      <div class="a-title">The reframe question that<br>reveals the real objection.</div>
+      <div class="a-sub">One question reveals what really needs to be addressed.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Ask: <strong>'Compared to what?'</strong><br><br>If they say 'another provider': what's different about the outcomes? If they say 'doing it myself': calculate their hours × their hourly rate. If they say 'our budget': explore whether the budget is fixed or whether ROI could justify flexibility.<br><br>One question reveals what really needs to be addressed. Don't guess which objection you're handling. Ask the one question that surfaces it.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The ROI Conversation</div>
+      <div class="a-title">The ROI conversation that<br>makes cost obvious.</div>
+      <div class="a-sub">State it as a number and 'expensive' disappears.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'If this engagement brings in 2 new clients, what does that mean for your business?'<br><br>Help them calculate the return. <strong>A £3,000 fee that generates £15,000 in revenue is a 5x return.</strong> Stated as a number, 'expensive' disappears.<br><br>ROI conversations work best with commercially-minded clients who think in numbers, not just costs. Change the frame from 'cost of investment' to 'return on investment' and the entire conversation shifts.</p>
+      <div class="a-box"><strong>The formula:</strong> Expected revenue from 1 new client × number of clients you typically generate. If your fee is less than the value of one result, it's not expensive — it's discounted.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">I Need to Think About It</div>
+      <div class="a-title">'I need to think about it' —<br>extracting the real blocker.</div>
+      <div class="a-sub">Surface the real concern and it becomes solvable.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Ask: <strong>'Of course — what specifically would help you feel confident moving forward?'</strong><br><br>Common answers: 'I want to see more case studies' (send relevant ones). 'I need to involve my partner' (offer a joint call). 'I'm uncertain about the timeline' (offer flexibility).<br><br>Each answer is solvable once it's surfaced. 'Think about it' is never the actual concern. It's a placeholder for something specific that hasn't been said yet.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide biz-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Genuine No</div>
+      <div class="a-title">Objections that genuinely mean no —<br>and how to handle them gracefully.</div>
+      <div class="a-sub">Not every no is a sales problem. Some are timing and fit.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'We've decided to handle this in-house.' 'We've signed with someone else.' 'We're pausing all spend.' These aren't sales problems — they're timing and fit issues.<br><br>Accept them gracefully: <strong>'Completely understand. I'd love to stay in touch — might I reach out in 6 months to see how things have progressed?'</strong><br><br>Clients who said no become clients 6-12 months later surprisingly often. The way you handle a no determines whether the door stays open.</p>
+      <div class="a-box"><strong>The long game:</strong> Grace under rejection is the most underrated sales skill. Every graceful exit plants a seed for a future conversation.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Objection Handling Reference</div>
+      <h2 class="s7-ti">Four objections — what they mean and how to respond</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Objection</th>
+            <th>Real Meaning</th>
+            <th>Question to Ask</th>
+            <th>How to Respond</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>It's too expensive</td>
+            <td>Value isn't clear yet</td>
+            <td>Compared to what?</td>
+            <td>Build the ROI calculation together</td>
+          </tr>
+          <tr>
+            <td>I need to think about it</td>
+            <td>An unspoken concern exists</td>
+            <td>What would help you feel confident?</td>
+            <td>Surface and solve the specific blocker</td>
+          </tr>
+          <tr>
+            <td>We're talking to others</td>
+            <td>Uncertain about differentiation</td>
+            <td>What's most important in your decision?</td>
+            <td>Clarify your specific outcome difference</td>
+          </tr>
+          <tr>
+            <td>We've decided not to proceed</td>
+            <td>Timing or fit issue</td>
+            <td>May I follow up in 6 months?</td>
+            <td>Accept gracefully, stay warm quarterly</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">The goal is never to 'overcome' objections. <strong>It's to understand them — then solve what's actually in the way.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-085.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

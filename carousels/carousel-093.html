@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 093 — Using AI to Research and Generate Content Ideas | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-093-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>AI Ideation</div>
+      <h1 class="headline">Most creators run out<br>of ideas after 30 posts.<br>AI gives you<br><span class="accent">unlimited raw material.</span></h1>
+      <p class="sub-deck">The AI ideation system that generates 30 specific content ideas in 20 minutes — from your audience's actual questions.</p>
+    </div>
+    <div class="tool-stack-visual">
+      <div class="tool-item"><span class="tool-num">01</span><div><div class="tool-name">Audience fears</div><div class="tool-role">What keeps them up at night</div></div></div>
+      <div class="tool-item"><span class="tool-num">02</span><div><div class="tool-name">Common questions</div><div class="tool-role">What they ask repeatedly</div></div></div>
+      <div class="tool-item"><span class="tool-num">03</span><div><div class="tool-name">Transformation wants</div><div class="tool-role">What outcome they want</div></div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Ideation Problem</div>
+      <div class="a-title">Why creators run out of ideas<br>after 30 posts.</div>
+      <div class="a-sub">AI turns audience intelligence into an endless content calendar.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most creators exhaust their personal experience within the first 30 posts. After that: topic anxiety. <strong>The fix isn't writing more from personal experience — it's mining your audience's questions, fears, and aspirations systematically.</strong><br><br>AI makes this research fast and specific, turning audience intelligence into an endless content calendar. The ideas were always there. AI helps you find them faster.</p>
+      <div class="a-box"><strong>The insight:</strong> Your audience's questions are more valuable than your personal experiences as content seeds — because they answer demand that already exists.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">20-Minute Ideation</div>
+      <div class="a-title">The 20-minute AI ideation<br>session.</div>
+      <div class="a-sub">3 weeks of content in 20 minutes.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Open Claude. Prompt: <strong>'I create content for [audience] on [topic]. Generate 30 specific content ideas covering: their biggest fears, common mistakes they make, frequently asked questions, and transformations they want. Format as: [Hook idea] + [what the post covers in one sentence].'</strong><br><br>Edit out weak ideas. You now have 3 weeks of content in 20 minutes. The AI does the volume work. You do the quality curation.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Pattern Mining</div>
+      <div class="a-title">Mining your existing content<br>for patterns.</div>
+      <div class="a-sub">AI reveals the gap between what you've published and what works.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Paste your top 10 posts into Claude: <strong>'Here are 10 of my best-performing posts. What themes are emerging? What topics are connecting most with my audience? What related topics haven't I covered yet that my audience would want?'</strong><br><br>This analysis reveals the content gap between what you've published and what your audience is ready for. Your data, interpreted by AI, tells you exactly where to go next.</p>
+      <div class="a-box"><strong>The pattern test:</strong> Most creators find that 2-3 themes explain 80% of their best-performing posts. Find the pattern. Scale it.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Competitor Research</div>
+      <div class="a-title">Using AI to monitor what's<br>working in your industry.</div>
+      <div class="a-sub">Use competitors' data to inform your positioning, not copy their approach.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Collect your competitors' top 10 posts from the last month. Input to Claude: <strong>'What topics are performing well? What gaps exist that my audience would want? What contrarian takes could differentiate my content?'</strong><br><br>AI identifies patterns in seconds that would take hours of manual research. Use competitors' data to inform your positioning, not copy their approach. The goal is differentiation, not imitation.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Quarterly Strategy</div>
+      <div class="a-title">The quarterly AI strategy session<br>that replaces 5 hours of planning.</div>
+      <div class="a-sub">AI sees patterns humans miss across all your variables simultaneously.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Every 3 months: <strong>'I create content about [topics] for [audience]. Here are my top 10 posts from last quarter: [list]. Suggest 12 content themes for next quarter — each with 3 post ideas — balancing audience interest and business goals.'</strong><br><br>This single session replaces 5 hours of planning and produces better results because AI sees patterns humans miss. Book a recurring calendar slot. 60 minutes. Every quarter.</p>
+      <div class="a-box"><strong>The output:</strong> 12 themes × 3 post ideas = 36 posts planned before the quarter starts. That's 3 months of content in one focused session.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">AI Ideation Prompts Library</div>
+      <h2 class="s7-ti">Four prompts — use case, template, and expected output</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Use Case</th>
+            <th>Prompt Template</th>
+            <th>Expected Output</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ideation</strong></td>
+            <td>Generate 30 content ideas for [audience] covering: fears, mistakes, questions, transformations</td>
+            <td>30 hooks + one-line descriptions</td>
+          </tr>
+          <tr>
+            <td><strong>Audience Research</strong></td>
+            <td>Analyse these 10 top posts — what themes resonate and what gaps exist?</td>
+            <td>3 themes + content gap list</td>
+          </tr>
+          <tr>
+            <td><strong>Competitor Analysis</strong></td>
+            <td>What's working in competitor content? What contrarian angles would differentiate me?</td>
+            <td>Patterns + 5 contrarian positions</td>
+          </tr>
+          <tr>
+            <td><strong>Strategy Planning</strong></td>
+            <td>Suggest 12 quarterly themes with 3 ideas each, balancing audience and business goals</td>
+            <td>36 planned post ideas</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Save these prompts. Run them regularly. <strong>Consistent AI ideation beats occasional inspiration every time.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-093.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

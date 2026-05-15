@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 096 — Advanced ChatGPT and Claude for Business | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-096-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Advanced AI Use</div>
+      <h1 class="headline">Everyone knows 'write me<br>a post'. The real ROI<br>of AI is what happens<br><span class="accent">after that command.</span></h1>
+      <p class="sub-deck">Advanced prompting techniques that turn AI from a content tool into a strategic business partner.</p>
+    </div>
+    <div class="tool-stack-visual">
+      <div class="tool-item"><span class="tool-num">01</span><div><div class="tool-name">Write content</div><div class="tool-role">Basic use — everyone does this</div></div></div>
+      <div class="tool-item"><span class="tool-num">02</span><div><div class="tool-name">Strategic thinking</div><div class="tool-role">Challenge assumptions, stress-test plans</div></div></div>
+      <div class="tool-item"><span class="tool-num">03</span><div><div class="tool-name">Business partner</div><div class="tool-role">Advisor, analyst, strategist</div></div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Beyond Basic Use</div>
+      <div class="a-title">The basic use case everyone knows —<br>and what to do next.</div>
+      <div class="a-sub">AI as strategic thinking partner delivers higher ROI than content generation.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Everyone uses: 'write me a blog post.'<br><br>Advanced users use: <strong>AI as a strategic thinking partner.</strong> Ask it to challenge your assumptions. Play devil's advocate on your business plan. Stress-test your pricing rationale. Generate the 5 strongest arguments against your strategy.<br><br>This meta-use delivers higher ROI than any content generation use case.</p>
+      <div class="a-box"><strong>The upgrade:</strong> Use AI to think better, not just write faster. The first is a multiplier on your intelligence. The second is a multiplier on your speed.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Advanced Techniques</div>
+      <div class="a-title">Advanced prompting techniques<br>that produce expert-level output.</div>
+      <div class="a-sub">Each technique unlocks different output quality.</div>
+      <div class="a-divider"></div>
+      <div class="stack-list">
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">1</span><div class="si-text"><strong>Chain-of-thought:</strong> 'Think through this step by step before answering.'</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">2</span><div class="si-text"><strong>Role-play:</strong> 'You are a skeptical CFO. Challenge every assumption in this strategy.'</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">3</span><div class="si-text"><strong>Iteration:</strong> 'This is good. Now make it 30% more specific and replace all generalities with examples.'</div></div>
+        <div class="stack-item"><span class="si-num" style="color:var(--gold);border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.08)">4</span><div class="si-text"><strong>Constraint:</strong> 'Answer this in under 100 words, using only plain language.'</div></div>
+      </div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Strategic Advisor</div>
+      <div class="a-title">Using Claude as a<br>strategic advisor.</div>
+      <div class="a-sub">Brief it well and it thinks clearly.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'Here is my content strategy: [paste]. <strong>What are the 5 weakest assumptions? What evidence would change your recommendation?'</strong><br><br>'Here is my proposal: [paste]. <strong>What might make them hesitate and how should I address each concern?'</strong><br><br>AI as strategic advisor replaces expensive consultants for most service business decisions. Brief it well and it thinks clearly.</p>
+      <div class="a-box"><strong>The briefing principle:</strong> The quality of the AI's strategic output is directly proportional to the quality of the context you provide. Brief it like you'd brief a senior consultant.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Custom Instructions</div>
+      <div class="a-title">Custom instructions — making AI<br>know your business.</div>
+      <div class="a-sub">Eliminates the re-briefing overhead that slows most AI users.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Claude and ChatGPT support persistent context instructions. Set up a business brief: your industry, client type, service, tone, goals, constraints.<br><br>Every conversation starts with this context. <strong>The AI responds as if it already knows your business.</strong> This eliminates the re-briefing overhead that slows most AI users and produces much more relevant output.<br><br>One afternoon of setup. Permanent productivity gain.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">AI-Powered Week</div>
+      <div class="a-title">The AI-powered week: 10 hours<br>of output in 2.5.</div>
+      <div class="a-sub">The difference is the system, not just the tool.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Monday (30 min):</strong> Ideation session — 20 content ideas. <strong>Tuesday (45 min):</strong> Draft 5 LinkedIn posts. <strong>Wednesday (30 min):</strong> Edit, humanise, approve. <strong>Thursday (20 min):</strong> Visuals. <strong>Friday (15 min):</strong> Schedule.<br><br><strong>Total: 2.5 hours for a complete week of content.</strong> The same output took 8-10 hours manually. The difference is the system, not just the tool.</p>
+      <div class="a-box"><strong>The compound effect:</strong> 2.5 hours/week vs 10 hours/week = 390 hours saved per year. That's 10 additional working weeks of capacity.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Advanced Prompting Reference</div>
+      <h2 class="s7-ti">5 techniques — when to use them and example prompt templates</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Technique</th>
+            <th>When to Use</th>
+            <th>Example Prompt Template</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Chain-of-Thought</strong></td>
+            <td>Complex problems needing structured analysis</td>
+            <td>'Think through this step by step before answering: [problem]'</td>
+          </tr>
+          <tr>
+            <td><strong>Role-Play</strong></td>
+            <td>Stress-testing ideas and strategies</td>
+            <td>'You are a skeptical [role]. Challenge every assumption in: [strategy]'</td>
+          </tr>
+          <tr>
+            <td><strong>Iteration</strong></td>
+            <td>Improving a draft that's 70% there</td>
+            <td>'This is good. Now make it 30% more specific, replace all generalities with examples.'</td>
+          </tr>
+          <tr>
+            <td><strong>Constraint</strong></td>
+            <td>Forcing concise, clear output</td>
+            <td>'Answer in under 100 words, plain language only, no jargon.'</td>
+          </tr>
+          <tr>
+            <td><strong>Devil's Advocate</strong></td>
+            <td>Finding weaknesses before launch</td>
+            <td>'Give me the 5 strongest arguments against this plan: [plan]'</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Most AI users never go beyond basic prompts. <strong>These 5 techniques separate casual users from strategic ones.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-096.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

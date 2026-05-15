@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 099 — The Human + AI Content Framework | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-099-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Human + AI</div>
+      <h1 class="headline">The debate isn't human<br>vs. AI content. It's how<br>to use AI to amplify<br><span class="accent">human expertise.</span></h1>
+      <p class="sub-deck">The framework that separates creators who produce high-quality content at scale from those who produce generic AI output.</p>
+    </div>
+    <div class="tool-stack-visual">
+      <div class="tool-item"><span class="tool-num">Human</span><div><div class="tool-name">Insight + Experience + Opinion</div><div class="tool-role">Irreplaceable inputs</div></div></div>
+      <div class="tool-item"><span class="tool-num">AI</span><div><div class="tool-name">Draft + Polish + Repurpose</div><div class="tool-role">Production advantages</div></div></div>
+      <div class="tool-item"><span class="tool-num">Result</span><div><div class="tool-name">4x output, same quality</div><div class="tool-role">Scale without sacrifice</div></div></div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The False Binary</div>
+      <div class="a-title">The false binary that's slowing<br>most creators down.</div>
+      <div class="a-sub">Human insight + AI production + human curation. Remove any one and quality collapses.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">'Should I use AI or write everything myself?' is the wrong question.<br><br>The right question: <strong>what role should human expertise play and what role should AI production play?</strong><br><br>The creators winning in 2025 use both: human insight + AI production + human curation. Each element is non-negotiable. Remove any one and quality collapses.</p>
+      <div class="a-box"><strong>The three-part formula:</strong> Human insight (irreplaceable) + AI production (fast) + human curation (quality control). All three. Every piece of content.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Irreplaceable Human Inputs</div>
+      <div class="a-title">What only humans can provide —<br>the irreplaceable inputs.</div>
+      <div class="a-sub">AI cannot generate these. It can only package what you provide.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Personal experience</strong> and specific client stories. <strong>Genuine opinion</strong> and conviction. <strong>Cultural timing</strong> and nuance. <strong>The non-obvious insight</strong> from years of practice. <strong>Emotional authenticity</strong> that creates connection.<br><br>These elements make content memorable, shareable, and trustworthy. AI cannot generate them. It can only package what you provide.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">AI Production Advantages</div>
+      <div class="a-title">What AI does better than humans —<br>the production advantages.</div>
+      <div class="a-sub">Use AI for the thinking layer: your output becomes generic.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>First draft velocity.</strong> <strong>Consistency</strong> across large volumes. <strong>Research synthesis.</strong> <strong>Grammar and clarity editing.</strong> <strong>Format adaptation</strong> across platforms. <strong>Keyword integration.</strong> <strong>Structural suggestions.</strong> <strong>Pattern identification.</strong><br><br>Use AI for these functions: your output doubles. Use AI for the thinking layer: your output becomes generic. Know which layer each function belongs to.</p>
+      <div class="a-box"><strong>The dividing line:</strong> Everything that requires lived experience = human. Everything that requires production = AI. Never cross the line in either direction.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Process</div>
+      <div class="a-title">The Human + AI content process —<br>step by step.</div>
+      <div class="a-sub">4x output at the same quality level.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Step 1 (Human):</strong> Identify the insight, experience, or opinion worth sharing. <strong>Step 2 (AI):</strong> Draft structure, add context, polish language. <strong>Step 3 (Human):</strong> Add specific detail, edit voice, remove AI tells. <strong>Step 4 (AI):</strong> Repurpose for other formats. <strong>Step 5 (Human):</strong> Review and approve all final content.<br><br>This process produces 4x output at the same quality level.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide ai-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Competitive Advantage</div>
+      <div class="a-title">The competitive advantage<br>this creates.</div>
+      <div class="a-sub">Authentic expert voice is increasingly scarce. Scarcity drives value.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most creators use AI badly (publish generic output) or avoid it entirely (spend 4x the time).<br><br>The creators who understand Human + AI collaboration produce high-quality content at scale with genuine voice. <strong>In a market flooded with AI-generated content, authentic expert voice is increasingly scarce. Scarcity drives value. This is the opportunity.</strong></p>
+      <div class="a-box"><strong>The window:</strong> Most people haven't figured this out yet. The creators who master Human + AI collaboration now will have a compounding advantage that's very hard to replicate later.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Human vs. AI Contribution Map</div>
+      <h2 class="s7-ti">Who does what — the clear demarcation</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Content Element</th>
+            <th>Human Inputs</th>
+            <th>AI Production Tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Core Idea</strong></td>
+            <td>Your insight from lived experience</td>
+            <td>Structuring and expanding the idea</td>
+          </tr>
+          <tr>
+            <td><strong>Examples</strong></td>
+            <td>Your specific client stories</td>
+            <td>Formatting and clarifying examples</td>
+          </tr>
+          <tr>
+            <td><strong>Opinion</strong></td>
+            <td>Your genuine conviction</td>
+            <td>Sharpening language and tone</td>
+          </tr>
+          <tr>
+            <td><strong>First Draft</strong></td>
+            <td>Key insight + structure</td>
+            <td>Full draft from skeleton</td>
+          </tr>
+          <tr>
+            <td><strong>Voice</strong></td>
+            <td>Edit for your pattern and rhythm</td>
+            <td>Apply voice training profile</td>
+          </tr>
+          <tr>
+            <td><strong>Repurposing</strong></td>
+            <td>Approve adapted versions</td>
+            <td>Format adaptation for each platform</td>
+          </tr>
+          <tr>
+            <td><strong>Final Check</strong></td>
+            <td>Authenticity test and approval</td>
+            <td>Grammar and clarity polish</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-099.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
