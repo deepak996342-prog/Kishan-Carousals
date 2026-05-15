@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 052 — Reels Strategy for Service Business Owners | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-052-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Reels Strategy</div>
+      <h1 class="headline">Reels Strategy<br>for Service<br><span class="accent">Business Owners.</span></h1>
+      <p class="sub-deck">The formats, hooks, and systems that turn Reels into a consistent lead generation engine.</p>
+    </div>
+    <div class="format-stack">
+      <div class="format-box">Quick Tips</div>
+      <div class="format-box f2">Myth-Busts</div>
+      <div class="format-box f3">Before/After</div>
+      <div class="format-box">Behind-the-Scenes</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Distribution Advantage</div>
+      <div class="a-title">Why Reels reach non-followers —<br>the distribution advantage.</div>
+      <div class="a-sub">Reels are Instagram's built-in growth engine for creators.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Unlike feed posts that reach mainly your followers, Reels get pushed to the Explore page and Reels tab. This is Instagram's algorithm saying 'we'll find an audience for you.' <strong>A consultant with 500 followers can get 50,000 Reel views on the right content.</strong> The opportunity cost of not doing Reels is massive reach left on the table.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">4 Formats</div>
+      <div class="a-title">The 4 Reels formats that<br>build authority.</div>
+      <div class="a-sub">Rotate all four for a well-rounded authority presence.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Quick tip (under 30s):</strong> 'The fastest way to [result].'<br><strong>2. Myth-bust:</strong> 'Stop believing [wrong advice].'<br><strong>3. Before/after reveal</strong> — show a real transformation.<br><strong>4. Behind-the-scenes of your work</strong> — the process clients pay for.<br>Each format positions you differently. Rotate all four for a well-rounded authority presence.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Scroll-Stopping Hooks</div>
+      <div class="a-title">Reels hooks that stop the scroll<br>in 2 seconds.</div>
+      <div class="a-sub">Your hook is the first frame + first spoken word.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Never start with 'Hey guys.' Start with the punchline: <strong>'Most [your client type] make this $5,000 mistake.'</strong> The scroll stops when the opening creates instant recognition of a problem they have. Your hook is a promise. The rest of the Reel is the payoff. If the hook doesn't land, nothing else matters.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Technical Guide</div>
+      <div class="a-title">Captions, hashtags, and audio —<br>the technical guide.</div>
+      <div class="a-sub">The details that separate average Reels from great ones.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>85% of Reels are watched without sound.</strong> Captions aren't optional — they're essential. Keep captions in the middle-bottom, not overlapping faces. Hashtags: 3-5 specific ones, not 30 generic. Original audio slightly outperforms trending audio for discoverability in professional niches. Every technical decision compounds over time.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Repurposing System</div>
+      <div class="a-title">Repurposing LinkedIn content<br>into Reels — the 10-minute method.</div>
+      <div class="a-sub">One idea becomes content on two platforms.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Take your best performing LinkedIn post. Extract the 3 key points. Record yourself explaining each in 15 seconds. Add captions and a simple hook. <strong>This repurposing system means one idea becomes content on two platforms with minimal extra work.</strong> Your best LinkedIn insights are already validated. Now give them visual reach.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Reels Content Framework</div>
+      <h2 class="s7-ti">Hook → Body → CTA for each Reel format</h2>
+      <div class="grid-3col">
+        <div class="grid-col">
+          <div class="grid-col-header h-acc">Hook Type</div>
+          <div class="grid-cell label">Quick Tip</div>
+          <div class="grid-cell">'The fastest way to [result]'</div>
+          <div class="grid-cell label">Myth-Bust</div>
+          <div class="grid-cell">'Stop believing [advice]'</div>
+          <div class="grid-cell label">Before/After</div>
+          <div class="grid-cell">'This [situation] transformed into…'</div>
+          <div class="grid-cell label">Behind-Scenes</div>
+          <div class="grid-cell">'Here's what [process] looks like'</div>
+        </div>
+        <div class="grid-col">
+          <div class="grid-col-header h-gold">Content Body</div>
+          <div class="grid-cell label">Quick Tip</div>
+          <div class="grid-cell">Single actionable step in 20s</div>
+          <div class="grid-cell label">Myth-Bust</div>
+          <div class="grid-cell">Debunk + correct with evidence</div>
+          <div class="grid-cell label">Before/After</div>
+          <div class="grid-cell">Show contrast + explain the shift</div>
+          <div class="grid-cell label">Behind-Scenes</div>
+          <div class="grid-cell">Walk through real work step-by-step</div>
+        </div>
+        <div class="grid-col">
+          <div class="grid-col-header h-muted">CTA</div>
+          <div class="grid-cell label">Quick Tip</div>
+          <div class="grid-cell">Follow for more</div>
+          <div class="grid-cell label">Myth-Bust</div>
+          <div class="grid-cell">Save this + share</div>
+          <div class="grid-cell label">Before/After</div>
+          <div class="grid-cell">DM me [keyword]</div>
+          <div class="grid-cell label">Behind-Scenes</div>
+          <div class="grid-cell">Comment your question</div>
+        </div>
+      </div>
+      <div class="s7-note">Every Reel needs all three parts. <strong>Hook earns the view. Body earns the trust. CTA earns the action.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-052.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

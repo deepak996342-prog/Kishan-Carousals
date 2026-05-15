@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 056 — Hashtag Strategy That Still Works in 2025 | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-056-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Hashtag Strategy</div>
+      <h1 class="headline">Hashtag Strategy<br>That <span class="accent">Still Works</span><br>in 2025.</h1>
+      <p class="sub-deck">The 3-tier system that gets your content in front of ideal clients — not just large audiences.</p>
+    </div>
+    <div class="hash-stack">
+      <div class="hash-tag">#YourNiche</div>
+      <div class="hash-tag ht2">#YourSpeciality</div>
+      <div class="hash-tag ht3">#YourIdealClient</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 2025 Reality</div>
+      <div class="a-title">The truth about hashtags<br>in 2025.</div>
+      <div class="a-sub">Two functions remain valuable — everything else is noise.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Instagram's own research shows that more hashtags don't mean more reach. The algorithm now uses content understanding more than hashtags. But hashtags still serve two functions: <strong>community discovery</strong> (people who follow hashtags see your post) and <strong>SEO</strong> (searchable). Use them strategically, not as a spam tactic.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">3-Tier System</div>
+      <div class="a-title">The 3-tier hashtag system.</div>
+      <div class="a-sub">Use all three tiers in every post. Total: 9-13 tags maximum.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Tier 1 (1-3 tags):</strong> broad topic, 1M+ posts. Large audiences but high competition.<br><strong>Tier 2 (3-5 tags):</strong> medium niche, 100K-1M posts. Best for discoverability.<br><strong>Tier 3 (3-5 tags):</strong> micro-niche, under 100K posts. Highest chance of reaching your ideal audience.<br>Use all three tiers in every post. Total: 9-13 tags maximum.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Finding the Right Tags</div>
+      <div class="a-title">Finding hashtags your ideal<br>clients actually follow.</div>
+      <div class="a-sub">Better to reach 100 ideal clients than 10,000 wrong people.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Search your ideal client's profile. What hashtags do they use? What hashtags do they follow? Start there. <strong>Better to reach 100 ideal clients with specific hashtags than 10,000 wrong people with popular ones.</strong> The goal of hashtags is qualified reach, not vanity reach. Specificity converts; popularity just inflates numbers.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Caption vs. Comment</div>
+      <div class="a-title">Hashtags in caption vs. first<br>comment — what the data shows.</div>
+      <div class="a-sub">What doesn't work: stuffing 30 generic hashtags into every post.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Caption hashtags perform slightly better for immediate reach. First comment hashtags look cleaner. Either works. <strong>What doesn't work: stuffing 30 generic hashtags into every post.</strong> The algorithm reads this as spam behaviour and reduces your reach. Quality and relevance over quantity — always. 9-13 strategic tags outperform 30 random ones.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide tl-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Monthly Audit</div>
+      <div class="a-title">The monthly hashtag audit.</div>
+      <div class="a-sub">Build a rotating hashtag bank of 40-50 tested tags.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Check which hashtags are driving profile visits (Instagram Insights shows this). Remove any hashtag that's attracting irrelevant followers or zero engagement. <strong>Test 5 new hashtags every 30 days. Build a hashtag bank of 40-50 rotating tags that you cycle through.</strong> This prevents algorithm fatigue from seeing the same tags on every post from your account.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Hashtag Strategy by Post Type</div>
+      <h2 class="s7-ti">Example hashtag sets for each content category</h2>
+      <div class="hash-3col">
+        <div class="hash-col">
+          <div class="hash-col-head hc-acc">Educational</div>
+          <div class="hash-col-body">
+            <div class="hash-item"><strong>Tier 1 (broad)</strong>#contentmarketing</div>
+            <div class="hash-item"><strong>Tier 2 (mid)</strong>#contentcreatorcoach</div>
+            <div class="hash-item"><strong>Tier 3 (micro)</strong>#linkedintipsforcoaches</div>
+            <div class="hash-item"><strong>Tier 3 (micro)</strong>#contentstrategytips</div>
+            <div class="hash-item"><strong>Tip</strong>Prioritise your specific subject area</div>
+          </div>
+        </div>
+        <div class="hash-col">
+          <div class="hash-col-head hc-gold">Promotional</div>
+          <div class="hash-col-body">
+            <div class="hash-item"><strong>Tier 1 (broad)</strong>#businesscoach</div>
+            <div class="hash-item"><strong>Tier 2 (mid)</strong>#onlinebusinesscoach</div>
+            <div class="hash-item"><strong>Tier 3 (micro)</strong>#coachingforConsultants</div>
+            <div class="hash-item"><strong>Tier 3 (micro)</strong>#servicebusinessowner</div>
+            <div class="hash-item"><strong>Tip</strong>Include your ideal client's identity</div>
+          </div>
+        </div>
+        <div class="hash-col">
+          <div class="hash-col-head hc-muted">Behind-the-Scenes</div>
+          <div class="hash-col-body">
+            <div class="hash-item"><strong>Tier 1 (broad)</strong>#entrepreneurlife</div>
+            <div class="hash-item"><strong>Tier 2 (mid)</strong>#freelancecoach</div>
+            <div class="hash-item"><strong>Tier 3 (micro)</strong>#solopreneurlife</div>
+            <div class="hash-item"><strong>Tier 3 (micro)</strong>#workfromanywhere</div>
+            <div class="hash-item"><strong>Tip</strong>Focus on lifestyle-adjacent tags</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">Rotate hashtag sets monthly to avoid algorithm fatigue. <strong>Track what drives profile visits, not just reach.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-056.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
