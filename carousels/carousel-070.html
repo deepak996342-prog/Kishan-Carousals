@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 070 — From Email Subscriber to Paying Client: The 90-Day Journey | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-070-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Email to Client</div>
+      <h1 class="headline">Someone joined your<br>list. Here's the exact<br>path to make them<br><span class="accent">a paying client.</span></h1>
+      <p class="sub-deck">The subscriber-to-client journey that works — and why most service businesses break it at step 3.</p>
+    </div>
+    <div class="visual-stack">
+      <div class="vis-box">Subscriber</div>
+      <div class="vis-box v2">→ Trust</div>
+      <div class="vis-box v3">→ Readiness</div>
+      <div class="vis-box v4">→ Client</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide em-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Trust Timeline</div>
+      <div class="a-title">Why clients rarely buy<br>on first contact.</div>
+      <div class="a-sub">Most businesses give up at day 30. Clients convert at day 70.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Average B2B purchase: <strong>7–13 touchpoints</strong> before a decision. Email delivers touchpoints at the lowest cost of any channel.<br><br>The 90-day journey:<br><strong>Weeks 1–4</strong> — education and credibility (build trust).<br><strong>Weeks 5–8</strong> — social proof and methodology (build belief).<br><strong>Weeks 9–12</strong> — offer and conversion (capture readiness).<br><br>Most businesses give up at day 30. Clients convert at day 70.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3 (gold) -->
+  <div class="slide em-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Content Sequence</div>
+      <div class="a-title">The content sequence that<br>builds buyer readiness.</div>
+      <div class="a-sub">Each phase mirrors the buyer's psychological journey.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Weeks 1–2:</strong> pure educational value (build credibility).<br><strong>Weeks 3–4:</strong> your methodology in detail (build understanding).<br><strong>Weeks 5–6:</strong> client case studies (build belief in outcomes).<br><strong>Weeks 7–8:</strong> addressing the 3 most common objections directly (remove barriers).<br><strong>Weeks 9–12:</strong> your offer with genuine context and urgency.<br><br>Each phase mirrors the buyer's psychological journey.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide em-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Buying Signals</div>
+      <div class="a-title">Identifying buying signals<br>in email behaviour.</div>
+      <div class="a-sub">The gap between signal and response is where sales are won or lost.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Subscriber opens 5 emails in a row:</strong> warming up.<br><strong>Clicks every link about pricing or process:</strong> researching.<br><strong>Replies to your email with a service question:</strong> ready to buy.<br><br>Your email platform tracks all of this. Set up email notifications for these behaviours. When you see them: <strong>reach out personally within 24 hours</strong>. The gap between signal and response is where sales are won or lost.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5 (gold) -->
+  <div class="slide em-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Conversion Email</div>
+      <div class="a-title">The conversion email that makes<br>the ask without feeling pushy.</div>
+      <div class="a-sub">Specific. Honest. Low pressure. No fake scarcity.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The best conversion emails tell a client story first. Then:<br><br>'If any of this sounds like your situation, I'm opening [X] spots for [month]. Here's what we'd do together: [3 bullet points]. Investment: [range]. To see if it's a fit: [booking link].'<br><br>The story creates recognition; the offer creates a path. <strong>No fake scarcity. No countdown timers.</strong></p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide em-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Post-Purchase Sequence</div>
+      <div class="a-title">The post-purchase email sequence —<br>the overlooked revenue multiplier.</div>
+      <div class="a-sub">The businesses who stay in touch retain 60% more clients.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">80% of service business revenue comes from repeat clients and referrals. The first 30 days after someone becomes a client:<br><br><strong>Day 1:</strong> warm welcome. <strong>Day 7:</strong> quick-win delivery. <strong>Day 14:</strong> check-in. <strong>Day 30:</strong> mid-point review. <strong>Day 45:</strong> referral ask.<br><br>Most businesses go silent after the contract. The ones who don't <strong>retain 60% more clients</strong>.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Timeline -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">90-Day Email Journey Timeline</div>
+      <h2 class="s7-ti">3 phases — email content and goal for each</h2>
+      <div class="timeline-blocks">
+        <div class="timeline-block t1">
+          <div class="tb-phase g">Phase 1 — Trust</div>
+          <div class="tb-title">Education &amp; Credibility</div>
+          <div class="tb-weeks">Weeks 1–4</div>
+          <div class="tb-goals">
+            <div class="tb-goal">Pure educational value — establish expertise</div>
+            <div class="tb-goal">Your methodology in detail</div>
+            <div class="tb-goal">Who you are and why it matters</div>
+            <div class="tb-goal">Goal: subscriber knows, likes, and trusts you</div>
+          </div>
+        </div>
+        <div class="timeline-block t2">
+          <div class="tb-phase go">Phase 2 — Belief</div>
+          <div class="tb-title">Social Proof &amp; Objections</div>
+          <div class="tb-weeks">Weeks 5–8</div>
+          <div class="tb-goals">
+            <div class="tb-goal">Client case studies with real results</div>
+            <div class="tb-goal">Address 3 most common objections</div>
+            <div class="tb-goal">Behind-the-scenes process content</div>
+            <div class="tb-goal">Goal: subscriber believes you can help them</div>
+          </div>
+        </div>
+        <div class="timeline-block t3">
+          <div class="tb-phase g">Phase 3 — Conversion</div>
+          <div class="tb-title">Offer &amp; Client Journey</div>
+          <div class="tb-weeks">Weeks 9–12</div>
+          <div class="tb-goals">
+            <div class="tb-goal">Client story + relevant offer</div>
+            <div class="tb-goal">Clear spots, investment range, next step</div>
+            <div class="tb-goal">Post-purchase sequence (day 1–45)</div>
+            <div class="tb-goal">Goal: subscriber becomes paying client</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">Most businesses give up at day 30. <strong>The 90-day journey is where the real revenue is built.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-070.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

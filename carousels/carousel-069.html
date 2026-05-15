@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 069 — Email Copywriting: Write Emails That Actually Get Read | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-069-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <!-- Slide 1: Hook -->
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Email Copy</div>
+      <h1 class="headline">The reason your emails<br>get deleted before<br>they're read.<br><span class="accent">It's the first sentence.</span></h1>
+      <p class="sub-deck">5 email copywriting principles that turn unopened emails into replies, click-throughs, and clients.</p>
+    </div>
+    <div class="visual-stack">
+      <div class="vis-box">Deleted</div>
+      <div class="vis-box v2">→ Opened</div>
+      <div class="vis-box v3">→ Replied</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide em-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Fundamental Rule</div>
+      <div class="a-title">Write like a human,<br>not a marketer.</div>
+      <div class="a-sub">People read personal emails next to messages from friends.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The moment your email sounds corporate — 'We're excited to share' — defenses go up. Skim mode activates.<br><br>The best email copy reads like a message from a <strong>smart, trusted friend who happens to know exactly what you're dealing with</strong>. That tone is what makes people stop scanning and actually read.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 3 (gold) -->
+  <div class="slide em-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Opening Sentence</div>
+      <div class="a-title">The opening sentence that determines<br>whether they read anything else.</div>
+      <div class="a-sub">The only job of the opening line: create a reason to read the second.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Best opening sentences:</strong> start mid-story, make a bold claim, or ask a question they're thinking.<br><br><strong>Worst:</strong> 'I hope this email finds you well.' They delete it before the second sentence.<br><br>The rule: your first sentence must create a reason to read the second. <strong>It's the only job of the opening line.</strong> Nothing else. No pleasantries.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide em-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The One-Idea Rule</div>
+      <div class="a-title">Why focused emails<br>get better results.</div>
+      <div class="a-sub">Every additional element reduces the probability of any element being acted upon.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The most acted-on emails contain <strong>one idea</strong>. The most deleted emails contain: newsletter highlights, blog post links, an event, a product, and a survey.<br><br>Every additional element reduces the probability of any element being acted upon. Choose one thing per email. Do it exceptionally. <strong>Link to everything else from that one thing.</strong></p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 5 (gold) -->
+  <div class="slide em-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The PS Line</div>
+      <div class="a-title">The most important part<br>you keep forgetting.</div>
+      <div class="a-sub">Readers skim to the PS before deciding whether to read the body.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Research shows readers skim to the PS before deciding whether to read the body. <strong>Your PS is your second headline.</strong><br><br>Use it: 'PS — if you're dealing with [specific problem], reply and tell me. I respond to every email.' Or: 'PS — the most-read thing I shared this week: [link].'<br><br>Never waste the PS on 'Sent from iPhone.'</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide em-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Words That Kill Conversions</div>
+      <div class="a-title">Words that kill email conversions<br>(and what to use instead).</div>
+      <div class="a-sub">Specificity is the antidote to marketing speak.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Kill list:</strong> 'revolutionary', 'world-class', 'game-changing', 'synergy', 'leverage'. These trigger the 'marketing speak' filter.<br><br><strong>Replace with:</strong> specific numbers, concrete outcomes, real client names (with permission), exact before/after scenarios.<br><br>The more specific your copy, <strong>the more trustworthy you appear</strong>. Specificity is the antidote to marketing speak.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 7: Checklist -->
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Email Copy Checklist</div>
+      <h2 class="s7-ti">7 elements — review every email before sending</h2>
+      <table class="copy-table">
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Pass / Fail Criteria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Subject Line</strong></td>
+            <td>Does it create curiosity or make a specific promise? Would YOU open it?</td>
+          </tr>
+          <tr>
+            <td><strong>Opening Sentence</strong></td>
+            <td>Does it give a reason to read the second sentence? No pleasantries. No 'I hope this finds you well.'</td>
+          </tr>
+          <tr>
+            <td><strong>One-Idea Rule</strong></td>
+            <td>Is there one clear focus? Remove every element that isn't that one idea.</td>
+          </tr>
+          <tr>
+            <td><strong>AIDA Structure</strong></td>
+            <td>Does it move through Attention → Interest → Desire → Action in that order?</td>
+          </tr>
+          <tr>
+            <td><strong>CTA</strong></td>
+            <td>Is there one clear call to action? One only. Not three options. Not 'click here or reply or share.'</td>
+          </tr>
+          <tr>
+            <td><strong>PS Line</strong></td>
+            <td>Does the PS work as a standalone hook? Would someone who only reads the PS be intrigued?</td>
+          </tr>
+          <tr>
+            <td><strong>Human Tone</strong></td>
+            <td>Read it aloud. Would you say this to a colleague? If not — rewrite it.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <!-- Slide 8: CTA -->
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-069.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
