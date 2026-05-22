@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 140 — Scalable Service Business: From 1:1 to One-to-Many | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-140-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Scalable Service Business</div>
+      <h1 class="headline">Charging by the hour<br>is a ceiling. Building<br><span class="accent">a system is a staircase.</span></h1>
+      <p class="sub-deck">The path from time-for-money consulting to a scalable model — and the LinkedIn strategy that makes the transition possible.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Level 1</div>
+        <div class="vis-box-val">1:1 Service</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Level 2</div>
+        <div class="vis-box-val">Productized Service</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Level 3</div>
+        <div class="vis-box-val">Group Delivery</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Level 4</div>
+        <div class="vis-box-val">Async / Self-Service</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 1:1 Ceiling</div>
+      <div class="a-title">40–50 billable hours is<br>your hard limit. Full stop.</div>
+      <div class="a-sub">Scaling requires a different model, not more hours.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The math of hourly consulting is brutally simple: there are only so many hours in a week. At 40 billable hours and £200/hour, your maximum revenue is £8,000/week — and that assumes 100% utilisation, zero admin, zero marketing, zero illness, zero holidays. The real cap is far lower.<br><br><strong>Most consultants hit their revenue ceiling not because they're not good enough, but because they've built a model that can't grow without adding more of their time.</strong> The only way to break through the ceiling is to decouple revenue from hours. That requires a fundamentally different service architecture — not working harder, not charging more per hour. A different model entirely.</p>
+      <div class="a-box"><strong>The ceiling test:</strong> If doubling your revenue requires doubling your hours, you have a ceiling. If it requires better systems or more clients per delivery hour, you have a staircase.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The 4 Scalability Levels</div>
+      <div class="a-title">Each level multiplies<br>your revenue per hour.</div>
+      <div class="a-sub">Progress through levels as proof and systems accumulate.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Level 1: 1:1 custom service.</strong> Fully bespoke, high margin, time-capped. Entry point for every consultant.<br><br><strong>Level 2: Productized service.</strong> Fixed scope, deliverables, timeline, and price. Same work, repeatable process. Doubles capacity without doubling hours.<br><br><strong>Level 3: Group delivery.</strong> Same preparation, multiple clients. Cohort programs, group coaching, mastermind formats. Revenue per preparation hour multiplies by the group size.<br><br><strong>Level 4: Asynchronous / self-service.</strong> Courses, digital products, licensing. You deliver the work once; clients consume it on their schedule. Revenue scales without additional delivery time.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Productizing Your Service</div>
+      <div class="a-title">Define the scope. Fix the price.<br>Double your capacity.</div>
+      <div class="a-sub">A standard engagement alone can transform your business.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Productization doesn't mean selling a commodity — it means creating a repeatable, clearly scoped engagement with defined deliverables, timeline, and price. <strong>Instead of "I'll help you with your LinkedIn strategy for £X/hour," it's "12-week LinkedIn Growth System: full profile optimisation, content strategy, 30-day editorial calendar, weekly review calls. £3,000. Fixed."</strong><br><br>This alone — without changing your delivery method — transforms your business: proposals become easier to write, expectations become clearer, delivery becomes faster (you've done it before), and clients self-select based on fit rather than negotiating your rates. Productization is the bridge between Level 1 and Level 3.</p>
+      <div class="a-box"><strong>Productization checklist:</strong> Fixed scope · Fixed deliverables · Fixed timeline · Fixed price · Standard intake process · Repeatable delivery template</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Group Delivery Models</div>
+      <div class="a-title">Same outcome. More clients.<br>Less time per person.</div>
+      <div class="a-sub">The economics of group delivery change everything.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Group delivery comes in three primary formats, each with different dynamics:<br><br><strong>Group coaching (5–10 clients):</strong> Same transformation as 1:1 but delivered in group calls. Clients pay 50–70% of 1:1 rate. Your revenue per hour of delivery can be 3–7× higher.<br><br><strong>Cohort program (time-bounded):</strong> A structured 6–12 week curriculum with a defined start/end date. Creates community, accountability, and clear milestones. Cohorts allow launch events that generate concentrated revenue.<br><br><strong>Mastermind (peer-learning model):</strong> You facilitate peer exchange and expertise. Lower preparation overhead. Higher trust required. Premium pricing because the community IS the product.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">LinkedIn's Role in the Transition</div>
+      <div class="a-title">Build authority that commands<br>higher prices at lower volume.</div>
+      <div class="a-sub">Content attracts clients already sold on your approach.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The shift from 1:1 to scalable models is often blocked by one fear: "Will I lose clients if I stop doing custom work?" The answer LinkedIn provides is profound. <strong>When your content builds genuine authority, you attract clients who want your specific methodology — not just "a consultant." They're pre-sold before the first conversation.</strong><br><br>This allows you to raise prices, narrow your offer, and serve fewer clients at higher value — while simultaneously marketing a group program to the broader audience. Your content educates the mass market. Your 1:1 serves the premium segment. Your group program serves the middle. <strong>LinkedIn makes it possible to run all three simultaneously without separate marketing strategies for each.</strong></p>
+      <div class="a-box"><strong>Transition rule:</strong> Don't drop 1:1 until group delivery generates equivalent revenue. Run them in parallel. Let the market tell you which to grow.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Service Scalability Ladder</div>
+      <h2 class="s7-ti">4 levels — pricing, capacity, delivery format, transition steps</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Pricing</th>
+            <th>Capacity</th>
+            <th>Format</th>
+            <th>Next Step</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1:1 Custom</td>
+            <td>£X/hour or project</td>
+            <td>5–10 clients</td>
+            <td>Bespoke calls + deliverables</td>
+            <td>Document your process → productize</td>
+          </tr>
+          <tr>
+            <td>Productized</td>
+            <td>Fixed project price</td>
+            <td>10–20 clients</td>
+            <td>Standard scope, faster delivery</td>
+            <td>Run same outcome with 5 clients at once → group</td>
+          </tr>
+          <tr>
+            <td>Group Delivery</td>
+            <td>50–70% of 1:1 rate</td>
+            <td>5–20 per group</td>
+            <td>Cohort calls, shared curriculum</td>
+            <td>Record sessions → asynchronous course</td>
+          </tr>
+          <tr>
+            <td>Async / Self-Service</td>
+            <td>£97–£997+</td>
+            <td>Unlimited</td>
+            <td>Pre-recorded, self-paced</td>
+            <td>Launch, gather testimonials, optimize, repeat</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Each level requires the proof built at the previous level. <strong>Don't skip rungs — climb them.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-140.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

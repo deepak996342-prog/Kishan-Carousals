@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 139 — Online Courses: The Minimum Viable Course That Sells | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-139-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Online Courses</div>
+      <h1 class="headline">You don't need a<br>40-module course. You need<br>to solve one specific<br><span class="accent">problem brilliantly.</span></h1>
+      <p class="sub-deck">How to design, validate, build, and sell your first online course to your LinkedIn audience.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Phase 1</div>
+        <div class="vis-box-val">Validate first</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Phase 2</div>
+        <div class="vis-box-val">Design for outcomes</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Phase 3</div>
+        <div class="vis-box-val">Build &amp; launch</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Price range</div>
+        <div class="vis-box-val">£97–£2,997</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The MVP Course Principle</div>
+      <div class="a-title">One problem. One person.<br>One timeframe.</div>
+      <div class="a-sub">3 modules of transformation beats 20 modules of everything.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The most common course-building mistake is trying to cover everything you know. A 40-module course doesn't demonstrate more value — it creates overwhelm that prevents completion. <strong>And completion is what creates testimonials. Testimonials are what drive sales.</strong><br><br>The MVP Course Principle: solve one specific problem for one specific type of person within one defined timeframe. "Help B2B consultants book 3 new clients in 60 days using LinkedIn" is a course. "Master LinkedIn for Business Growth" is a topic. The first sells. The second doesn't. <strong>Specificity is not limiting — it's what makes your course findable, buyable, and completable.</strong></p>
+      <div class="a-box"><strong>Scope test:</strong> Can you describe who your course is for, what they'll achieve, and in how long — in one sentence? If not, the scope is too broad.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Validate Before Build</div>
+      <div class="a-title">Pre-sell to 5 people<br>before building anything.</div>
+      <div class="a-sub">If 5 people pay → build. If not → find out why first.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Building a course takes 50–200 hours. The validation step takes 2 hours. The math makes this an obvious decision — yet most creators skip it entirely and build for months before discovering no one wants to buy.<br><br><strong>The pre-sell process:</strong> Write a clear description of your course (outcome, modules, price, delivery format). DM 20 people in your audience who fit the ideal student profile. Ask if they'd be interested at an early-bird discount for founding access. <strong>If 5 people say yes and pay a deposit — build the course.</strong> If not, the feedback from why they declined is worth more than months of wasted production time.</p>
+      <div class="a-box"><strong>Validation threshold:</strong> 5 paying students before you record module 1. Their payment is the market's vote. Their reasons for declining are the product brief for the version that will sell.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Design for Completion</div>
+      <div class="a-title">Design for what students<br>DO, not just what they know.</div>
+      <div class="a-sub">Outcomes over information. Action prompts in every module.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The completion rate for most online courses is under 15%. The creators who sustain testimonial-generating sales have completion rates of 60–80%. The difference isn't production quality — it's design philosophy.<br><br><strong>Courses with high completion rates share three characteristics:</strong> Each module ends with a specific action (not just learning), the next action builds on the last (momentum compounds), and students are shown their progress clearly (recognition reinforces continuation).<br><br>Every module should prompt the student to do something before moving to the next. Not "understand X" — "do X." The transformation happens in the doing, not the watching. <strong>Design for the action, not the information.</strong></p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Course Pricing</div>
+      <div class="a-title">Price to your proof.<br>Increase as results accumulate.</div>
+      <div class="a-sub">Your price is not a statement about your value — it's a hypothesis.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Course pricing follows a clear ladder tied to format, depth, and social proof:<br><br><strong>Workshop / mini-course (1–3 hours): £97–£297.</strong> Fast, focused, high completion. Great entry point.<br><strong>Full self-paced course (5–15 hours): £297–£997.</strong> Comprehensive transformation. Requires 10+ testimonials to sustain full price.<br><strong>Cohort with live support (8–12 weeks): £997–£2,997.</strong> Your time + community + accountability. Premium experience commands premium price.<br><br>Start at the lower range of each tier. Build social proof. Raise the price with each cohort or version as results accumulate. <strong>A course with 50 testimonials can charge 3× what a new course with none can.</strong></p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">LinkedIn Launch Strategy</div>
+      <div class="a-title">30 days of content before<br>you open enrolment.</div>
+      <div class="a-sub">Your audience needs to be warm before the cart opens.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>The 30-day pre-launch</strong> is the most underused lever in course marketing. Use it to educate your audience on the problem, share behind-the-scenes of building the course, collect testimonials from beta students, and build a waitlist through lead magnet content.<br><br><strong>Launch week:</strong> Daily posts Monday through Friday. Monday: announcement + early bird offer. Tuesday: detailed breakdown of what's inside. Wednesday: student result or case study. Thursday: answer objections (FAQ post). Friday: last chance + close.<br><br><strong>Personal DMs to warm connections</strong> on launch day convert 5–10× better than public posts alone. Every post should link to a waitlist or directly to enrolment.</p>
+      <div class="a-box"><strong>Launch sequence:</strong> 30-day pre-launch content → waitlist build → launch week daily posts → personal DMs to warm audience → testimonial posts post-launch</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Course Launch Roadmap</div>
+      <h2 class="s7-ti">Validate → Design → Build → Launch → Optimize — 12-week timeline</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Phase</th>
+            <th>Weeks</th>
+            <th>Key Actions</th>
+            <th>Milestone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Validate</td>
+            <td>Week 1–2</td>
+            <td>Write outline, DM 20 prospects, collect pre-sales</td>
+            <td>5 paying students confirmed</td>
+          </tr>
+          <tr>
+            <td>Design</td>
+            <td>Week 2–3</td>
+            <td>Build curriculum map, define outcomes per module</td>
+            <td>Full module outline complete</td>
+          </tr>
+          <tr>
+            <td>Build</td>
+            <td>Week 3–7</td>
+            <td>Record modules, create workbooks, set up platform</td>
+            <td>Course published and accessible</td>
+          </tr>
+          <tr>
+            <td>Launch</td>
+            <td>Week 8–9</td>
+            <td>Daily LinkedIn posts, DMs, waitlist emails, live Q&amp;A</td>
+            <td>Enrolment closes with target students</td>
+          </tr>
+          <tr>
+            <td>Optimize</td>
+            <td>Week 10–12</td>
+            <td>Collect feedback, gather testimonials, improve weak modules</td>
+            <td>V2 ready for next launch at higher price</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">The first cohort teaches you more than any planning session. <strong>Launch fast, optimize continuously.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-139.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

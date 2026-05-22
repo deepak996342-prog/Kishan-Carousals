@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 117 — Podcast Guesting: The Highest-ROI Brand-Building Activity | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-117-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Podcast Guesting</div>
+      <h1 class="headline">One podcast appearance<br>builds more trust than<br>a month of posts.<br><span class="accent">Here's how to get booked.</span></h1>
+      <p class="sub-deck">How to identify shows, pitch them, crush the interview, and turn one appearance into 90 days of content.</p>
+    </div>
+    <div class="vis-stack">
+      <div class="vis-box">45+ Min Trust-Building</div>
+      <div class="vis-box gold">Borrowed Audience</div>
+      <div class="vis-box">Evergreen Content</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why Podcasting Wins</div>
+      <div class="a-title">Why Podcast Guesting<br>Beats Most Channels</div>
+      <div class="a-sub">No other format gives you 45 minutes to build trust with a warm audience.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Consider what a podcast appearance actually gives you compared to every other content format:<br><br><strong>45+ minutes of trust-building.</strong> A LinkedIn post gets 2 minutes of attention on a good day. A podcast episode gets 45 minutes of focused listening — often while driving, exercising, or commuting. The listener is alone with your voice, your thinking, and your personality.<br><br><strong>Borrowed audience.</strong> The host has spent months or years building trust with their audience. When they introduce you, a portion of that trust transfers immediately. You're not starting from zero.<br><br><strong>Evergreen content.</strong> A blog post from 2021 feels dated. A podcast episode from 2021 can still be discovered and listened to today. The shelf life of podcast content vastly exceeds any social post.<br><br><strong>Repurpose forever.</strong> One episode becomes dozens of content assets.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Finding Shows</div>
+      <div class="a-title">Finding the Right Shows<br>to Pitch</div>
+      <div class="a-sub">Niche beats size. A 500-listener niche show beats a 100k generalist every time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The instinct is to chase the biggest shows. That's usually wrong. <strong>A 500-listener show where 100% of the audience is your exact ideal client is more valuable than a 100,000-listener show where 0.1% are relevant.</strong><br><br>How to find the right shows:<br><br><strong>Search by your client's keywords</strong> on Apple Podcasts, Spotify, and Google. Find the shows your ideal client actually listens to.<br><br><strong>Check engagement, not just downloads.</strong> A show with active listener reviews, community engagement, or LinkedIn shares is more alive than a high-download show with no conversation around it.<br><br><strong>Look for shows that have recently featured guests at your level.</strong> If they've hosted someone with your background before, they understand your value and are likely open to booking you.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Perfect Pitch</div>
+      <div class="a-title">The 3-Sentence Pitch<br>That Actually Works</div>
+      <div class="a-sub">Hosts get dozens of pitches. Yours needs to answer three questions instantly.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A podcast pitch email has one job: make the host immediately understand why their audience will benefit from having you on. Three sentences. Three questions answered.<br><br><strong>Sentence 1: Who you are + one credibility signal.</strong> Not your full bio. One specific, relevant detail that establishes why you're worth 45 minutes of their audience's attention.<br><br><strong>Sentence 2: Why their audience benefits + what they will learn.</strong> Specific, not generic. "Your listeners will walk away with X" beats "I think your audience would find this interesting."<br><br><strong>Sentence 3: Three specific episode angles.</strong> Give them three talk ideas, ready to go. Remove the friction of figuring out what the episode would be about. The easier you make it to say yes, the more yeses you get.</p>
+      <div class="a-box"><strong>Template:</strong> "I help [niche] do [outcome]. I think your [audience] would benefit from [specific value]. Here are 3 episode angles: [A], [B], [C]."</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Crushing the Interview</div>
+      <div class="a-title">How to Crush<br>the Interview</div>
+      <div class="a-sub">Great guests prepare assets. They don't wing it.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most guests show up hoping to have a good conversation. The best guests arrive with prepared assets that make the conversation great regardless of what the host asks.<br><br><strong>5 go-to stories ready.</strong> Stories that illustrate your core points. Specific, real, with named outcomes. Stories are more memorable than arguments.<br><br><strong>1 memorable named framework.</strong> The thing listeners will remember and repeat when the episode ends. Name it, explain it in under 2 minutes, make it memorable.<br><br><strong>3 specific results to quote.</strong> Concrete numbers and outcomes from your work. Specificity builds credibility faster than any other signal.<br><br><strong>1 clear listener next step.</strong> What should a listener do in the next 24 hours? Make it concrete, free, and directly related to the episode topic.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Post-Episode</div>
+      <div class="a-title">Post-Episode<br>Amplification System</div>
+      <div class="a-sub">The work after the episode is where most of the value gets created.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>60-second clip.</strong> Your single best moment from the episode. Short, punchy, and ends with a hook that makes people want more. Post as a video on LinkedIn.<br><br><strong>Quote card.</strong> Your most quotable line, designed as a clean visual. The highest-save-rate format on any platform.<br><br><strong>Insight follow-up post.</strong> Write a LinkedIn post expanding on the idea that generated the most response in the episode.<br><br><strong>Email to your list.</strong> Share the full episode with a personal note about what you most enjoyed discussing.<br><br><strong>Tag host and share with your network.</strong> The host will reshare — doubling the reach of the episode and beginning a relationship that may lead to referrals to other shows.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Podcast System</div>
+      <h2 class="s7-ti">Podcast Guesting System — Research → Pitch → Prep → Record → Amplify</h2>
+      <div class="s7-grid">
+        <div class="s7-col c1">
+          <div class="s7-col-label">Research + Pitch</div>
+          <div class="s7-item">Week 1: Identify 20 target shows</div>
+          <div class="s7-item">Listen to 1 episode of each to understand tone</div>
+          <div class="s7-item">Find host email or contact form</div>
+          <div class="s7-item">Send 5 personalised pitches per week</div>
+          <div class="s7-item">Tool: Podmatch, Spotify search, Apple Podcasts</div>
+        </div>
+        <div class="s7-col c2">
+          <div class="s7-col-label">Prep + Record</div>
+          <div class="s7-item">Prepare 5 stories with specific outcomes</div>
+          <div class="s7-item">Draft your 1 named framework explanation</div>
+          <div class="s7-item">Prepare 3 data points or specific results</div>
+          <div class="s7-item">Set up clean audio (USB mic, quiet room)</div>
+          <div class="s7-item">End with a clear, single call to action</div>
+        </div>
+        <div class="s7-col c3">
+          <div class="s7-col-label">Amplify</div>
+          <div class="s7-item">Day 1: Post 60s clip on LinkedIn</div>
+          <div class="s7-item">Day 2: Share quote card</div>
+          <div class="s7-item">Day 3: Insight follow-up post</div>
+          <div class="s7-item">Day 4: Email to list with episode link</div>
+          <div class="s7-item">Day 7: Tag host + share with network</div>
+        </div>
+      </div>
+      <div class="s7-note">One episode, executed fully, is worth 2 weeks of daily posting. <strong>Most guests use 10% of the value. Use 100%.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-117.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
