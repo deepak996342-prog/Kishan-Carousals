@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 149 — Measuring Brand ROI: Is Your Personal Brand Actually Working? | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-149-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Brand ROI</div>
+      <h1 class="headline">Vanity metrics feel good.<br>ROI metrics<br><span class="accent">change your business.</span></h1>
+      <p class="sub-deck">The 7 metrics that tell you whether your personal brand generates real business value — and the tracking system that makes them visible.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Not vanity</div>
+        <div class="vis-box-val">Inbound inquiries</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Not vanity</div>
+        <div class="vis-box-val">Revenue attributed</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Not vanity</div>
+        <div class="vis-box-val">Close rate (warm)</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Review cycle</div>
+        <div class="vis-box-val">Monthly 30 min</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Problem With Follower Count</div>
+      <div class="a-title">Follower count measures interest.<br>Not impact. Not income.</div>
+      <div class="a-sub">10,000 passive followers can be worth less than 500 engaged ones.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Follower count is a vanity metric not because it's meaningless — it's not — but because it measures potential, not conversion. <strong>A creator with 50,000 followers and no clients has a larger audience than a creator with 2,000 followers and a full pipeline. The second creator has built a business. The first has built an audience without a conversion mechanism.</strong><br><br>The alternative is impact metrics: how many inbound enquiries did your content generate this month? How many led to proposals? How many converted to clients? How much revenue is directly attributable to your LinkedIn presence? These numbers tell you whether your brand is generating business value — and they are rarely correlated with follower count as strongly as creators assume.</p>
+      <div class="a-box"><strong>Reframe:</strong> Stop asking "how many followers do I have?" Start asking "how many enquiries did I receive this month, and where did they come from?"</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The 7 Brand ROI Metrics</div>
+      <div class="a-title">Seven numbers that tell you<br>if your brand is working.</div>
+      <div class="a-sub">Each metric reveals a different layer of brand health and business impact.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Inbound inquiries (origin-tracked):</strong> How many, and from where.<br><strong>2. Sales-qualified leads from content:</strong> Inquiries that meet your ideal client criteria.<br><strong>3. Close rate on content-warmed leads:</strong> vs. your close rate on cold leads.<br><strong>4. Speaking invitations or media mentions:</strong> Signals brand reach beyond your immediate audience.<br><strong>5. Email list / newsletter growth:</strong> Audience you own, not platform-dependent.<br><strong>6. Revenue directly attributed to LinkedIn:</strong> Track where every client originated.<br><strong>7. Referrals from content followers:</strong> People who know you only through your content and refer others.<br><br><strong>Together, these 7 metrics give you a complete picture of brand ROI across the visibility, trust, and conversion dimensions.</strong></p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Setting Up Attribution</div>
+      <div class="a-title">Ask every new client<br>three questions.</div>
+      <div class="a-sub">The pattern reveals which content is doing the real business work.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Attribution begins with a simple, consistent habit: after every new client engagement begins, ask three questions:<br><br><strong>"Where did you first find me?"</strong> — identifies the source channel.<br><strong>"What made you reach out at this particular time?"</strong> — identifies the trigger content or event.<br><strong>"What content or posts of mine did you read before reaching out?"</strong> — identifies the trust-building content.<br><br>Log every answer in a simple spreadsheet: date, source, trigger, content consumed. After 6 months, <strong>the patterns become undeniable.</strong> Usually, 1–2 specific post types or topic series account for 70–80% of all qualified leads. This data makes your next 6 months of content decisions obvious.</p>
+      <div class="a-box"><strong>Attribution tracker setup:</strong> Client name · Date · Source channel · Trigger post or event · Trust-building content noted · Revenue from engagement. Review quarterly.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Monthly Review (30 Minutes)</div>
+      <div class="a-title">One 30-minute session that<br>sharpens your entire strategy.</div>
+      <div class="a-sub">7 metrics vs. previous month + quarter. Identify 1 series driving the most business.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A monthly brand ROI review does not need to be complex. Set a 30-minute calendar block on the last Friday of each month. Review your 7 metrics against the prior month and the quarter. The questions to answer:<br><br><strong>"Which content series generated the most inbound enquiries this month?"</strong> — double it next month.<br><strong>"Which posts generated the most saves and DMs?"</strong> — these are your trust-building workhorses.<br><strong>"Is my email list growing?"</strong> — if not, add a lead magnet to your top posts.<br><strong>"What is my close rate this month vs. last month?"</strong> — declining close rate signals a qualification or offer problem.<br><br><strong>Thirty minutes per month of honest data review is worth more than 10 hours of content strategy theorising.</strong></p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Brand Value vs. Revenue Gap</div>
+      <div class="a-title">Some brand value doesn't<br>show in revenue. Track both.</div>
+      <div class="a-sub">Recognition and invitations are brand assets that feed future revenue.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Not all brand ROI is immediately monetisable. <strong>Speaking invitations, media mentions, peer recognition, academic citations, and inbound partnership enquiries are brand value that will often convert to revenue — on a longer timeframe.</strong> If you only track current revenue, you will undervalue the brand work that is building your pipeline for the next 12 months.<br><br>Track both: <strong>Revenue metrics</strong> (inbound leads, SQLs, close rate, revenue attributed) and <strong>brand equity metrics</strong> (speaking invitations, media mentions, peer shout-outs, inbound partnership enquiries, follower growth rate, engagement quality). The brand equity metrics today are the revenue pipeline metrics of next year. <strong>A brand that generates both simultaneously is compounding in the truest sense.</strong></p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Brand ROI Dashboard</div>
+      <h2 class="s7-ti">7 metrics — tracking method, monthly targets, quarterly review questions</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>How to Track</th>
+            <th>Monthly Target</th>
+            <th>Quarterly Review Question</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inbound inquiries</td>
+            <td>Log every DM / email / call source</td>
+            <td>Growing vs. prior month</td>
+            <td>Which channel drives most?</td>
+          </tr>
+          <tr>
+            <td>SQLs from content</td>
+            <td>Tag as "content-sourced" in CRM</td>
+            <td>50%+ of total leads</td>
+            <td>What content triggered them?</td>
+          </tr>
+          <tr>
+            <td>Close rate (warm)</td>
+            <td>Proposals vs. signed from content</td>
+            <td>60%+ close rate</td>
+            <td>Declining? Check qualification.</td>
+          </tr>
+          <tr>
+            <td>Speaking / media</td>
+            <td>Log each invitation in a spreadsheet</td>
+            <td>1+ per quarter</td>
+            <td>What topics attract invitations?</td>
+          </tr>
+          <tr>
+            <td>Email list growth</td>
+            <td>Newsletter platform analytics</td>
+            <td>5%+ monthly growth</td>
+            <td>Which posts drive sign-ups?</td>
+          </tr>
+          <tr>
+            <td>Revenue attributed</td>
+            <td>Ask every client the source question</td>
+            <td>Rising % from LinkedIn</td>
+            <td>What % of total revenue?</td>
+          </tr>
+          <tr>
+            <td>Content-follower referrals</td>
+            <td>Tag referral source in attribution log</td>
+            <td>1+ per month by month 12</td>
+            <td>Which topics generate referrals?</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">Measure what matters. <strong>The metrics you track are the metrics you optimize — choose them deliberately.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-149.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
