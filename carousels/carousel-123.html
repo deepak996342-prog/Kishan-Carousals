@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 123 — Content Team on a Budget: Your First Content Hire | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-123-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Content Team</div>
+      <h1 class="headline">You don't need a<br>marketing team.<br>You need one right<br><span class="accent">person doing the<br>right tasks.</span></h1>
+      <p class="sub-deck">When to hire content help, what to delegate first, where to find good people.</p>
+    </div>
+    <div class="vis-stack">
+      <div class="vis-box">Time is the bottleneck</div>
+      <div class="vis-box gold">Delegate repeatable tasks</div>
+      <div class="vis-box">Keep strategy + voice</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">When to Hire</div>
+      <div class="a-title">The Right Time<br>to Hire Content Help</div>
+      <div class="a-sub">Hiring before these conditions are met usually makes things worse, not better.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Hiring too early is as damaging as hiring too late. Before you bring anyone in, four conditions need to be true:<br><br><strong>Content ROI is proven.</strong> You have evidence — in DMs, calls, or revenue — that your content is generating business results. You're not hiring to fix a content problem; you're hiring to scale a content success.<br><br><strong>You're at capacity.</strong> You're doing as much content work as you personally can and the bottleneck is genuinely hours, not ideas or strategy.<br><br><strong>Time is genuinely the constraint.</strong> Not perfectionism. Not fear of delegating your voice. Actual time that cannot be recaptured without help.<br><br><strong>Budget for 2+ months exists.</strong> Never hire for one month of work. The ramp-up time means you won't see returns until month 2 at the earliest. Plan accordingly.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">What to Delegate</div>
+      <div class="a-title">What to Delegate<br>First</div>
+      <div class="a-sub">Start with the tasks that consume time without requiring your voice or judgment.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The first hire should never be a ghostwriter. Your voice is your differentiator. Delegate process, not personality.<br><br><strong>Scheduling and publishing.</strong> Loading drafted posts into Buffer, setting publish times, managing the content calendar. Pure process. Zero judgment needed.<br><br><strong>Carousel and graphic creation.</strong> You provide the content and structure; they produce the visual execution. Canva templates make this highly systematisable.<br><br><strong>Research.</strong> Background research on topics, data points, competitor analysis, industry news summaries. You get the raw material; you do the thinking.<br><br><strong>Transcript editing.</strong> If you record video or audio, they turn the raw transcript into a clean, structured document you can then write from.<br><br><strong>Comment management.</strong> Monitoring your posts, flagging replies that need your personal response, thanking new commenters. High time cost, low creativity requirement.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Where to Find Help</div>
+      <div class="a-title">Where to Find<br>the Right Person</div>
+      <div class="a-sub">The source matters as much as the candidate.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Three channels, each suited to a different type of hire:<br><br><strong>Upwork for task-based work.</strong> Best for defined, repeatable deliverables — graphic creation, scheduling, research. Hourly or per-project. Low risk. Easy to start and stop. Filter by reviews and portfolio, not just price.<br><br><strong>LinkedIn for specialists.</strong> If you need someone with genuine content strategy or writing expertise, LinkedIn search finds professionals with a track record. They cost more. They're worth it for creative roles.<br><br><strong>Your own audience for culture-fit hires.</strong> The most underutilised channel. People who follow you already understand your voice, your values, and your worldview. A post saying "I'm looking for a content assistant — here's what the role involves" will surface people who genuinely want to work with you specifically.</p>
+      <div class="a-box"><strong>The best first hire is often someone already in your community</strong> — a follower who comments consistently, understands your work, and responds when you post the opportunity.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Hiring Test</div>
+      <div class="a-title">The Paid Mini-Project<br>Hiring Test</div>
+      <div class="a-sub">Never commit to anyone you haven't seen work in a real, paid context.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Interviews reveal almost nothing about work quality, especially in creative and content roles. The hiring test reveals everything.<br><br><strong>Assign a paid mini-project of 2–3 hours' work.</strong> Real work. Something you actually need done. Pay them fairly for the time — this is not an audition at the candidate's expense, it's a paid evaluation.<br><br>The mini-project reveals four things that CVs and interviews can't:<br><br><strong>Initiative.</strong> Do they ask clarifying questions before starting, or just deliver something generic?<br><strong>Quality.</strong> Does the output meet your standard, or require extensive rework?<br><strong>Communication.</strong> Do they update you as the project progresses? Do they flag problems early?<br><strong>Turnaround.</strong> Do they meet the agreed timeline, or do you have to chase?<br><br>Two candidates pass the interview. Only one passes the mini-project. That's your hire.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Managing Well</div>
+      <div class="a-title">Managing a Content<br>Collaborator Effectively</div>
+      <div class="a-sub">Clear systems prevent the most common collaboration failures.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most content collaboration fails not because the person was wrong but because the management system was unclear.<br><br><strong>Weekly 30-minute brief.</strong> Every Monday: what's being published this week, any brand updates, any feedback from last week. 30 minutes of alignment prevents hours of rework.<br><br><strong>Shared Notion workspace.</strong> A single source of truth for the content calendar, brand guidelines, editorial standards, and in-progress drafts. Both of you work from the same document set.<br><br><strong>Monthly feedback call.</strong> A structured 45-minute session reviewing what's working, what isn't, and what the next month's priorities are. Not a critique session — a collaborative planning session.<br><br><strong>Clear editorial guidelines.</strong> A written document covering: your brand voice adjectives, topics that are on/off brand, formatting preferences, tone examples, and sample posts that represent the standard.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Delegation Framework</div>
+      <h2 class="s7-ti">What to Keep vs. Delegate — By Budget Tier</h2>
+      <div class="s7-grid">
+        <div class="s7-col c1">
+          <div class="s7-col-label">Always Keep (You)</div>
+          <div class="s7-item">Content strategy and pillar decisions</div>
+          <div class="s7-item">Final voice and editorial approval</div>
+          <div class="s7-item">Original ideas and perspectives</div>
+          <div class="s7-item">Personal stories and origin content</div>
+          <div class="s7-item">High-priority DM and comment responses</div>
+        </div>
+        <div class="s7-col c2">
+          <div class="s7-col-label">$500/mo Tier</div>
+          <div class="s7-item">Scheduling and publishing (5 hrs/week)</div>
+          <div class="s7-item">Basic graphic creation from templates</div>
+          <div class="s7-item">Comment monitoring and flagging</div>
+          <div class="s7-item">Research for post ideas</div>
+          <div class="s7-item">Best for: Upwork VA, part-time assistant</div>
+        </div>
+        <div class="s7-col c3">
+          <div class="s7-col-label">$1,500–$3,000/mo Tier</div>
+          <div class="s7-item">Everything in $500 tier plus:</div>
+          <div class="s7-item">Transcript editing and content mining</div>
+          <div class="s7-item">First-draft blog posts from your outlines</div>
+          <div class="s7-item">Carousel design and production</div>
+          <div class="s7-item">Best for: specialist freelancer or content VA</div>
+        </div>
+      </div>
+      <div class="s7-note">Start at the $500 tier. <strong>Prove the ROI before increasing the investment. Most solopreneurs need the $500 tier longer than they expect.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-123.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 124 — Evergreen Content: Build a Library That Generates Leads Forever | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-124-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Evergreen Content</div>
+      <h1 class="headline">Most content expires<br>in 48 hours.<br>Evergreen content pays<br><span class="accent">dividends for years.</span></h1>
+      <p class="sub-deck">How to create, build, and rotate a library of evergreen LinkedIn content that generates leads long after you publish it.</p>
+    </div>
+    <div class="vis-stack">
+      <div class="vis-box">Timely → 48h shelf life</div>
+      <div class="vis-box gold">Evergreen → 12+ months</div>
+      <div class="vis-box">Library → Permanent asset</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Core Distinction</div>
+      <div class="a-title">Evergreen vs. Timely:<br>Why It Matters</div>
+      <div class="a-sub">Both have a place. Only one compounds.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most LinkedIn content falls into one of two categories, with very different shelf lives:<br><br><strong>Timely content</strong> — news commentary, trend reactions, current events, quarterly reports. Shelf life: 24–48 hours. Timely content gets a burst of reach when it's fresh. Then it's functionally dead. Nobody searches for "my reaction to the March 2024 algorithm update" in September.<br><br><strong>Evergreen content</strong> — frameworks, psychological principles, fundamentals of your field, personal transformation stories, "how I think about X" insights. Shelf life: 12+ months, often years.<br><br>Evergreen content can be shared with a brand-new audience member in 2026 and be as relevant as the day it was written. <strong>It doesn't reference dates, news, or time-bound context.</strong> It speaks to permanent human motivations, persistent professional challenges, and enduring principles.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">5 Archetypes</div>
+      <div class="a-title">5 Evergreen Content<br>Archetypes That Work</div>
+      <div class="a-sub">These five formats reliably produce long-shelf-life, high-engagement content.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>1. Framework posts.</strong> "The 3-step process I use to [outcome]." A named, repeatable system with clear stages. Saves are high because people want to reference it later.<br><br><strong>2. Myth-busting posts.</strong> "Everyone says X. Here's why X is wrong." Challenges a widely-held belief with evidence or alternative framing. Timeless because the myth persists.<br><br><strong>3. Step-by-step guides.</strong> Practical, sequential, outcome-specific. "How to do X in Y steps" never expires as long as the process remains valid.<br><br><strong>4. Personal transformation stories.</strong> Your experience going from A to B. The emotional truth of a transformation story doesn't age — because the struggle you describe is ongoing for people who find it years later.<br><br><strong>5. "This changed how I think about X" insights.</strong> A single idea that fundamentally shifted your perspective. Written as a revelation, not a listicle.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Writing for Permanence</div>
+      <div class="a-title">Writing Content That<br>Stays Relevant for Years</div>
+      <div class="a-sub">Four rules that guarantee a post can be reshared without edits in 2 years.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The difference between a post that ages well and one that doesn't often comes down to four specific writing choices:<br><br><strong>No dates.</strong> "Last week I tried..." instantly dates the post. "I once tried..." doesn't. Remove all date references that aren't essential to the point.<br><br><strong>No "last week" or "recently."</strong> Same reason. Time-anchored language creates expiry dates. Write in the eternal present tense of principles.<br><br><strong>No news references.</strong> "With the current state of AI..." is dated within months. "As AI capabilities evolve..." stays relevant indefinitely.<br><br><strong>Principle-based, not trend-based.</strong> Anchor the point in a psychological principle, a business fundamental, or a human truth rather than a current trend. The principle will still be true when the trend is forgotten.<br><br><strong>Specific enough to be useful in 2 years.</strong> Vague content isn't evergreen — it's just forgettable. Specificity and permanence are not opposites.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Resharing Strategy</div>
+      <div class="a-title">The Resharing<br>Strategy</div>
+      <div class="a-sub">Your best post from 6 months ago is new content for 80% of your current audience.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn audiences grow and turn over continuously. If you gained 500 followers in the last 3 months, those 500 people have never seen your best post from a year ago. It's not old to them — it doesn't exist yet.<br><br><strong>Reshare evergreen posts every 3–4 months.</strong> This is not laziness. It's strategic distribution. The same post, reaching a meaningfully different audience segment, produces similar results to when it was first published.<br><br><strong>Add a new first line to freshen it.</strong> A single updated line — "I published this a year ago. It's still the most accurate thing I've written about X." — signals that you're sharing intentionally, not accidentally recycling old content. It also creates a brief moment of meta-commentary that often performs well in its own right.<br><br>A library of 30 evergreen posts on rotation means 8+ posts per month require zero new writing.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Building the Library</div>
+      <div class="a-title">Building Your<br>Evergreen Library</div>
+      <div class="a-sub">30 posts. 4-month rotation. Index by theme. Done.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The evergreen library is a finite, manageable asset. You don't need 200 posts — you need 30 great ones.<br><br><strong>Target: 30 evergreen posts.</strong> Six per archetype (frameworks, myth-busting, guides, transformation stories, perspective-changing insights). A set of 30 covers every major theme in your content pillars and provides material for an 18-month rotation with no repetition.<br><br><strong>4-month rotation cycle.</strong> Each post is reshared once every 4 months. With 30 posts, you're publishing ~8 evergreen reshares per month — roughly 2 per week. Combined with new content, this creates a consistent, high-quality feed with significantly less writing effort.<br><br><strong>Index by theme in Notion.</strong> A simple database: post title, core theme, archetype, last shared date, next scheduled share date, performance notes. Takes 30 minutes to build. Saves hours every month.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Evergreen Framework</div>
+      <h2 class="s7-ti">Evergreen Content Framework — 5 Archetypes with Examples &amp; Rotation</h2>
+      <div class="s7-grid">
+        <div class="s7-col c1">
+          <div class="s7-col-label">5 Archetypes + Examples</div>
+          <div class="s7-item">Framework: "The 3-Pillar Content System I use every week"</div>
+          <div class="s7-item">Myth-busting: "Consistency doesn't mean posting every day"</div>
+          <div class="s7-item">Guide: "How to write a LinkedIn hook in 10 minutes"</div>
+          <div class="s7-item">Transformation: "I spent 6 months posting to 200 followers"</div>
+          <div class="s7-item">Perspective: "The idea that changed how I think about niches"</div>
+        </div>
+        <div class="s7-col c2">
+          <div class="s7-col-label">Resharing Schedule</div>
+          <div class="s7-item">Library target: 30 posts (6 per archetype)</div>
+          <div class="s7-item">Rotation cycle: Every 3–4 months per post</div>
+          <div class="s7-item">Monthly reshares: ~8 posts (2 per week)</div>
+          <div class="s7-item">Freshening line: Add 1 new sentence at the top</div>
+          <div class="s7-item">New content to pair with: 2–3 original posts/week</div>
+        </div>
+        <div class="s7-col c3">
+          <div class="s7-col-label">Library Index (Notion)</div>
+          <div class="s7-item">Column: Post title + core theme tag</div>
+          <div class="s7-item">Column: Archetype (one of the 5)</div>
+          <div class="s7-item">Column: Last shared date</div>
+          <div class="s7-item">Column: Next scheduled share</div>
+          <div class="s7-item">Column: Performance notes (engagement, DMs)</div>
+        </div>
+      </div>
+      <div class="s7-note">Build the library one post per week. <strong>In 30 weeks you have a permanent, rotating content asset that works for you indefinitely.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-124.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
