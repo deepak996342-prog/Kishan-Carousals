@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 138 — Digital Products: Create and Sell Your First Digital Product | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-138-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Digital Products</div>
+      <h1 class="headline">Your next income stream<br>doesn't require a client.<br>It requires <span class="accent">packaging<br>what you already know.</span></h1>
+      <p class="sub-deck">How to identify, build in a weekend, and sell your first digital product to your LinkedIn audience.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Step 1</div>
+        <div class="vis-box-val">Find your idea</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Step 2</div>
+        <div class="vis-box-val">Build this weekend</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Step 3</div>
+        <div class="vis-box-val">Launch on LinkedIn</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Price right</div>
+        <div class="vis-box-val">£25–£97+</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">What Counts as a Digital Product</div>
+      <div class="a-title">You already have the<br>raw material. Package it.</div>
+      <div class="a-sub">Digital products are packaged expertise — not software, not complexity.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A digital product is any piece of knowledge, process, or tool you can package once and deliver digitally without custom work each time. The format options available to a LinkedIn creator include: <strong>Notion templates, email swipe files, prompt libraries for AI tools, mini-courses, frameworks as PDFs, step-by-step playbooks, curated resource guides, and SOPs for a specific task.</strong><br><br>The common thread is not the format — it's the transformation. Every digital product should answer: what does the buyer achieve or avoid by purchasing this? If your answer is vague, your product will undersell. Make the transformation specific: "Go from blank page to 30 posts in a weekend" beats "LinkedIn content templates".</p>
+      <div class="a-box"><strong>Quick test:</strong> If buying your product saves someone 10 hours or helps them avoid a specific mistake, it's worth making. Price accordingly.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Finding Your Idea</div>
+      <div class="a-title">The right idea is already<br>hiding in plain sight.</div>
+      <div class="a-sub">The intersection of demand, repetition, and time savings.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The best digital product ideas sit at the intersection of three signals: <strong>the most common requests you receive</strong> (demand is already proven), <strong>the things you repeatedly explain to clients or connections</strong> (you have the expertise and the content), and <strong>something that saves someone 10+ hours</strong> (justifies paying for it rather than figuring it out themselves).<br><br>Review your last 90 days: What have clients asked you to help with most? What LinkedIn comments ask the same question? What does your free advice most consistently cover? That territory contains your first product. The market has already voted — you just need to listen to the vote.</p>
+      <div class="a-box"><strong>Idea validation shortcut:</strong> Post a LinkedIn poll asking your audience which of 3 potential product ideas they'd find most useful. The answer in 24 hours tells you everything.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Weekend Build</div>
+      <div class="a-title">Day 1: create it.<br>Day 2: sell it.</div>
+      <div class="a-sub">A weekend is enough time if you stop overthinking and start building.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Day 1:</strong> Outline the entire product in the morning. Identify every section, template, or piece of content it needs. Build in Canva (design-heavy), Notion (template or guide), or Google Docs (frameworks, playbooks). Don't refine — create. Aim for 80% complete by evening.<br><br><strong>Day 2:</strong> Add examples, refine copy, and create your sales page on Gumroad or Lemon Squeezy (both take 30 minutes to set up). Write a compelling product description that leads with transformation. Set your price. Upload. Your product is live.<br><br><strong>The goal isn't perfect — it's published.</strong> You will improve it based on buyer feedback. The first version is just the starting point.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">LinkedIn as Sales Channel</div>
+      <div class="a-title">Sell the transformation,<br>not the features.</div>
+      <div class="a-sub">3–4 teaser posts before launch warm the audience that's already ready.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>The pre-launch content sequence matters.</strong> For 1–2 weeks before launch, publish 3–4 posts that share the problem your product solves, the transformation it creates, and a behind-the-scenes preview of what's inside. Never lead with "I've built a template pack." Lead with the pain: "I spent 6 hours this week building LinkedIn carousels. Then I templated the process. Here's what I built."<br><br>On launch day, post your announcement and <strong>personally DM your 20 warmest connections</strong> — people who engage with your content regularly. A personal message from you converts far better than any public post. Early buyers create social proof that accelerates the next wave of sales.</p>
+      <div class="a-box"><strong>Pre-launch checklist:</strong> 3 teaser posts published · Sales page live · DM list of 20 warm connections ready · Launch post drafted with strong hook and clear link</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Pricing Your Digital Product</div>
+      <div class="a-title">Lower prices signal<br>lower value. Price up.</div>
+      <div class="a-sub">The buyer's psychology is counterintuitive: higher price = higher trust.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The most common mistake first-time digital product creators make is under-pricing. They charge £5–£10 because they fear rejection and don't believe in their own expertise. <strong>A well-designed, transformation-focused digital product priced at £25–£97 is not only normal — it's expected.</strong> Pricing below £20 signals "low effort, low value" to your audience. Pricing at £47–£97 signals "this is professional and worthwhile."<br><br>The buyer isn't comparing your product to free content — they're comparing it to the cost of the problem. If your template saves someone 6 hours, and their time is worth £50/hour, your product is worth £300 just in time saved. Price to the value delivered, not the cost of production.</p>
+      <div class="a-box"><strong>Pricing rule:</strong> Start at £47. If it sells well, test £67 or £97 with the next launch. Your price is not final — it's a starting hypothesis.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Digital Product Launch Plan</div>
+      <h2 class="s7-ti">Pre-Launch / Launch / Post-Launch — LinkedIn post types for each phase</h2>
+      <div class="s7-3col">
+        <div class="s7-card">
+          <div class="s7-card-lbl">Pre-Launch (Week 1–2)</div>
+          <div class="s7-card-ttl">Build Anticipation</div>
+          <div class="s7-list">
+            <div class="s7-li">Problem post: the pain your product solves</div>
+            <div class="s7-li">Behind-the-scenes: building the product</div>
+            <div class="s7-li">Transformation post: before vs. after</div>
+            <div class="s7-li">Sneak peek: 1 page or template preview</div>
+            <div class="s7-li">Waitlist post: "DM me EARLY for first access"</div>
+          </div>
+        </div>
+        <div class="s7-card gc">
+          <div class="s7-card-lbl">Launch Week</div>
+          <div class="s7-card-ttl">Announce and Convert</div>
+          <div class="s7-list">
+            <div class="s7-li">Launch post: hook + transformation + link</div>
+            <div class="s7-li">DM warm connections personally (20 people)</div>
+            <div class="s7-li">Mid-week social proof post (first buyers)</div>
+            <div class="s7-li">FAQ post: answer top 3 objections</div>
+            <div class="s7-li">Closing post: last chance + urgency</div>
+          </div>
+        </div>
+        <div class="s7-card">
+          <div class="s7-card-lbl">Post-Launch (Month 2+)</div>
+          <div class="s7-card-ttl">Sustain Sales</div>
+          <div class="s7-list">
+            <div class="s7-li">Buyer testimonial / results post</div>
+            <div class="s7-li">Case study: how a buyer used it</div>
+            <div class="s7-li">Updated version announcement</div>
+            <div class="s7-li">Evergreen content linking back to product</div>
+            <div class="s7-li">Monthly soft mention in relevant posts</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">The launch is not an event — it's a sequence. <strong>Consistency over 4–6 weeks generates more sales than a single announcement.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-138.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
