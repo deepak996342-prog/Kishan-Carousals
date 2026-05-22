@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 134 — Writer's Block: What to Post When You Have Nothing to Say | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-134-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Writer's Block</div>
+      <h1 class="headline">You're not out of ideas.<br>You've stopped paying<br><span class="accent">attention to the right things.</span></h1>
+      <p class="sub-deck">12 reliable post-generating triggers that work every time you sit down with a blank screen.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Experience Mining</div>
+        <div class="vis-box-val">Triggers 1–3</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Audience-Centred</div>
+        <div class="vis-box-val">Triggers 4–6</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Industry Lens</div>
+        <div class="vis-box-val">Triggers 7–9</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Contrast &amp; Comparison</div>
+        <div class="vis-box-val">Triggers 10–12</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Root Cause of Blank Screen</div>
+      <div class="a-title">It's rarely lack of ideas.<br>It's lack of capture.</div>
+      <div class="a-sub">Uncaptured ideas don't exist when you need them.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">You have ideas constantly. In the shower. During client calls. When reading an article. When you make a mistake and realise something.<br><br><strong>The problem isn't generation — it's capture.</strong> Those ideas evaporate in minutes if you don't catch them. A blank screen on Wednesday isn't a creativity problem. It's a Monday capture failure.<br><br>The fix: carry a capture tool everywhere. Notes app. Voice memo. Notion mobile. The moment an idea surfaces — capture it. One sentence. That's enough. 30 captures per month = never facing a blank screen.</p>
+      <div class="a-box"><strong>The capture habit:</strong> After every client call, write one thing that surprised you or confirmed something you believed. 30 seconds. One sentence. That's a post idea.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Triggers 1–3 · Experience Mining</div>
+      <div class="a-title">Your last 7 days contain<br>at least 3 post ideas.</div>
+      <div class="a-sub">Mine your own experience — it's original by definition.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Trigger 1: The last conversation that surprised you.</strong> When did someone say something in the last week that shifted your thinking? What surprised you about their perspective? That surprise is a post.<br><br><strong>Trigger 2: A mistake this week that taught you something.</strong> What went wrong? What would you do differently? The lesson is worth sharing.<br><br><strong>Trigger 3: A belief you've changed.</strong> What did you used to think that you no longer think? What changed your mind? Before/after belief shifts are some of the most engaging posts on LinkedIn.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Triggers 4–6 · Audience-Centred</div>
+      <div class="a-title">Your audience is asking<br>you questions every day.</div>
+      <div class="a-sub">Their questions are your best content brief.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Trigger 4: The most common question you get asked.</strong> If someone asks you the same thing more than twice, it's a post. The question is the proof that the audience wants the answer.<br><br><strong>Trigger 5: The misconception you correct most often.</strong> What do clients consistently misunderstand about your field? Correcting it publicly is service and positioning simultaneously.<br><br><strong>Trigger 6: What clients always underestimate.</strong> What do new clients fail to appreciate about the complexity or importance of what you do? Making that visible educates your future clients before they hire you.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Triggers 7–9 · Industry Lens</div>
+      <div class="a-title">Your perspective on your<br>industry is unique content.</div>
+      <div class="a-sub">Credibility comes from having opinions, not just information.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Trigger 7: A trend you're skeptical of.</strong> What's everyone excited about in your field that you think is overrated or misunderstood? Contrarian takes drive more discussion than consensus.<br><br><strong>Trigger 8: Advice that gets repeated that you think is wrong.</strong> What's the received wisdom in your niche that you disagree with? Disagreeing publicly (respectfully and with reasoning) signals expertise and courage.<br><br><strong>Trigger 9: What new people need to hear first.</strong> If someone just entered your field or started their journey, what's the most important thing to understand? That lesson is always useful.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Triggers 10–12 · Contrast</div>
+      <div class="a-title">Comparison posts work<br>because contrast creates clarity.</div>
+      <div class="a-sub">The gap between A and B is always more interesting than either alone.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Trigger 10: Then vs. now (your journey).</strong> What did you think 3 years ago that you'd completely disagree with now? Your evolution is evidence of expertise and authenticity.<br><br><strong>Trigger 11: The difference between A and B that nobody explains.</strong> Two concepts that people confuse — strategy vs. tactics, authority vs. fame, engagement vs. reach. Explain the distinction clearly and concisely.<br><br><strong>Trigger 12: What you wish someone told you.</strong> What would have saved you months of confusion if you'd heard it at the start? That lesson is gold for everyone who is where you were.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">30-Day Content Prompt Pack</div>
+      <h2 class="s7-ti">12 trigger types with variations — your content sprint</h2>
+      <div class="s7-3col">
+        <div class="s7-card">
+          <div class="s7-card-lbl">Experience Mining (1–3)</div>
+          <div class="s7-card-ttl">This Week's Experiences</div>
+          <div class="s7-list">
+            <div class="s7-li">A conversation that surprised me</div>
+            <div class="s7-li">A mistake + lesson learned</div>
+            <div class="s7-li">A belief I've changed</div>
+            <div class="s7-li">Something I tried that didn't work</div>
+            <div class="s7-li">A result I didn't expect</div>
+          </div>
+        </div>
+        <div class="s7-card gc">
+          <div class="s7-card-lbl">Audience-Centred (4–6)</div>
+          <div class="s7-card-ttl">Their Questions, Your Answers</div>
+          <div class="s7-list">
+            <div class="s7-li">Most common question I get asked</div>
+            <div class="s7-li">Misconception I correct most often</div>
+            <div class="s7-li">What clients always underestimate</div>
+            <div class="s7-li">What I wish clients understood first</div>
+            <div class="s7-li">The question no one asks but should</div>
+          </div>
+        </div>
+        <div class="s7-card">
+          <div class="s7-card-lbl">Contrast (10–12)</div>
+          <div class="s7-card-ttl">Then vs. Now</div>
+          <div class="s7-list">
+            <div class="s7-li">What I thought vs. what I know now</div>
+            <div class="s7-li">Concept A vs. Concept B distinction</div>
+            <div class="s7-li">What I wish I'd heard at the start</div>
+            <div class="s7-li">Before / after a key decision</div>
+            <div class="s7-li">The truth vs. the popular myth</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">Pick one trigger. Set a 10-minute timer. <strong>Write without stopping.</strong> Your content was always there — you just needed a door in.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-134.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
