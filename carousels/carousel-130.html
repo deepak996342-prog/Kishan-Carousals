@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 130 — 1-Hour Weekly Content System: All Your Posts in 60 Minutes | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-130-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>60-Minute System</div>
+      <h1 class="headline">You have exactly<br>1 hour per week to<br>create all your LinkedIn<br><span class="accent">content. Here's the system.</span></h1>
+      <p class="sub-deck">A time-constrained creation system for busy professionals — 4 posts per week in 60 minutes, without sacrificing quality.</p>
+    </div>
+    <div class="time-blocks">
+      <div class="time-block">
+        <div>
+          <div class="time-block-day">Sunday</div>
+          <div class="time-block-task">Plan &amp; prep</div>
+        </div>
+        <div class="time-block-mins">10 min</div>
+      </div>
+      <div class="time-block gold-tb">
+        <div>
+          <div class="time-block-day">Monday</div>
+          <div class="time-block-task">Write all 4 posts</div>
+        </div>
+        <div class="time-block-mins">30 min</div>
+      </div>
+      <div class="time-block">
+        <div>
+          <div class="time-block-day">Tuesday</div>
+          <div class="time-block-task">Polish &amp; schedule</div>
+        </div>
+        <div class="time-block-mins">20 min</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why 60 Minutes Is Enough</div>
+      <div class="a-title">Most content time is wasted<br>on decisions, not writing.</div>
+      <div class="a-sub">A system eliminates the decision phase entirely.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">If you've ever spent 90 minutes "working on content" and published nothing, the problem wasn't time. It was decision fatigue.<br><br><strong>What to write about. Which angle to take. What format to use. When to post.</strong> These micro-decisions, multiplied across 4 posts, consume hours. The system pre-answers all of them.<br><br>Once you have a content bank, a format library, and a publishing schedule, writing is the only variable. And writing 4 posts takes 28 minutes when you're not simultaneously trying to invent them.</p>
+      <div class="a-box"><strong>Time audit:</strong> Track your next content session by phase. Most people spend 70% on deciding, 30% on writing. The fix: decide in batch on Sunday.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Sunday — Week Prep (10 min)</div>
+      <div class="a-title">Make all decisions before<br>the week begins.</div>
+      <div class="a-sub">10 minutes of planning saves 60 minutes of friction.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Open your content bank. Pull 4 topics — one per post day. <strong>Assign a format to each: text post, image post, carousel, or story format.</strong> Set the posting days and times (block them in your calendar). Done.<br><br>You've just answered every question you'd otherwise have to answer while staring at a blank screen on Monday morning. The week is planned. Monday writing is pure execution — no cognitive overhead, no deliberation, no procrastination.<br><br>This 10-minute investment is the highest ROI in the system.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Monday — 30-Min Write</div>
+      <div class="a-title">4 posts. 7 minutes each.<br>No editing allowed.</div>
+      <div class="a-sub">Speed is the creative constraint that forces clarity.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Set a timer for 7 minutes. Write post 1. Stop. Set timer again. Write post 2. Four posts in 28 minutes, leaving 2 minutes buffer.<br><br><strong>The template: Hook → 3 insight bullets → CTA.</strong> This constraint keeps you out of your own head. No editing during writing — if you write a bad sentence, leave it and keep going. Bad sentences get cut on Tuesday, not Monday.<br><br>Writing and editing are different cognitive modes. Mixing them creates the worst of both: slow writing and weak editing. Separate the modes.</p>
+      <div class="a-box"><strong>The 7-minute rule:</strong> If you can't explain an idea clearly in 7 minutes of writing, you don't understand it well enough yet. That's also useful data.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Tuesday — 20-Min Polish</div>
+      <div class="a-title">Edit with discipline.<br>Schedule with confidence.</div>
+      <div class="a-sub">5 minutes per post. One job: remove friction.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">5 minutes per post: <strong>read it aloud</strong> (catches awkward phrasing instantly), <strong>cut the first sentence of 3 out of 4 posts</strong> (the real opener is usually sentence 2), <strong>sharpen one CTA</strong> so it's specific not generic.<br><br>Then schedule all 4 posts. Buffer, Hootsuite, LinkedIn's native scheduler — any works. The act of scheduling removes the daily decision of "should I post today?" That decision doesn't happen during the week. It happened on Sunday.<br><br>The week is done. Four posts, 60 minutes total.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Compound Effect</div>
+      <div class="a-title">Week 1 is hard.<br>Week 12 is automatic.</div>
+      <div class="a-sub">Systems improve with repetition. Motivation doesn't.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Week 1: the system feels clunky. You'll go over time. You'll doubt the quality. That's fine — your brain is learning a new pattern. The friction is temporary.<br><br>Week 4: the rituals are forming. Sunday planning takes 8 minutes. Monday writing flows. Tuesday polishing is mechanical.<br><br><strong>Week 12: the system runs itself.</strong> You stop watching the clock because you're inside the habit. The content bank gets faster to navigate. The format templates get faster to execute. Each week's output improves while time spent decreases.</p>
+      <div class="a-box"><strong>Do not miss a week.</strong> Missing week 1 means starting over. The system only works if you run it, imperfectly, until it's automatic. The first 4 weeks are the hardest.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">60-Minute Content Week Template</div>
+      <h2 class="s7-ti">The exact breakdown by day and task</h2>
+      <div class="week-grid">
+        <div class="week-col">
+          <div class="week-col-day">Sunday · 10 min</div>
+          <div class="week-col-time">Week Prep</div>
+          <div class="week-tasks">
+            <div class="week-task">Pull 4 topics from content bank</div>
+            <div class="week-task">Assign format to each post</div>
+            <div class="week-task">Set posting days + times</div>
+            <div class="week-task">Block Monday/Tuesday in calendar</div>
+            <div class="week-task">Done. Close laptop.</div>
+          </div>
+        </div>
+        <div class="week-col gold-wc">
+          <div class="week-col-day">Monday · 30 min</div>
+          <div class="week-col-time">Write</div>
+          <div class="week-tasks">
+            <div class="week-task">Timer: 7 min per post × 4</div>
+            <div class="week-task">Template: Hook → 3 bullets → CTA</div>
+            <div class="week-task">No editing while writing</div>
+            <div class="week-task">Bad sentences stay for now</div>
+            <div class="week-task">Volume over polish</div>
+          </div>
+        </div>
+        <div class="week-col">
+          <div class="week-col-day">Tuesday · 20 min</div>
+          <div class="week-col-time">Polish &amp; Schedule</div>
+          <div class="week-tasks">
+            <div class="week-task">Read each post aloud (2 min)</div>
+            <div class="week-task">Cut first sentence from 3 posts</div>
+            <div class="week-task">Sharpen one CTA per post</div>
+            <div class="week-task">Schedule all 4 posts</div>
+            <div class="week-task">Week is done.</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">The system works because it <strong>eliminates decision-making during execution.</strong> All decisions happen on Sunday.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-130.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

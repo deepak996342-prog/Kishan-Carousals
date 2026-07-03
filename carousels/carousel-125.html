@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 125 — Quarterly Content Strategy: Plan 90 Days in 2 Hours | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-125-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Quarterly Strategy</div>
+      <h1 class="headline">Posting without a<br>strategy is noise.<br>Strategic posting is<br><span class="accent">compound business<br>development.</span></h1>
+      <p class="sub-deck">How to build a 90-day content plan that aligns every post with a business goal.</p>
+    </div>
+    <div class="vis-stack">
+      <div class="vis-box">Goal → Pillar → Calendar</div>
+      <div class="vis-box gold">2 hours → 90 days planned</div>
+      <div class="vis-box">Every post intentional</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Why 90 Days</div>
+      <div class="a-title">Why Quarterly Planning<br>Works Better Than Annual</div>
+      <div class="a-sub">90 days is the sweet spot between specificity and momentum.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Annual planning produces beautiful documents that are irrelevant by February. Monthly planning is too reactive — not enough time to build content arcs that compound.<br><br><strong>90 days hits the sweet spot.</strong> Short enough that you can be specific about goals, themes, and outcomes. Long enough to see compounding results. Aligned with natural business cycles — most sales, service, and product rhythms operate on quarterly timelines.<br><br>A 90-day content plan also creates accountability without rigidity. You set the direction for the quarter and make weekly tactical decisions within that framework — rather than reinventing the strategy every Monday morning.<br><br>In practice: <strong>companies that align content to quarterly goals generate 4× more qualified conversations than those creating content without strategic direction.</strong> The difference isn't output volume — it's intentionality.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Step 1: Set Goals</div>
+      <div class="a-title">Step 1: Set Goals<br>Tied to Outcomes</div>
+      <div class="a-sub">Content goals that aren't connected to business outcomes are vanity metrics.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most content plans start with "post X times per week." That's a tactic, not a goal. The quarterly content plan starts with business outcomes and works backward to content.<br><br><strong>Business goals that content can drive:</strong><br><br>Inbound inquiries → How many qualified conversations do you want this quarter?<br>Partnership opportunities → Are there 3 specific collaborators you want to reach?<br>Speaking invitations → Content demonstrating a POV that gets you booked?<br>Audience growth → A target number means a growth strategy, not just a posting frequency?<br><br><strong>Tie every content goal to a business outcome.</strong> "Reach 5,000 followers" is not a business outcome. "Generate 10 qualified discovery calls from LinkedIn" is. The first goal produces vanity. The second produces revenue.</p>
+      <div class="a-box"><strong>Goal-setting prompt:</strong> "If my content is working this quarter, what will be happening in my business that isn't happening now?" That answer is your real goal.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Step 2: Define Pillars</div>
+      <div class="a-title">Step 2: Define Your<br>4–5 Content Pillars</div>
+      <div class="a-sub">Pillars are the recurring themes that make your feed coherent rather than random.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Content pillars are the 4–5 recurring themes that make up your entire content output. Every post belongs to one of them. This creates a feed that feels intentional rather than scattered.<br><br><strong>Expertise.</strong> Demonstrates your depth in your field. Frameworks, methodologies, lessons learned. This is what you know.<br><br><strong>Process.</strong> Shows how you work. Behind the scenes, client stories, decision-making. This is how you do it.<br><br><strong>Results.</strong> Social proof and outcomes. Client wins, case studies, before/after. This is what you've produced.<br><br><strong>Personal.</strong> The human behind the professional. Values, origin story, failures, lessons. This is who you are.<br><br><strong>Hot Takes.</strong> Contrarian perspectives on your field. Disagreements, predictions, reframings. This is what you believe that others don't.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Step 3: Map to Sales</div>
+      <div class="a-title">Step 3: Map Content<br>to Your Sales Cycle</div>
+      <div class="a-sub">60/30/10 is the allocation that balances trust-building with business development.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Not all content serves the same purpose in your business development cycle. A quarterly content plan allocates posts intentionally across three categories:<br><br><strong>60% Authority-building.</strong> Demonstrates expertise and perspective. Builds the credibility that makes prospects confident before they ever contact you. Expertise, process, and hot takes posts fall here.<br><br><strong>30% Trust-building.</strong> Creates human connection and relatability. Reduces the risk a prospect feels in reaching out. Personal stories, behind-the-scenes, origin content, and client stories fall here.<br><br><strong>10% Promotional.</strong> Direct references to your service, offer, or availability. Asking for a conversation, announcing an opening, referencing your work explicitly. This is the content people feel most anxious about — but 10% is a remarkably small number. One promotional post per 10 is not aggressive. It's responsible.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Step 4: Build Calendar</div>
+      <div class="a-title">Step 4: Create the<br>Monthly Content Arc</div>
+      <div class="a-sub">Each month of the quarter has a different strategic focus and emotional destination.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The quarterly plan distributes content strategically across three months, each with a different primary focus:<br><br><strong>Month 1: Establish Authority.</strong> Lead with your best expertise content. Introduce or reintroduce your frameworks. Demonstrate depth. The goal is to ensure that by the end of month one, your ideal client knows who you are and what you stand for.<br><br><strong>Month 2: Deepen With Results.</strong> Shift toward proof. Case studies, client outcomes, documented experiments, transformation stories. Authority tells people you know what you're doing. Results show them you've done it.<br><br><strong>Month 3: Activate for Inquiry.</strong> Gradually increase the warmth and directness of your content. More personal stories. More explicit CTAs. More direct reference to the work you do for clients. By month three, your audience has seen 8 weeks of value — they're ready to hear about your offer without feeling sold to.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Planning Template</div>
+      <h2 class="s7-ti">Quarterly Content Planning Template — Goals / Pillars / Arc / Cadence / KPIs</h2>
+      <div class="s7-grid">
+        <div class="s7-col c1">
+          <div class="s7-col-label">Goals + Pillars (30 min)</div>
+          <div class="s7-item">Goal 1: Qualified conversations (target number)</div>
+          <div class="s7-item">Goal 2: Partnership or speaking opportunities</div>
+          <div class="s7-item">Goal 3: Audience growth milestone</div>
+          <div class="s7-item">Pillar split: 30% Expertise · 25% Process · 20% Results · 15% Personal · 10% Hot Takes</div>
+          <div class="s7-item">Content mix: 60% authority · 30% trust · 10% promo</div>
+        </div>
+        <div class="s7-col c2">
+          <div class="s7-col-label">Monthly Arc (45 min)</div>
+          <div class="s7-item">Month 1: Establish authority — frameworks, POV posts</div>
+          <div class="s7-item">Month 2: Deepen with results — case studies, proof</div>
+          <div class="s7-item">Month 3: Activate inquiry — warm CTAs, direct offers</div>
+          <div class="s7-item">Weekly cadence: 3–5 posts per week, consistent day/time</div>
+          <div class="s7-item">Batch: Monthly 4-hr session + reactive 20% slots</div>
+        </div>
+        <div class="s7-col c3">
+          <div class="s7-col-label">KPIs to Track (45 min)</div>
+          <div class="s7-item">Qualified DMs received per month</div>
+          <div class="s7-item">Discovery calls booked from content</div>
+          <div class="s7-item">Profile views per week (traffic signal)</div>
+          <div class="s7-item">Engagement rate on authority posts</div>
+          <div class="s7-item">Follower growth rate (benchmark: 5–10%/month)</div>
+        </div>
+      </div>
+      <div class="s7-note">Block 2 hours at the start of each quarter. <strong>This session determines the commercial impact of the next 90 days of your content.</strong> Protect it.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-125.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

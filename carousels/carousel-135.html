@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 135 — Burnout Prevention: Sustainable Content Creation for the Long Game | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-135-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Burnout Prevention</div>
+      <h1 class="headline">Content burnout isn't about<br>posting too much. It's about<br><span class="accent">posting without a<br>sustainable system.</span></h1>
+      <p class="sub-deck">How to build a content practice you can maintain for 3 years — not 3 months — without sacrifice or exhaustion.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Burnout Pattern</div>
+        <div class="vis-box-val">Sprint → crash → disappear → repeat</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Sustainable Pattern</div>
+        <div class="vis-box-val">Consistent → systematic → compounding</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">The Floor Rule</div>
+        <div class="vis-box-val">1 post/week on worst days</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Signs of Creator Burnout</div>
+      <div class="a-title">Recognise it before it<br>stops your momentum cold.</div>
+      <div class="a-sub">Burnout announces itself with clear early signals.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Burnout for content creators doesn't look like dramatic collapse. It looks like gradual erosion.<br><br><strong>Dreading the blank screen</strong> — where you used to feel creative energy, now you feel dread. <strong>Posting just to post</strong> — you're going through the motions, producing content that doesn't reflect your best thinking. <strong>Avoiding the platform</strong> — opening LinkedIn feels like obligation, not opportunity. <strong>Recycling content without care</strong> — reposting old stuff not because it's worth sharing again, but because you can't face creating something new.<br><br>Any of these? The system needs redesigning, not your willpower.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Root Cause 1 · Unsustainable Volume</div>
+      <div class="a-title">Start at the frequency<br>you can hold on your worst week.</div>
+      <div class="a-sub">Your worst week is the right benchmark, not your best.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The classic burnout pattern: start posting 7 days a week fueled by excitement. Sustain for 3-4 weeks. A busy week happens. You miss 4 days. The break becomes a 3-week disappearance. Return with guilt. Repeat.<br><br><strong>The fix: choose a frequency you can hold on your worst week.</strong> Not your average week. Your worst. The week a client project blows up, you get sick, a family thing happens.<br><br>If you can post 3×/week on your worst week — start there. If that's only 1×/week — start there. Consistent 1×/week for 2 years beats 7×/week for 6 weeks and zero for 6 months.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Root Cause 2 · No Intrinsic Motivation</div>
+      <div class="a-title">Posting only for metrics<br>collapses when metrics disappoint.</div>
+      <div class="a-sub">Build the intrinsic part before the extrinsic rewards arrive.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">When you post purely to grow followers and generate leads, every low-performing post feels like failure. If the metrics go quiet — and they will, they go quiet for everyone — the motivation to continue evaporates.<br><br><strong>Build in creation for its own sake.</strong> Find topics you'd write about even if nobody read them. The satisfaction of expressing a clear idea, explaining something well, or processing your own thinking through writing — these are intrinsic rewards that don't depend on the algorithm.<br><br>External rewards are motivating. Internal rewards are sustaining. You need both to last 3 years.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The Sustainability System</div>
+      <div class="a-title">Three practices that make<br>the long game possible.</div>
+      <div class="a-sub">System design beats character — every time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Batching:</strong> Create once, distribute over time. Write 4 posts in one Monday session. Schedule them. Then don't touch content again until next Monday. The constraint of designated creation time prevents the draining ambient pressure to always be creating.<br><br><strong>Content bank:</strong> Never start from zero. Having 30+ ideas ready to write means every session starts with choice, not anxiety.<br><br><strong>Planned breaks:</strong> A scheduled 2-week break every quarter is sustainable. An unplanned 3-week disappearance because you're exhausted is damaging. Plan the rest before you need it.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Minimal Viable Standard</div>
+      <div class="a-title">Know your floor before<br>you set your ceiling.</div>
+      <div class="a-sub">The floor is what protects the momentum when life happens.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Every content creator needs two posting standards: a normal standard and a floor standard.<br><br><strong>Normal:</strong> What you aim for when everything is running well. For many: 3-4 posts per week, one carousel per month, regular comments.<br><br><strong>Floor:</strong> What's the least you can post and still maintain momentum? Probably 1 post per week. One text post. 15 minutes. That's it. No carousel. No image. Just one clear thought.<br><br>When life gets hard — you don't quit, you drop to the floor. The floor is what separates creators who last from those who disappear. Define yours now, before you need it.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Sustainable Content Calendar</div>
+      <h2 class="s7-ti">High / Normal / Low / Rest weeks with post counts</h2>
+      <div class="s7-3col">
+        <div class="s7-card">
+          <div class="s7-card-lbl">High Week (1×/month)</div>
+          <div class="s7-card-ttl">Full Output</div>
+          <div class="s7-list">
+            <div class="s7-li">5 posts + 1 carousel</div>
+            <div class="s7-li">Daily comments on others</div>
+            <div class="s7-li">When: energy high, client work light</div>
+            <div class="s7-li">Create buffer for future Normal weeks</div>
+          </div>
+        </div>
+        <div class="s7-card gc">
+          <div class="s7-card-lbl">Normal Week (2×/month)</div>
+          <div class="s7-card-ttl">Steady Output</div>
+          <div class="s7-list">
+            <div class="s7-li">3 posts per week</div>
+            <div class="s7-li">Engage with comments daily</div>
+            <div class="s7-li">60-min creation block × 2</div>
+            <div class="s7-li">This is the baseline. Protect it.</div>
+          </div>
+        </div>
+        <div class="s7-card">
+          <div class="s7-card-lbl">Low / Rest (1×/month)</div>
+          <div class="s7-card-ttl">Floor Standard</div>
+          <div class="s7-list">
+            <div class="s7-li">1 post per week minimum</div>
+            <div class="s7-li">Use banked content if needed</div>
+            <div class="s7-li">No carousel required</div>
+            <div class="s7-li">Planned Rest: zero posts, full recharge</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">Sustainability is a design choice, not a personality trait. <strong>Design for your worst week, not your best.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-135.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

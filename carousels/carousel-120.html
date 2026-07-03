@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 120 — Brand Audit: Your Personal Brand Health Check | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-120-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Brand Audit</div>
+      <h1 class="headline">Before you create<br>more content, run this<br>audit. You might be<br><span class="accent">fixing the wrong things.</span></h1>
+      <p class="sub-deck">The complete personal brand audit — 5 dimensions, 25 questions, 90-day action plan.</p>
+    </div>
+    <div class="vis-stack">
+      <div class="vis-box">Clarity + Visibility</div>
+      <div class="vis-box gold">Credibility + Consistency</div>
+      <div class="vis-box">Conversion</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 5 Dimensions</div>
+      <div class="a-title">The 5 Dimensions of<br>a Strong Personal Brand</div>
+      <div class="a-sub">Every brand problem traces back to one of these five areas.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most creators focus entirely on content output — more posts, better hooks, higher frequency. But before you optimise volume, audit the five dimensions that determine whether your brand can convert.<br><br><strong>Clarity</strong> — does your message land with strangers in 5 seconds? Is your niche specific enough to be memorable?<br><br><strong>Visibility</strong> — are you reaching enough people consistently? Is your posting frequency sustainable?<br><br><strong>Credibility</strong> — does proof of your work exist publicly? Are there testimonials, case studies, results?<br><br><strong>Consistency</strong> — do all touchpoints tell the same story? Same photo, bio, tone, and frequency everywhere?<br><br><strong>Conversion</strong> — does your reach translate into conversations, calls, and revenue? Where does the funnel break?</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Clarity Audit</div>
+      <div class="a-title">Running Your<br>Clarity Audit</div>
+      <div class="a-sub">The 5-second test is the most honest feedback your brand can receive.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Clarity is the first thing to audit because it affects everything downstream. A clear message converts at every stage. An unclear message fails everywhere.<br><br><strong>The 5-second test:</strong> Ask a stranger — ideally a potential client, not a peer — to look at your LinkedIn profile for 5 seconds. Then close it. Ask them: what does this person do? Who do they help? Why should I work with them?<br><br>If they can't answer clearly, your clarity problem is bigger than your content problem. No amount of posting volume fixes a message that doesn't land.<br><br><strong>Questions to ask yourself:</strong> Is your niche specific enough that your ideal client immediately recognises themselves? Is your LinkedIn headline a job title or a value proposition? Does your About section lead with what you do for clients or with your career history?</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Visibility &amp; Credibility</div>
+      <div class="a-title">Auditing Visibility<br>and Credibility</div>
+      <div class="a-sub">Numbers and proof — the two pillars of a brand that can be found and trusted.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Visibility metrics to check:</strong> follower count and growth rate (are you gaining ground or stalling?), post reach (are impressions growing month-over-month?), engagement rate versus industry benchmark (2–4% for LinkedIn is healthy), profile view count (is your content driving people to your profile?).<br><br><strong>Credibility assets to audit:</strong> Do you have at least 5 LinkedIn recommendations with specific, outcome-based language? Do you have 3+ published case studies or client results? Have you been featured in any media? Do you have a portfolio, a published framework, or documented experiments?<br><br>Most credibility problems are visibility problems in disguise. <strong>The proof exists — it just isn't public.</strong> Testimonials in your inbox don't count. Published ones do.</p>
+      <div class="a-box"><strong>Quick credibility win:</strong> Message 3 former clients today. Ask for a specific testimonial referencing a concrete outcome. Publish all three within the week.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Consistency Audit</div>
+      <div class="a-title">Auditing Brand<br>Consistency</div>
+      <div class="a-sub">Inconsistency is invisible to you. Glaringly obvious to everyone else.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Consistency is the dimension most creators neglect because they experience each platform separately. Their audience experiences all of them simultaneously — and inconsistency creates cognitive friction that undermines trust.<br><br><strong>Check these four areas:</strong><br><br><strong>Same photo across all platforms.</strong> LinkedIn, Twitter/X, website, email signature — same image. Inconsistency here creates the impression of different people.<br><br><strong>Same core bio messaging.</strong> The description of what you do should be recognisably similar everywhere, even if the length differs.<br><br><strong>Same posting frequency.</strong> Irregular cadences — daily for two weeks, silent for three — signal unreliability. Consistent frequency, even if lower, builds more trust.<br><br><strong>Same visual style.</strong> Colour palette, typography choices, image treatment — all consistent.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide pb-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Conversion Audit</div>
+      <div class="a-title">Auditing Your<br>Conversion Funnel</div>
+      <div class="a-sub">Traffic without conversion is vanity. The leak is always somewhere specific.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The final and most commercially critical dimension. Beautiful brand, great content, strong visibility — but no revenue. That's a conversion problem. And conversion problems always have a specific location in the funnel.<br><br><strong>Profile view → conversation.</strong> What percentage of profile views result in a connection request, DM, or inquiry? If this is low, your profile isn't doing its job as a sales page.<br><br><strong>DM → call.</strong> What percentage of your DMs convert to a scheduled call? If this is low, your DM conversations may be unfocused or lack a clear next step.<br><br><strong>Call → client.</strong> What percentage of discovery calls convert to paid engagements? If this is low, there may be a positioning mismatch, a pricing concern, or a lack of follow-up process.<br><br><strong>Find the biggest drop-off. Fix that first.</strong></p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Brand Health Scorecard</div>
+      <h2 class="s7-ti">Brand Audit Scorecard — 5 Dimensions, Score 1–10, Priority Actions</h2>
+      <div class="s7-grid">
+        <div class="s7-col c1">
+          <div class="s7-col-label">Clarity + Visibility</div>
+          <div class="s7-item">Clarity score (1–10): stranger 5-sec test</div>
+          <div class="s7-item">Red (&lt;5): Rewrite headline and About section</div>
+          <div class="s7-item">Amber (5–7): Sharpen niche statement</div>
+          <div class="s7-item">Visibility score (1–10): reach + growth rate</div>
+          <div class="s7-item">Red (&lt;5): Increase posting frequency first</div>
+        </div>
+        <div class="s7-col c2">
+          <div class="s7-col-label">Credibility + Consistency</div>
+          <div class="s7-item">Credibility score (1–10): public proof assets</div>
+          <div class="s7-item">Red (&lt;5): Collect and publish 3 testimonials now</div>
+          <div class="s7-item">Amber (5–7): Add case study to Featured section</div>
+          <div class="s7-item">Consistency score (1–10): cross-platform audit</div>
+          <div class="s7-item">Red (&lt;5): Standardise photo and bio this week</div>
+        </div>
+        <div class="s7-col c3">
+          <div class="s7-col-label">Conversion</div>
+          <div class="s7-item">Conversion score (1–10): reach → revenue ratio</div>
+          <div class="s7-item">Red (&lt;5): Add clear CTA to every post</div>
+          <div class="s7-item">Amber (5–7): Optimise DM follow-up sequence</div>
+          <div class="s7-item">Green (8+): Scale what's working</div>
+          <div class="s7-item">90-day priority: focus on lowest-scoring dimension</div>
+        </div>
+      </div>
+      <div class="s7-note">Score honestly. <strong>A 90-day plan fixing your weakest dimension will outperform 90 days of posting without addressing the root issue.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-120.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

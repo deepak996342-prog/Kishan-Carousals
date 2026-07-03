@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 128 — Data-Driven Content: Use Analytics to Create Better Posts | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-128-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Data-Driven Content</div>
+      <h1 class="headline">Your past posts are your<br>best content brief.<br><span class="accent">Most creators never<br>read them.</span></h1>
+      <p class="sub-deck">How to use your LinkedIn analytics to identify what's working, eliminate what isn't, and create more content your audience actually wants.</p>
+    </div>
+    <div class="analytics-grid">
+      <div class="analytics-box">
+        <div class="analytics-box-label">Top 5 by Impressions</div>
+        <div class="analytics-box-val">What reached most people</div>
+      </div>
+      <div class="analytics-box gold-a">
+        <div class="analytics-box-label">Top 5 by Engagement Rate</div>
+        <div class="analytics-box-val">What resonated deepest</div>
+      </div>
+      <div class="analytics-box">
+        <div class="analytics-box-label">Top 5 by Comments</div>
+        <div class="analytics-box-val">What sparked conversation</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Monthly Analytics Ritual</div>
+      <div class="a-title">30 minutes. Once a month.<br>Changes everything.</div>
+      <div class="a-sub">Consistency in review equals improvement in output.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Set a recurring calendar event on the last Friday of every month. Pull three lists: <strong>top 5 posts by impressions, top 5 by engagement rate, top 5 by comments.</strong><br><br>These three metrics tell you different things. Impressions = algorithm reach. Engagement rate = audience resonance. Comments = emotional response. The sweet spot is posts that score well on all three.<br><br>Look for patterns across your lists, not individual post performance. One viral post proves nothing. Repeated high performance reveals your positioning.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Analysing Best Posts</div>
+      <div class="a-title">What made your best<br>posts actually work?</div>
+      <div class="a-sub">Diagnose before you replicate.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">For each top-performing post, ask: <strong>What format was it? What topic? What length? What hook style? When was it posted?</strong><br><br>Also: Did it include a question? Did it share a personal story? Did it challenge a popular belief? Did it use a numbered list?<br><br>Most creators look at total performance. The smart ones look at the variables that drove performance. Format is often less important than topic. Topic is often less important than hook. Hook is always more important than length.</p>
+      <div class="a-box"><strong>Pattern signal:</strong> When 3+ top posts share a common element (same topic, same format, same hook type) — you've found a signal. Exploit it.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Content Intelligence System</div>
+      <div class="a-title">The spreadsheet that turns<br>posts into strategy.</div>
+      <div class="a-sub">3 months of data. 6 months of strategy.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Build a simple spreadsheet. Track 20 fields per post: Date / Format / Topic / Pillar / Hook Type / Word Count / Impressions / Engagement Rate / Comments / Shares / Profile Visits / Post Time / Personal Story? / Question Included? / Direct CTA? / Link Included? / Image/Visual? / Reaction Count / DMs Generated / Client Outcome.<br><br><strong>After 3 months you have a dataset. After 6 months you have a strategy.</strong> You'll know exactly what to post, when, in what format — because the data tells you, not your intuition.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Adapting Without Abandoning</div>
+      <div class="a-title">Follow your data without<br>losing your voice.</div>
+      <div class="a-sub">The line between data-informed and data-dictated.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Here's the trap: you notice listicles outperform essays in your analytics. So you post only listicles. Your content becomes formulaic. Engagement drops. You've optimised the format while hollowing out the value.<br><br><strong>Don't just copy algorithmic winners. Find the overlap between what your audience wants and what you find worth saying.</strong> That intersection is your positioning. Analytics should sharpen your aim — not define your identity.<br><br>Your voice is your moat. Data without voice builds a commodity. Voice without data builds slowly. Both together builds authority.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs2-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">A/B Testing on LinkedIn</div>
+      <div class="a-title">Test one variable.<br>Learn one lesson.</div>
+      <div class="a-sub">Systematic improvement vs. random hoping.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">You can't run true A/B tests on LinkedIn — you can't send different versions to the same audience simultaneously. But you can test sequentially.<br><br><strong>Test one variable at a time:</strong> same topic, different hook structure. Same hook style, different format. Same format, different posting time. Same topic, personal story vs. data-driven.<br><br>The key: change one variable, hold everything else constant, compare results. After 4-6 posts with a controlled variable, you'll have a directional answer.</p>
+      <div class="a-box"><strong>Most valuable test first:</strong> Hook format. Run 4 posts on the same topic with 4 different hook types. Your most valuable content intelligence will come from this.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Content Analytics Template</div>
+      <h2 class="s7-ti">Your monthly review framework</h2>
+      <div class="s7-cols">
+        <div class="s7-col">
+          <div class="s7-col-label">Post Tracking (20 fields)</div>
+          <div class="s7-col-title">What to Track Per Post</div>
+          <div class="s7-items">
+            <div class="s7-item">Date, format, topic, pillar</div>
+            <div class="s7-item">Hook type, word count</div>
+            <div class="s7-item">Impressions, engagement rate</div>
+            <div class="s7-item">Comments, shares, reactions</div>
+            <div class="s7-item">DMs generated, client outcome</div>
+          </div>
+        </div>
+        <div class="s7-col gold-col">
+          <div class="s7-col-label">Monthly Review Questions</div>
+          <div class="s7-col-title">What to Ask Each Month</div>
+          <div class="s7-items">
+            <div class="s7-item">Which topic drove most comments?</div>
+            <div class="s7-item">Which format had highest ER?</div>
+            <div class="s7-item">Which hook type pulled most reach?</div>
+            <div class="s7-item">What 3 variables do top posts share?</div>
+            <div class="s7-item">What should I post more / less of?</div>
+          </div>
+        </div>
+      </div>
+      <div class="s7-note">After 6 months of tracking, you'll know more about your audience than <strong>any LinkedIn course could teach you.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-128.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

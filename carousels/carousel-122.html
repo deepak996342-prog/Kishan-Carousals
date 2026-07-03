@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 122 — Content Repurposing: One Idea, 10 Formats | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-122-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Content Repurposing</div>
+      <h1 class="headline">The most productive<br>creators don't create<br>more content. They<br><span class="accent">extract more value from<br>what they've already made.</span></h1>
+      <p class="sub-deck">How to turn one LinkedIn post into 10 pieces of content across platforms.</p>
+    </div>
+    <div class="vis-stack">
+      <div class="vis-box">1 idea → 10 formats</div>
+      <div class="vis-box gold">Same insight, new context</div>
+      <div class="vis-box">Less creation, more reach</div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Mindset Shift</div>
+      <div class="a-title">The Repurposing<br>Mindset</div>
+      <div class="a-sub">Stop creating new content. Start extracting from what exists.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The daily content grind is built on a flawed premise: that the only way to maintain presence is to generate new ideas constantly. It isn't.<br><br><strong>The repurposing mindset flips the question entirely.</strong> Instead of "what do I post today?", ask "what can I extract from what already exists?"<br><br>Your best post from six months ago reached 3% of your current audience. 97% of your followers have never seen it. Resharing that post — even unchanged — is new content for nearly everyone reading it.<br><br>Better still, repurposing means extracting the core insight and reformatting it for different platforms, different learning styles, and different discovery contexts. The idea stays the same. The expression multiplies.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The 10-Format Map</div>
+      <div class="a-title">One LinkedIn Post →<br>10 Formats</div>
+      <div class="a-sub">Every format reaches a different person on a different platform at a different moment.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Starting from one well-performing LinkedIn post, here are the 10 formats you can extract:<br><br><strong>1. Twitter/X thread</strong> — break the core argument into 5–7 numbered tweets.<br><strong>2. Email newsletter</strong> — expand with context, a story, and a CTA.<br><strong>3. Carousel</strong> — visualise the key points as a swipeable PDF/graphic.<br><strong>4. Short video</strong> — record yourself explaining the concept in 60–90 seconds.<br><strong>5. Quote card</strong> — pull the single best sentence. Design it. Share as image.<br><strong>6. Blog post</strong> — 600–1,000 words expanding on the idea with examples.<br><strong>7. Podcast angle</strong> — pitch this topic to a show host as an episode idea.<br><strong>8. Instagram caption</strong> — rewrite for a visual-first audience with different hooks.<br><strong>9. YouTube community post</strong> — share the concept as a poll or short reflection.<br><strong>10. New LinkedIn post</strong> — opposite angle on the same core idea, 3 months later.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Workflow</div>
+      <div class="a-title">The Repurposing<br>Workflow</div>
+      <div class="a-sub">Identify → Extract → Reformat → Distribute over 2 weeks.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Repurposing without a workflow becomes chaotic. This 4-step process makes it systematic:<br><br><strong>Step 1: Identify a high-performing piece.</strong> A post that drove unusual engagement, DMs, or shares. This is your source material. Proven resonance is a signal that the core idea is worth amplifying.<br><br><strong>Step 2: Extract the core insight.</strong> Strip away the LinkedIn-specific formatting, the hooks, the platform context. What is the pure idea underneath? Write it in one sentence.<br><br><strong>Step 3: Reformat for each channel.</strong> Each format gets a new introduction and new framing suited to that platform's audience and context — but the core insight stays identical.<br><br><strong>Step 4: Publish over a 2-week window.</strong> Not all at once. Spread the repurposed formats across two weeks to maximise the reach of a single source idea.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Building the System</div>
+      <div class="a-title">Building Your<br>Repurposing System</div>
+      <div class="a-sub">Source content first, distribution second — always in that order.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The most sustainable repurposing strategy is built on a content hierarchy. At the top: one long-form piece per week that serves as the source for everything else.<br><br><strong>One long-form piece per week is the source for everything.</strong> A 1,000-word LinkedIn article. A 45-minute podcast episode. A detailed carousel. Something substantive that contains multiple ideas worth extracting.<br><br>From that one piece, you extract and distribute across the other formats throughout the week. Not starting from scratch each time — mining from what you've already created.<br><br><strong>"Source content first, distribution second."</strong> Most creators work in reverse — they create platform-native short content without a source. This approach produces inconsistent depth and zero compounding. The source-first model creates a library of interconnected content that builds authority over time.</p>
+      <div class="a-box"><strong>The 1-to-10 equation:</strong> One long-form source piece per week = 10 distribution pieces = 2 weeks of content without a single new idea.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide cs-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Automation</div>
+      <div class="a-title">Automating the<br>Repurposing Pipeline</div>
+      <div class="a-sub">The tools that reduce repurposing from hours to minutes.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Manual repurposing across 10 formats is still time-consuming. Automation handles the mechanical parts so you can focus on the creative adaptation.<br><br><strong>Notion content database.</strong> A single database tracking every source piece, every derived format, and its publishing status. You can see gaps instantly — "I have the LinkedIn post and email but haven't done the carousel yet."<br><br><strong>Zapier cross-posting.</strong> Automate the distribution of certain formats to certain platforms. New blog post → automatically notified to email list, for example.<br><br><strong>AI for rewriting for different audiences.</strong> Give Claude or ChatGPT your source piece and ask it to rewrite for a Twitter audience, an email audience, or an Instagram audience. The core idea is yours. The reformatting takes minutes.<br><br><strong>Schedulers for distribution.</strong> Buffer, Hypefury, or Later for pre-loading your 2-week distribution window.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Repurposing Matrix</div>
+      <h2 class="s7-ti">Repurposing Matrix — 1 Source → 10 Formats with Effort &amp; Frequency</h2>
+      <div class="s7-grid">
+        <div class="s7-col c1">
+          <div class="s7-col-label">High-Value Formats</div>
+          <div class="s7-item">Carousel: High effort · Highest saves · Weekly</div>
+          <div class="s7-item">Email newsletter: Medium effort · Best conversion · Weekly</div>
+          <div class="s7-item">Short video clip: Medium effort · Highest reach · 2× week</div>
+          <div class="s7-item">Blog post: High effort · Best SEO · Monthly</div>
+          <div class="s7-item">Podcast angle: Low effort · Highest trust · Per episode</div>
+        </div>
+        <div class="s7-col c2">
+          <div class="s7-col-label">Quick Turnaround Formats</div>
+          <div class="s7-item">Quote card: Low effort · High saves · 3× week</div>
+          <div class="s7-item">Twitter/X thread: Low effort · Discovery reach · Weekly</div>
+          <div class="s7-item">Instagram caption: Low effort · Visual audience · 3× week</div>
+          <div class="s7-item">YouTube community: Low effort · Subscriber touch · Weekly</div>
+          <div class="s7-item">Reshared LinkedIn post: Zero effort · New audience · Monthly</div>
+        </div>
+        <div class="s7-col c3">
+          <div class="s7-col-label">Platform-Audience Match</div>
+          <div class="s7-item">LinkedIn: B2B, professional development</div>
+          <div class="s7-item">Twitter/X: Founders, builders, tech</div>
+          <div class="s7-item">Email: Warmest audience, highest intent</div>
+          <div class="s7-item">Instagram: Visual learners, younger professionals</div>
+          <div class="s7-item">YouTube: Deep learners, search-driven discovery</div>
+        </div>
+      </div>
+      <div class="s7-note">Start with 3 formats from one source. Master those before expanding. <strong>Doing 10 formats badly is worse than doing 3 formats excellently.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-122.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

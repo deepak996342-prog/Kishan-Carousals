@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 136 — Business of Personal Branding: Turn LinkedIn Into Revenue | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-136-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>Personal Brand Business</div>
+      <h1 class="headline">Building a personal brand<br>without a monetization<br>strategy is a hobby,<br><span class="accent">not a business.</span></h1>
+      <p class="sub-deck">The framework for turning your LinkedIn audience into real revenue — the 3-stage path from visibility to income.</p>
+    </div>
+    <div class="vis-right">
+      <div class="vis-box">
+        <div class="vis-box-label">Stage 1</div>
+        <div class="vis-box-val">Visibility</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Stage 2</div>
+        <div class="vis-box-val">Trust</div>
+      </div>
+      <div class="vis-box">
+        <div class="vis-box-label">Stage 3</div>
+        <div class="vis-box-val">Offers</div>
+      </div>
+      <div class="vis-box gold-v">
+        <div class="vis-box-label">Result</div>
+        <div class="vis-box-val">Revenue</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The 3 Stages</div>
+      <div class="a-title">Visibility → Trust → Offers.<br>You cannot skip stages.</div>
+      <div class="a-sub">Most people try to sell before trust is established.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">The personal brand revenue path has a strict sequence. <strong>Visibility gets you seen. Trust earns you credibility. Offers turn credibility into income.</strong> The reason most LinkedIn creators don't make money is simple: they skip stage 2. They build a following and immediately launch an offer before the audience trusts them enough to buy.<br><br>Trust isn't built in weeks — it's built through months of consistent, generous, useful content. It takes 90–180 days of regular presence before a meaningful portion of your audience considers you a trusted expert. Build the stages in order. The shortcut is the long way.</p>
+      <div class="a-box"><strong>Stage sequence check:</strong> Are people reading your content regularly (visibility)? Are they DMing, commenting with questions, tagging you (trust)? Then — and only then — it's time to introduce your offer.</div>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Revenue-Ready Profile</div>
+      <div class="a-title">Your profile is your<br>silent salesperson.</div>
+      <div class="a-sub">Most profiles look like CVs, not conversion tools.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">A revenue-ready profile has four non-negotiable elements: <strong>clarity on what you offer</strong> (visitor knows within 5 seconds), <strong>easy ways to contact you</strong> (DM open, email visible, booking link in featured), <strong>visible social proof</strong> (testimonials, results, case studies above the fold), and <strong>one clear next step</strong> for anyone who wants your help.<br><br>Most LinkedIn profiles are built to impress, not to convert. Listing past roles and credentials is visibility. Showing transformation — what clients achieve by working with you — is trust. Add a single CTA. One. The confused visitor does nothing.</p>
+      <div class="a-box"><strong>Profile audit:</strong> Ask someone unfamiliar with your work to spend 10 seconds on your profile. Can they tell what you do, who you help, and what to do next? If not — rewrite the headline and About section.</div>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">The Slow Burn Conversion</div>
+      <div class="a-title">80% of LinkedIn clients<br>watched you for months first.</div>
+      <div class="a-sub">Consistency IS the sales funnel.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">This is one of the most important things to understand about LinkedIn as a revenue channel: <strong>your buyers are silent for months before they reach out.</strong> They read your posts. They save your carousels. They check your profile. They're building a picture of you, assessing trust, waiting until the timing is right for them — and then they DM you as if they already know you. Because they do.<br><br>This means every post you publish is an investment in conversions that will happen 3–6 months from now. The creator who stops posting in month 4 because "nothing is happening" is walking away just before the harvest. <strong>Consistency is not a content tactic. It is your sales funnel.</strong></p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">The 3 Revenue Types</div>
+      <div class="a-title">Direct, Leveraged, and<br>Passive income from LinkedIn.</div>
+      <div class="a-sub">Each type has a different relationship to your time.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Direct revenue</strong> is 1:1 services — consulting, coaching, done-for-you work. High margin, immediate, limited by your hours. This is usually where you start.<br><br><strong>Leveraged revenue</strong> is one-to-many — group programs, cohort courses, workshops. Same preparation, more students. This is where income begins to decouple from your time.<br><br><strong>Passive revenue</strong> is what continues without you being present — digital products, templates, licensed frameworks. Create once, sell repeatedly. The goal is a stack of all three: direct for high-value relationships, leveraged for scale, passive for compound income that works while you sleep.</p>
+      <div class="a-box"><strong>Revenue stack progression:</strong> Start with direct (validates your expertise), add a digital product (leverages your IP), build a group program (scales your delivery). Each layer feeds the next.</div>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide dt-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Measuring Brand ROI</div>
+      <div class="a-title">Track where your leads<br>actually come from.</div>
+      <div class="a-sub">LinkedIn attribution reveals your true brand value.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Most creators have no idea which content is generating revenue because they never ask. <strong>The single most powerful question you can ask every new client is: "Where did you first find me?"</strong> Follow it with "What content made you reach out?" Map the answers over 6 months and patterns emerge — usually a specific post type, topic, or series that drives the majority of your leads.<br><br>This data changes your content strategy entirely. Instead of chasing engagement on every format, you double the content that is directly linked to conversations, proposals, and clients. <strong>Measuring brand ROI is not vanity — it's the only way to know if you're building a business or a hobby.</strong></p>
+      <div class="a-box"><strong>Simple attribution system:</strong> After every new enquiry, ask the source. Tag it in a spreadsheet. Review quarterly. The pattern will be obvious within 3 months.</div>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Personal Brand Revenue Model</div>
+      <h2 class="s7-ti">3 stages × 3 revenue types — your action plan</h2>
+      <table class="s7-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Direct (1:1)</th>
+            <th>Leveraged (Group)</th>
+            <th>Passive (Products)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Visibility (0–3 mo)</td>
+            <td>Share case studies; no pitch yet</td>
+            <td>Tease future group offer in content</td>
+            <td>Create a free lead magnet to test demand</td>
+          </tr>
+          <tr>
+            <td>Trust (3–6 mo)</td>
+            <td>Soft introduce consultation; invite DMs</td>
+            <td>Survey audience on group program interest</td>
+            <td>Launch paid template or swipe file</td>
+          </tr>
+          <tr>
+            <td>Offers (6+ mo)</td>
+            <td>Consistent 1:1 consulting pipeline</td>
+            <td>Cohort or workshop with live delivery</td>
+            <td>Course or licensing deal generating recurring revenue</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="s7-note">You don't need all three revenue types immediately. <strong>Start with one, validate it, then add the next layer.</strong></div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-136.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

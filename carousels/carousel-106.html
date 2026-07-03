@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 106 — SSI Score: What It Measures and How to Improve It | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-106-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>SSI Score</div>
+      <h1 class="headline">There's a hidden score<br>that decides how far<br>your LinkedIn posts travel.<br><span class="accent">Here's how to move it.</span></h1>
+      <p class="sub-deck">LinkedIn's Social Selling Index explained — the 4 pillars and the weekly habits that push your score above 70.</p>
+    </div>
+    <div class="ssi-visual">
+      <div class="ssi-score">
+        <div class="ssi-num">74</div>
+        <div class="ssi-label">SSI Score</div>
+      </div>
+      <div class="ssi-pillars">
+        <div class="ssi-pillar">
+          <div class="ssi-bar-wrap"><div class="ssi-bar-fill" style="width:88%"></div></div>
+          <div class="ssi-p-label">Brand</div>
+        </div>
+        <div class="ssi-pillar">
+          <div class="ssi-bar-wrap"><div class="ssi-bar-fill" style="width:72%"></div></div>
+          <div class="ssi-p-label">Find</div>
+        </div>
+        <div class="ssi-pillar">
+          <div class="ssi-bar-wrap"><div class="ssi-bar-fill" style="width:66%"></div></div>
+          <div class="ssi-p-label">Engage</div>
+        </div>
+        <div class="ssi-pillar">
+          <div class="ssi-bar-wrap"><div class="ssi-bar-fill" style="width:76%"></div></div>
+          <div class="ssi-p-label">Relationships</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">SSI Explained</div>
+      <div class="a-title">What SSI Measures<br>(0–100 Scale)</div>
+      <div class="a-sub">Four pillars worth 25 points each — totalling 100.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">LinkedIn's Social Selling Index (SSI) is a score from 0–100 that measures your effectiveness on the platform across four dimensions. <strong>The higher your score, the broader your organic content distribution.</strong><br><br>LinkedIn's own data shows that users with an SSI above 70 have <strong>45% more opportunities created</strong> than those below 30. Your score updates daily and reflects your activity over the previous 90 days.<br><br>You can view your score at <strong>linkedin.com/sales/ssi</strong> — it's free and public. Check it now before you read the rest of this.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Pillar 1</div>
+      <div class="a-title">Establish Your<br>Professional Brand</div>
+      <div class="a-sub">25 points — the foundation everything else sits on.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">This pillar measures how well your profile presents you as a credible expert and how actively you create content.<br><br><strong>Complete your profile to 100%.</strong> All sections filled, including skills, certifications, and a strong summary. LinkedIn's algorithm actively penalises incomplete profiles.<br><br><strong>Post original content 3+ times per week.</strong> LinkedIn measures content creation frequency directly in this pillar. Sharing others' content doesn't count — only original posts.<br><br><strong>Optimise your headline for search.</strong> Include your primary keyword naturally. This lifts your profile in LinkedIn search results, which increases views, which increases pillar score.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Pillars 2 &amp; 3</div>
+      <div class="a-title">Find the Right People<br>&amp; Engage With Insights</div>
+      <div class="a-sub">50 combined points — proactive and reactive activity both count.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Pillar 2 — Find the Right People (25 pts):</strong> Use LinkedIn Search with filters to find your ideal clients and peers. Save searches. View profiles of prospects. Add them to saved lead lists if you use Sales Navigator. LinkedIn tracks whether you're actively prospecting or passively waiting.<br><br><strong>Pillar 3 — Engage With Insights (25 pts):</strong> Comment on content shared by prospects and industry leaders — substantive comments, not just "Great post." Share relevant articles with your own commentary. React to content your connections share. This pillar rewards active network participation, not broadcasting.</p>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Pillar 4</div>
+      <div class="a-title">Build Strong<br>Relationships</div>
+      <div class="a-sub">25 points — the pillar most creators completely ignore.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">This pillar measures the quality and depth of your network interactions — not just size.<br><br><strong>Personalised connection requests.</strong> A custom note dramatically increases acceptance rates. LinkedIn tracks whether you're connecting strategically or mass-blasting. Quality connections signal intent.<br><br><strong>Respond to DMs within 24 hours.</strong> Responsiveness is measured. Leaving messages unread for days hurts this pillar.<br><br><strong>Follow up with new connections.</strong> A simple message 48 hours after connecting — no pitch, just genuine interest — moves connections from pending to active. This is what LinkedIn calls "relationship building."</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Weekly Routine</div>
+      <div class="a-title">The 30-Minute Weekly<br>SSI Improvement Routine</div>
+      <div class="a-sub">Specific daily actions that move all four pillars simultaneously.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Monday (5 min):</strong> Check your SSI score at linkedin.com/sales/ssi. Note which pillar dropped. That's your focus for the week.<br><br><strong>Tuesday–Thursday (5 min/day):</strong> Post one piece of original content. Spend 5 minutes commenting on 3–5 posts from people in your target audience. This builds pillars 1 and 3 simultaneously.<br><br><strong>Friday (10 min):</strong> Connect with 10 new people using personalised notes. View 10–15 profiles of potential connections. This builds pillars 2 and 4.<br><br><strong>Ongoing:</strong> Reply to every DM same day. Respond to every comment within 2 hours of posting.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">SSI Breakdown</div>
+      <h2 class="s7-ti">4 Pillars — Points, Indicators &amp; Weekly Actions</h2>
+      <div class="ssi-table">
+        <div class="ssi-col c1">
+          <div class="ssi-col-label">Pillar 1</div>
+          <div class="ssi-pts">25 pts</div>
+          <div style="font-size:12px;color:var(--acc-light);margin-bottom:8px;">Establish Brand</div>
+          <div class="ssi-action">Complete 100% profile</div>
+          <div class="ssi-action">Post original 3×/week</div>
+          <div class="ssi-action">Optimise headline for search</div>
+          <div class="ssi-action">Get recommendations</div>
+        </div>
+        <div class="ssi-col c2">
+          <div class="ssi-col-label">Pillar 2</div>
+          <div class="ssi-pts">25 pts</div>
+          <div style="font-size:12px;color:var(--gold);margin-bottom:8px;">Find Right People</div>
+          <div class="ssi-action">Use Search with filters</div>
+          <div class="ssi-action">Save lead searches</div>
+          <div class="ssi-action">View target profiles daily</div>
+          <div class="ssi-action">Connect 10 new/week</div>
+        </div>
+        <div class="ssi-col c3">
+          <div class="ssi-col-label">Pillar 3</div>
+          <div class="ssi-pts">25 pts</div>
+          <div style="font-size:12px;color:var(--acc-light);margin-bottom:8px;">Engage Insights</div>
+          <div class="ssi-action">Comment on 5 posts/day</div>
+          <div class="ssi-action">Share with commentary</div>
+          <div class="ssi-action">React to connections' content</div>
+          <div class="ssi-action">Mention people in posts</div>
+        </div>
+        <div class="ssi-col c4">
+          <div class="ssi-col-label">Pillar 4</div>
+          <div class="ssi-pts">25 pts</div>
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Build Relationships</div>
+          <div class="ssi-action">Personalised invites only</div>
+          <div class="ssi-action">Reply to DMs same day</div>
+          <div class="ssi-action">Follow up new connects</div>
+          <div class="ssi-action">Reply to all comments fast</div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-106.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carousel 110 — LinkedIn Analytics: Read the Data That Actually Matters | Kishan Kr Soni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="carousel-110-styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<div class="carousel-wrapper">
+  <div class="nav-bar">
+    <button class="nav-btn" id="btn-prev" onclick="go(-1)" disabled>← Prev</button>
+    <span class="slide-counter" id="counter">1 / 8</span>
+    <button class="nav-btn" id="btn-next" onclick="go(1)">Next →</button>
+    <div class="nav-sep"></div>
+    <button class="nav-btn-pdf" id="btn-pdf" onclick="exportPDF()">↓ Download PDF</button>
+  </div>
+
+  <div class="slide active" id="slide-1">
+    <div class="grid-overlay"></div>
+    <div class="hook-inner">
+      <div class="eyebrow"><span class="eyebrow-line"></span>LinkedIn Analytics</div>
+      <h1 class="headline">The LinkedIn creators<br>who grow fastest know<br>exactly which posts<br><span class="accent">to make more of.</span></h1>
+      <p class="sub-deck">Plain-English guide to LinkedIn analytics — what each metric means, which to track weekly, and how to turn data into a smarter strategy.</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-box">
+        <div class="metric-val">4.7k</div>
+        <div class="metric-name">Impressions</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-val gold">8.2%</div>
+        <div class="metric-name">Eng. Rate</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-val">+312</div>
+        <div class="metric-name">New Followers</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-val gold">284</div>
+        <div class="metric-name">Profile Views</div>
+      </div>
+    </div>
+    <div class="slide-num">1 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-2">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">5 Core Metrics</div>
+      <div class="a-title">The 5 Metrics That<br>Actually Drive Decisions</div>
+      <div class="a-sub">Track these weekly. Ignore everything else until you've mastered these.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Impressions:</strong> How many times your content was shown. This is your reach signal — are you growing or shrinking?<br><br><strong>Engagement Rate:</strong> (Reactions + Comments + Saves + Shares) ÷ Impressions. Above 3% is good. Above 6% is excellent. This measures resonance.<br><br><strong>Followers Gained:</strong> Net new followers per post. This tells you which content attracts your ideal audience.<br><br><strong>Profile Views:</strong> High-intent signal. Someone who viewed your profile after seeing a post is considering reaching out.<br><br><strong>CTR (Click-Through Rate):</strong> How often people click your links. Critical for driving traffic to your lead magnet or services.</p>
+    </div>
+    <div class="slide-num">2 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-3">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Post-Level Analytics</div>
+      <div class="a-title">What Each Post Metric<br>Is Actually Telling You</div>
+      <div class="a-sub">Four engagement types — each measures something different.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Reactions</strong> measure emotional resonance. High reactions, low comments = content people agree with but don't feel compelled to discuss.<br><br><strong>Comments</strong> measure conversation value. Comment-heavy posts have the strongest algorithm signal — LinkedIn distributes them further because they generate ongoing engagement.<br><br><strong>Shares</strong> measure amplification. When someone shares your post, they're saying "my network needs to see this." These are your most powerful advocacy signals.<br><br><strong>Saves</strong> are perhaps the most underrated metric. A save means "I want to return to this later" — it signals that your content is reference-worthy, not just scroll-worthy.</p>
+    </div>
+    <div class="slide-num">3 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-4">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Audience Analytics</div>
+      <div class="a-title">Why Audience Demographics<br>Are the Most Underused Data</div>
+      <div class="a-sub">You can't serve an audience you haven't accurately identified.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">Creator Mode unlocks detailed follower demographics including industry, job function, seniority, company size, and geography. Most creators check this once and forget it exists. <strong>Review it monthly.</strong><br><br>The critical question: <strong>Are the right people following you?</strong> If you're a B2B consultant targeting VP-level decision-makers and your audience skews heavily toward junior marketers or students, your content positioning is off — no matter how good your engagement rate looks.<br><br>Use audience demographics to <strong>refine your content focus, not validate your ego.</strong> The goal is the right 5,000 followers, not the wrong 50,000.</p>
+      <div class="a-box"><strong>Monthly check:</strong> Does your top industry follower match your ideal client industry? If not, your content focus needs adjusting.</div>
+    </div>
+    <div class="slide-num">4 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-5">
+    <div class="l-bar gold"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge gold">Content Patterns</div>
+      <div class="a-title">Finding the Patterns<br>That Tell You What to Post Next</div>
+      <div class="a-sub">Data removes guesswork. Most creators never look for patterns.</div>
+      <div class="a-divider"></div>
+      <p class="a-body">After 20+ posts, your analytics start to reveal patterns that your intuition cannot. Look for:<br><br><strong>Which format drives the most reach?</strong> Compare text-only vs. carousel vs. video impression averages. You will almost certainly have a clear winner — most people are surprised by the result.<br><br><strong>Which topic cluster gets the most comments?</strong> Comments signal that the topic creates conversation. Double down on the topic that gets people talking — not the one you find easiest to write about.<br><br><strong>What posting time consistently outperforms?</strong> Compare engagement rates by time of day over 30+ posts. Find your window and protect it.</p>
+    </div>
+    <div class="slide-num">5 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide li-slide" id="slide-6">
+    <div class="l-bar"></div><div class="tr-glow"></div>
+    <div class="ai">
+      <div class="a-badge">Monthly Review</div>
+      <div class="a-title">The Monthly 30-Minute<br>Analytics Review That Changes Everything</div>
+      <div class="a-sub">30 minutes once a month beats checking daily and acting on noise.</div>
+      <div class="a-divider"></div>
+      <p class="a-body"><strong>Step 1 — Review your 5 KPIs vs. the previous 4 weeks.</strong> Are impressions up or down? Engagement rate up or down? Follower growth trend up or down? You need a direction before you can change direction.<br><br><strong>Step 2 — Identify your top post.</strong> Which post had the highest engagement rate this month? Open it. Read it again. Ask: what made this work? Hook? Topic? Format? Specific story?<br><br><strong>Step 3 — Analyse why it worked.</strong> Write your hypothesis in one sentence. This is your experiment for next month.<br><br><strong>Step 4 — Plan next month accordingly.</strong> Create more content in the format, on the topic, with the hook style that won last month.</p>
+    </div>
+    <div class="slide-num">6 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-7">
+    <div class="s7i">
+      <div class="s7-ey">Analytics Dashboard</div>
+      <h2 class="s7-ti">5 KPIs — Tracking Columns &amp; Monthly Review Questions</h2>
+      <div class="analytics-dash">
+        <div class="ad-col c1">
+          <div class="ad-label">Weekly KPI Tracker</div>
+          <div class="ad-row"><div class="ad-metric">Avg. Impressions/Post</div><div class="ad-track">Week 1–4</div></div>
+          <div class="ad-row"><div class="ad-metric">Avg. Engagement Rate</div><div class="ad-track">% Target: 4%+</div></div>
+          <div class="ad-row"><div class="ad-metric">Net New Followers</div><div class="ad-track">+/week</div></div>
+          <div class="ad-row"><div class="ad-metric">Profile Views</div><div class="ad-track">High-intent</div></div>
+          <div class="ad-row"><div class="ad-metric">Link CTR (if applicable)</div><div class="ad-track">% target: 1%+</div></div>
+        </div>
+        <div class="ad-col c2">
+          <div class="ad-label">Monthly Review Questions</div>
+          <div class="review-steps">
+            <div class="rs"><span class="rs-n">1.</span>Which post had the highest engagement rate this month?</div>
+            <div class="rs"><span class="rs-n">2.</span>What was the topic/format/hook style that worked?</div>
+            <div class="rs"><span class="rs-n">3.</span>Does my audience demographic match my ideal client?</div>
+            <div class="rs"><span class="rs-n">4.</span>What was my worst-performing post and why?</div>
+            <div class="rs"><span class="rs-n">5.</span>What one change will I make to next month's strategy based on this data?</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:16px;font-size:15px;color:var(--muted);border-left:3px solid var(--gold);padding-left:16px;">Analytics don't tell you what to create. They tell you <strong style="color:var(--white);">what to create more of.</strong> The goal is not to be data-driven — it's to be data-informed.</div>
+    </div>
+    <div class="slide-num">7 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+
+  <div class="slide" id="slide-8">
+    <div class="geo-ring-a"></div><div class="geo-ring-b"></div><div class="geo-ring-c"></div>
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Free For You</div>
+      <h2 class="cta-title">Let me audit your content.<br>No pitch. Just clarity.</h2>
+      <p class="cta-body">30-minute Content Audit Call — I'll show you exactly<br>what's blocking your growth and the 3 moves to fix it.</p>
+      <div class="cta-pill">DM me "AUDIT"</div>
+      <div class="cta-url">linkedin.com/in/kishan-kr-soni</div>
+    </div>
+    <div class="slide-num">8 / 8</div>
+    <div class="brand-bar"><div class="brand-left"><span class="brand-name">Kishan Kr Soni</span><span class="brand-dot">·</span><span class="brand-role">Content Strategist &amp; AI Specialist</span></div><span class="brand-url">linkedin.com/in/kishan-kr-soni</span></div>
+  </div>
+</div>
+<script>
+  var cur = 1, total = 8;
+  function go(dir) { var n = cur + dir; if (n < 1 || n > total) return; document.getElementById('slide-' + cur).classList.remove('active'); cur = n; document.getElementById('slide-' + cur).classList.add('active'); document.getElementById('counter').textContent = cur + ' / ' + total; document.getElementById('btn-prev').disabled = (cur === 1); document.getElementById('btn-next').disabled = (cur === total); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.addEventListener('keydown', function(e) { if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1); if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') go(-1); });
+  async function exportPDF() {
+    var btn = document.getElementById('btn-pdf'); btn.disabled = true;
+    try {
+      var doc = new window.jspdf.jsPDF({ orientation: 'p', unit: 'px', format: [1080, 1080], hotfixes: ['px_scaling'] });
+      var slides = document.querySelectorAll('.slide');
+      for (var i = 0; i < slides.length; i++) { btn.textContent = 'Exporting ' + (i + 1) + ' / ' + slides.length + '…'; slides[i].style.display = 'flex'; var canvas = await html2canvas(slides[i], { width: 1080, height: 1080, scale: 2, useCORS: true, logging: false, backgroundColor: null }); slides[i].style.display = ''; if (i > 0) doc.addPage([1080, 1080], 'p'); doc.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, 1080, 1080); }
+      doc.save('Kishan-Kr-Soni-Carousel-110.pdf');
+    } catch (err) { alert('PDF export failed — please try again.'); }
+    btn.textContent = '↓ Download PDF'; btn.disabled = false;
+  }
+</script>
+</body>
+</html>
